@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+*.log
+docs/video_parts*/
+evidence/site_*.tar.gz
+
+# Generated previews and export packages (keep final editable/PDF documents).
+docs/slides/
+docs/slides_short_13/
+docs/*.zip
+docs/*.tex
+*.tex
+evidence/document_preview/
+evidence/report_preview/
+evidence/report_source_slides/
+evidence/reading_guide/*.png
+evidence/reading_guide/header.html
+evidence/reading_guide/reference.docx
+evidence/ontology_design/html_header.html
+evidence/ontology_design/reference.docx
+!docs/latex_header.tex
