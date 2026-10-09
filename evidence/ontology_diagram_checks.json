@@ -1,0 +1,17 @@
+{
+  "canonical_owl_sha256": "c75fb9caad895cbc18ba316e4bfb7bc1be1ef7f3701ff214276a1a21acc4eecd",
+  "classes_covered": 37,
+  "object_properties_covered": 19,
+  "datatype_properties_covered": 5,
+  "equivalent_class_definitions_covered": 14,
+  "canvas": [
+    4800,
+    4400
+  ],
+  "scope": "Full named schema and core axioms; corpus counts and a concrete example",
+  "artifacts": [
+    "docs/Ontology_toan_bo.png",
+    "docs/Ontology_toan_bo.svg",
+    "docs/Ontology_toan_bo.pdf"
+  ]
+}

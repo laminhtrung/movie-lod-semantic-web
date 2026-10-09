@@ -80,3 +80,7 @@ URL canonical và các IRI đều chứa `/movie-lod-semantic-web`. Khi chạy l
 Sau đổi ontology hoặc dữ liệu: chạy build → reason → validate → tests; sau sửa tài liệu: chạy các trình tạo tương ứng và `src/sync_document_assets.py`, rồi commit/push thư mục `web/dist`. GitHub Actions sẽ xuất bản bản mới. Không chứa hoặc tạo video demo.
 
 Kiểm tra browser tùy chọn: `pip install -r requirements_dev.txt`, rồi `python -m playwright install chromium`. `src/preview_pages.py` mô phỏng đúng đường dẫn con Pages; mở URL có `?browser=1` được in ra để chạy Comunica.
+
+## Bản đồ ontology
+
+[Sơ đồ toàn bộ OWL — PNG](docs/Ontology_toan_bo.png) · [SVG phóng to](docs/Ontology_toan_bo.svg) · [PDF một trang](docs/Ontology_toan_bo.pdf). Sơ đồ đọc trực tiếp từ ontology canonical, bao phủ 37 lớp, 19 object properties, 5 datatype properties, 14 equivalent-class definitions, inverse/chain/cardinality, provenance và ví dụ Nolan. Chạy lại bằng `src/draw_full_ontology.py` khi đổi OWL.
