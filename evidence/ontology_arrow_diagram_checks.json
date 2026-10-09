@@ -1,0 +1,12 @@
+{
+  "classes": 37,
+  "labelled_object_property_arrows": 19,
+  "labelled_datatype_arrows": 5,
+  "owl_sha256": "c75fb9caad895cbc18ba316e4bfb7bc1be1ef7f3701ff214276a1a21acc4eecd",
+  "canvas": [
+    6000,
+    4250
+  ],
+  "all_relation_arrows_labelled": true,
+  "style": "One node-and-arrow drawing, no prose tables"
+}

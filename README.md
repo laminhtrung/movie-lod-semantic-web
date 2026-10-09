@@ -83,4 +83,4 @@ Kiểm tra browser tùy chọn: `pip install -r requirements_dev.txt`, rồi `py
 
 ## Bản đồ ontology
 
-[Sơ đồ toàn bộ OWL — PNG](docs/Ontology_toan_bo.png) · [SVG phóng to](docs/Ontology_toan_bo.svg) · [PDF một trang](docs/Ontology_toan_bo.pdf). Sơ đồ đọc trực tiếp từ ontology canonical, bao phủ 37 lớp, 19 object properties, 5 datatype properties, 14 equivalent-class definitions, inverse/chain/cardinality, provenance và ví dụ Nolan. Chạy lại bằng `src/draw_full_ontology.py` khi đổi OWL.
+[Sơ đồ lớp và quan hệ — PNG](docs/Ontology_quan_he.png). Một ảnh gồm các ô và mũi tên có nhãn, bao phủ 37 lớp, 19 object properties và 5 datatype properties. Các vùng lặp lại tên lớp để dễ đọc. Chạy lại bằng `src/draw_ontology_arrows.py` khi đổi OWL.
