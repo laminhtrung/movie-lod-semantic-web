@@ -44501,5 +44501,41 @@
         ]
       }
     }
+  },
+  {
+    "file": "28.rq",
+    "mode": "asserted",
+    "result": {
+      "results": {
+        "bindings": [
+          {
+            "link": {
+              "type": "uri",
+              "value": "http://dbpedia.org/resource/Inception"
+            },
+            "source": {
+              "type": "literal",
+              "value": "DBpedia"
+            }
+          },
+          {
+            "link": {
+              "type": "uri",
+              "value": "http://www.wikidata.org/entity/Q25188"
+            },
+            "source": {
+              "type": "literal",
+              "value": "Wikidata"
+            }
+          }
+        ]
+      },
+      "head": {
+        "vars": [
+          "source",
+          "link"
+        ]
+      }
+    }
   }
 ]

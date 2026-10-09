@@ -51,6 +51,7 @@ def run():
         reasoned.parse(inference_path)
     query_results=[]
     questions=json.loads((ROOT/'evidence/ontology_design/query_results.json').read_text())
+    questions += json.loads((ROOT/'queries/extra_samples.json').read_text())
     named=Dataset().parse(ROOT/'data/processed/before_after.trig',format='trig')
     for row in questions:
         path=ROOT/'queries'/f"{row['number']:02}.rq"

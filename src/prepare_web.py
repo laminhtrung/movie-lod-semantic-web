@@ -6,6 +6,8 @@ order=[2]+[i for i in range(1,28) if i!=2]
 samples=[]
 for n in order:
     row=meta[n-1];samples.append({'file':f'{n:02}.rq','label':row['question'],'mode':'dataset' if n==27 else 'asserted' if row['group']=='A' else 'reasoned','query':(ROOT/'queries'/f'{n:02}.rq').read_text()})
+for row in json.loads((ROOT/'queries/extra_samples.json').read_text()):
+    n=row['number'];samples.append({'file':f'{n:02}.rq','label':row['question'],'mode':'asserted','query':(ROOT/'queries'/f'{n:02}.rq').read_text()})
 write_json(ROOT/'web/dist/data/queries.json',samples)
 shutil.copy2(ROOT/'LICENSE-DATA.txt',ROOT/'web/dist/LICENSE-DATA.txt')
 docs=ROOT/'web/dist/docs';docs.mkdir(exist_ok=True)

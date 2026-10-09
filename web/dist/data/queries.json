@@ -160,5 +160,11 @@
     "label": "Types present only after reasoning",
     "mode": "dataset",
     "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?type WHERE {\n GRAPH <urn:movie:reasoned> { ?s a ?type }\n FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\") && STRSTARTS(STR(?type), \"https://laminhtrung.github.io/movie-lod-semantic-web/ontology#\"))\n FILTER NOT EXISTS { GRAPH <urn:movie:asserted> { ?s a ?type } }\n} ORDER BY ?type ?s\n"
+  },
+  {
+    "file": "28.rq",
+    "label": "Inception links to DBpedia and Wikidata",
+    "mode": "asserted",
+    "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nSELECT ?source ?link WHERE {\n  res:film-Q25188 owl:sameAs ?link .\n  BIND(IF(CONTAINS(STR(?link), \"dbpedia\"), \"DBpedia\", \"Wikidata\") AS ?source)\n} ORDER BY ?source\n"
   }
 ]

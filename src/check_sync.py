@@ -47,10 +47,10 @@ def main():
         with zipfile.ZipFile(p) as z:assert not any(n.lower().endswith('.mp4') for n in z.namelist()),p
         archives.append(str(p.relative_to(ROOT)))
     stats=requests.get(BASE+'/data/statistics.json',timeout=40).json();assert stats['ontology_version']=='3.0.0' and stats['classes']==37
-    queries=list((ROOT/'queries').glob('*.rq'));assert len(queries)==27
+    queries=list((ROOT/'queries').glob('*.rq'));assert len(queries)==28
     assert not (ROOT/'queries/design').exists()
     meta=json.loads((ROOT/'evidence/ontology_design/query_results.json').read_text())
     for row in meta:assert (ROOT/'queries'/f"{row['number']:02}.rq").read_text().strip()==row['query'].strip()
-    report={'passed':True,'checked_at':datetime.now(timezone.utc).isoformat(),'ontology_version':'3.0.0','canonical_static_public_graphs':graphs,'named_graphs':named,'public_documents':docs,'mp4_files':0,'mp4_entries_in_current_archives':0,'zip_archives_checked':archives,'hosting_provider':'GitHub Pages','canonical_queries_verified':27,'statistics_match':True}
+    report={'passed':True,'checked_at':datetime.now(timezone.utc).isoformat(),'ontology_version':'3.0.0','canonical_static_public_graphs':graphs,'named_graphs':named,'public_documents':docs,'mp4_files':0,'mp4_entries_in_current_archives':0,'zip_archives_checked':archives,'hosting_provider':'GitHub Pages','canonical_queries_verified':len(queries),'statistics_match':True}
     write_json(ROOT/'evidence/full_sync_checks.json',report);print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

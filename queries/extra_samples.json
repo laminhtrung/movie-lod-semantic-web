@@ -1,0 +1,9 @@
+[
+  {
+    "number": 28,
+    "question": "Inception links to DBpedia and Wikidata",
+    "group": "A",
+    "asserted_rows": 2,
+    "reasoned_rows": 2
+  }
+]
