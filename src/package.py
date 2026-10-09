@@ -38,7 +38,7 @@ def main():
     assert not any(p for p in ROOT.rglob('*') if p.is_file() and p.suffix.lower()=='.mp4' and '.git' not in p.parts)
     summary={'ontology_version':'3.0.0','application_version':'3.0.0','turtle_jsonld_same_graph':True,'owl_matches_data_and_schema':True,'hermit_canonical_owl_verified':True,'single_primary_full_owl':True,'report_pages':15,'slides':24,'short_slides':13,'report_language':'English','report_font':'Times New Roman','report_font_size_pt':13,'report_line_spacing':1.5,'tests_passed':int(match.group(1)),'browser_checks_passed':len(browser),'public_query_checks_passed':31,'source_snapshots_verified':len(sources),'protege_photo_placeholders':11,'official_grade':None,'mp4_count':0,'mp4_removed_by_request':True,'public_publication_complete':True}
     write_json(ROOT/'evidence/deliverables.json',summary)
-    excluded={'.venv','.git','__pycache__','.pytest_cache','video_parts','video_parts_v2'}
+    excluded={'.venv','.git','__pycache__','.pytest_cache','video_parts','video_parts_v2','slides','slides_short_13'}
     def include(p):
         rel=p.relative_to(ROOT)
         return not(set(rel.parts)&excluded) and p.name!='.DS_Store' and (p.suffix.lower() not in ['.pyc','.tex','.mp4','.zip'] or p.name=='latex_header.tex') and (p.suffix!='.log' or 'ontology_design' in rel.parts) and not p.name.startswith('site_') and not p.name.endswith('.tar.gz')

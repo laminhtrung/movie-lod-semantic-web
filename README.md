@@ -78,3 +78,5 @@ GitHub Actions deploy thư mục `web/dist` khi có thay đổi trên nhánh `ma
 URL canonical và các IRI đều chứa `/movie-lod-semantic-web`. Khi chạy local, có thể mở `http://127.0.0.1:8000/movie-lod-semantic-web/`; Flask cũng hỗ trợ đường dẫn gốc để thuận tiện kiểm thử. Các link tĩnh giữ đúng prefix như trên Pages.
 
 Sau đổi ontology hoặc dữ liệu: chạy build → reason → validate → tests; sau sửa tài liệu: chạy các trình tạo tương ứng và `src/sync_document_assets.py`, rồi commit/push thư mục `web/dist`. GitHub Actions sẽ xuất bản bản mới. Không chứa hoặc tạo video demo.
+
+Kiểm tra browser tùy chọn: `pip install -r requirements_dev.txt`, rồi `python -m playwright install chromium`. `src/preview_pages.py` mô phỏng đúng đường dẫn con Pages; mở URL có `?browser=1` được in ra để chạy Comunica.

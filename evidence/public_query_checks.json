@@ -1,10 +1,10 @@
 {
-  "url": "http://127.0.0.1:8017/movie-lod-semantic-web/?browser=1",
-  "checked_at": "2026-10-09T16:19:53.210080+00:00",
+  "url": "https://laminhtrung.github.io/movie-lod-semantic-web/",
+  "checked_at": "2026-10-09T16:29:18.483065+00:00",
   "checks": [
     {
       "query": "02.rq",
-      "status": "1 result · 0.01 s",
+      "status": "1 result · 0.00 s",
       "passed": true
     },
     {
@@ -44,97 +44,97 @@
     },
     {
       "query": "09.rq",
-      "status": "75 results · 1.04 s",
+      "status": "75 results · 1.61 s",
       "passed": true
     },
     {
       "query": "10.rq",
-      "status": "851 results · 2.27 s",
+      "status": "851 results · 1.32 s",
       "passed": true
     },
     {
       "query": "11.rq",
-      "status": "45 results · 0.06 s",
+      "status": "45 results · 0.11 s",
       "passed": true
     },
     {
       "query": "12.rq",
-      "status": "4 results · 0.00 s",
+      "status": "4 results · 0.09 s",
       "passed": true
     },
     {
       "query": "13.rq",
-      "status": "769 results · 1.94 s",
+      "status": "769 results · 1.16 s",
       "passed": true
     },
     {
       "query": "14.rq",
-      "status": "769 results · 1.37 s",
+      "status": "769 results · 0.52 s",
       "passed": true
     },
     {
       "query": "15.rq",
-      "status": "89 results · 0.14 s",
+      "status": "89 results · 0.13 s",
       "passed": true
     },
     {
       "query": "16.rq",
-      "status": "12 results · 0.00 s",
+      "status": "12 results · 0.09 s",
       "passed": true
     },
     {
       "query": "17.rq",
-      "status": "26 results · 0.02 s",
+      "status": "26 results · 0.10 s",
       "passed": true
     },
     {
       "query": "18.rq",
-      "status": "17 results · 0.01 s",
+      "status": "17 results · 0.09 s",
       "passed": true
     },
     {
       "query": "19.rq",
-      "status": "7 results · 0.00 s",
+      "status": "7 results · 0.09 s",
       "passed": true
     },
     {
       "query": "20.rq",
-      "status": "10 results · 0.00 s",
+      "status": "10 results · 0.08 s",
       "passed": true
     },
     {
       "query": "21.rq",
-      "status": "7 results · 0.00 s",
+      "status": "7 results · 0.09 s",
       "passed": true
     },
     {
       "query": "22.rq",
-      "status": "65 results · 0.10 s",
+      "status": "65 results · 0.12 s",
       "passed": true
     },
     {
       "query": "23.rq",
-      "status": "10 results · 0.00 s",
+      "status": "10 results · 0.09 s",
       "passed": true
     },
     {
       "query": "24.rq",
-      "status": "8 results · 0.00 s",
+      "status": "8 results · 0.08 s",
       "passed": true
     },
     {
       "query": "25.rq",
-      "status": "8 results · 0.00 s",
+      "status": "8 results · 0.09 s",
       "passed": true
     },
     {
       "query": "26.rq",
-      "status": "8 results · 0.00 s",
+      "status": "8 results · 0.08 s",
       "passed": true
     },
     {
       "query": "27.rq",
-      "status": "1261 results · 6.55 s",
+      "status": "1261 results · 8.11 s",
       "passed": true
     },
     {
@@ -144,7 +144,7 @@
     },
     {
       "query": "DESCRIBE",
-      "status": "83 results · 0.01 s",
+      "status": "83 results · 0.02 s",
       "passed": true
     },
     {
@@ -162,9 +162,9 @@
   "uncaught_errors": [],
   "dataset_responses": [
     {
-      "url": "http://127.0.0.1:8017/movie-lod-semantic-web/data/movies.ttl",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/data/movies.ttl",
       "status": 200,
-      "content_type": "text/turtle"
+      "content_type": "text/turtle; charset=utf-8"
     }
   ]
 }

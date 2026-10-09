@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checked_at": "2026-10-09T15:56:48.216986+00:00",
+  "checked_at": "2026-10-09T16:29:20.051948+00:00",
   "ontology_version": "3.0.0",
   "canonical_static_public_graphs": [
     {
@@ -109,7 +109,7 @@
       "public_sha256_matches": true
     },
     {
-      "file": "Kich_ban_video.pdf",
+      "file": "Kich_ban_demo.pdf",
       "public_sha256_matches": true
     },
     {
@@ -150,7 +150,7 @@
   "mp4_files": 0,
   "mp4_entries_in_current_archives": 0,
   "zip_archives_checked": [],
-  "current_site_archive_checked": "../movie_lod_github_deliverables/site_current.tar.gz",
+  "hosting_provider": "GitHub Pages",
   "canonical_queries_verified": 27,
   "statistics_match": true
 }

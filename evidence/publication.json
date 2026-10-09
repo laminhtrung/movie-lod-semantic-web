@@ -1,11 +1,17 @@
 {
   "audience": "public",
-  "status": "pending",
+  "status": "succeeded",
   "url": "https://laminhtrung.github.io/movie-lod-semantic-web/",
   "repository": "laminhtrung/movie-lod-semantic-web",
+  "repository_url": "https://github.com/laminhtrung/movie-lod-semantic-web",
   "hosting_provider": "GitHub Pages",
+  "source_commit": "4258546a2a4e9dba1f36b9591574022ec791ea13",
+  "workflow_run_id": 37959180782,
+  "workflow_run_url": "https://github.com/laminhtrung/movie-lod-semantic-web/actions/runs/37959180782",
   "ontology_version": "3.0.0",
   "application_version": "3.0.0",
-  "local_changes_pending_publication": true,
-  "mp4_count": 0
+  "local_changes_pending_publication": false,
+  "mp4_count": 0,
+  "public_query_engine": "Comunica in the browser",
+  "local_endpoint": "Flask/RDFLib; not hosted by GitHub Pages"
 }

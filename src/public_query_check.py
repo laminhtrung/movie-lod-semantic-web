@@ -13,7 +13,8 @@ samples = json.loads((ROOT/'web/dist/data/queries.json').read_text())
 expected = {x['file']: x['result'] for x in json.loads((ROOT/'evidence/query_results.json').read_text())}
 checks, errors, responses = [], [], []
 with sync_playwright() as p:
-    browser = p.chromium.launch(headless=True, executable_path='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
+    chrome=Path('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
+    browser = p.chromium.launch(headless=True, executable_path=str(chrome) if chrome.exists() else None)
     page = browser.new_page(viewport={'width':1440, 'height':1000})
     page.on('pageerror', lambda error: errors.append(str(error)))
     page.on('response', lambda response: responses.append({'url':response.url, 'status':response.status, 'content_type':response.headers.get('content-type')}) if '/data/movies.ttl' in response.url else None)
