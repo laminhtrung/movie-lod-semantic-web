@@ -1,0 +1,38 @@
+[
+  {
+    "check": "local endpoint UI, Inception",
+    "passed": true
+  },
+  {
+    "check": "Nolan query through endpoint",
+    "passed": true
+  },
+  {
+    "check": "IRI HTML and linked-data navigation",
+    "passed": true
+  },
+  {
+    "check": "browser Comunica SELECT",
+    "passed": true
+  },
+  {
+    "check": "browser Comunica GROUP BY / COUNT",
+    "passed": true
+  },
+  {
+    "check": "browser Comunica ASK",
+    "passed": true
+  },
+  {
+    "check": "browser Comunica CONSTRUCT",
+    "passed": true
+  },
+  {
+    "check": "mobile 390px, no page overflow",
+    "passed": true
+  },
+  {
+    "check": "no uncaught browser exceptions",
+    "passed": true
+  }
+]

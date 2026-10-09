@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q580231 a dbo:Award ;
+    rdfs:label "Golden Eagle Awards"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q580231> ;
+    ex:sourceSnapshot res:source-54db2618110b9433d713e304 .
+

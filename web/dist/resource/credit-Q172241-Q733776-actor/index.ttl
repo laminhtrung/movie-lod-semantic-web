@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q172241-Q733776-actor a ex:Credit ;
+    rdfs:label "The Shawshank Redemption — actor — Jude Ciccolella" ;
+    ex:inFilm res:film-Q172241 ;
+    ex:participant res:person-Q733776 ;
+    ex:role ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

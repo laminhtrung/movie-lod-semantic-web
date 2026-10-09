@@ -1,0 +1,24 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q48337 a dbo:Person ;
+    rdfs:label "Morgan Freeman"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q106291,
+        res:award-Q1095395,
+        res:award-Q1260789,
+        res:award-Q1738793,
+        res:award-Q1789030,
+        res:award-Q17985761,
+        res:award-Q292044,
+        res:award-Q708135 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q48337> ;
+    ex:hasContribution res:contribution-Q163872-Q48337-actor,
+        res:contribution-Q166262-Q48337-actor,
+        res:contribution-Q172241-Q48337-actor,
+        res:contribution-Q190908-Q48337-actor ;
+    ex:sourceSnapshot res:source-da3b5f106516c6082cf64a1b .
+

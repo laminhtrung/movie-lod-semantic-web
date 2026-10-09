@@ -1,0 +1,28 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q25144 a dbo:Person ;
+    rdfs:label "Kevin Spacey"@en ;
+    dbo:award res:award-Q103916,
+        res:award-Q1062026,
+        res:award-Q106291,
+        res:award-Q12201445,
+        res:award-Q1257493,
+        res:award-Q1474410,
+        res:award-Q16985329,
+        res:award-Q17985761,
+        res:award-Q191874,
+        res:award-Q2414252,
+        res:award-Q400007,
+        res:award-Q518675,
+        res:award-Q6500767,
+        res:award-Q654620,
+        res:award-Q7552552,
+        res:award-Q922348 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25144> ;
+    ex:hasContribution res:contribution-Q190908-Q25144-actor ;
+    ex:sourceSnapshot res:source-b82d4cd24c4fcbc751ccf4dc .
+

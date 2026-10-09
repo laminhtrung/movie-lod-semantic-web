@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q1225469 a dbo:Person ;
+    rdfs:label "Dileep Rao"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1225469> ;
+    ex:hasContribution res:contribution-Q25188-Q1225469-actor ;
+    ex:sourceSnapshot res:source-d575e89ee6f63a14842d22cf .
+

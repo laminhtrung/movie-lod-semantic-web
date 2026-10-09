@@ -1,0 +1,20 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q544465 a dbo:Person ;
+    rdfs:label "Kathy Bates"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q103618,
+        res:award-Q1320315,
+        res:award-Q17985761,
+        res:award-Q21595675,
+        res:award-Q2462064,
+        res:award-Q2981152,
+        res:award-Q989449 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q544465> ;
+    ex:hasContribution res:contribution-Q44578-Q544465-actor ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

@@ -1,0 +1,83 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q83495 a dbo:Film ;
+    rdfs:label "The Matrix"@en ;
+    dbo:award res:award-Q1131772,
+        res:award-Q1265702,
+        res:award-Q281939,
+        res:award-Q393686,
+        res:award-Q488645,
+        res:award-Q739633,
+        res:award-Q787127,
+        res:award-Q830079 ;
+    dbo:country res:country-Q30,
+        res:country-Q408 ;
+    dbo:director res:person-Q9544977,
+        res:person-Q9545711 ;
+    dbo:genre res:genre-Q1341051,
+        res:genre-Q1535153,
+        res:genre-Q174526,
+        res:genre-Q185867,
+        res:genre-Q188473,
+        res:genre-Q20443008,
+        res:genre-Q2484376,
+        res:genre-Q3990883,
+        res:genre-Q471839 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q539718 ;
+    dbo:productionCompany res:company-Q1188938,
+        res:company-Q126399,
+        res:company-Q622668 ;
+    dbo:runtime 8.16e+03 ;
+    dbo:starring res:person-Q1236595,
+        res:person-Q18219789,
+        res:person-Q193048,
+        res:person-Q206890,
+        res:person-Q21870719,
+        res:person-Q2424724,
+        res:person-Q258604,
+        res:person-Q2616690,
+        res:person-Q296883,
+        res:person-Q2985403,
+        res:person-Q3324448,
+        res:person-Q3391203,
+        res:person-Q43416,
+        res:person-Q455234,
+        res:person-Q4882899,
+        res:person-Q6306950,
+        res:person-Q862673,
+        res:person-Q944529 ;
+    owl:sameAs <http://dbpedia.org/resource/The_Matrix>,
+        <http://www.wikidata.org/entity/Q83495> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q83495> ;
+    ex:contributionOf res:contribution-Q83495-Q1236595-actor,
+        res:contribution-Q83495-Q18219789-actor,
+        res:contribution-Q83495-Q193048-actor,
+        res:contribution-Q83495-Q206890-actor,
+        res:contribution-Q83495-Q21870719-actor,
+        res:contribution-Q83495-Q2424724-actor,
+        res:contribution-Q83495-Q258604-actor,
+        res:contribution-Q83495-Q2616690-actor,
+        res:contribution-Q83495-Q296883-actor,
+        res:contribution-Q83495-Q2985403-actor,
+        res:contribution-Q83495-Q3324448-actor,
+        res:contribution-Q83495-Q3391203-actor,
+        res:contribution-Q83495-Q43416-actor,
+        res:contribution-Q83495-Q455234-actor,
+        res:contribution-Q83495-Q4882899-actor,
+        res:contribution-Q83495-Q539718-producer,
+        res:contribution-Q83495-Q6306950-actor,
+        res:contribution-Q83495-Q862673-actor,
+        res:contribution-Q83495-Q944529-actor,
+        res:contribution-Q83495-Q9544977-director,
+        res:contribution-Q83495-Q9545711-director ;
+    ex:releaseYear 1999 ;
+    ex:sourceSnapshot res:source-146237842471bc5f929e09cf,
+        res:source-3e29244a71b9cd1900b290d9 .
+

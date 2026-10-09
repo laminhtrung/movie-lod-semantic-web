@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Schindler%27s_List.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:00.972779+00:00",
+  "sha256": "27a4a609adeeb8f61665592b896403f98842e49daced7a49065a144e12cbe668",
+  "path": "data/raw/dcba0188466bcdc00b9841c5.json",
+  "http_status": 200
+}

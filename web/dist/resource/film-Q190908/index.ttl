@@ -1,0 +1,88 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q190908 a dbo:Film ;
+    rdfs:label "Seven"@en ;
+    dbo:award res:award-Q1062026 ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q184903 ;
+    dbo:genre res:genre-Q109629396,
+        res:genre-Q109733304,
+        res:genre-Q109733630,
+        res:genre-Q11304653,
+        res:genre-Q113485322,
+        res:genre-Q1200678,
+        res:genre-Q130232,
+        res:genre-Q16538713,
+        res:genre-Q188473,
+        res:genre-Q19367312,
+        res:genre-Q200092,
+        res:genre-Q2421031,
+        res:genre-Q2484376,
+        res:genre-Q25533274,
+        res:genre-Q459290,
+        res:genre-Q4984974,
+        res:genre-Q63214877,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q695608 ;
+    dbo:productionCompany res:company-Q79202 ;
+    dbo:runtime 7.62e+03 ;
+    dbo:starring res:person-Q1139511,
+        res:person-Q1320006,
+        res:person-Q1333793,
+        res:person-Q16237544,
+        res:person-Q24023955,
+        res:person-Q25144,
+        res:person-Q316032,
+        res:person-Q3361195,
+        res:person-Q34460,
+        res:person-Q35332,
+        res:person-Q353978,
+        res:person-Q355209,
+        res:person-Q446493,
+        res:person-Q4722037,
+        res:person-Q48337,
+        res:person-Q505689,
+        res:person-Q5219143,
+        res:person-Q526468,
+        res:person-Q706513,
+        res:person-Q7173458,
+        res:person-Q718382 ;
+    dbo:writer res:person-Q505689 ;
+    owl:sameAs <http://dbpedia.org/resource/Seven_(1995_film)>,
+        <http://www.wikidata.org/entity/Q190908> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q190908> ;
+    ex:contributionOf res:contribution-Q190908-Q1139511-actor,
+        res:contribution-Q190908-Q1320006-actor,
+        res:contribution-Q190908-Q1333793-actor,
+        res:contribution-Q190908-Q16237544-actor,
+        res:contribution-Q190908-Q184903-director,
+        res:contribution-Q190908-Q24023955-actor,
+        res:contribution-Q190908-Q25144-actor,
+        res:contribution-Q190908-Q316032-actor,
+        res:contribution-Q190908-Q3361195-actor,
+        res:contribution-Q190908-Q34460-actor,
+        res:contribution-Q190908-Q35332-actor,
+        res:contribution-Q190908-Q353978-actor,
+        res:contribution-Q190908-Q355209-actor,
+        res:contribution-Q190908-Q446493-actor,
+        res:contribution-Q190908-Q4722037-actor,
+        res:contribution-Q190908-Q48337-actor,
+        res:contribution-Q190908-Q505689-actor,
+        res:contribution-Q190908-Q505689-writer,
+        res:contribution-Q190908-Q5219143-actor,
+        res:contribution-Q190908-Q526468-actor,
+        res:contribution-Q190908-Q695608-producer,
+        res:contribution-Q190908-Q706513-actor,
+        res:contribution-Q190908-Q7173458-actor,
+        res:contribution-Q190908-Q718382-actor ;
+    ex:releaseYear 1995 ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9,
+        res:source-4f6244fc2173e8322e60ac62 .
+

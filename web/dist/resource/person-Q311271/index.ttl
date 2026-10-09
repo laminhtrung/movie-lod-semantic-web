@@ -1,0 +1,26 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q311271 a dbo:Person ;
+    rdfs:label "John Lithgow"@en ;
+    dbo:award res:award-Q1286639,
+        res:award-Q138996,
+        res:award-Q1474410,
+        res:award-Q1723064,
+        res:award-Q17985761,
+        res:award-Q2414252,
+        res:award-Q2529381,
+        res:award-Q253936,
+        res:award-Q2604800,
+        res:award-Q39384825,
+        res:award-Q518675,
+        res:award-Q5305702,
+        res:award-Q6500767,
+        res:award-Q989442 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q311271> ;
+    ex:hasContribution res:contribution-Q13417189-Q311271-actor ;
+    ex:sourceSnapshot res:source-24e2ab3470e472768aa25d26 .
+

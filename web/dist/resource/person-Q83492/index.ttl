@@ -1,0 +1,21 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q83492 a dbo:Person ;
+    rdfs:label "Gary Oldman"@en ;
+    dbo:award res:award-Q103916,
+        res:award-Q2663714,
+        res:award-Q400007,
+        res:award-Q41375,
+        res:award-Q593098,
+        res:award-Q654620,
+        res:award-Q833163,
+        res:award-Q922322 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q83492> ;
+    ex:hasContribution res:contribution-Q163872-Q83492-actor,
+        res:contribution-Q166262-Q83492-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

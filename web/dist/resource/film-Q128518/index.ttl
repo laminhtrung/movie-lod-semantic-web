@@ -1,0 +1,105 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q128518 a dbo:Film ;
+    rdfs:label "Gladiator"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q103916,
+        res:award-Q139184,
+        res:award-Q16320408,
+        res:award-Q1966965,
+        res:award-Q277536,
+        res:award-Q393686,
+        res:award-Q830079 ;
+    dbo:country res:country-Q145,
+        res:country-Q30 ;
+    dbo:director res:person-Q56005 ;
+    dbo:genre res:genre-Q116514801,
+        res:genre-Q130232,
+        res:genre-Q1433443,
+        res:genre-Q17013749,
+        res:genre-Q188473,
+        res:genre-Q1919632,
+        res:genre-Q319221,
+        res:genre-Q652256 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q1174454,
+        res:person-Q1252563,
+        res:person-Q28044847,
+        res:person-Q703611 ;
+    dbo:productionCompany res:company-Q168383,
+        res:company-Q192557,
+        res:company-Q28044838,
+        res:company-Q28044841,
+        res:company-Q28044843,
+        res:company-Q3476213 ;
+    dbo:runtime 9.3e+03 ;
+    dbo:starring res:person-Q106775,
+        res:person-Q1176556,
+        res:person-Q129817,
+        res:person-Q134133,
+        res:person-Q1375689,
+        res:person-Q1388769,
+        res:person-Q185140,
+        res:person-Q20974079,
+        res:person-Q2165590,
+        res:person-Q22680663,
+        res:person-Q231951,
+        res:person-Q256164,
+        res:person-Q2647961,
+        res:person-Q298682,
+        res:person-Q3017460,
+        res:person-Q310217,
+        res:person-Q313588,
+        res:person-Q457736,
+        res:person-Q468241,
+        res:person-Q61112,
+        res:person-Q711054,
+        res:person-Q735360,
+        res:person-Q737369 ;
+    dbo:writer res:person-Q1174454,
+        res:person-Q384004,
+        res:person-Q706935 ;
+    owl:sameAs <http://dbpedia.org/resource/Gladiator_(2000_film)>,
+        <http://www.wikidata.org/entity/Q128518> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q128518> ;
+    ex:contributionOf res:contribution-Q128518-Q106775-actor,
+        res:contribution-Q128518-Q1174454-producer,
+        res:contribution-Q128518-Q1174454-writer,
+        res:contribution-Q128518-Q1176556-actor,
+        res:contribution-Q128518-Q1252563-producer,
+        res:contribution-Q128518-Q129817-actor,
+        res:contribution-Q128518-Q134133-actor,
+        res:contribution-Q128518-Q1375689-actor,
+        res:contribution-Q128518-Q1388769-actor,
+        res:contribution-Q128518-Q185140-actor,
+        res:contribution-Q128518-Q20974079-actor,
+        res:contribution-Q128518-Q2165590-actor,
+        res:contribution-Q128518-Q22680663-actor,
+        res:contribution-Q128518-Q231951-actor,
+        res:contribution-Q128518-Q256164-actor,
+        res:contribution-Q128518-Q2647961-actor,
+        res:contribution-Q128518-Q28044847-producer,
+        res:contribution-Q128518-Q298682-actor,
+        res:contribution-Q128518-Q3017460-actor,
+        res:contribution-Q128518-Q310217-actor,
+        res:contribution-Q128518-Q313588-actor,
+        res:contribution-Q128518-Q384004-writer,
+        res:contribution-Q128518-Q457736-actor,
+        res:contribution-Q128518-Q468241-actor,
+        res:contribution-Q128518-Q56005-director,
+        res:contribution-Q128518-Q61112-actor,
+        res:contribution-Q128518-Q703611-producer,
+        res:contribution-Q128518-Q706935-writer,
+        res:contribution-Q128518-Q711054-actor,
+        res:contribution-Q128518-Q735360-actor,
+        res:contribution-Q128518-Q737369-actor ;
+    ex:releaseYear 2000 ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7,
+        res:source-f141d420651d6814a6a72d85 .
+

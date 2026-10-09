@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q34012 a dbo:Person ;
+    rdfs:label "Marlon Brando"@en ;
+    dbo:award res:award-Q103916,
+        res:award-Q1131356,
+        res:award-Q17985761,
+        res:award-Q5295360,
+        res:award-Q593098,
+        res:award-Q641316,
+        res:award-Q945887 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q34012> ;
+    ex:hasContribution res:contribution-Q47703-Q34012-actor ;
+    ex:sourceSnapshot res:source-70350d2b565eee56f834c56a .
+

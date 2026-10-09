@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q313040 a dbo:Person ;
+    rdfs:label "James Whitmore"@en ;
+    dbo:award res:award-Q1131356,
+        res:award-Q17985761,
+        res:award-Q24204477,
+        res:award-Q2604800,
+        res:award-Q5295360,
+        res:award-Q723830 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q313040> ;
+    ex:hasContribution res:contribution-Q172241-Q313040-actor ;
+    ex:sourceSnapshot res:source-24e2ab3470e472768aa25d26 .
+

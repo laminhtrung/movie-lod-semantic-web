@@ -1,0 +1,79 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q20856802 a dbo:Film ;
+    rdfs:label "La La Land"@en ;
+    dbo:award res:award-Q1011564,
+        res:award-Q103360,
+        res:award-Q103618,
+        res:award-Q112243,
+        res:award-Q131520,
+        res:award-Q1422140,
+        res:award-Q1472235,
+        res:award-Q181883,
+        res:award-Q277751,
+        res:award-Q488651,
+        res:award-Q586356,
+        res:award-Q670282,
+        res:award-Q849124 ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q18350026 ;
+    dbo:genre res:genre-Q1054574,
+        res:genre-Q130232,
+        res:genre-Q157443,
+        res:genre-Q3072043,
+        res:genre-Q842256,
+        res:genre-Q859369 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q28531045,
+        res:person-Q28542755,
+        res:person-Q5525133,
+        res:person-Q6755521 ;
+    dbo:productionCompany res:company-Q515869,
+        res:company-Q632323 ;
+    dbo:runtime 7.68e+03 ;
+    dbo:starring res:person-Q150482,
+        res:person-Q15790902,
+        res:person-Q1683907,
+        res:person-Q193815,
+        res:person-Q19665276,
+        res:person-Q236956,
+        res:person-Q24444473,
+        res:person-Q3303794,
+        res:person-Q351171,
+        res:person-Q44857,
+        res:person-Q494393,
+        res:person-Q5450687,
+        res:person-Q967833 ;
+    dbo:writer res:person-Q18350026 ;
+    owl:sameAs <http://dbpedia.org/resource/La_La_Land>,
+        <http://www.wikidata.org/entity/Q20856802> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q20856802> ;
+    ex:contributionOf res:contribution-Q20856802-Q150482-actor,
+        res:contribution-Q20856802-Q15790902-actor,
+        res:contribution-Q20856802-Q1683907-actor,
+        res:contribution-Q20856802-Q18350026-director,
+        res:contribution-Q20856802-Q18350026-writer,
+        res:contribution-Q20856802-Q193815-actor,
+        res:contribution-Q20856802-Q19665276-actor,
+        res:contribution-Q20856802-Q236956-actor,
+        res:contribution-Q20856802-Q24444473-actor,
+        res:contribution-Q20856802-Q28531045-producer,
+        res:contribution-Q20856802-Q28542755-producer,
+        res:contribution-Q20856802-Q3303794-actor,
+        res:contribution-Q20856802-Q351171-actor,
+        res:contribution-Q20856802-Q44857-actor,
+        res:contribution-Q20856802-Q494393-actor,
+        res:contribution-Q20856802-Q5450687-actor,
+        res:contribution-Q20856802-Q5525133-producer,
+        res:contribution-Q20856802-Q6755521-producer,
+        res:contribution-Q20856802-Q967833-actor ;
+    ex:releaseYear 2016 ;
+    ex:sourceSnapshot res:source-39bf11b99eaea7b3ce392693,
+        res:source-767abf09b55092603628beb7 .
+

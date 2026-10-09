@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q291141 a dbo:Person ;
+    rdfs:label "Steven Zaillian"@en ;
+    dbo:award res:award-Q107258,
+        res:award-Q17008313,
+        res:award-Q4823084,
+        res:award-Q739694,
+        res:award-Q7866353,
+        res:award-Q8038458,
+        res:award-Q849124 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q291141> ;
+    ex:hasContribution res:contribution-Q483941-Q291141-writer ;
+    ex:sourceSnapshot res:source-c1c7221b65b5fe36d3d50e86 .
+

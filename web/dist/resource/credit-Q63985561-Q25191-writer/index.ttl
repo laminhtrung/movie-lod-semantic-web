@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q63985561-Q25191-writer a ex:Credit ;
+    rdfs:label "Tenet — writer — Christopher Nolan" ;
+    ex:inFilm res:film-Q63985561 ;
+    ex:participant res:person-Q25191 ;
+    ex:role ex:WriterRole ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

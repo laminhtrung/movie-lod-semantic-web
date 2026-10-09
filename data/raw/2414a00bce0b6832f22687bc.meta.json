@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Interstellar_%28film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:52.812126+00:00",
+  "sha256": "3b78c4260ce558e6273b27999b84102d5cbcc34d7343300113055db337135e5c",
+  "path": "data/raw/2414a00bce0b6832f22687bc.json",
+  "http_status": 200
+}

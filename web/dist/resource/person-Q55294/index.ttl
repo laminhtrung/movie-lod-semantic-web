@@ -1,0 +1,22 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q55294 a dbo:Person ;
+    rdfs:label "Kenneth Branagh"@en ;
+    dbo:award res:award-Q123737,
+        res:award-Q3734888,
+        res:award-Q41417,
+        res:award-Q7552552,
+        res:award-Q787131,
+        res:award-Q833163,
+        res:award-Q849124,
+        res:award-Q932281,
+        res:award-Q989453 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q55294> ;
+    ex:hasContribution res:contribution-Q21935651-Q55294-actor,
+        res:contribution-Q63985561-Q55294-actor ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

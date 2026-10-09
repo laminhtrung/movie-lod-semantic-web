@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Blade_Runner.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:03.630986+00:00",
+  "sha256": "732753dcab1a96503b5489109a4b5d0f12446695416e281e46edfe62e1bccef2",
+  "path": "data/raw/52f1f94257b6c8e0aa1e69a8.json",
+  "http_status": 200
+}

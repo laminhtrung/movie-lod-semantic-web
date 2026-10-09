@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Spirited_Away.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:04.664287+00:00",
+  "sha256": "55c92492ee66c9d5cf52464f0ba994b6a064b5ef15de17f442c072e419c826fe",
+  "path": "data/raw/9bf1892b5f457bf8234f24e7.json",
+  "http_status": 200
+}

@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q453973 a dbo:Person ;
+    rdfs:label "Angela Jones"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q453973> ;
+    ex:hasContribution res:contribution-Q104123-Q453973-actor ;
+    ex:sourceSnapshot res:source-784aba8cd47bf4430b0f4f9b .
+

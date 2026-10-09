@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q42047-Q17490321-actor a ex:Contribution ;
+    rdfs:label "Goodfellas — actor — Christopher Serrone" ;
+    ex:contributionBy res:person-Q17490321 ;
+    ex:contributionTo res:film-Q42047 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

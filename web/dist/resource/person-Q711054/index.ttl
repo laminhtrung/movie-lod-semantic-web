@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q711054 a dbo:Person ;
+    rdfs:label "Tony Curran"@en ;
+    dbo:award res:award-Q2876690,
+        res:award-Q919525 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q711054> ;
+    ex:hasContribution res:contribution-Q128518-Q711054-actor ;
+    ex:sourceSnapshot res:source-02a565dc091a4655cc178303 .
+

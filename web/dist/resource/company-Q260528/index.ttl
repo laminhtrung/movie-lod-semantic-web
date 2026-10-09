@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:company-Q260528 a dbo:Company ;
+    rdfs:label "British Film Institute"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q260528> ;
+    ex:sourceSnapshot res:source-b82d4cd24c4fcbc751ccf4dc .
+

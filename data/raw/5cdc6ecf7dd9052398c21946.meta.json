@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Dark_Knight.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:53.005258+00:00",
+  "sha256": "01c22ef7d3be4b100d5dac26632343c7baa705458131b12dc2564249e9598c69",
+  "path": "data/raw/5cdc6ecf7dd9052398c21946.json",
+  "http_status": 200
+}

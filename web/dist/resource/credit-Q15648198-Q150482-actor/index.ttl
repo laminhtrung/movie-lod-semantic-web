@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q15648198-Q150482-actor a ex:Credit ;
+    rdfs:label "Whiplash — actor — J. K. Simmons" ;
+    ex:inFilm res:film-Q15648198 ;
+    ex:participant res:person-Q150482 ;
+    ex:role ex:ActorRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

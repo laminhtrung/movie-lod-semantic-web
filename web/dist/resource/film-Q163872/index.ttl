@@ -1,0 +1,112 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q163872 a dbo:Film ;
+    rdfs:label "The Dark Knight"@en ;
+    dbo:award res:award-Q1062026,
+        res:award-Q106291,
+        res:award-Q1966965,
+        res:award-Q488645 ;
+    dbo:country res:country-Q145,
+        res:country-Q30 ;
+    dbo:director res:person-Q25191 ;
+    dbo:genre res:genre-Q130232,
+        res:genre-Q1535153,
+        res:genre-Q188473,
+        res:genre-Q19367312,
+        res:genre-Q2421031,
+        res:genre-Q2484376,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q242951,
+        res:person-Q25191,
+        res:person-Q2740357 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q2924461,
+        res:company-Q621364,
+        res:company-Q984047 ;
+    dbo:runtime 9.18e+03 ;
+    dbo:starring res:person-Q1108562,
+        res:person-Q123351,
+        res:person-Q1366768,
+        res:person-Q1388258,
+        res:person-Q1591382,
+        res:person-Q16203767,
+        res:person-Q192643,
+        res:person-Q202381,
+        res:person-Q202589,
+        res:person-Q207969,
+        res:person-Q220335,
+        res:person-Q225933,
+        res:person-Q2434354,
+        res:person-Q248915,
+        res:person-Q2635096,
+        res:person-Q266881,
+        res:person-Q361215,
+        res:person-Q379830,
+        res:person-Q40572,
+        res:person-Q436828,
+        res:person-Q456426,
+        res:person-Q45772,
+        res:person-Q48337,
+        res:person-Q519949,
+        res:person-Q729618,
+        res:person-Q83492,
+        res:person-Q934484,
+        res:person-Q938855,
+        res:person-Q957363 ;
+    dbo:writer res:person-Q25191,
+        res:person-Q313048,
+        res:person-Q352010,
+        res:person-Q372788,
+        res:person-Q464282 ;
+    owl:sameAs <http://dbpedia.org/resource/The_Dark_Knight>,
+        <http://www.wikidata.org/entity/Q163872> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q163872> ;
+    ex:contributionOf res:contribution-Q163872-Q1108562-actor,
+        res:contribution-Q163872-Q123351-actor,
+        res:contribution-Q163872-Q1366768-actor,
+        res:contribution-Q163872-Q1388258-actor,
+        res:contribution-Q163872-Q1591382-actor,
+        res:contribution-Q163872-Q16203767-actor,
+        res:contribution-Q163872-Q192643-actor,
+        res:contribution-Q163872-Q202381-actor,
+        res:contribution-Q163872-Q202589-actor,
+        res:contribution-Q163872-Q207969-actor,
+        res:contribution-Q163872-Q220335-actor,
+        res:contribution-Q163872-Q225933-actor,
+        res:contribution-Q163872-Q242951-producer,
+        res:contribution-Q163872-Q2434354-actor,
+        res:contribution-Q163872-Q248915-actor,
+        res:contribution-Q163872-Q25191-director,
+        res:contribution-Q163872-Q25191-producer,
+        res:contribution-Q163872-Q25191-writer,
+        res:contribution-Q163872-Q2635096-actor,
+        res:contribution-Q163872-Q266881-actor,
+        res:contribution-Q163872-Q2740357-producer,
+        res:contribution-Q163872-Q313048-writer,
+        res:contribution-Q163872-Q352010-writer,
+        res:contribution-Q163872-Q361215-actor,
+        res:contribution-Q163872-Q372788-writer,
+        res:contribution-Q163872-Q379830-actor,
+        res:contribution-Q163872-Q40572-actor,
+        res:contribution-Q163872-Q436828-actor,
+        res:contribution-Q163872-Q456426-actor,
+        res:contribution-Q163872-Q45772-actor,
+        res:contribution-Q163872-Q464282-writer,
+        res:contribution-Q163872-Q48337-actor,
+        res:contribution-Q163872-Q519949-actor,
+        res:contribution-Q163872-Q729618-actor,
+        res:contribution-Q163872-Q83492-actor,
+        res:contribution-Q163872-Q934484-actor,
+        res:contribution-Q163872-Q938855-actor,
+        res:contribution-Q163872-Q957363-actor ;
+    ex:releaseYear 2008 ;
+    ex:sourceSnapshot res:source-01c22ef7d3be4b100d5dac26,
+        res:source-56d8b57c83cb1ad3dc2d2e0c .
+

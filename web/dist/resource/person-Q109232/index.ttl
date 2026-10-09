@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q109232 a dbo:Person ;
+    rdfs:label "Rosanna Arquette"@en ;
+    dbo:award res:award-Q24051552,
+        res:award-Q787123 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q109232> ;
+    ex:hasContribution res:contribution-Q104123-Q109232-actor ;
+    ex:sourceSnapshot res:source-125e8e07aa0b622e289724a2 .
+

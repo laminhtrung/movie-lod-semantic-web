@@ -1,0 +1,11 @@
+{
+  "audience": "public",
+  "status": "pending",
+  "url": "https://laminhtrung.github.io/movie-lod-semantic-web/",
+  "repository": "laminhtrung/movie-lod-semantic-web",
+  "hosting_provider": "GitHub Pages",
+  "ontology_version": "3.0.0",
+  "application_version": "3.0.0",
+  "local_changes_pending_publication": true,
+  "mp4_count": 0
+}

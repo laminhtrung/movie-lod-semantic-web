@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q218605 a dbo:Person ;
+    rdfs:label "Michael V. Gazzo"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q218605> ;
+    ex:hasContribution res:contribution-Q184768-Q218605-actor ;
+    ex:sourceSnapshot res:source-95de1603c72929d3b2973622 .
+

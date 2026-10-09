@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q47703-Q380872-actor a ex:Contribution ;
+    rdfs:label "The Godfather — actor — Al Martino" ;
+    ex:contributionBy res:person-Q380872 ;
+    ex:contributionTo res:film-Q47703 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

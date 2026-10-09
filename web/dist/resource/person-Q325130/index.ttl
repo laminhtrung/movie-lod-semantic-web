@@ -1,0 +1,22 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q325130 a dbo:Person ;
+    rdfs:label "Richard Matheson"@en ;
+    dbo:award res:award-Q3405405,
+        res:award-Q3414212,
+        res:award-Q3910469,
+        res:award-Q3910470,
+        res:award-Q48961500,
+        res:award-Q5530024,
+        res:award-Q747089,
+        res:award-Q8035829,
+        res:award-Q833154,
+        res:award-Q898527 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q325130> ;
+    ex:hasContribution res:contribution-Q184768-Q325130-actor ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

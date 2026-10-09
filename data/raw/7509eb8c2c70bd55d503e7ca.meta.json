@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Batman_Begins.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:54.798394+00:00",
+  "sha256": "dd68be11edb49634d61ecba820200022fe8c1de778d319d7f3c77a52e2295f9f",
+  "path": "data/raw/7509eb8c2c70bd55d503e7ca.json",
+  "http_status": 200
+}

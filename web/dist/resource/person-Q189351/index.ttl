@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q189351 a dbo:Person ;
+    rdfs:label "Sean Astin"@en ;
+    dbo:award res:award-Q1258647 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q189351> ;
+    ex:hasContribution res:contribution-Q127367-Q189351-actor,
+        res:contribution-Q131074-Q189351-actor ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+

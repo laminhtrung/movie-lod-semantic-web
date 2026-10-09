@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-39bf11b99eaea7b3ce392693 a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/La_La_Land.json> ;
+    ex:retrievedAt "2026-10-06T08:42:05.570+00:00"^^xsd:dateTime ;
+    ex:sha256 "39bf11b99eaea7b3ce3926934598c6437531f13cf1b6c71a5a880b4fa344818a" ;
+    ex:sourceUrl "https://dbpedia.org/data/La_La_Land.json"^^xsd:anyURI .
+

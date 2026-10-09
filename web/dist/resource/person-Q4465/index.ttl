@@ -1,0 +1,46 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q4465 a dbo:Person ;
+    rdfs:label "Peter Jackson"@en ;
+    dbo:award res:award-Q1011509,
+        res:award-Q1011547,
+        res:award-Q102427,
+        res:award-Q103360,
+        res:award-Q104629144,
+        res:award-Q105447,
+        res:award-Q1056240,
+        res:award-Q107258,
+        res:award-Q1111310,
+        res:award-Q1265702,
+        res:award-Q1321674,
+        res:award-Q1337827,
+        res:award-Q13452524,
+        res:award-Q17985761,
+        res:award-Q23049765,
+        res:award-Q23049797,
+        res:award-Q3406648,
+        res:award-Q3414212,
+        res:award-Q4824149,
+        res:award-Q5211225,
+        res:award-Q5280675,
+        res:award-Q586356,
+        res:award-Q739694,
+        res:award-Q787131,
+        res:award-Q922263,
+        res:award-Q973829,
+        res:award-Q981030 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4465> ;
+    ex:hasContribution res:contribution-Q127367-Q4465-actor,
+        res:contribution-Q127367-Q4465-director,
+        res:contribution-Q127367-Q4465-producer,
+        res:contribution-Q127367-Q4465-writer,
+        res:contribution-Q131074-Q4465-actor,
+        res:contribution-Q131074-Q4465-director,
+        res:contribution-Q131074-Q4465-producer,
+        res:contribution-Q131074-Q4465-writer ;
+    ex:sourceSnapshot res:source-784aba8cd47bf4430b0f4f9b .
+

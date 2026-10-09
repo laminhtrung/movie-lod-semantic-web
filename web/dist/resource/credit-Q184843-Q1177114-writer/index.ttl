@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q184843-Q1177114-writer a ex:Credit ;
+    rdfs:label "Blade Runner — writer — David Peoples" ;
+    ex:inFilm res:film-Q184843 ;
+    ex:participant res:person-Q1177114 ;
+    ex:role ex:WriterRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

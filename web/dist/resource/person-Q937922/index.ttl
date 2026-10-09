@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q937922 a dbo:Person ;
+    rdfs:label "Tony Darrow"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q937922> ;
+    ex:hasContribution res:contribution-Q42047-Q937922-actor ;
+    ex:sourceSnapshot res:source-8c6fb43b7aa45e3aebfc36f9 .
+

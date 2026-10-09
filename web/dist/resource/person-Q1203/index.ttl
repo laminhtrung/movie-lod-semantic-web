@@ -1,0 +1,17 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q1203 a dbo:Person ;
+    rdfs:label "John Lennon"@en ;
+    dbo:award res:award-Q12201526,
+        res:award-Q179191,
+        res:award-Q17985761,
+        res:award-Q488651,
+        res:award-Q935843 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1203> ;
+    ex:hasContribution res:contribution-Q134773-Q1203-actor ;
+    ex:sourceSnapshot res:source-1c42d282f795483c77a94b24 .
+

@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q1693866 a dbo:Person ;
+    rdfs:label "Marianna Hill"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1693866> ;
+    ex:hasContribution res:contribution-Q184768-Q1693866-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

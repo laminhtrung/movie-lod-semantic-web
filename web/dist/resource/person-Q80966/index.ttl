@@ -1,0 +1,39 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q80966 a dbo:Person ;
+    rdfs:label "Cate Blanchett"@en ;
+    dbo:award res:award-Q103618,
+        res:award-Q106301,
+        res:award-Q106517969,
+        res:award-Q110930267,
+        res:award-Q111292721,
+        res:award-Q1129487,
+        res:award-Q125030529,
+        res:award-Q1320315,
+        res:award-Q13452528,
+        res:award-Q174389,
+        res:award-Q17985761,
+        res:award-Q2089918,
+        res:award-Q2294705,
+        res:award-Q2393205,
+        res:award-Q2544851,
+        res:award-Q286069,
+        res:award-Q30687800,
+        res:award-Q3724813,
+        res:award-Q463085,
+        res:award-Q56085709,
+        res:award-Q630018,
+        res:award-Q687123,
+        res:award-Q7585305,
+        res:award-Q787123,
+        res:award-Q85196951,
+        res:award-Q9680541 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q80966> ;
+    ex:hasContribution res:contribution-Q127367-Q80966-actor,
+        res:contribution-Q131074-Q80966-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

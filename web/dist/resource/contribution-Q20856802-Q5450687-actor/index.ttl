@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q20856802-Q5450687-actor a ex:Contribution ;
+    rdfs:label "La La Land — actor — Finn Wittrock" ;
+    ex:contributionBy res:person-Q5450687 ;
+    ex:contributionTo res:film-Q20856802 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

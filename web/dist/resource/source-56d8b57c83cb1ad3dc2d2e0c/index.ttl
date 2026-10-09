@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-56d8b57c83cb1ad3dc2d2e0c a ex:SourceSnapshot ;
+    rdfs:label "Wikidata source snapshot" ;
+    prov:wasDerivedFrom <https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&languages=en&sites=enwiki&titles=Inception%7CInterstellar+%28film%29%7CThe+Dark+Knight%7CMemento+%28film%29%7CDunkirk+%282017+film%29%7CThe+Prestige%7CBatman+Begins%7CTenet%7CThe+Godfather%7CThe+Godfather+Part+II&props=labels%7Cdescriptions%7Csitelinks%7Cclaims> ;
+    ex:retrievedAt "2026-10-06T08:43:21.455+00:00"^^xsd:dateTime ;
+    ex:sha256 "56d8b57c83cb1ad3dc2d2e0cf47035801fede896cc0dca296a6e8ff1e0c246e1" ;
+    ex:sourceUrl "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&languages=en&sites=enwiki&titles=Inception%7CInterstellar+%28film%29%7CThe+Dark+Knight%7CMemento+%28film%29%7CDunkirk+%282017+film%29%7CThe+Prestige%7CBatman+Begins%7CTenet%7CThe+Godfather%7CThe+Godfather+Part+II&props=labels%7Cdescriptions%7Csitelinks%7Cclaims"^^xsd:anyURI .
+

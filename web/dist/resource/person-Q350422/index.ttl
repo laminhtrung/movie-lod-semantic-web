@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q350422 a dbo:Person ;
+    rdfs:label "Walter Hill"@en ;
+    dbo:award res:award-Q20714679,
+        res:award-Q25405526,
+        res:award-Q3414212,
+        res:award-Q5280674,
+        res:award-Q5280678,
+        res:award-Q583972 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q350422> ;
+    ex:hasContribution res:contribution-Q103569-Q350422-producer ;
+    ex:sourceSnapshot res:source-70350d2b565eee56f834c56a .
+

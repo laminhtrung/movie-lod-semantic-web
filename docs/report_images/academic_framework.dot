@@ -1,0 +1,15 @@
+digraph study {
+      graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.5", dpi=180];
+      node [shape=box, style="rounded,filled", fillcolor="#EEF3F5", color="#345469", fontname="Times New Roman", fontsize=16, margin="0.18,0.14"];
+      edge [color="#345469", arrowsize=0.7, fontname="Times New Roman", fontsize=13];
+      sources [label="Source knowledge\nWikidata / DBpedia"];
+      alignment [label="Entity alignment\nIdentity + provenance"];
+      assertions [label="RDF assertions\nIndividuals + relations"];
+      ontology [label="OWL ontology\nClasses + axioms", fillcolor="#E5EEE8"];
+      inference [label="Semantic inference\nEntailed membership"];
+      queries [label="SPARQL questions\nRetrieval + aggregation"];
+      sources -> alignment -> assertions -> inference -> queries;
+      ontology -> inference [label="defines meaning"];
+      assertions -> queries [label="stated facts"];
+      {rank=same; assertions; ontology;}
+    }

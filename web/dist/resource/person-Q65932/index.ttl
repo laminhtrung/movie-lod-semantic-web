@@ -1,0 +1,41 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q65932 a dbo:Person ;
+    rdfs:label "Anthony Hopkins"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q103916,
+        res:award-Q105447,
+        res:award-Q1071903,
+        res:award-Q12201477,
+        res:award-Q1259362,
+        res:award-Q1789544,
+        res:award-Q1790281,
+        res:award-Q1790292,
+        res:award-Q17985761,
+        res:award-Q1868950,
+        res:award-Q19020,
+        res:award-Q2925701,
+        res:award-Q2947548,
+        res:award-Q3404523,
+        res:award-Q400007,
+        res:award-Q503034,
+        res:award-Q5211221,
+        res:award-Q5305701,
+        res:award-Q640353,
+        res:award-Q716909,
+        res:award-Q7569444,
+        res:award-Q787148,
+        res:award-Q833163,
+        res:award-Q894592,
+        res:award-Q908858,
+        res:award-Q922348,
+        res:award-Q932281,
+        res:award-Q989453 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q65932> ;
+    ex:hasContribution res:contribution-Q133654-Q65932-actor ;
+    ex:sourceSnapshot res:source-f4ca917e06a8755924ffd24a .
+

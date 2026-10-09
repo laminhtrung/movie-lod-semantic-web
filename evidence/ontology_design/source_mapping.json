@@ -1,0 +1,819 @@
+{
+  "schema_reference": "https://downloads.dbpedia.org/2016-10/dbpedia_2016-10.owl",
+  "reference_sha256": "a0ca30c8f25cf2d2957639dcad4fd1115f37a856d6d542fd50bba3bf9fa6bf9f",
+  "reference_version": "Official 2016-10 schema + official extraction-framework development vocabulary (790 classes); live starring/runtime/MovieGenre cross-checked 2026-10-09",
+  "classes": [
+    {
+      "uri": "http://dbpedia.org/ontology/Work",
+      "name": "dbo:Work",
+      "parent": "—",
+      "definition": null,
+      "source": "DBpedia supertype of supported entities",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Film",
+      "name": "dbo:Film",
+      "parent": "dbo:Work",
+      "definition": null,
+      "source": "P31",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Agent",
+      "name": "dbo:Agent",
+      "parent": "—",
+      "definition": null,
+      "source": "DBpedia supertype of supported entities",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Person",
+      "name": "dbo:Person",
+      "parent": "dbo:Agent",
+      "definition": null,
+      "source": "P31=Q5; P57/P161/P58/P162",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Artist",
+      "name": "dbo:Artist",
+      "parent": "dbo:Person",
+      "definition": null,
+      "source": "DBpedia supertype of supported entities",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Actor",
+      "name": "dbo:Actor",
+      "parent": "dbo:Artist",
+      "definition": null,
+      "source": "P161",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Writer",
+      "name": "dbo:Writer",
+      "parent": "dbo:Person",
+      "definition": null,
+      "source": "P58 via ScreenWriter",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/MovieDirector",
+      "name": "dbo:MovieDirector",
+      "parent": "dbo:Person",
+      "definition": null,
+      "source": "P57",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/ScreenWriter",
+      "name": "dbo:ScreenWriter",
+      "parent": "dbo:Writer",
+      "definition": null,
+      "source": "P58",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Producer",
+      "name": "dbo:Producer",
+      "parent": "dbo:Person",
+      "definition": null,
+      "source": "P162",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Organisation",
+      "name": "dbo:Organisation",
+      "parent": "dbo:Agent",
+      "definition": null,
+      "source": "DBpedia supertype of supported entities",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Company",
+      "name": "dbo:Company",
+      "parent": "dbo:Organisation",
+      "definition": null,
+      "source": "P272",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Genre",
+      "name": "dbo:Genre",
+      "parent": "—",
+      "definition": null,
+      "source": "P136",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/MovieGenre",
+      "name": "dbo:MovieGenre",
+      "parent": "dbo:Genre",
+      "definition": null,
+      "source": "P136 in film context",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Award",
+      "name": "dbo:Award",
+      "parent": "—",
+      "definition": null,
+      "source": "P166",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Country",
+      "name": "dbo:Country",
+      "parent": "—",
+      "definition": null,
+      "source": "P495",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/Language",
+      "name": "dbo:Language",
+      "parent": "—",
+      "definition": null,
+      "source": "P364",
+      "action": "REUSE",
+      "reason": "Reuse DBpedia meaning and its supported superclass; no local clone.",
+      "dbpedia_exists": true
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution",
+      "name": "ex:Contribution",
+      "parent": "—",
+      "definition": null,
+      "source": "P57/P161/P58/P162",
+      "action": "CREATE",
+      "reason": "A local credit association with one person, film and role; not the person or film itself.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole",
+      "name": "ex:ContributionRole",
+      "parent": "—",
+      "definition": null,
+      "source": "The four crawled credit predicates",
+      "action": "CREATE",
+      "reason": "Local controlled role values, not subclasses of Person.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot",
+      "name": "ex:SourceSnapshot",
+      "parent": "—",
+      "definition": null,
+      "source": "snapshots.json URL/time/hash",
+      "action": "CREATE",
+      "reason": "A retrieved response record, not a domain entity.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "http://rdfs.org/ns/void#Dataset",
+      "name": "void:Dataset",
+      "parent": "—",
+      "definition": null,
+      "source": "Published collection of crawled film records",
+      "action": "REUSE",
+      "reason": "Reuse VoID dataset, remove ex:Dataset clone.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre",
+      "name": "ex:ActionGenre",
+      "parent": "dbo:MovieGenre",
+      "definition": null,
+      "source": "P136 target English label",
+      "action": "EXTEND",
+      "reason": "Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DramaGenre",
+      "name": "ex:DramaGenre",
+      "parent": "dbo:MovieGenre",
+      "definition": null,
+      "source": "P136 target English label",
+      "action": "EXTEND",
+      "reason": "Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActingContribution",
+      "name": "ex:ActingContribution",
+      "parent": "ex:Contribution",
+      "definition": [
+        "and",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution",
+        [
+          "value",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorRole"
+        ]
+      ],
+      "source": "Credit claim corresponding to Actor",
+      "action": "EXTEND",
+      "reason": "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectingContribution",
+      "name": "ex:DirectingContribution",
+      "parent": "ex:Contribution",
+      "definition": [
+        "and",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution",
+        [
+          "value",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectorRole"
+        ]
+      ],
+      "source": "Credit claim corresponding to Director",
+      "action": "EXTEND",
+      "reason": "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WritingContribution",
+      "name": "ex:WritingContribution",
+      "parent": "ex:Contribution",
+      "definition": [
+        "and",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution",
+        [
+          "value",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterRole"
+        ]
+      ],
+      "source": "Credit claim corresponding to Writer",
+      "action": "EXTEND",
+      "reason": "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducingContribution",
+      "name": "ex:ProducingContribution",
+      "parent": "ex:Contribution",
+      "definition": [
+        "and",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution",
+        [
+          "value",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducerRole"
+        ]
+      ],
+      "source": "Credit claim corresponding to Producer",
+      "action": "EXTEND",
+      "reason": "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker",
+      "name": "ex:Filmmaker",
+      "parent": "dbo:Person",
+      "definition": [
+        "and",
+        "http://dbpedia.org/ontology/Person",
+        [
+          "or",
+          [
+            "some",
+            "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution",
+            "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectingContribution"
+          ],
+          [
+            "some",
+            "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution",
+            "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WritingContribution"
+          ],
+          [
+            "some",
+            "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution",
+            "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducingContribution"
+          ]
+        ]
+      ],
+      "source": "P57/P161/P58/P162; P166 when award-based",
+      "action": "EXTEND",
+      "reason": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionFilm",
+      "name": "ex:ActionFilm",
+      "parent": "dbo:Film",
+      "definition": [
+        "and",
+        "http://dbpedia.org/ontology/Film",
+        [
+          "some",
+          "http://dbpedia.org/ontology/genre",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre"
+        ]
+      ],
+      "source": "P136/P166",
+      "action": "EXTEND",
+      "reason": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilm",
+      "name": "ex:AwardWinningFilm",
+      "parent": "dbo:Film",
+      "definition": [
+        "and",
+        "http://dbpedia.org/ontology/Film",
+        [
+          "some",
+          "http://dbpedia.org/ontology/award",
+          "http://dbpedia.org/ontology/Award"
+        ]
+      ],
+      "source": "P136/P166",
+      "action": "EXTEND",
+      "reason": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#MultiCreditContributor",
+      "name": "ex:MultiCreditContributor",
+      "parent": "dbo:Person",
+      "definition": [
+        "and",
+        "http://dbpedia.org/ontology/Person",
+        [
+          "min",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution",
+          2,
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+        ]
+      ],
+      "source": "P57/P161/P58/P162; P166 when award-based",
+      "action": "EXTEND",
+      "reason": "At least two semantically distinct credit records. Different roles prove their distinctness; the name is shorthand and does not exclude repeated same-role credits.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ThreeCreditContributor",
+      "name": "ex:ThreeCreditContributor",
+      "parent": "dbo:Person",
+      "definition": [
+        "and",
+        "http://dbpedia.org/ontology/Person",
+        [
+          "min",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution",
+          3,
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+        ]
+      ],
+      "source": "P57/P161/P58/P162; P166 when award-based",
+      "action": "EXTEND",
+      "reason": "At least three distinct credit records; three different role fillers prove distinctness. Not exactly three roles or an exhaustive career description.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterDirector",
+      "name": "ex:WriterDirector",
+      "parent": "dbo:Person",
+      "definition": [
+        "and",
+        "http://dbpedia.org/ontology/MovieDirector",
+        "http://dbpedia.org/ontology/ScreenWriter"
+      ],
+      "source": "P57/P161/P58/P162; P166 when award-based",
+      "action": "EXTEND",
+      "reason": "A person with both directing and writing credits in this dataset; classification is never manually asserted.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorFilmmaker",
+      "name": "ex:ActorFilmmaker",
+      "parent": "dbo:Person",
+      "definition": [
+        "and",
+        "http://dbpedia.org/ontology/Actor",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker"
+      ],
+      "source": "P57/P161/P58/P162; P166 when award-based",
+      "action": "EXTEND",
+      "reason": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilmmaker",
+      "name": "ex:AwardWinningFilmmaker",
+      "parent": "dbo:Person",
+      "definition": [
+        "and",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker",
+        [
+          "some",
+          "http://dbpedia.org/ontology/award",
+          "http://dbpedia.org/ontology/Award"
+        ]
+      ],
+      "source": "P57/P161/P58/P162; P166 when award-based",
+      "action": "EXTEND",
+      "reason": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningActionFilm",
+      "name": "ex:AwardWinningActionFilm",
+      "parent": "dbo:Film",
+      "definition": [
+        "and",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionFilm",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilm"
+      ],
+      "source": "P136/P166",
+      "action": "EXTEND",
+      "reason": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.",
+      "dbpedia_exists": false
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#GenreCrossingFilm",
+      "name": "ex:GenreCrossingFilm",
+      "parent": "dbo:Film",
+      "definition": [
+        "and",
+        "http://dbpedia.org/ontology/Film",
+        [
+          "some",
+          "http://dbpedia.org/ontology/genre",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre"
+        ],
+        [
+          "some",
+          "http://dbpedia.org/ontology/genre",
+          "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DramaGenre"
+        ]
+      ],
+      "source": "P136/P166",
+      "action": "EXTEND",
+      "reason": "Film carrying both action and drama genre memberships; this is not an unproved two-distinct-genre cardinality claim.",
+      "dbpedia_exists": false
+    }
+  ],
+  "properties": [
+    {
+      "uri": "http://dbpedia.org/ontology/director",
+      "name": "dbo:director",
+      "kind": "Object",
+      "domain": "dbo:Film",
+      "range": "dbo:Person",
+      "source": "P57",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/starring",
+      "name": "dbo:starring",
+      "kind": "Object",
+      "domain": "dbo:Work",
+      "range": "dbo:Actor",
+      "source": "P161",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/writer",
+      "name": "dbo:writer",
+      "kind": "Object",
+      "domain": "dbo:Work",
+      "range": "dbo:Person",
+      "source": "P58",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/producer",
+      "name": "dbo:producer",
+      "kind": "Object",
+      "domain": "dbo:Work",
+      "range": "dbo:Agent",
+      "source": "P162",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/productionCompany",
+      "name": "dbo:productionCompany",
+      "kind": "Object",
+      "domain": "dbo:Work",
+      "range": "dbo:Company",
+      "source": "P272",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/award",
+      "name": "dbo:award",
+      "kind": "Object",
+      "domain": "—",
+      "range": "dbo:Award",
+      "source": "P166",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/genre",
+      "name": "dbo:genre",
+      "kind": "Object",
+      "domain": "—",
+      "range": "dbo:Genre",
+      "source": "P136",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/country",
+      "name": "dbo:country",
+      "kind": "Object",
+      "domain": "—",
+      "range": "dbo:Country",
+      "source": "P495",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/language",
+      "name": "dbo:language",
+      "kind": "Object",
+      "domain": "—",
+      "range": "dbo:Language",
+      "source": "P364",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution",
+      "name": "ex:hasContribution",
+      "kind": "Object",
+      "domain": "dbo:Person",
+      "range": "ex:Contribution",
+      "source": "Derived credit association",
+      "inverse": "ex:contributionBy",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "dbo:occupation links a PersonFunction, not a film-credit record. The local property refers to n-ary source credits."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionBy",
+      "name": "ex:contributionBy",
+      "kind": "Object",
+      "domain": "ex:Contribution",
+      "range": "dbo:Person",
+      "source": "P57/P161/P58/P162",
+      "inverse": "—",
+      "functional": true,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "dbo:director/writer/starring refer from Work/Film to people; this relation originates from a credit record, so they are not semantically interchangeable."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionTo",
+      "name": "ex:contributionTo",
+      "kind": "Object",
+      "domain": "ex:Contribution",
+      "range": "dbo:Film",
+      "source": "Containing source film",
+      "inverse": "ex:contributionOf",
+      "functional": true,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "The domain is a credit association, not an Agent or Work. This is the film endpoint of the n-ary model."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionOf",
+      "name": "ex:contributionOf",
+      "kind": "Object",
+      "domain": "dbo:Film",
+      "range": "ex:Contribution",
+      "source": "Inverse of contributionTo",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "Inverse of the film endpoint of the local n-ary association; not a Film-to-Person relation."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole",
+      "name": "ex:hasRole",
+      "kind": "Object",
+      "domain": "ex:Contribution",
+      "range": "ex:ContributionRole",
+      "source": "Credit predicate to controlled role",
+      "inverse": "—",
+      "functional": true,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "dbo:role and dbo:artistFunction have string ranges; the controlled-role entity of a functional credit record has distinct object semantics."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributedTo",
+      "name": "ex:contributedTo",
+      "kind": "Object",
+      "domain": "dbo:Person",
+      "range": "dbo:Film",
+      "source": "OWL property chain",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "Covers every collected credit role through a shared chain. director/starring/writer/producer are narrower and opposite-direction properties."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#directed",
+      "name": "ex:directed",
+      "kind": "Object",
+      "domain": "dbo:Person",
+      "range": "dbo:Film",
+      "source": "Inverse P57",
+      "inverse": "dbo:director",
+      "functional": false,
+      "subproperty": "ex:contributedTo",
+      "action": "CREATE",
+      "semantic_reuse_reason": "Inverse of dbo:director; cannot reuse that forward predicate with its arguments reversed. It is also a subproperty of the broader local contributedTo."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#actedIn",
+      "name": "ex:actedIn",
+      "kind": "Object",
+      "domain": "dbo:Actor",
+      "range": "dbo:Film",
+      "source": "Inverse P161",
+      "inverse": "dbo:starring",
+      "functional": false,
+      "subproperty": "ex:contributedTo",
+      "action": "CREATE",
+      "semantic_reuse_reason": "Inverse of dbo:starring; forward dbo:starring cannot denote the reversed relation."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#productionOf",
+      "name": "ex:productionOf",
+      "kind": "Object",
+      "domain": "dbo:Company",
+      "range": "dbo:Work",
+      "source": "Inverse P272",
+      "inverse": "dbo:productionCompany",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "Inverse of dbo:productionCompany; preserving direction is necessary for semantic equivalence."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sourceSnapshot",
+      "name": "ex:sourceSnapshot",
+      "kind": "Object",
+      "domain": "—",
+      "range": "ex:SourceSnapshot",
+      "source": "Crawled entity response provenance",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "More specific than prov:wasDerivedFrom: points to a locally saved response record with retrieval timestamp and content hash, not merely any source entity."
+    },
+    {
+      "uri": "http://dbpedia.org/ontology/runtime",
+      "name": "dbo:runtime",
+      "kind": "Data",
+      "domain": "dbo:Work",
+      "range": "xsd:double",
+      "source": "P2047; normalize to seconds",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "REUSE",
+      "semantic_reuse_reason": "Same relation/value semantics as the checked DBpedia property, with its original domain and range. Runtime is converted to the reference unit of seconds."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#releaseYear",
+      "name": "ex:releaseYear",
+      "kind": "Data",
+      "domain": "dbo:Film",
+      "range": "xsd:integer",
+      "source": "Earliest Gregorian P577 year, precision >=9",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "Derived earliest-release-year integer summary from P577. dbo:releaseDate requires a date; dbo:year is a generic gYear and does not express the earliest-release summary. No equivalence or invented full date is asserted."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sourceUrl",
+      "name": "ex:sourceUrl",
+      "kind": "Data",
+      "domain": "ex:SourceSnapshot",
+      "range": "xsd:anyURI",
+      "source": "Snapshot manifest sourceUrl",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "Literal lexical request endpoint stored in the snapshot manifest. DBpedia has no matching request-metadata datatype property in the checked vocabulary; prov:wasDerivedFrom is separately retained as an IRI relation."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#retrievedAt",
+      "name": "ex:retrievedAt",
+      "kind": "Data",
+      "domain": "ex:SourceSnapshot",
+      "range": "xsd:dateTime",
+      "source": "Snapshot manifest retrievedAt",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "Retrieval instant of a local response snapshot, not a film releaseDate, generic date, or creation time of the original remote entity."
+    },
+    {
+      "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sha256",
+      "name": "ex:sha256",
+      "kind": "Data",
+      "domain": "ex:SourceSnapshot",
+      "range": "xsd:string",
+      "source": "Snapshot manifest sha256",
+      "inverse": "—",
+      "functional": false,
+      "subproperty": "—",
+      "action": "CREATE",
+      "semantic_reuse_reason": "SHA-256 checksum of the exact crawled response bytes, not a generic title, name, code or identifier of the represented film/person."
+    }
+  ],
+  "removed": "FeatureFilm (Q11424 means film, not necessarily feature); unsupported Documentary/FictionGenre; blanket FilmAward fallback; duplicate vocabulary",
+  "preserved_entities": 1699,
+  "base_dataset_sha256": "5b1f4dd7a5d372c2855f5afbf00c167f253eaeb7d61f5519c99687329d6c0a15",
+  "reference_versions": {
+    "official_archive_sha256": "a0ca30c8f25cf2d2957639dcad4fd1115f37a856d6d542fd50bba3bf9fa6bf9f",
+    "official_development_url": "https://raw.githubusercontent.com/dbpedia/extraction-framework/master/ontology.owl",
+    "official_development_sha256": "5c74adf1d2cb112acf4a5786d760c6607ecc7db6ca5e6910128b9c4113a5591d"
+  }
+}

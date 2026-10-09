@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Seven_%281995_film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:47:40.433577+00:00",
+  "sha256": "4f6244fc2173e8322e60ac626a72b2635725a23e1a290f40267a873ce20b9a28",
+  "path": "data/raw/c8b3b1c29d95986fb1e00a1d.json",
+  "http_status": 200
+}

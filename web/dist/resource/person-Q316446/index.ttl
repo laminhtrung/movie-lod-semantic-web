@@ -1,0 +1,30 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q316446 a dbo:Person ;
+    rdfs:label "Sam Rockwell"@en ;
+    dbo:award res:award-Q106291,
+        res:award-Q1260789,
+        res:award-Q16154915,
+        res:award-Q24051551,
+        res:award-Q2665878,
+        res:award-Q28226224,
+        res:award-Q518675,
+        res:award-Q5211229,
+        res:award-Q5461359,
+        res:award-Q548389,
+        res:award-Q708135,
+        res:award-Q723830,
+        res:award-Q7413655,
+        res:award-Q7971821,
+        res:award-Q894588,
+        res:award-Q922348,
+        res:award-Q922396,
+        res:award-Q973177 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q316446> ;
+    ex:hasContribution res:contribution-Q208263-Q316446-actor ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

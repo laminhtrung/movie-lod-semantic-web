@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q172241-Q2690748-actor a ex:Contribution ;
+    rdfs:label "The Shawshank Redemption — actor — Brian Delate" ;
+    ex:contributionBy res:person-Q2690748 ;
+    ex:contributionTo res:film-Q172241 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

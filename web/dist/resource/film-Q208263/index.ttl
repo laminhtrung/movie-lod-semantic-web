@@ -1,0 +1,78 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q208263 a dbo:Film ;
+    rdfs:label "The Green Mile"@en ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q295445 ;
+    dbo:genre res:genre-Q102706436,
+        res:genre-Q130232,
+        res:genre-Q157394,
+        res:genre-Q21401869,
+        res:genre-Q586250 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q1176945,
+        res:person-Q295445 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q168383,
+        res:company-Q622848 ;
+    dbo:runtime 1.134e+04 ;
+    dbo:starring res:person-Q152542,
+        res:person-Q180272,
+        res:person-Q2263,
+        res:person-Q229268,
+        res:person-Q272952,
+        res:person-Q296370,
+        res:person-Q299483,
+        res:person-Q311169,
+        res:person-Q314290,
+        res:person-Q315604,
+        res:person-Q316446,
+        res:person-Q329716,
+        res:person-Q433198,
+        res:person-Q443343,
+        res:person-Q465310,
+        res:person-Q483148,
+        res:person-Q506778,
+        res:person-Q589849,
+        res:person-Q640001,
+        res:person-Q862314,
+        res:person-Q909704 ;
+    dbo:writer res:person-Q295445 ;
+    owl:sameAs <http://dbpedia.org/resource/The_Green_Mile_(film)>,
+        <http://www.wikidata.org/entity/Q208263> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q208263> ;
+    ex:contributionOf res:contribution-Q208263-Q1176945-producer,
+        res:contribution-Q208263-Q152542-actor,
+        res:contribution-Q208263-Q180272-actor,
+        res:contribution-Q208263-Q2263-actor,
+        res:contribution-Q208263-Q229268-actor,
+        res:contribution-Q208263-Q272952-actor,
+        res:contribution-Q208263-Q295445-director,
+        res:contribution-Q208263-Q295445-producer,
+        res:contribution-Q208263-Q295445-writer,
+        res:contribution-Q208263-Q296370-actor,
+        res:contribution-Q208263-Q299483-actor,
+        res:contribution-Q208263-Q311169-actor,
+        res:contribution-Q208263-Q314290-actor,
+        res:contribution-Q208263-Q315604-actor,
+        res:contribution-Q208263-Q316446-actor,
+        res:contribution-Q208263-Q329716-actor,
+        res:contribution-Q208263-Q433198-actor,
+        res:contribution-Q208263-Q443343-actor,
+        res:contribution-Q208263-Q465310-actor,
+        res:contribution-Q208263-Q483148-actor,
+        res:contribution-Q208263-Q506778-actor,
+        res:contribution-Q208263-Q589849-actor,
+        res:contribution-Q208263-Q640001-actor,
+        res:contribution-Q208263-Q862314-actor,
+        res:contribution-Q208263-Q909704-actor ;
+    ex:releaseYear 1999 ;
+    ex:sourceSnapshot res:source-20fe8b45a0358744817c64b8,
+        res:source-3e29244a71b9cd1900b290d9 .
+

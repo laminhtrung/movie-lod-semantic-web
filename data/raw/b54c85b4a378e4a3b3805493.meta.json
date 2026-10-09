@@ -1,0 +1,8 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&languages=en&sites=enwiki&titles=The+Shawshank+Redemption%7CPulp+Fiction%7CForrest+Gump%7CThe+Matrix%7CFight+Club%7CGoodfellas%7CThe+Silence+of+the+Lambs+%28film%29%7CSchindler%27s+List%7CThe+Green+Mile+%28film%29%7CSeven+%281995+film%29&props=labels%7Cdescriptions%7Csitelinks%7Cclaims",
+  "provider": "Wikidata",
+  "retrieved_at": "2026-10-06T08:43:30.709402+00:00",
+  "sha256": "3e29244a71b9cd1900b290d926f72bdcf8bf9721a264248b79de559dd0e17f76",
+  "path": "data/raw/b54c85b4a378e4a3b3805493.json",
+  "http_status": 200
+}

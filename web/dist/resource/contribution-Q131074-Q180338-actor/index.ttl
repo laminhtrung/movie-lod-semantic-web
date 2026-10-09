@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q131074-Q180338-actor a ex:Contribution ;
+    rdfs:label "The Lord of the Rings: The Return of the King — actor — Christopher Lee" ;
+    ex:contributionBy res:person-Q180338 ;
+    ex:contributionTo res:film-Q131074 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

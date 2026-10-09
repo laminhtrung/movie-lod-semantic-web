@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Matrix.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:58.309915+00:00",
+  "sha256": "146237842471bc5f929e09cf9c3012a523aa563a532031a510fe502c770f2f42",
+  "path": "data/raw/2031d274098b4bc93d6fbc3b.json",
+  "http_status": 200
+}

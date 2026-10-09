@@ -1,0 +1,21 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q116854 a dbo:Person ;
+    rdfs:label "Philippa Boyens"@en ;
+    dbo:award res:award-Q1056240,
+        res:award-Q107258,
+        res:award-Q1075366,
+        res:award-Q23050104,
+        res:award-Q3414212,
+        res:award-Q430910,
+        res:award-Q644077,
+        res:award-Q739694 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q116854> ;
+    ex:hasContribution res:contribution-Q127367-Q116854-writer,
+        res:contribution-Q131074-Q116854-writer ;
+    ex:sourceSnapshot res:source-1c42d282f795483c77a94b24 .
+

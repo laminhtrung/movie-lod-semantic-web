@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q434291 a dbo:Person ;
+    rdfs:label "Rade Šerbedžija"@en ;
+    dbo:award res:award-Q11222980,
+        res:award-Q124390870,
+        res:award-Q16087837,
+        res:award-Q21595675,
+        res:award-Q3135388,
+        res:award-Q4589995 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q434291> ;
+    ex:hasContribution res:contribution-Q166262-Q434291-actor ;
+    ex:sourceSnapshot res:source-9e94454ce34a83ba6f3dd0b6 .
+

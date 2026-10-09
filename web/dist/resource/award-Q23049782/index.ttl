@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q23049782 a dbo:Award ;
+    rdfs:label "Dame Companion of the New Zealand Order of Merit‎"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q23049782> ;
+    ex:sourceSnapshot res:source-be3d7041e0dec5d61c7094a1 .
+

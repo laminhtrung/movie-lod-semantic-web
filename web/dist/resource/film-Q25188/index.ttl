@@ -1,0 +1,92 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q25188 a dbo:Film ;
+    rdfs:label "Inception"@en ;
+    dbo:award res:award-Q1056240,
+        res:award-Q1131772,
+        res:award-Q131520,
+        res:award-Q1966965,
+        res:award-Q393686,
+        res:award-Q488645,
+        res:award-Q830079 ;
+    dbo:country res:country-Q145,
+        res:country-Q30 ;
+    dbo:director res:person-Q25191 ;
+    dbo:genre res:genre-Q1200678,
+        res:genre-Q130232,
+        res:genre-Q188473,
+        res:genre-Q20656232,
+        res:genre-Q2484376,
+        res:genre-Q319221,
+        res:genre-Q471839,
+        res:genre-Q496523 ;
+    dbo:language res:language-Q150,
+        res:language-Q1860,
+        res:language-Q5287 ;
+    dbo:producer res:person-Q242951,
+        res:person-Q25191 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q621364,
+        res:company-Q8016302,
+        res:company-Q984047 ;
+    dbo:runtime 8.88e+03 ;
+    dbo:starring res:person-Q1225469,
+        res:person-Q123351,
+        res:person-Q173399,
+        res:person-Q177311,
+        res:person-Q18415482,
+        res:person-Q18720063,
+        res:person-Q202589,
+        res:person-Q208026,
+        res:person-Q211553,
+        res:person-Q217137,
+        res:person-Q2397879,
+        res:person-Q269309,
+        res:person-Q299317,
+        res:person-Q3046377,
+        res:person-Q3507348,
+        res:person-Q3560613,
+        res:person-Q3573137,
+        res:person-Q38111,
+        res:person-Q386249,
+        res:person-Q532169,
+        res:person-Q8927 ;
+    dbo:writer res:person-Q25191 ;
+    owl:sameAs <http://dbpedia.org/resource/Inception>,
+        <http://www.wikidata.org/entity/Q25188> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q25188> ;
+    ex:contributionOf res:contribution-Q25188-Q1225469-actor,
+        res:contribution-Q25188-Q123351-actor,
+        res:contribution-Q25188-Q173399-actor,
+        res:contribution-Q25188-Q177311-actor,
+        res:contribution-Q25188-Q18415482-actor,
+        res:contribution-Q25188-Q18720063-actor,
+        res:contribution-Q25188-Q202589-actor,
+        res:contribution-Q25188-Q208026-actor,
+        res:contribution-Q25188-Q211553-actor,
+        res:contribution-Q25188-Q217137-actor,
+        res:contribution-Q25188-Q2397879-actor,
+        res:contribution-Q25188-Q242951-producer,
+        res:contribution-Q25188-Q25191-director,
+        res:contribution-Q25188-Q25191-producer,
+        res:contribution-Q25188-Q25191-writer,
+        res:contribution-Q25188-Q269309-actor,
+        res:contribution-Q25188-Q299317-actor,
+        res:contribution-Q25188-Q3046377-actor,
+        res:contribution-Q25188-Q3507348-actor,
+        res:contribution-Q25188-Q3560613-actor,
+        res:contribution-Q25188-Q3573137-actor,
+        res:contribution-Q25188-Q38111-actor,
+        res:contribution-Q25188-Q386249-actor,
+        res:contribution-Q25188-Q532169-actor,
+        res:contribution-Q25188-Q8927-actor ;
+    ex:releaseYear 2010 ;
+    ex:sourceSnapshot res:source-514bd35dd455093667eb081f,
+        res:source-56d8b57c83cb1ad3dc2d2e0c .
+

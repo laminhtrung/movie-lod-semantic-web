@@ -1,0 +1,18 @@
+{
+  "requested_films": 30,
+  "resolved_films": 30,
+  "snapshots": 76,
+  "dbpedia_links": 28,
+  "errors": [
+    {
+      "stage": "dbpedia",
+      "film": "The Prestige",
+      "message": "DBpedia root is not explicitly Film"
+    },
+    {
+      "stage": "dbpedia",
+      "film": "Tenet",
+      "message": "DBpedia root is not explicitly Film"
+    }
+  ]
+}

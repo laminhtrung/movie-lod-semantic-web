@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q155653-Q55400-writer a ex:Contribution ;
+    rdfs:label "Spirited Away — writer — Hayao Miyazaki" ;
+    ex:contributionBy res:person-Q55400 ;
+    ex:contributionTo res:film-Q155653 ;
+    ex:hasRole ex:WriterRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

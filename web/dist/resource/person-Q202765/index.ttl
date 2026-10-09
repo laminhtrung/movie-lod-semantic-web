@@ -1,0 +1,25 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q202765 a dbo:Person ;
+    rdfs:label "Kate Winslet"@en ;
+    dbo:award res:award-Q103618,
+        res:award-Q1092356,
+        res:award-Q12201477,
+        res:award-Q1320315,
+        res:award-Q1377738,
+        res:award-Q17985761,
+        res:award-Q2462064,
+        res:award-Q5412594,
+        res:award-Q56085709,
+        res:award-Q604370,
+        res:award-Q687123,
+        res:award-Q787123,
+        res:award-Q989447 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q202765> ;
+    ex:hasContribution res:contribution-Q44578-Q202765-actor ;
+    ex:sourceSnapshot res:source-8c53dd10280f0a6d0cab26d2 .
+

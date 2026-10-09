@@ -1,0 +1,25 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q5383 a dbo:Person ;
+    rdfs:label "David Bowie"@en ;
+    dbo:award res:award-Q112241213,
+        res:award-Q12201477,
+        res:award-Q1259362,
+        res:award-Q13452531,
+        res:award-Q165177,
+        res:award-Q179191,
+        res:award-Q17985761,
+        res:award-Q19833602,
+        res:award-Q3833781,
+        res:award-Q48961500,
+        res:award-Q716909,
+        res:award-Q81180,
+        res:award-Q935843 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5383> ;
+    ex:hasContribution res:contribution-Q46551-Q5383-actor ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

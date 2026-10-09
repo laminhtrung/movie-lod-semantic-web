@@ -1,0 +1,4490 @@
+[
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q103569",
+    "qid": "Q103569",
+    "title": "Alien",
+    "year": 1979,
+    "runtime_minutes": 117.0,
+    "director": [
+      {
+        "name": "Ridley Scott",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56005"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Sigourney Weaver",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102124"
+      },
+      {
+        "name": "John Hurt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q200405"
+      },
+      {
+        "name": "Ian Holm",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q223091"
+      },
+      {
+        "name": "Yaphet Kotto",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q266270"
+      },
+      {
+        "name": "Veronica Cartwright",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q283872"
+      },
+      {
+        "name": "Eddie Powell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3047302"
+      },
+      {
+        "name": "Harry Dean Stanton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q314290"
+      },
+      {
+        "name": "Tom Skerritt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q320093"
+      },
+      {
+        "name": "Bolaji Badejo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q323185"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Ronald Shusett",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3056094"
+      },
+      {
+        "name": "Dan O'Bannon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q498430"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Gordon Carroll",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1537983"
+      },
+      {
+        "name": "David Giler",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2396324"
+      },
+      {
+        "name": "Walter Hill",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q350422"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q166262",
+    "qid": "Q166262",
+    "title": "Batman Begins",
+    "year": 2005,
+    "runtime_minutes": 140.0,
+    "director": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Tamer Hassan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1058562"
+      },
+      {
+        "name": "Colin McFarlane",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1108562"
+      },
+      {
+        "name": "Michael Caine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q123351"
+      },
+      {
+        "name": "Gus Lewis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1262715"
+      },
+      {
+        "name": "John Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q12858652"
+      },
+      {
+        "name": "Jeremy Theobald",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1313592"
+      },
+      {
+        "name": "Christine Adams",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16149374"
+      },
+      {
+        "name": "Lucy Russell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1619100"
+      },
+      {
+        "name": "Katie Holmes",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q174346"
+      },
+      {
+        "name": "Richard Brake",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1859256"
+      },
+      {
+        "name": "Cillian Murphy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q202589"
+      },
+      {
+        "name": "Tom Wilkinson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q211322"
+      },
+      {
+        "name": "Ken Watanabe",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q211553"
+      },
+      {
+        "name": "Gerard Murphy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2132927"
+      },
+      {
+        "name": "Rutger Hauer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q213574"
+      },
+      {
+        "name": "Rade Šerbedžija",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q434291"
+      },
+      {
+        "name": "Christian Bale",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q45772"
+      },
+      {
+        "name": "Karen David",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q465981"
+      },
+      {
+        "name": "Linus Roache",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q468915"
+      },
+      {
+        "name": "Morgan Freeman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q48337"
+      },
+      {
+        "name": "Sara Stewart",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q515044"
+      },
+      {
+        "name": "Larry Holden",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q530578"
+      },
+      {
+        "name": "Dave Legeno",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q544038"
+      },
+      {
+        "name": "Liam Neeson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q58444"
+      },
+      {
+        "name": "Joey Ansah",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q613029"
+      },
+      {
+        "name": "Shane Rimmer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q674451"
+      },
+      {
+        "name": "Mark Boone Junior",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q718382"
+      },
+      {
+        "name": "Stephen Walters",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7609915"
+      },
+      {
+        "name": "TJ Ramini",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7670520"
+      },
+      {
+        "name": "Jack Gleeson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q777260"
+      },
+      {
+        "name": "Tom Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7817052"
+      },
+      {
+        "name": "Gary Oldman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q83492"
+      },
+      {
+        "name": "Jon Foo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q933428"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      },
+      {
+        "name": "David S. Goyer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q352010"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Emma Thomas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q242951"
+      },
+      {
+        "name": "Charles Roven",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2740357"
+      },
+      {
+        "name": "Larry J. Franco",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q521038"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q184843",
+    "qid": "Q184843",
+    "title": "Blade Runner",
+    "year": 1982,
+    "runtime_minutes": 112.0,
+    "director": [
+      {
+        "name": "Ridley Scott",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56005"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Morgan Paull",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1353691"
+      },
+      {
+        "name": "William Sanderson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1372770"
+      },
+      {
+        "name": "Joe Turkel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1691628"
+      },
+      {
+        "name": "Daryl Hannah",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q207596"
+      },
+      {
+        "name": "Edward James Olmos",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q211415"
+      },
+      {
+        "name": "Rutger Hauer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q213574"
+      },
+      {
+        "name": "Sean Young",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q230736"
+      },
+      {
+        "name": "Joanna Cassidy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q236702"
+      },
+      {
+        "name": "Hy Pyke",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3143555"
+      },
+      {
+        "name": "James Hong",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q358990"
+      },
+      {
+        "name": "M. Emmet Walsh",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q498420"
+      },
+      {
+        "name": "Brion James",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q723780"
+      },
+      {
+        "name": "Harrison Ford",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q81328"
+      }
+    ],
+    "writer": [
+      {
+        "name": "David Peoples",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1177114"
+      },
+      {
+        "name": "Hampton Fancher",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1372703"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Bud Yorkin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q361443"
+      },
+      {
+        "name": "Jerry Perenchio",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3808035"
+      },
+      {
+        "name": "Michael Deeley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q656655"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q21935651",
+    "qid": "Q21935651",
+    "title": "Dunkirk",
+    "year": 2017,
+    "runtime_minutes": 106.0,
+    "director": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Michael Caine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q123351"
+      },
+      {
+        "name": "John Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q12858652"
+      },
+      {
+        "name": "Adam Long",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q17005758"
+      },
+      {
+        "name": "Jochum ten Haaf",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1945936"
+      },
+      {
+        "name": "Olivia Wilde",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q200355"
+      },
+      {
+        "name": "Cillian Murphy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q202589"
+      },
+      {
+        "name": "Tom Hardy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q208026"
+      },
+      {
+        "name": "Will Attenborough",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q22910218"
+      },
+      {
+        "name": "Aneurin Barnard",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q245880"
+      },
+      {
+        "name": "Fionn Whitehead",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q27535227"
+      },
+      {
+        "name": "Damien Bonnard",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q27535240"
+      },
+      {
+        "name": "Brian Vernel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q27758467"
+      },
+      {
+        "name": "Barry Keoghan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q28542230"
+      },
+      {
+        "name": "Billy Howle",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q28915096"
+      },
+      {
+        "name": "Mark Rylance",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q324572"
+      },
+      {
+        "name": "Tom Glynn-Carney",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q33133445"
+      },
+      {
+        "name": "Harry Styles",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3626966"
+      },
+      {
+        "name": "Armie Hammer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q374273"
+      },
+      {
+        "name": "Elliott Tittensor",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5365734"
+      },
+      {
+        "name": "Kenneth Branagh",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q55294"
+      },
+      {
+        "name": "Jack Lowden",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6113745"
+      },
+      {
+        "name": "James D'Arcy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q717194"
+      },
+      {
+        "name": "Bobby Lockwood",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q888617"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Emma Thomas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q242951"
+      },
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      },
+      {
+        "name": "Erwin Godschalk",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q95817606"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q190050",
+    "qid": "Q190050",
+    "title": "Fight Club",
+    "year": 1999,
+    "runtime_minutes": 139.0,
+    "director": [
+      {
+        "name": "David Fincher",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q184903"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Richmond Arquette",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1139511"
+      },
+      {
+        "name": "Edward Norton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q125904"
+      },
+      {
+        "name": "Holt McCallany",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1368141"
+      },
+      {
+        "name": "Zach Grenier",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q139341"
+      },
+      {
+        "name": "Tim de Zarn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q15288220"
+      },
+      {
+        "name": "Meat Loaf",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q152929"
+      },
+      {
+        "name": "Eugenie Bondurant",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q15808775"
+      },
+      {
+        "name": "Michael Shamus Wiles",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16186952"
+      },
+      {
+        "name": "Helena Bonham Carter",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q170428"
+      },
+      {
+        "name": "Carl Ciarfalio",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q21074794"
+      },
+      {
+        "name": "Pat McNamara",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q22575750"
+      },
+      {
+        "name": "Rachel Singer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q23001654"
+      },
+      {
+        "name": "Stuart Blumberg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2357826"
+      },
+      {
+        "name": "Charlie Dell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q28974005"
+      },
+      {
+        "name": "Christina Cabot",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2965857"
+      },
+      {
+        "name": "Matt Winston",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q325814"
+      },
+      {
+        "name": "David Lee Smith",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q329859"
+      },
+      {
+        "name": "David Andrews",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q330801"
+      },
+      {
+        "name": "Phil Hawn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3378785"
+      },
+      {
+        "name": "Bob Stephenson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q352012"
+      },
+      {
+        "name": "Brad Pitt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q35332"
+      },
+      {
+        "name": "Paul Carafotes",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3898029"
+      },
+      {
+        "name": "Jared Leto",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q484523"
+      },
+      {
+        "name": "Ezra Buzzington",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4993338"
+      },
+      {
+        "name": "Eddie Hargitay",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5336101"
+      },
+      {
+        "name": "Brian Tochi",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q849641"
+      },
+      {
+        "name": "Paul Dillon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q953588"
+      },
+      {
+        "name": "Eion Bailey",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q964006"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Chuck Palahniuk",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q268181"
+      },
+      {
+        "name": "Jim Uhls",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3178961"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Art Linson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q705631"
+      },
+      {
+        "name": "Ceán Chaffin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q961183"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q134773",
+    "qid": "Q134773",
+    "title": "Forrest Gump",
+    "year": 1994,
+    "runtime_minutes": 142.0,
+    "director": [
+      {
+        "name": "Robert Zemeckis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q187364"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Kurt Russell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q103157"
+      },
+      {
+        "name": "John Lennon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1203"
+      },
+      {
+        "name": "Michael Conner Humphreys",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1357803"
+      },
+      {
+        "name": "Hanna R. Hall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q14446"
+      },
+      {
+        "name": "Geoffrey Blake",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1502946"
+      },
+      {
+        "name": "Hallie D'Amore",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16017365"
+      },
+      {
+        "name": "Daniel C. Striepeke",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16091645"
+      },
+      {
+        "name": "Joe Alaskey",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1691318"
+      },
+      {
+        "name": "Gary Sinise",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q180272"
+      },
+      {
+        "name": "Sally Field",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q187033"
+      },
+      {
+        "name": "E. A. Hanks",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q20993894"
+      },
+      {
+        "name": "Tom Hanks",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2263"
+      },
+      {
+        "name": "W. Benson Terry",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q22665449"
+      },
+      {
+        "name": "Kevin Davis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q22673621"
+      },
+      {
+        "name": "Michael Burgess",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q22985966"
+      },
+      {
+        "name": "Sonny Shroyer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2384946"
+      },
+      {
+        "name": "Jacqueline Lovell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2386386"
+      },
+      {
+        "name": "Don Fischer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q23926673"
+      },
+      {
+        "name": "Rebecca Williams",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857959"
+      },
+      {
+        "name": "Harold G. Herthum",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857960"
+      },
+      {
+        "name": "George Kelly",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857961"
+      },
+      {
+        "name": "Bob Penny",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857962"
+      },
+      {
+        "name": "John Randall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857964"
+      },
+      {
+        "name": "Margo Moorer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857972"
+      },
+      {
+        "name": "Ione M. Telech",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857974"
+      },
+      {
+        "name": "Christine Seabrook",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857976"
+      },
+      {
+        "name": "John Worsham",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857979"
+      },
+      {
+        "name": "Alexander Zemeckis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857995"
+      },
+      {
+        "name": "Logan Livingston Gomez",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857997"
+      },
+      {
+        "name": "Ben Waddel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26857999"
+      },
+      {
+        "name": "Tyler Long",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858377"
+      },
+      {
+        "name": "Grady Bowman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858530"
+      },
+      {
+        "name": "Kevin Mangan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858533"
+      },
+      {
+        "name": "Fay Genens",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858540"
+      },
+      {
+        "name": "Frank Geyer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858542"
+      },
+      {
+        "name": "Rob Landry",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858544"
+      },
+      {
+        "name": "Jason McGuire",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858547"
+      },
+      {
+        "name": "Pete Auster",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858550"
+      },
+      {
+        "name": "Ed Davis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858558"
+      },
+      {
+        "name": "Bruce Lucvia",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858567"
+      },
+      {
+        "name": "Kirk Ward",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858570"
+      },
+      {
+        "name": "Angela Lomas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858576"
+      },
+      {
+        "name": "Timothy Record",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858577"
+      },
+      {
+        "name": "Deborah McTeer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858584"
+      },
+      {
+        "name": "Mark Matheisen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858589"
+      },
+      {
+        "name": "Jed Gillin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858593"
+      },
+      {
+        "name": "Bob Harks",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858602"
+      },
+      {
+        "name": "Kenneth Bevington",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858615"
+      },
+      {
+        "name": "Michael Flannery",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858619"
+      },
+      {
+        "name": "Gary Robinson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858621"
+      },
+      {
+        "name": "Marlena Smalls",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858623"
+      },
+      {
+        "name": "Kitty K. Green",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858634"
+      },
+      {
+        "name": "Matt Wallace",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858662"
+      },
+      {
+        "name": "Danté McCarthy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858676"
+      },
+      {
+        "name": "Paulie DiCocco",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858677"
+      },
+      {
+        "name": "Mike Jolly",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858680"
+      },
+      {
+        "name": "Michael Kemmerling",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858681"
+      },
+      {
+        "name": "Jeffrey Winner",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858689"
+      },
+      {
+        "name": "Russ Wilson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858692"
+      },
+      {
+        "name": "Daniel J. Gillooly",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858695"
+      },
+      {
+        "name": "Calvin Gadsden",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858706"
+      },
+      {
+        "name": "Aaron Izbicki",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858709"
+      },
+      {
+        "name": "Steven Griffith",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858732"
+      },
+      {
+        "name": "William Acy \"Billy\" Roberson Jr",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858734"
+      },
+      {
+        "name": "Michael McFall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858737"
+      },
+      {
+        "name": "Eric Underwood",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858744"
+      },
+      {
+        "name": "Steve DeRelian",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858753"
+      },
+      {
+        "name": "Byron Minns",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858756"
+      },
+      {
+        "name": "Bonnie Ann Burgess",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858768"
+      },
+      {
+        "name": "Scott Oliver",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858807"
+      },
+      {
+        "name": "John William Galt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858814"
+      },
+      {
+        "name": "Hilary Chaplain",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26858889"
+      },
+      {
+        "name": "Isabel Rose",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859033"
+      },
+      {
+        "name": "Jay Ross",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859059"
+      },
+      {
+        "name": "Richard D'Alessandro",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859068"
+      },
+      {
+        "name": "Dick Stilwell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859100"
+      },
+      {
+        "name": "Tim Perry",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859151"
+      },
+      {
+        "name": "Paul Raczkowski",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859179"
+      },
+      {
+        "name": "Valentine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859187"
+      },
+      {
+        "name": "Tiffany Salerno",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859208"
+      },
+      {
+        "name": "Marla Sucharetza",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859284"
+      },
+      {
+        "name": "Aloysius Gigl",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859347"
+      },
+      {
+        "name": "Jack Bowden",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859371"
+      },
+      {
+        "name": "Lazarus Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859423"
+      },
+      {
+        "name": "Matt Rebenkoff",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859485"
+      },
+      {
+        "name": "Peter Bannon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859526"
+      },
+      {
+        "name": "Joe Washington",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859543"
+      },
+      {
+        "name": "Natalie Hendrix",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859576"
+      },
+      {
+        "name": "Chiffonye Cobb",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859640"
+      },
+      {
+        "name": "Juan Singleton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859664"
+      },
+      {
+        "name": "Michael Mattison",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859763"
+      },
+      {
+        "name": "Lenny Herb",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859788"
+      },
+      {
+        "name": "Charles Boswell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859856"
+      },
+      {
+        "name": "Timothy McNeil",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859957"
+      },
+      {
+        "name": "Lonnie Hamilton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26859981"
+      },
+      {
+        "name": "Teresa Denton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q26860001"
+      },
+      {
+        "name": "John Voldstad",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2691042"
+      },
+      {
+        "name": "Robin Wright",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q272972"
+      },
+      {
+        "name": "Afemo Omilami",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2825721"
+      },
+      {
+        "name": "Christopher Jones",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2966611"
+      },
+      {
+        "name": "Peter Dobson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3376545"
+      },
+      {
+        "name": "Stephen Bridgewater",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3498519"
+      },
+      {
+        "name": "David Brisbin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3536506"
+      },
+      {
+        "name": "Sam Anderson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q374447"
+      },
+      {
+        "name": "Dick Cavett",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q375356"
+      },
+      {
+        "name": "Mary Ellen Trainor",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q442310"
+      },
+      {
+        "name": "Grand L. Bush",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q452552"
+      },
+      {
+        "name": "Siobhan Fallon Hogan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q457991"
+      },
+      {
+        "name": "Al Harrington",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4703990"
+      },
+      {
+        "name": "Haley Joel Osment",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q489856"
+      },
+      {
+        "name": "Brett Rice",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4962360"
+      },
+      {
+        "name": "Joe Stefanelli",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6212499"
+      },
+      {
+        "name": "Nora Dunfee",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7050088"
+      },
+      {
+        "name": "Mykelti Williamson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q741555"
+      },
+      {
+        "name": "Vanessa Roth",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7914705"
+      },
+      {
+        "name": "Bobby Richardson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q869771"
+      },
+      {
+        "name": "Michael Jace",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q950104"
+      },
+      {
+        "name": "Gerald Ford",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q9582"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Eric Roth",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q942932"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Steve Starkey",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2347318"
+      },
+      {
+        "name": "Wendy Finerman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q459177"
+      },
+      {
+        "name": "Charles Newirth",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5081233"
+      },
+      {
+        "name": "Steve Tisch",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7482626"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q128518",
+    "qid": "Q128518",
+    "title": "Gladiator",
+    "year": 2000,
+    "runtime_minutes": 155.0,
+    "director": [
+      {
+        "name": "Ridley Scott",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56005"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Richard Harris",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q106775"
+      },
+      {
+        "name": "David Schofield",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1176556"
+      },
+      {
+        "name": "Russell Crowe",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q129817"
+      },
+      {
+        "name": "Tommy Flanagan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q134133"
+      },
+      {
+        "name": "John Shrapnel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1375689"
+      },
+      {
+        "name": "Sven-Ole Thorsen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1388769"
+      },
+      {
+        "name": "Joaquin Phoenix",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q185140"
+      },
+      {
+        "name": "Adam Levy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q20974079"
+      },
+      {
+        "name": "Spencer Treat Clark",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2165590"
+      },
+      {
+        "name": "John Quinn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q22680663"
+      },
+      {
+        "name": "Connie Nielsen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q231951"
+      },
+      {
+        "name": "Derek Jacobi",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q256164"
+      },
+      {
+        "name": "Allan Corduner",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2647961"
+      },
+      {
+        "name": "Djimon Hounsou",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q298682"
+      },
+      {
+        "name": "David Bailie",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3017460"
+      },
+      {
+        "name": "David Hemmings",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q310217"
+      },
+      {
+        "name": "Oliver Reed",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q313588"
+      },
+      {
+        "name": "Giannina Facio",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q457736"
+      },
+      {
+        "name": "Omid Djalili",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q468241"
+      },
+      {
+        "name": "Ralf Moeller",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q61112"
+      },
+      {
+        "name": "Tony Curran",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q711054"
+      },
+      {
+        "name": "Giorgio Cantarini",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q735360"
+      },
+      {
+        "name": "Tomas Arana",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q737369"
+      }
+    ],
+    "writer": [
+      {
+        "name": "David Franzoni",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174454"
+      },
+      {
+        "name": "John Logan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q384004"
+      },
+      {
+        "name": "William Nicholson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q706935"
+      }
+    ],
+    "producer": [
+      {
+        "name": "David Franzoni",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174454"
+      },
+      {
+        "name": "Douglas Wick",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1252563"
+      },
+      {
+        "name": "Terry Needham",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q28044847"
+      },
+      {
+        "name": "Branko Lustig",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q703611"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q42047",
+    "qid": "Q42047",
+    "title": "Goodfellas",
+    "year": 1990,
+    "runtime_minutes": 146.0,
+    "director": [
+      {
+        "name": "Martin Scorsese",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q41148"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Charles Scorsese",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1066037"
+      },
+      {
+        "name": "Edward McDonald",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q111549296"
+      },
+      {
+        "name": "Robbie Vinton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q111549302"
+      },
+      {
+        "name": "Joseph Bono",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q111549303"
+      },
+      {
+        "name": "Kevin Corrigan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1334725"
+      },
+      {
+        "name": "Frank Sivero",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1369720"
+      },
+      {
+        "name": "Mike Starr",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1373450"
+      },
+      {
+        "name": "Frank Pellegrino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q15040582"
+      },
+      {
+        "name": "Tony Powers",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16104953"
+      },
+      {
+        "name": "Samuel L. Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q172678"
+      },
+      {
+        "name": "Louis Eppolito",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1744181"
+      },
+      {
+        "name": "Christopher Serrone",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q17490321"
+      },
+      {
+        "name": "Margo Winkler",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q17581458"
+      },
+      {
+        "name": "Welker White",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2012197"
+      },
+      {
+        "name": "Joe Pesci",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q20178"
+      },
+      {
+        "name": "Ray Liotta",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q211280"
+      },
+      {
+        "name": "Lorraine Bracco",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q229319"
+      },
+      {
+        "name": "Debi Mazar",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q238671"
+      },
+      {
+        "name": "Tony Lip",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2442701"
+      },
+      {
+        "name": "Henny Youngman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2586583"
+      },
+      {
+        "name": "Victor Colicchio",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2594868"
+      },
+      {
+        "name": "Isiah Whitlock Jr.",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2660468"
+      },
+      {
+        "name": "Illeana Douglas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q269669"
+      },
+      {
+        "name": "Nick Vallelonga",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q29585307"
+      },
+      {
+        "name": "Frank Adonis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3082480"
+      },
+      {
+        "name": "Tobin Bell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q310190"
+      },
+      {
+        "name": "Michael Imperioli",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q317358"
+      },
+      {
+        "name": "Peter Onorati",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q328409"
+      },
+      {
+        "name": "Vincent Gallo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q362353"
+      },
+      {
+        "name": "Robert De Niro",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q36949"
+      },
+      {
+        "name": "Gina Mastrogiacomo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3764465"
+      },
+      {
+        "name": "Marianne Leone Cooper",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3847733"
+      },
+      {
+        "name": "Melissa Prophet",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3854240"
+      },
+      {
+        "name": "Paul Herman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3898080"
+      },
+      {
+        "name": "Catherine Scorsese",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q441713"
+      },
+      {
+        "name": "Paul Sorvino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q447892"
+      },
+      {
+        "name": "Frank Vincent",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q463407"
+      },
+      {
+        "name": "Bo Dietl",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4931077"
+      },
+      {
+        "name": "Bob Golub",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4932564"
+      },
+      {
+        "name": "Chuck Low",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5115597"
+      },
+      {
+        "name": "Suzanne Shepherd",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q516692"
+      },
+      {
+        "name": "Elizabeth Whitcraft",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5363720"
+      },
+      {
+        "name": "Frank DiLeo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5486229"
+      },
+      {
+        "name": "Tony Sirico",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q726201"
+      },
+      {
+        "name": "Jerry Vale",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q764622"
+      },
+      {
+        "name": "Beau Starr",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q813336"
+      },
+      {
+        "name": "Tony Darrow",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q937922"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Martin Scorsese",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q41148"
+      },
+      {
+        "name": "Nicholas Pileggi",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q450279"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Irwin Winkler",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q950428"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q25188",
+    "qid": "Q25188",
+    "title": "Inception",
+    "year": 2010,
+    "runtime_minutes": 148.0,
+    "director": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Dileep Rao",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1225469"
+      },
+      {
+        "name": "Michael Caine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q123351"
+      },
+      {
+        "name": "Elliot Page",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q173399"
+      },
+      {
+        "name": "Joseph Gordon-Levitt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q177311"
+      },
+      {
+        "name": "Tohoru Masamune",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18415482"
+      },
+      {
+        "name": "Claire Geare",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18720063"
+      },
+      {
+        "name": "Cillian Murphy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q202589"
+      },
+      {
+        "name": "Tom Hardy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q208026"
+      },
+      {
+        "name": "Ken Watanabe",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q211553"
+      },
+      {
+        "name": "Pete Postlethwaite",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q217137"
+      },
+      {
+        "name": "Taylor Geare",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2397879"
+      },
+      {
+        "name": "Talulah Riley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q269309"
+      },
+      {
+        "name": "Tom Berenger",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q299317"
+      },
+      {
+        "name": "Earl Cameron",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3046377"
+      },
+      {
+        "name": "Silvie Laguna",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3507348"
+      },
+      {
+        "name": "Virgile Bramly",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3560613"
+      },
+      {
+        "name": "Yuji Okumoto",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3573137"
+      },
+      {
+        "name": "Leonardo DiCaprio",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q38111"
+      },
+      {
+        "name": "Michael Gaston",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q386249"
+      },
+      {
+        "name": "Lukas Haas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q532169"
+      },
+      {
+        "name": "Marion Cotillard",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q8927"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Emma Thomas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q242951"
+      },
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q13417189",
+    "qid": "Q13417189",
+    "title": "Interstellar",
+    "year": 2014,
+    "runtime_minutes": 169.0,
+    "director": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Josh Stewart",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q117415"
+      },
+      {
+        "name": "David Gyasi",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174630"
+      },
+      {
+        "name": "Michael Caine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q123351"
+      },
+      {
+        "name": "Matt Damon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q175535"
+      },
+      {
+        "name": "Matthew McConaughey",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q188955"
+      },
+      {
+        "name": "Timothée Chalamet",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q19877770"
+      },
+      {
+        "name": "Francis X. McCarthy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q19981241"
+      },
+      {
+        "name": "Ellen Burstyn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q211144"
+      },
+      {
+        "name": "David Oyelowo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q218800"
+      },
+      {
+        "name": "Jessica Chastain",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q229313"
+      },
+      {
+        "name": "Brooke Smith",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q235725"
+      },
+      {
+        "name": "Collette Wolfe",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2604240"
+      },
+      {
+        "name": "Jeff Hephner",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2636244"
+      },
+      {
+        "name": "Casey Affleck",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q270730"
+      },
+      {
+        "name": "Topher Grace",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q277978"
+      },
+      {
+        "name": "John Lithgow",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q311271"
+      },
+      {
+        "name": "Wes Bentley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q368037"
+      },
+      {
+        "name": "William Devane",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q451880"
+      },
+      {
+        "name": "Leah Cairns",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q461623"
+      },
+      {
+        "name": "Elyes Gabel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5368467"
+      },
+      {
+        "name": "Bill Irwin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q603317"
+      },
+      {
+        "name": "Mackenzie Foy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q94913"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      },
+      {
+        "name": "Jonathan Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q372788"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Emma Thomas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q242951"
+      },
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q20856802",
+    "qid": "Q20856802",
+    "title": "La La Land",
+    "year": 2016,
+    "runtime_minutes": 128.0,
+    "director": [
+      {
+        "name": "Damien Chazelle",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18350026"
+      }
+    ],
+    "actor": [
+      {
+        "name": "J. K. Simmons",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q150482"
+      },
+      {
+        "name": "Candice Coke",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q15790902"
+      },
+      {
+        "name": "Jason Fuchs",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1683907"
+      },
+      {
+        "name": "Ryan Gosling",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q193815"
+      },
+      {
+        "name": "Sonoya Mizuno",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q19665276"
+      },
+      {
+        "name": "Rosemarie DeWitt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q236956"
+      },
+      {
+        "name": "Callie Hernandez",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q24444473"
+      },
+      {
+        "name": "Meagen Fay",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3303794"
+      },
+      {
+        "name": "Trevor Lissauer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q351171"
+      },
+      {
+        "name": "John Legend",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q44857"
+      },
+      {
+        "name": "Tom Everett Scott",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q494393"
+      },
+      {
+        "name": "Finn Wittrock",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5450687"
+      },
+      {
+        "name": "Josh Pence",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q967833"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Damien Chazelle",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18350026"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Fred Berger",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q28531045"
+      },
+      {
+        "name": "Jordan Horowitz",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q28542755"
+      },
+      {
+        "name": "Gary Gilbert",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5525133"
+      },
+      {
+        "name": "Marc Platt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6755521"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q190525",
+    "qid": "Q190525",
+    "title": "Memento",
+    "year": 2000,
+    "runtime_minutes": 113.0,
+    "director": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Thomas Lennon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1319539"
+      },
+      {
+        "name": "Carrie-Anne Moss",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q206890"
+      },
+      {
+        "name": "Guy Pearce",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q223745"
+      },
+      {
+        "name": "Jorja Fox",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q231807"
+      },
+      {
+        "name": "Harriet Sansom Harris",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q270622"
+      },
+      {
+        "name": "Joe Pantoliano",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q296883"
+      },
+      {
+        "name": "Stephen Tobolowsky",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q376131"
+      },
+      {
+        "name": "Marianne Muellerleile",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q467496"
+      },
+      {
+        "name": "Larry Holden",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q530578"
+      },
+      {
+        "name": "Callum Keith Rennie",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q551558"
+      },
+      {
+        "name": "Mark Boone Junior",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q718382"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Jennifer Todd",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1611265"
+      },
+      {
+        "name": "Suzanne Todd",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7650980"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q61448040",
+    "qid": "Q61448040",
+    "title": "Parasite",
+    "year": 2019,
+    "runtime_minutes": 132.0,
+    "director": [
+      {
+        "name": "Bong Joon-ho",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q495980"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Jeong E-suh",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q105706491"
+      },
+      {
+        "name": "Jung Ziso",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16177322"
+      },
+      {
+        "name": "Park So-dam",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18700040"
+      },
+      {
+        "name": "Lee Jung-eun",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q21710318"
+      },
+      {
+        "name": "Park Myung-hoon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q24867395"
+      },
+      {
+        "name": "Song Kang-ho",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q484400"
+      },
+      {
+        "name": "Lee Sun-kyun",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q489681"
+      },
+      {
+        "name": "Choi Woo-shik",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q492701"
+      },
+      {
+        "name": "Park Seo-joon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5116234"
+      },
+      {
+        "name": "Jang Hye-jin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q55733858"
+      },
+      {
+        "name": "Cho Yeo-jeong",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q626347"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Bong Joon-ho",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q495980"
+      },
+      {
+        "name": "Han Jin-won",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q81911860"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Bong Joon-ho",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q495980"
+      },
+      {
+        "name": "Kwak Sin-ae",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q83945397"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q104123",
+    "qid": "Q104123",
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "runtime_minutes": 154.0,
+    "director": [
+      {
+        "name": "Quentin Tarantino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3772"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Burr Steers",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1016897"
+      },
+      {
+        "name": "Steve Buscemi",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q104061"
+      },
+      {
+        "name": "Rosanna Arquette",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q109232"
+      },
+      {
+        "name": "Dick Miller",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1209753"
+      },
+      {
+        "name": "Uma Thurman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q125017"
+      },
+      {
+        "name": "Joseph Pilato",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1368224"
+      },
+      {
+        "name": "Emil Sitka",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1563838"
+      },
+      {
+        "name": "Peter Greene",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q164534"
+      },
+      {
+        "name": "Samuel L. Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q172678"
+      },
+      {
+        "name": "Christopher Walken",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q185051"
+      },
+      {
+        "name": "Harvey Keitel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q191132"
+      },
+      {
+        "name": "Tim Roth",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q203804"
+      },
+      {
+        "name": "Duane Whitaker",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2263306"
+      },
+      {
+        "name": "Maria de Medeiros",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q235115"
+      },
+      {
+        "name": "Amanda Plummer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q238483"
+      },
+      {
+        "name": "Frank Whaley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q240774"
+      },
+      {
+        "name": "Paul Calderón",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2434817"
+      },
+      {
+        "name": "Alexis Arquette",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q254431"
+      },
+      {
+        "name": "Julia Sweeney",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q270774"
+      },
+      {
+        "name": "Brenda Hillhouse",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2924399"
+      },
+      {
+        "name": "Bronagh Gallagher",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2926038"
+      },
+      {
+        "name": "Ving Rhames",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q310315"
+      },
+      {
+        "name": "Eric Stoltz",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q318267"
+      },
+      {
+        "name": "Karen Maruyama",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3193117"
+      },
+      {
+        "name": "Linda Kaye",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3241353"
+      },
+      {
+        "name": "Phil LaMarr",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q356541"
+      },
+      {
+        "name": "Quentin Tarantino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3772"
+      },
+      {
+        "name": "Michael Gilden",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3856171"
+      },
+      {
+        "name": "Stephen Hibbert",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3973186"
+      },
+      {
+        "name": "Kathy Griffin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q432437"
+      },
+      {
+        "name": "Angela Jones",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q453973"
+      },
+      {
+        "name": "Lawrence Bender",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q514913"
+      },
+      {
+        "name": "Susan Griffiths",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7647898"
+      },
+      {
+        "name": "John Travolta",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q80938"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Quentin Tarantino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3772"
+      },
+      {
+        "name": "Roger Avary",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q450720"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Lawrence Bender",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q514913"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q483941",
+    "qid": "Q483941",
+    "title": "Schindler's List",
+    "year": 1993,
+    "runtime_minutes": 195.0,
+    "director": [
+      {
+        "name": "Steven Spielberg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q8877"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Mark Ivanir",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1033909"
+      },
+      {
+        "name": "Joachim Paul Assböck",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q106744"
+      },
+      {
+        "name": "Grzegorz Kwas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q111472798"
+      },
+      {
+        "name": "Wilhelm Manske",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q118053"
+      },
+      {
+        "name": "Norbert Weisser",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q121045"
+      },
+      {
+        "name": "Edward Linde-Lubaszenko",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1292876"
+      },
+      {
+        "name": "Jonathan Sagall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1356584"
+      },
+      {
+        "name": "Friedrich von Thun",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1464037"
+      },
+      {
+        "name": "Geno Lechner",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1502443"
+      },
+      {
+        "name": "Alexander Strobele",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1521335"
+      },
+      {
+        "name": "Ezra Dagan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q15762190"
+      },
+      {
+        "name": "Hans-Jörg Assmann",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1577563"
+      },
+      {
+        "name": "Hans Michael Rehberg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1577938"
+      },
+      {
+        "name": "Henryk Bista",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1607467"
+      },
+      {
+        "name": "Razia Israeli",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16129016"
+      },
+      {
+        "name": "Ben Kingsley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q173158"
+      },
+      {
+        "name": "Olaf Lubaszenko",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1937615"
+      },
+      {
+        "name": "Caroline Goodall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q201976"
+      },
+      {
+        "name": "Embeth Davidtz",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q260622"
+      },
+      {
+        "name": "Maria Peszek",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q274836"
+      },
+      {
+        "name": "Agnieszka Wagner",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2826948"
+      },
+      {
+        "name": "Ralph Fiennes",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q28493"
+      },
+      {
+        "name": "Anna Mucha",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2850579"
+      },
+      {
+        "name": "Paweł Deląg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3373190"
+      },
+      {
+        "name": "Elina Löwensohn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q450694"
+      },
+      {
+        "name": "Maja Ostaszewska",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q450928"
+      },
+      {
+        "name": "Jan Jurewicz",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5015744"
+      },
+      {
+        "name": "Tadeusz Huk",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5101571"
+      },
+      {
+        "name": "Andrzej Seweryn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q515592"
+      },
+      {
+        "name": "Beatrice Macola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q526864"
+      },
+      {
+        "name": "Maciej Kozłowski",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q55389"
+      },
+      {
+        "name": "Liam Neeson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q58444"
+      },
+      {
+        "name": "Götz Otto",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q62676"
+      },
+      {
+        "name": "Branko Lustig",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q703611"
+      },
+      {
+        "name": "Piotr Polk",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7197001"
+      },
+      {
+        "name": "Rami Heuberger",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7289526"
+      },
+      {
+        "name": "Małgorzata Gebel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q771165"
+      },
+      {
+        "name": "Wojciech Klata",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q8029127"
+      },
+      {
+        "name": "Miri Fabian",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q81968984"
+      },
+      {
+        "name": "Jerzy Nowak",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q8338880"
+      },
+      {
+        "name": "Bettina Kupfer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q850004"
+      },
+      {
+        "name": "Erwin Leder",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q86767"
+      },
+      {
+        "name": "Alexander Held",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q87676"
+      },
+      {
+        "name": "Thomas Morris",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q88303"
+      },
+      {
+        "name": "August Schmölzer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q88583"
+      },
+      {
+        "name": "Grzegorz Damięcki",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q9281760"
+      },
+      {
+        "name": "Tadeusz Bradecki",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q9354107"
+      },
+      {
+        "name": "Ludger Pistor",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q95316"
+      },
+      {
+        "name": "Martin Semmelrogge",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q95580"
+      },
+      {
+        "name": "Daniel Del Ponte",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q95788171"
+      },
+      {
+        "name": "Jochen Nickel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q97604"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Steven Zaillian",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q291141"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Gerald R. Molen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1385337"
+      },
+      {
+        "name": "Kathleen Kennedy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q237207"
+      },
+      {
+        "name": "Branko Lustig",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q703611"
+      },
+      {
+        "name": "Steven Spielberg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q8877"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q190908",
+    "qid": "Q190908",
+    "title": "Seven",
+    "year": 1995,
+    "runtime_minutes": 127.0,
+    "director": [
+      {
+        "name": "David Fincher",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q184903"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Richmond Arquette",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1139511"
+      },
+      {
+        "name": "Leland Orser",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1320006"
+      },
+      {
+        "name": "Haris Savides",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1333793"
+      },
+      {
+        "name": "Hawthorne James",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16237544"
+      },
+      {
+        "name": "Endre Hules",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q24023955"
+      },
+      {
+        "name": "Kevin Spacey",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25144"
+      },
+      {
+        "name": "John C. McGinley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q316032"
+      },
+      {
+        "name": "Richard Portnow",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3361195"
+      },
+      {
+        "name": "Gwyneth Paltrow",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q34460"
+      },
+      {
+        "name": "Brad Pitt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q35332"
+      },
+      {
+        "name": "R. Lee Ermey",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q353978"
+      },
+      {
+        "name": "Richard Schiff",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q355209"
+      },
+      {
+        "name": "Richard Roundtree",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q446493"
+      },
+      {
+        "name": "Alfonso Freeman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4722037"
+      },
+      {
+        "name": "Morgan Freeman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q48337"
+      },
+      {
+        "name": "Andrew Kevin Walker",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q505689"
+      },
+      {
+        "name": "Daniel Zacapa",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5219143"
+      },
+      {
+        "name": "Michael Massee",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q526468"
+      },
+      {
+        "name": "Charles S. Dutton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q706513"
+      },
+      {
+        "name": "Peter Crombie",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7173458"
+      },
+      {
+        "name": "Mark Boone Junior",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q718382"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Andrew Kevin Walker",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q505689"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Arnold Kopelson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q695608"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q155653",
+    "qid": "Q155653",
+    "title": "Spirited Away",
+    "year": 2001,
+    "runtime_minutes": 125.0,
+    "director": [
+      {
+        "name": "Hayao Miyazaki",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q55400"
+      }
+    ],
+    "actor": [],
+    "writer": [
+      {
+        "name": "Hayao Miyazaki",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q55400"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Toshio Suzuki",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q713511"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q63985561",
+    "qid": "Q63985561",
+    "title": "Tenet",
+    "year": 2020,
+    "runtime_minutes": 150.0,
+    "director": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Michael Caine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q123351"
+      },
+      {
+        "name": "Dimple Kapadia",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q158558"
+      },
+      {
+        "name": "Marcel Sabat",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16325426"
+      },
+      {
+        "name": "Denzil Smith",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q20090576"
+      },
+      {
+        "name": "Clémence Poésy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q232868"
+      },
+      {
+        "name": "Himesh Patel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2835788"
+      },
+      {
+        "name": "Andrew Howard",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3499384"
+      },
+      {
+        "name": "Robert Pattinson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q36767"
+      },
+      {
+        "name": "John David Washington",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4120019"
+      },
+      {
+        "name": "Yuri Kolokolnikov",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4228271"
+      },
+      {
+        "name": "Fiona Dourif",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q432873"
+      },
+      {
+        "name": "Aaron Taylor-Johnson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q45923"
+      },
+      {
+        "name": "Elizabeth Debicki",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5362676"
+      },
+      {
+        "name": "Kenneth Branagh",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q55294"
+      },
+      {
+        "name": "Martin Donovan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q726130"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Emma Thomas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q242951"
+      },
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q163872",
+    "qid": "Q163872",
+    "title": "The Dark Knight",
+    "year": 2008,
+    "runtime_minutes": 153.0,
+    "director": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Colin McFarlane",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1108562"
+      },
+      {
+        "name": "Michael Caine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q123351"
+      },
+      {
+        "name": "Tommy Lister Jr.",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1366768"
+      },
+      {
+        "name": "Keith Szarabajka",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1388258"
+      },
+      {
+        "name": "Richard Dillane",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1591382"
+      },
+      {
+        "name": "David Dastmalchian",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16203767"
+      },
+      {
+        "name": "Aaron Eckhart",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q192643"
+      },
+      {
+        "name": "Maggie Gyllenhaal",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q202381"
+      },
+      {
+        "name": "Cillian Murphy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q202589"
+      },
+      {
+        "name": "Eric Roberts",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q207969"
+      },
+      {
+        "name": "William Fichtner",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q220335"
+      },
+      {
+        "name": "Nestor Carbonell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q225933"
+      },
+      {
+        "name": "Ritchie Coster",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2434354"
+      },
+      {
+        "name": "Michael Jai White",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q248915"
+      },
+      {
+        "name": "Melinda McGraw",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2635096"
+      },
+      {
+        "name": "Beatrice Rosen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q266881"
+      },
+      {
+        "name": "Anthony Michael Hall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q361215"
+      },
+      {
+        "name": "Edison Chen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q379830"
+      },
+      {
+        "name": "Heath Ledger",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q40572"
+      },
+      {
+        "name": "Joshua Harto",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q436828"
+      },
+      {
+        "name": "Monique Gabriela Curnen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q456426"
+      },
+      {
+        "name": "Christian Bale",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q45772"
+      },
+      {
+        "name": "Morgan Freeman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q48337"
+      },
+      {
+        "name": "Sarah Jayne Dunn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q519949"
+      },
+      {
+        "name": "Nicky Katt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q729618"
+      },
+      {
+        "name": "Gary Oldman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q83492"
+      },
+      {
+        "name": "Nathan Gamble",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q934484"
+      },
+      {
+        "name": "Chin Han",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q938855"
+      },
+      {
+        "name": "Vincent Riotta",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q957363"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      },
+      {
+        "name": "Bob Kane",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q313048"
+      },
+      {
+        "name": "David S. Goyer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q352010"
+      },
+      {
+        "name": "Jonathan Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q372788"
+      },
+      {
+        "name": "Bill Finger",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q464282"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Emma Thomas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q242951"
+      },
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      },
+      {
+        "name": "Charles Roven",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2740357"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q47703",
+    "qid": "Q47703",
+    "title": "The Godfather",
+    "year": 1972,
+    "runtime_minutes": 175.0,
+    "director": [
+      {
+        "name": "Francis Ford Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56094"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Diane Keaton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102642"
+      },
+      {
+        "name": "Victor Rendina",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q10390375"
+      },
+      {
+        "name": "Talia Shire",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q108622"
+      },
+      {
+        "name": "Simonetta Stefanelli",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1147417"
+      },
+      {
+        "name": "Tere Livrano",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q134317151"
+      },
+      {
+        "name": "Lenny Montana",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1352034"
+      },
+      {
+        "name": "Gianni Russo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1622732"
+      },
+      {
+        "name": "Tony King",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16575211"
+      },
+      {
+        "name": "Tony Giorgio",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16745067"
+      },
+      {
+        "name": "Robert Duvall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q171736"
+      },
+      {
+        "name": "Sofia Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q193628"
+      },
+      {
+        "name": "Ron Gilbert",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q19956031"
+      },
+      {
+        "name": "Vito Scotti",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2300160"
+      },
+      {
+        "name": "Roman Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q245808"
+      },
+      {
+        "name": "Nick Vallelonga",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q29585307"
+      },
+      {
+        "name": "John Cazale",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q296177"
+      },
+      {
+        "name": "Abe Vigoda",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q318220"
+      },
+      {
+        "name": "Sterling Hayden",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q323166"
+      },
+      {
+        "name": "Marlon Brando",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q34012"
+      },
+      {
+        "name": "Corrado Gaipa",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3694232"
+      },
+      {
+        "name": "Angelo Infanti",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q376261"
+      },
+      {
+        "name": "Al Martino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q380872"
+      },
+      {
+        "name": "Johnny Martino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3809461"
+      },
+      {
+        "name": "Julie Gregg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3811107"
+      },
+      {
+        "name": "Al Pacino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q41163"
+      },
+      {
+        "name": "Richard S. Castellano",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q464714"
+      },
+      {
+        "name": "Morgana King",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q524930"
+      },
+      {
+        "name": "Franco Citti",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q554430"
+      },
+      {
+        "name": "Al Lettieri",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q558492"
+      },
+      {
+        "name": "Salvatore Corsitto",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56333356"
+      },
+      {
+        "name": "Carmine Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q658614"
+      },
+      {
+        "name": "Rudy Bond",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q673482"
+      },
+      {
+        "name": "Raymond Martino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7298995"
+      },
+      {
+        "name": "Richard Conte",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q734043"
+      },
+      {
+        "name": "Saro Urzì",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q752652"
+      },
+      {
+        "name": "Richard Bright",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q786720"
+      },
+      {
+        "name": "John Marley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q946196"
+      },
+      {
+        "name": "James Caan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q95043"
+      },
+      {
+        "name": "Joe Spinell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q960676"
+      },
+      {
+        "name": "Alex Rocco",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q975161"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Mario Puzo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q182870"
+      },
+      {
+        "name": "Francis Ford Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56094"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Albert S. Ruddy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q280490"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q184768",
+    "qid": "Q184768",
+    "title": "The Godfather Part II",
+    "year": 1974,
+    "runtime_minutes": 202.0,
+    "director": [
+      {
+        "name": "Francis Ford Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56094"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Diane Keaton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102642"
+      },
+      {
+        "name": "Talia Shire",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q108622"
+      },
+      {
+        "name": "Tere Livrano",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q134317151"
+      },
+      {
+        "name": "Frank Sivero",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1369720"
+      },
+      {
+        "name": "Gianni Russo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1622732"
+      },
+      {
+        "name": "Marianna Hill",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1693866"
+      },
+      {
+        "name": "Robert Duvall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q171736"
+      },
+      {
+        "name": "Sofia Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q193628"
+      },
+      {
+        "name": "G. D. Spradlin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q195871"
+      },
+      {
+        "name": "Peter Donat",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2074570"
+      },
+      {
+        "name": "Michael V. Gazzo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q218605"
+      },
+      {
+        "name": "Roman Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q245808"
+      },
+      {
+        "name": "John Cazale",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q296177"
+      },
+      {
+        "name": "Lee Strasberg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q297945"
+      },
+      {
+        "name": "Danny Aiello",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q299314"
+      },
+      {
+        "name": "Harry Dean Stanton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q314290"
+      },
+      {
+        "name": "Abe Vigoda",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q318220"
+      },
+      {
+        "name": "Roger Corman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q318292"
+      },
+      {
+        "name": "Richard Matheson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q325130"
+      },
+      {
+        "name": "William Bowers",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3388862"
+      },
+      {
+        "name": "Carmine Caridi",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3660357"
+      },
+      {
+        "name": "Robert De Niro",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q36949"
+      },
+      {
+        "name": "Francesca De Sapio",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3749387"
+      },
+      {
+        "name": "Al Martino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q380872"
+      },
+      {
+        "name": "Julie Gregg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3811107"
+      },
+      {
+        "name": "Oreste Baldini",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3885536"
+      },
+      {
+        "name": "Al Pacino",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q41163"
+      },
+      {
+        "name": "Erica Yohn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q453501"
+      },
+      {
+        "name": "Maria Carta",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q459019"
+      },
+      {
+        "name": "Kathleen Beller",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q460289"
+      },
+      {
+        "name": "Dominic Chianese",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q460688"
+      },
+      {
+        "name": "Leopoldo Trieste",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q472419"
+      },
+      {
+        "name": "Ezio Flagello",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q513981"
+      },
+      {
+        "name": "Troy Donahue",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q516035"
+      },
+      {
+        "name": "Bruno Kirby",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q517379"
+      },
+      {
+        "name": "Morgana King",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q524930"
+      },
+      {
+        "name": "Sho Kosugi",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q535906"
+      },
+      {
+        "name": "Ivonne Coll",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5923349"
+      },
+      {
+        "name": "Tom Rosqui",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6080465"
+      },
+      {
+        "name": "John Aprea",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6219271"
+      },
+      {
+        "name": "Fay Spain",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q638495"
+      },
+      {
+        "name": "Gastone Moschin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q696055"
+      },
+      {
+        "name": "Tom Dahlgren",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7815498"
+      },
+      {
+        "name": "Richard Bright",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q786720"
+      },
+      {
+        "name": "Carmen Argenziano",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q83694"
+      },
+      {
+        "name": "James Caan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q95043"
+      },
+      {
+        "name": "Joe Spinell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q960676"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Mario Puzo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q182870"
+      },
+      {
+        "name": "Francis Ford Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56094"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Fred Roos",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2675693"
+      },
+      {
+        "name": "Francis Ford Coppola",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56094"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q208263",
+    "qid": "Q208263",
+    "title": "The Green Mile",
+    "year": 1999,
+    "runtime_minutes": 189.0,
+    "director": [
+      {
+        "name": "Frank Darabont",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q295445"
+      }
+    ],
+    "actor": [
+      {
+        "name": "William Sadler",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q152542"
+      },
+      {
+        "name": "Gary Sinise",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q180272"
+      },
+      {
+        "name": "Tom Hanks",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2263"
+      },
+      {
+        "name": "Patricia Clarkson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q229268"
+      },
+      {
+        "name": "Bonnie Hunt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q272952"
+      },
+      {
+        "name": "David Morse",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q296370"
+      },
+      {
+        "name": "James Cromwell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q299483"
+      },
+      {
+        "name": "Graham Greene",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q311169"
+      },
+      {
+        "name": "Harry Dean Stanton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q314290"
+      },
+      {
+        "name": "Barry Pepper",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q315604"
+      },
+      {
+        "name": "Sam Rockwell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q316446"
+      },
+      {
+        "name": "Michael Jeter",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q329716"
+      },
+      {
+        "name": "Paula Malcomson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q433198"
+      },
+      {
+        "name": "Jeffrey DeMunn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q443343"
+      },
+      {
+        "name": "Eve Brent",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q465310"
+      },
+      {
+        "name": "Michael Clarke Duncan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q483148"
+      },
+      {
+        "name": "Doug Hutchison",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q506778"
+      },
+      {
+        "name": "Scotty Leavenworth",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q589849"
+      },
+      {
+        "name": "Dabbs Greer",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q640001"
+      },
+      {
+        "name": "Bill McKinney",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q862314"
+      },
+      {
+        "name": "Brent Briscoe",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q909704"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Frank Darabont",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q295445"
+      }
+    ],
+    "producer": [
+      {
+        "name": "David Valdes",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1176945"
+      },
+      {
+        "name": "Frank Darabont",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q295445"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q127367",
+    "qid": "Q127367",
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "runtime_minutes": 178.0,
+    "director": [
+      {
+        "name": "Peter Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Sala Baker",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1388807"
+      },
+      {
+        "name": "Dominic Monaghan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q152165"
+      },
+      {
+        "name": "John Rhys-Davies",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16455"
+      },
+      {
+        "name": "Ian Mune",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1655613"
+      },
+      {
+        "name": "Liv Tyler",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q168763"
+      },
+      {
+        "name": "Ian McKellen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q170510"
+      },
+      {
+        "name": "Viggo Mortensen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q171363"
+      },
+      {
+        "name": "Christopher Lee",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q180338"
+      },
+      {
+        "name": "Sean Astin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q189351"
+      },
+      {
+        "name": "Sean Bean",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q191104"
+      },
+      {
+        "name": "Andy Serkis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q206922"
+      },
+      {
+        "name": "Ian Holm",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q223091"
+      },
+      {
+        "name": "David Weatherley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2598175"
+      },
+      {
+        "name": "Sarah McLeod",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q270878"
+      },
+      {
+        "name": "Billy Boyd",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q276425"
+      },
+      {
+        "name": "Bill Johnson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q30717048"
+      },
+      {
+        "name": "Marton Csokas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q315118"
+      },
+      {
+        "name": "Harry Sinclair",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3330820"
+      },
+      {
+        "name": "Peter McKenzie",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3390280"
+      },
+      {
+        "name": "Mark Ferguson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3390514"
+      },
+      {
+        "name": "Alan Howard",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q339083"
+      },
+      {
+        "name": "Orlando Bloom",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q44467"
+      },
+      {
+        "name": "Peter Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      },
+      {
+        "name": "Craig Parker",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q469179"
+      },
+      {
+        "name": "Elijah Wood",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q483771"
+      },
+      {
+        "name": "Elizabeth Moody",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5363234"
+      },
+      {
+        "name": "Lawrence Makoare",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q737607"
+      },
+      {
+        "name": "Cate Blanchett",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q80966"
+      },
+      {
+        "name": "Bret McKenzie",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q910486"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Philippa Boyens",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116854"
+      },
+      {
+        "name": "Fran Walsh",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861"
+      },
+      {
+        "name": "Peter Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Fran Walsh",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861"
+      },
+      {
+        "name": "Tim Sanders",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q22676727"
+      },
+      {
+        "name": "Peter Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      },
+      {
+        "name": "Barrie M. Osborne",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q808917"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q131074",
+    "qid": "Q131074",
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "runtime_minutes": 200.0,
+    "director": [
+      {
+        "name": "Peter Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Karl Urban",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q132430"
+      },
+      {
+        "name": "Sala Baker",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1388807"
+      },
+      {
+        "name": "Dominic Monaghan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q152165"
+      },
+      {
+        "name": "Ian Hughes",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q15819828"
+      },
+      {
+        "name": "John Rhys-Davies",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16455"
+      },
+      {
+        "name": "Liv Tyler",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q168763"
+      },
+      {
+        "name": "Ian McKellen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q170510"
+      },
+      {
+        "name": "Viggo Mortensen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q171363"
+      },
+      {
+        "name": "Stephen Ure",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1779182"
+      },
+      {
+        "name": "Christopher Lee",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q180338"
+      },
+      {
+        "name": "Sean Astin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q189351"
+      },
+      {
+        "name": "Sean Bean",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q191104"
+      },
+      {
+        "name": "Paul Norell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2061535"
+      },
+      {
+        "name": "Andy Serkis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q206922"
+      },
+      {
+        "name": "Ian Holm",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q223091"
+      },
+      {
+        "name": "Thomas Robins",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2426862"
+      },
+      {
+        "name": "Bruce Hopkins",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2445092"
+      },
+      {
+        "name": "Sarah McLeod",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q270878"
+      },
+      {
+        "name": "Billy Boyd",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q276425"
+      },
+      {
+        "name": "Miranda Otto",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q294975"
+      },
+      {
+        "name": "David Wenham",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q296328"
+      },
+      {
+        "name": "Bernard Hill",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q310515"
+      },
+      {
+        "name": "John Noble",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q312399"
+      },
+      {
+        "name": "Marton Csokas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q315118"
+      },
+      {
+        "name": "Brad Dourif",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q329734"
+      },
+      {
+        "name": "Harry Sinclair",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3330820"
+      },
+      {
+        "name": "Alan Howard",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q339083"
+      },
+      {
+        "name": "Bruce Phillips",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3645492"
+      },
+      {
+        "name": "Orlando Bloom",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q44467"
+      },
+      {
+        "name": "Peter Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      },
+      {
+        "name": "Elijah Wood",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q483771"
+      },
+      {
+        "name": "Andrew Lesnie",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q505940"
+      },
+      {
+        "name": "Bruce Spence",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q704314"
+      },
+      {
+        "name": "Lawrence Makoare",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q737607"
+      },
+      {
+        "name": "John Bach",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q780432"
+      },
+      {
+        "name": "Cate Blanchett",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q80966"
+      },
+      {
+        "name": "Bret McKenzie",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q910486"
+      },
+      {
+        "name": "Joel Tobeck",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q966678"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Philippa Boyens",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116854"
+      },
+      {
+        "name": "Fran Walsh",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861"
+      },
+      {
+        "name": "Peter Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Fran Walsh",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861"
+      },
+      {
+        "name": "Peter Jackson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      },
+      {
+        "name": "Barrie M. Osborne",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q808917"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q83495",
+    "qid": "Q83495",
+    "title": "The Matrix",
+    "year": 1999,
+    "runtime_minutes": 136.0,
+    "director": [
+      {
+        "name": "Lilly Wachowski",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q9544977"
+      },
+      {
+        "name": "Lana Wachowski",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q9545711"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Marcus Chong",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1236595"
+      },
+      {
+        "name": "Jeremy Ball",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18219789"
+      },
+      {
+        "name": "Laurence Fishburne",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q193048"
+      },
+      {
+        "name": "Carrie-Anne Moss",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q206890"
+      },
+      {
+        "name": "Rowan Witt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q21870719"
+      },
+      {
+        "name": "Matt Doran",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2424724"
+      },
+      {
+        "name": "David Aston",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q258604"
+      },
+      {
+        "name": "Ada Nicodemou",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2616690"
+      },
+      {
+        "name": "Joe Pantoliano",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q296883"
+      },
+      {
+        "name": "Steve Dodd",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2985403"
+      },
+      {
+        "name": "Anthony Ray Parker",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3324448"
+      },
+      {
+        "name": "Paul Goddard",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3391203"
+      },
+      {
+        "name": "Keanu Reeves",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q43416"
+      },
+      {
+        "name": "Gloria Foster",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q455234"
+      },
+      {
+        "name": "Belinda McClory",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4882899"
+      },
+      {
+        "name": "Julian Arahanga",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6306950"
+      },
+      {
+        "name": "Bill Young",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q862673"
+      },
+      {
+        "name": "Robert Taylor",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q944529"
+      }
+    ],
+    "writer": [],
+    "producer": [
+      {
+        "name": "Joel Silver",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q539718"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q46551",
+    "qid": "Q46551",
+    "title": "The Prestige",
+    "year": 2006,
+    "runtime_minutes": 125.0,
+    "director": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Jim Piddock",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q10306924"
+      },
+      {
+        "name": "Ron Perkins",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1123336"
+      },
+      {
+        "name": "Michael Caine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q123351"
+      },
+      {
+        "name": "Ricky Jay",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1516734"
+      },
+      {
+        "name": "Kevin Will",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16239443"
+      },
+      {
+        "name": "Jodi Bianca Wise",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1691277"
+      },
+      {
+        "name": "Roger Rees",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1750774"
+      },
+      {
+        "name": "Andy Serkis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q206922"
+      },
+      {
+        "name": "Piper Perabo",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q228868"
+      },
+      {
+        "name": "Rebecca Hall",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q230534"
+      },
+      {
+        "name": "Dawn Upshaw",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q272823"
+      },
+      {
+        "name": "Daniel Davis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q280198"
+      },
+      {
+        "name": "Enn Reitel",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3054443"
+      },
+      {
+        "name": "James Otis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q338355"
+      },
+      {
+        "name": "Scarlett Johansson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q34436"
+      },
+      {
+        "name": "Sam Menning",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3946344"
+      },
+      {
+        "name": "Chao-Li Chi",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q440971"
+      },
+      {
+        "name": "Christian Bale",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q45772"
+      },
+      {
+        "name": "Christopher Neame",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q466789"
+      },
+      {
+        "name": "Ezra Buzzington",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4993338"
+      },
+      {
+        "name": "David Bowie",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5383"
+      },
+      {
+        "name": "Edward Hibbert",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q560413"
+      },
+      {
+        "name": "Jamie Harris",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q587641"
+      },
+      {
+        "name": "W. Morgan Sheppard",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q604485"
+      },
+      {
+        "name": "Mark Ryan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q723101"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      },
+      {
+        "name": "Jonathan Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q372788"
+      },
+      {
+        "name": "Christopher Priest",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q707796"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Emma Thomas",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q242951"
+      },
+      {
+        "name": "Christopher Nolan",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191"
+      },
+      {
+        "name": "Aaron Ryder",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2820085"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q172241",
+    "qid": "Q172241",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "runtime_minutes": 142.0,
+    "director": [
+      {
+        "name": "Frank Darabont",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q295445"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Ned Bellamy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1139190"
+      },
+      {
+        "name": "David Proval",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1176208"
+      },
+      {
+        "name": "William Sadler",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q152542"
+      },
+      {
+        "name": "Don McManus",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q15665021"
+      },
+      {
+        "name": "Brian Delate",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2690748"
+      },
+      {
+        "name": "James Whitmore",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q313040"
+      },
+      {
+        "name": "Bob Gunton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q352203"
+      },
+      {
+        "name": "Gil Bellows",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q360313"
+      },
+      {
+        "name": "Larry Brandenburg",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3827125"
+      },
+      {
+        "name": "Jeffrey DeMunn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q443343"
+      },
+      {
+        "name": "Clancy Brown",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4488"
+      },
+      {
+        "name": "Alfonso Freeman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4722037"
+      },
+      {
+        "name": "Morgan Freeman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q48337"
+      },
+      {
+        "name": "Bill Bolender",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4908187"
+      },
+      {
+        "name": "John Horton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6239926"
+      },
+      {
+        "name": "Frank Medrano",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q687311"
+      },
+      {
+        "name": "Mark Rolston",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q693301"
+      },
+      {
+        "name": "Paul McCrane",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q719256"
+      },
+      {
+        "name": "Jude Ciccolella",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q733776"
+      },
+      {
+        "name": "Tim Robbins",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q95048"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Frank Darabont",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q295445"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Niki Marvin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7034951"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q133654",
+    "qid": "Q133654",
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "runtime_minutes": 118.0,
+    "director": [
+      {
+        "name": "Jonathan Demme",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q48987"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Scott Glenn",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q114179"
+      },
+      {
+        "name": "Daniel von Bargen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1163293"
+      },
+      {
+        "name": "Tracey Walter",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1366460"
+      },
+      {
+        "name": "Ron Vawter",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1421128"
+      },
+      {
+        "name": "Paul Lazar",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q19631403"
+      },
+      {
+        "name": "Tommy Lafitte",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q23306199"
+      },
+      {
+        "name": "Brooke Smith",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q235725"
+      },
+      {
+        "name": "Diane Baker",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q266313"
+      },
+      {
+        "name": "Bill Miller",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2903297"
+      },
+      {
+        "name": "Chris Isaak",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q313009"
+      },
+      {
+        "name": "Roger Corman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q318292"
+      },
+      {
+        "name": "Stuart Rudin",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3500828"
+      },
+      {
+        "name": "Harry Northup",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3783517"
+      },
+      {
+        "name": "Jodie Foster",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q41351"
+      },
+      {
+        "name": "Charles Napier",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q431356"
+      },
+      {
+        "name": "Ted Levine",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q433520"
+      },
+      {
+        "name": "Kasi Lemmons",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q459933"
+      },
+      {
+        "name": "Cynthia Ettinger",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4653820"
+      },
+      {
+        "name": "Adelle Lutz",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4682002"
+      },
+      {
+        "name": "Brent Hinkley",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4961428"
+      },
+      {
+        "name": "Chuck Aber",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5115321"
+      },
+      {
+        "name": "George A. Romero",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q51511"
+      },
+      {
+        "name": "Ella Scott Lynch",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q5364564"
+      },
+      {
+        "name": "Dan Butler",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q561689"
+      },
+      {
+        "name": "Anthony Heald",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q573332"
+      },
+      {
+        "name": "Kenneth Utt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6390767"
+      },
+      {
+        "name": "Anthony Hopkins",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q65932"
+      },
+      {
+        "name": "Obba Babatundé",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q687234"
+      },
+      {
+        "name": "Frankie Faison",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q943589"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Ted Tally",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q721671"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Edward Saxon",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1293513"
+      },
+      {
+        "name": "Kenneth Utt",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6390767"
+      },
+      {
+        "name": "Ron Bozman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7363558"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q44578",
+    "qid": "Q44578",
+    "title": "Titanic",
+    "year": 1997,
+    "runtime_minutes": 195.0,
+    "director": [
+      {
+        "name": "James Cameron",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q42574"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Bill Paxton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q110374"
+      },
+      {
+        "name": "Lewis Abernathy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q11893776"
+      },
+      {
+        "name": "Martin Hub",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q12035731"
+      },
+      {
+        "name": "Ewan Stewart",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1234673"
+      },
+      {
+        "name": "Michael Ensign",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1254992"
+      },
+      {
+        "name": "Edward Fletcher",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1292214"
+      },
+      {
+        "name": "Greg Ellis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1332872"
+      },
+      {
+        "name": "Gregory Cooke",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1440197"
+      },
+      {
+        "name": "Scott G. Anderson",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1644834"
+      },
+      {
+        "name": "Jason Barry",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1683873"
+      },
+      {
+        "name": "Edward Kamuda",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q16859123"
+      },
+      {
+        "name": "Martin Jarvis",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1750537"
+      },
+      {
+        "name": "Gloria Stuart",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q189407"
+      },
+      {
+        "name": "Kate Winslet",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q202765"
+      },
+      {
+        "name": "Billy Zane",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q205435"
+      },
+      {
+        "name": "Rochelle Rose",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q20752286"
+      },
+      {
+        "name": "Suzy Amis Cameron",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q235635"
+      },
+      {
+        "name": "Terry Forrestal",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2405596"
+      },
+      {
+        "name": "Anne Fletcher",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q242557"
+      },
+      {
+        "name": "Mark Lindsay Chapman",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2553986"
+      },
+      {
+        "name": "Jenette Goldstein",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q263964"
+      },
+      {
+        "name": "Victor Garber",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q270664"
+      },
+      {
+        "name": "Tricia O'Neil",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q275270"
+      },
+      {
+        "name": "Rosalind Ayres",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q276165"
+      },
+      {
+        "name": "Ioan Gruffudd",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q295974"
+      },
+      {
+        "name": "Craig Kelly",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3002029"
+      },
+      {
+        "name": "Bernard Hill",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q310515"
+      },
+      {
+        "name": "Anatoly Sagalevich",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3182047"
+      },
+      {
+        "name": "Simon Crane",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3275736"
+      },
+      {
+        "name": "Martin Laing",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3295501"
+      },
+      {
+        "name": "Richard Graham",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3430805"
+      },
+      {
+        "name": "Frances Fisher",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q35011"
+      },
+      {
+        "name": "David Warner",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q363271"
+      },
+      {
+        "name": "Jonathan Evans-Jones",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q37269398"
+      },
+      {
+        "name": "Leonardo DiCaprio",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q38111"
+      },
+      {
+        "name": "James Cameron",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q42574"
+      },
+      {
+        "name": "Jonathan Hyde",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q435468"
+      },
+      {
+        "name": "Charlotte Chatton",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q509442"
+      },
+      {
+        "name": "Kathy Bates",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q544465"
+      },
+      {
+        "name": "Martin East",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56679144"
+      },
+      {
+        "name": "James Lancaster",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q56681515"
+      },
+      {
+        "name": "Eric Braeden",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q614851"
+      },
+      {
+        "name": "Liam Tuohy",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6539824"
+      },
+      {
+        "name": "Bernard Fox",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q707734"
+      },
+      {
+        "name": "Seth Adkins",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q711941"
+      },
+      {
+        "name": "Paul Brightwell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q7149519"
+      },
+      {
+        "name": "Lew Palter",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q731560"
+      },
+      {
+        "name": "Barry Dennen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q809029"
+      },
+      {
+        "name": "Danny Nucci",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q89552"
+      },
+      {
+        "name": "Jonathan Phillips",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q938230"
+      }
+    ],
+    "writer": [
+      {
+        "name": "James Cameron",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q42574"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Jon Landau",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q132451"
+      },
+      {
+        "name": "James Cameron",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q42574"
+      }
+    ]
+  },
+  {
+    "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q15648198",
+    "qid": "Q15648198",
+    "title": "Whiplash",
+    "year": 2014,
+    "runtime_minutes": 106.0,
+    "director": [
+      {
+        "name": "Damien Chazelle",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18350026"
+      }
+    ],
+    "actor": [
+      {
+        "name": "Chris Mulkey",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1189389"
+      },
+      {
+        "name": "J. K. Simmons",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q150482"
+      },
+      {
+        "name": "Wendee Lee",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q2642437"
+      },
+      {
+        "name": "Miles Teller",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q267330"
+      },
+      {
+        "name": "Suanne Spoke",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q29109394"
+      },
+      {
+        "name": "Jayson Blair",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3208206"
+      },
+      {
+        "name": "Henry G. Sanders",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3784932"
+      },
+      {
+        "name": "Max Kasch",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3853048"
+      },
+      {
+        "name": "Austin Stowell",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4204710"
+      },
+      {
+        "name": "Paul Reiser",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q430922"
+      },
+      {
+        "name": "Melissa Benoist",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q46677"
+      },
+      {
+        "name": "April Grace",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q509013"
+      },
+      {
+        "name": "Kavita Patil",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6379293"
+      },
+      {
+        "name": "Kofi Siriboe",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6425724"
+      },
+      {
+        "name": "Michael Cohen",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q6829330"
+      },
+      {
+        "name": "Michelle Ruff",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q842585"
+      }
+    ],
+    "writer": [
+      {
+        "name": "Damien Chazelle",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18350026"
+      }
+    ],
+    "producer": [
+      {
+        "name": "Jason Blum",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q13449900"
+      },
+      {
+        "name": "Helen Estabrook",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q19955710"
+      },
+      {
+        "name": "David Lancaster",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q19956396"
+      },
+      {
+        "name": "Michel Litvak",
+        "uri": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q20873879"
+      }
+    ]
+  }
+]

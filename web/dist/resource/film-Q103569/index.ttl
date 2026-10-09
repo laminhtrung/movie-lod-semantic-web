@@ -1,0 +1,72 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q103569 a dbo:Film ;
+    rdfs:label "Alien"@en ;
+    dbo:award res:award-Q1131772,
+        res:award-Q1257399,
+        res:award-Q1265702,
+        res:award-Q3414212,
+        res:award-Q393686,
+        res:award-Q739633 ;
+    dbo:country res:country-Q145,
+        res:country-Q30 ;
+    dbo:director res:person-Q56005 ;
+    dbo:genre res:genre-Q102260466,
+        res:genre-Q10663882,
+        res:genre-Q11304653,
+        res:genre-Q1200678,
+        res:genre-Q1342372,
+        res:genre-Q157394,
+        res:genre-Q1776156,
+        res:genre-Q188473,
+        res:genre-Q200092,
+        res:genre-Q20656232,
+        res:genre-Q2484376,
+        res:genre-Q319221,
+        res:genre-Q471839 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q1537983,
+        res:person-Q2396324,
+        res:person-Q350422 ;
+    dbo:productionCompany res:company-Q1706678,
+        res:company-Q434841 ;
+    dbo:runtime 7.02e+03 ;
+    dbo:starring res:person-Q102124,
+        res:person-Q200405,
+        res:person-Q223091,
+        res:person-Q266270,
+        res:person-Q283872,
+        res:person-Q3047302,
+        res:person-Q314290,
+        res:person-Q320093,
+        res:person-Q323185 ;
+    dbo:writer res:person-Q3056094,
+        res:person-Q498430 ;
+    owl:sameAs <http://dbpedia.org/resource/Alien_(film)>,
+        <http://www.wikidata.org/entity/Q103569> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q103569> ;
+    ex:contributionOf res:contribution-Q103569-Q102124-actor,
+        res:contribution-Q103569-Q1537983-producer,
+        res:contribution-Q103569-Q200405-actor,
+        res:contribution-Q103569-Q223091-actor,
+        res:contribution-Q103569-Q2396324-producer,
+        res:contribution-Q103569-Q266270-actor,
+        res:contribution-Q103569-Q283872-actor,
+        res:contribution-Q103569-Q3047302-actor,
+        res:contribution-Q103569-Q3056094-writer,
+        res:contribution-Q103569-Q314290-actor,
+        res:contribution-Q103569-Q320093-actor,
+        res:contribution-Q103569-Q323185-actor,
+        res:contribution-Q103569-Q350422-producer,
+        res:contribution-Q103569-Q498430-writer,
+        res:contribution-Q103569-Q56005-director ;
+    ex:releaseYear 1979 ;
+    ex:sourceSnapshot res:source-434da39b2ee00c238aca8cf8,
+        res:source-767abf09b55092603628beb7 .
+

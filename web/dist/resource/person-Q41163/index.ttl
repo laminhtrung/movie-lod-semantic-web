@@ -1,0 +1,34 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q41163 a dbo:Person ;
+    rdfs:label "Al Pacino"@en ;
+    dbo:award res:award-Q103916,
+        res:award-Q1131356,
+        res:award-Q1445521,
+        res:award-Q1474410,
+        res:award-Q1535324,
+        res:award-Q1738793,
+        res:award-Q1789030,
+        res:award-Q1789544,
+        res:award-Q1790292,
+        res:award-Q19020,
+        res:award-Q1967731,
+        res:award-Q251542,
+        res:award-Q2665878,
+        res:award-Q292044,
+        res:award-Q3241784,
+        res:award-Q400007,
+        res:award-Q5280673,
+        res:award-Q593098,
+        res:award-Q640353,
+        res:award-Q908858,
+        res:award-Q989453 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q41163> ;
+    ex:hasContribution res:contribution-Q184768-Q41163-actor,
+        res:contribution-Q47703-Q41163-actor ;
+    ex:sourceSnapshot res:source-9e94454ce34a83ba6f3dd0b6 .
+

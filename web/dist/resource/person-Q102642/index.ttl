@@ -1,0 +1,23 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q102642 a dbo:Person ;
+    rdfs:label "Diane Keaton"@en ;
+    dbo:award res:award-Q1011564,
+        res:award-Q10294045,
+        res:award-Q103618,
+        res:award-Q1268927,
+        res:award-Q1419495,
+        res:award-Q1790273,
+        res:award-Q3404521,
+        res:award-Q5261137,
+        res:award-Q56085709,
+        res:award-Q687123 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q102642> ;
+    ex:hasContribution res:contribution-Q184768-Q102642-actor,
+        res:contribution-Q47703-Q102642-actor ;
+    ex:sourceSnapshot res:source-125e8e07aa0b622e289724a2 .
+

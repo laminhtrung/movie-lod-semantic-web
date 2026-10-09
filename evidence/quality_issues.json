@@ -1,0 +1,152 @@
+[
+  {
+    "entity": "Q24930544",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q2680",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q24930544",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q24930544",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "film": "The Lord of the Rings: The Fellowship of the Ring",
+    "reason": "multiple runtimes; first non-deprecated/preferred claim retained",
+    "values": [
+      "178",
+      "208",
+      "228"
+    ]
+  },
+  {
+    "entity": "Q326323",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q42204",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "film": "The Lord of the Rings: The Return of the King",
+    "reason": "multiple runtimes; first non-deprecated/preferred claim retained",
+    "values": [
+      "200",
+      "250",
+      "263"
+    ]
+  },
+  {
+    "entity": "Q326323",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q42204",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q21002368",
+    "reason": "not explicitly a human; omitted from Person"
+  },
+  {
+    "entity": "Q36301",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q6708571",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q25021464",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q140460577",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q140460577",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q65557474",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q12638022",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "film": "The Godfather Part II",
+    "reason": "multiple runtimes; first non-deprecated/preferred claim retained",
+    "values": [
+      "202",
+      "165"
+    ]
+  },
+  {
+    "entity": "Q216123",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "film": "Blade Runner",
+    "reason": "multiple runtimes; first non-deprecated/preferred claim retained",
+    "values": [
+      "112",
+      "116"
+    ]
+  },
+  {
+    "entity": "Q41043454",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q65557474",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q147077",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q65557474",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q65557474",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q512986",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q2592908",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q65557474",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q129591",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q65557474",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q42204",
+    "reason": "missing English label; omitted"
+  },
+  {
+    "entity": "Q195719",
+    "reason": "not explicitly a human; omitted from Person"
+  }
+]

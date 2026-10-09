@@ -1,0 +1,6 @@
+PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?title ?year ?runtimeSeconds ?director WHERE { res:film-Q25188 rdfs:label ?title ; ex:releaseYear ?year ; dbo:runtime ?runtimeSeconds ; dbo:director ?person . ?person rdfs:label ?director }

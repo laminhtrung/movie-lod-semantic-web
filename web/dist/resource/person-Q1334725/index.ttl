@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q1334725 a dbo:Person ;
+    rdfs:label "Kevin Corrigan"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1334725> ;
+    ex:hasContribution res:contribution-Q42047-Q1334725-actor ;
+    ex:sourceSnapshot res:source-d575e89ee6f63a14842d22cf .
+

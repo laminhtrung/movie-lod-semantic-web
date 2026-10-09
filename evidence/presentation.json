@@ -1,0 +1,104 @@
+{
+  "review_date": "2026-10-09",
+  "slide_count": 24,
+  "font": "Be Vietnam Pro",
+  "slide_language": "English",
+  "placeholder_language": "Vietnamese",
+  "speaker_notes_language": "English",
+  "rehearsal_script_language": "Vietnamese",
+  "editable_text_and_diagrams": true,
+  "pdf_export": "LibreOffice vector PDF; searchable text",
+  "speaking_time_minutes": "18–22",
+  "protege_photos": [
+    {
+      "id": "P00",
+      "slide": 5,
+      "file": "P00_ontology_header.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P01",
+      "slide": 6,
+      "file": "P01_film_hierarchy.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P02",
+      "slide": 7,
+      "file": "P02_agent_hierarchy.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P03",
+      "slide": 8,
+      "file": "P03_genre_award_hierarchy.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P04",
+      "slide": 9,
+      "file": "P04_contribution_restrictions.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P05",
+      "slide": 10,
+      "file": "P05_object_property.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P06",
+      "slide": 13,
+      "file": "P06_filmmaker_equivalent_class.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P07",
+      "slide": 14,
+      "file": "P07_three_credit_cardinality.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P08",
+      "slide": 16,
+      "file": "P08_runtime_datatype.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P09",
+      "slide": 18,
+      "file": "P09_inception_individual.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    },
+    {
+      "id": "P10",
+      "slide": 21,
+      "file": "P10_nolan_inferred_types.png",
+      "image_present": false,
+      "instructions_visible_on_slide": true
+    }
+  ],
+  "protege_images_present": 0,
+  "protege_placeholders": 11,
+  "real_application_screenshots": [
+    "05_inception_current.png",
+    "06_nolan_roles.png",
+    "09_inception_resource.png"
+  ],
+  "short_deck_updated": "docs/Slide_ngan_13.pptx",
+  "application_images_scope": "current version 3.0.0 captures",
+  "technical_self_score": null,
+  "ontology_version": "3.0.0",
+  "application_snapshot": "3.0.0",
+  "mp4_included": false
+}

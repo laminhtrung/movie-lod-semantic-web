@@ -1,0 +1,20 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q223091 a dbo:Person ;
+    rdfs:label "Ian Holm"@en ;
+    dbo:award res:award-Q12201477,
+        res:award-Q1474410,
+        res:award-Q28470,
+        res:award-Q548389,
+        res:award-Q566905,
+        res:award-Q833163 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q223091> ;
+    ex:hasContribution res:contribution-Q103569-Q223091-actor,
+        res:contribution-Q127367-Q223091-actor,
+        res:contribution-Q131074-Q223091-actor ;
+    ex:sourceSnapshot res:source-95de1603c72929d3b2973622 .
+

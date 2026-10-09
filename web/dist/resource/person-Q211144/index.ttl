@@ -1,0 +1,33 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q211144 a dbo:Person ;
+    rdfs:label "Ellen Burstyn"@en ;
+    dbo:award res:award-Q1011564,
+        res:award-Q103618,
+        res:award-Q1071888,
+        res:award-Q1371682,
+        res:award-Q1464670,
+        res:award-Q1502249,
+        res:award-Q1790297,
+        res:award-Q185299,
+        res:award-Q1967719,
+        res:award-Q21595675,
+        res:award-Q28837118,
+        res:award-Q3062632,
+        res:award-Q311836,
+        res:award-Q5305704,
+        res:award-Q5461347,
+        res:award-Q55137804,
+        res:award-Q6837811,
+        res:award-Q687123,
+        res:award-Q793585,
+        res:award-Q894596,
+        res:award-Q989449 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q211144> ;
+    ex:hasContribution res:contribution-Q13417189-Q211144-actor ;
+    ex:sourceSnapshot res:source-95de1603c72929d3b2973622 .
+

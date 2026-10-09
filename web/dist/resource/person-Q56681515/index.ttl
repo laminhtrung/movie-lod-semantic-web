@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q56681515 a dbo:Person ;
+    rdfs:label "James Lancaster"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q56681515> ;
+    ex:hasContribution res:contribution-Q44578-Q56681515-actor ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

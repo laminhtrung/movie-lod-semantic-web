@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-20fe8b45a0358744817c64b8 a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/The_Green_Mile_%28film%29.json> ;
+    ex:retrievedAt "2026-10-06T08:42:01.017+00:00"^^xsd:dateTime ;
+    ex:sha256 "20fe8b45a0358744817c64b8926f8c1d5c92c8a5993f40f75fea990e39cd4fdc" ;
+    ex:sourceUrl "https://dbpedia.org/data/The_Green_Mile_%28film%29.json"^^xsd:anyURI .
+

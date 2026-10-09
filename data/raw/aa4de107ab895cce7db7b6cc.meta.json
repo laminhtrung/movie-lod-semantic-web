@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Alien_%28film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:02.697930+00:00",
+  "sha256": "434da39b2ee00c238aca8cf88a51391913ad0af99cb7447840fbd4b91d1cd7cf",
+  "path": "data/raw/aa4de107ab895cce7db7b6cc.json",
+  "http_status": 200
+}

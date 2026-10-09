@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q294975 a dbo:Person ;
+    rdfs:label "Miranda Otto"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q294975> ;
+    ex:hasContribution res:contribution-Q131074-Q294975-actor ;
+    ex:sourceSnapshot res:source-24e2ab3470e472768aa25d26 .
+

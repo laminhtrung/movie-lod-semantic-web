@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q86767 a dbo:Person ;
+    rdfs:label "Erwin Leder"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q86767> ;
+    ex:hasContribution res:contribution-Q483941-Q86767-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

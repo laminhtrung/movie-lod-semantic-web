@@ -1,0 +1,22 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q102124 a dbo:Person ;
+    rdfs:label "Sigourney Weaver"@en ;
+    dbo:award res:award-Q10294045,
+        res:award-Q10855271,
+        res:award-Q110930267,
+        res:award-Q1413741,
+        res:award-Q16968120,
+        res:award-Q1713744,
+        res:award-Q17985761,
+        res:award-Q463085,
+        res:award-Q787123,
+        res:award-Q822907 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q102124> ;
+    ex:hasContribution res:contribution-Q103569-Q102124-actor ;
+    ex:sourceSnapshot res:source-125e8e07aa0b622e289724a2 .
+

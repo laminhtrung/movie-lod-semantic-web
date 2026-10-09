@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Shawshank_Redemption.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:56.313983+00:00",
+  "sha256": "29faa784a977498431b6fa25856946f334000dbd22da5cbdd00e18dc358d5dac",
+  "path": "data/raw/73cfc8ba5c66d1fdbd53a02e.json",
+  "http_status": 200
+}

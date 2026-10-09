@@ -1,0 +1,67 @@
+{
+  "source_pdf": "docs/Slide_full.pptx.pdf",
+  "source_pdf_sha256": "1e8fbcf02c1b95b4b4bd74fb6ae76b8dba500855d36dc2a7ecf599c10a384b3e",
+  "images": [
+    {
+      "file": "docs/report_images/05_source_viewer.png",
+      "slide_page": 15,
+      "xref": 236,
+      "source": "docs/Slide_full.pptx.pdf"
+    },
+    {
+      "file": "docs/sync_images/verification.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/sync_images/cardinality.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/sync_images/properties.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/sync_images/queries.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/sync_images/literals.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/sync_images/identity.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/sync_images/hierarchy.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/sync_images/lod.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/guide_images/02_contribution.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/guide_images/03_reasoning.png",
+      "source": "Final OWL 3.0.0 and exact HermiT/query evidence",
+      "source_type": "author_diagram"
+    },
+    {
+      "file": "docs/report_images/academic_framework.png",
+      "source": "Author-generated conceptual framework for MovieLOD",
+      "source_type": "author_diagram"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q42047-Q111549303-actor a ex:Credit ;
+    rdfs:label "Goodfellas — actor — Joseph Bono" ;
+    ex:inFilm res:film-Q42047 ;
+    ex:participant res:person-Q111549303 ;
+    ex:role ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

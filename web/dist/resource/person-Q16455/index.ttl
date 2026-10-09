@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q16455 a dbo:Person ;
+    rdfs:label "John Rhys-Davies"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16455> ;
+    ex:hasContribution res:contribution-Q127367-Q16455-actor,
+        res:contribution-Q131074-Q16455-actor ;
+    ex:sourceSnapshot res:source-663206da4be1168eca278e08 .
+

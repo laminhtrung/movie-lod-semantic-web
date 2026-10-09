@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q721671 a dbo:Person ;
+    rdfs:label "Ted Tally"@en ;
+    dbo:award res:award-Q107258,
+        res:award-Q1316544,
+        res:award-Q1415017,
+        res:award-Q833154 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q721671> ;
+    ex:hasContribution res:contribution-Q133654-Q721671-writer ;
+    ex:sourceSnapshot res:source-02a565dc091a4655cc178303 .
+

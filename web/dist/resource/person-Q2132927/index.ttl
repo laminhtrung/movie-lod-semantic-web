@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q2132927 a dbo:Person ;
+    rdfs:label "Gerard Murphy"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2132927> ;
+    ex:hasContribution res:contribution-Q166262-Q2132927-actor ;
+    ex:sourceSnapshot res:source-95de1603c72929d3b2973622 .
+

@@ -1,0 +1,31 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q123351 a dbo:Person ;
+    rdfs:label "Michael Caine"@en ;
+    dbo:award res:award-Q106291,
+        res:award-Q12201477,
+        res:award-Q1260789,
+        res:award-Q13452531,
+        res:award-Q181883,
+        res:award-Q251542,
+        res:award-Q400007,
+        res:award-Q787148,
+        res:award-Q80482724,
+        res:award-Q833163,
+        res:award-Q849771,
+        res:award-Q908858,
+        res:award-Q932281 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123351> ;
+    ex:hasContribution res:contribution-Q13417189-Q123351-actor,
+        res:contribution-Q163872-Q123351-actor,
+        res:contribution-Q166262-Q123351-actor,
+        res:contribution-Q21935651-Q123351-actor,
+        res:contribution-Q25188-Q123351-actor,
+        res:contribution-Q46551-Q123351-actor,
+        res:contribution-Q63985561-Q123351-actor ;
+    ex:sourceSnapshot res:source-d575e89ee6f63a14842d22cf .
+

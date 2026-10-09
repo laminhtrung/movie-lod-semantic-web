@@ -1,0 +1,20 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q125017 a dbo:Person ;
+    rdfs:label "Uma Thurman"@en ;
+    dbo:award res:award-Q105447,
+        res:award-Q127612284,
+        res:award-Q13452528,
+        res:award-Q3841643,
+        res:award-Q4220898,
+        res:award-Q673229,
+        res:award-Q716909,
+        res:award-Q734036 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q125017> ;
+    ex:hasContribution res:contribution-Q104123-Q125017-actor ;
+    ex:sourceSnapshot res:source-d575e89ee6f63a14842d22cf .
+

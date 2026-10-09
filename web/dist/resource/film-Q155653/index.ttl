@@ -1,0 +1,39 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q155653 a dbo:Film ;
+    rdfs:label "Spirited Away"@en ;
+    dbo:award res:award-Q106800,
+        res:award-Q154590,
+        res:award-Q1800189,
+        res:award-Q19830564,
+        res:award-Q922357 ;
+    dbo:country res:country-Q17 ;
+    dbo:director res:person-Q55400 ;
+    dbo:genre res:genre-Q102429885,
+        res:genre-Q104623124,
+        res:genre-Q130232,
+        res:genre-Q15637301,
+        res:genre-Q157394,
+        res:genre-Q2143665,
+        res:genre-Q53911753 ;
+    dbo:language res:language-Q5287 ;
+    dbo:producer res:person-Q713511 ;
+    dbo:productionCompany res:company-Q182950 ;
+    dbo:runtime 7.5e+03 ;
+    dbo:writer res:person-Q55400 ;
+    owl:sameAs <http://dbpedia.org/resource/Spirited_Away>,
+        <http://www.wikidata.org/entity/Q155653> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q155653> ;
+    ex:contributionOf res:contribution-Q155653-Q55400-director,
+        res:contribution-Q155653-Q55400-writer,
+        res:contribution-Q155653-Q713511-producer ;
+    ex:releaseYear 2001 ;
+    ex:sourceSnapshot res:source-55c92492ee66c9d5cf52464f,
+        res:source-767abf09b55092603628beb7 .
+

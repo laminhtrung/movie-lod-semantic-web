@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Whiplash_%282014_film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:05.100399+00:00",
+  "sha256": "f95e7e29ea62942fd98edef57fa77e4fc6aec46acf311ca887a1cb19b6c1dfa9",
+  "path": "data/raw/40381ad71d66e21d97324523.json",
+  "http_status": 200
+}

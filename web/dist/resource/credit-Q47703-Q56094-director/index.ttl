@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q47703-Q56094-director a ex:Credit ;
+    rdfs:label "The Godfather — director — Francis Ford Coppola" ;
+    ex:inFilm res:film-Q47703 ;
+    ex:participant res:person-Q56094 ;
+    ex:role ex:DirectorRole ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

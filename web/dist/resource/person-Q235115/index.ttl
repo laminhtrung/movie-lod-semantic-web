@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q235115 a dbo:Person ;
+    rdfs:label "Maria de Medeiros"@en ;
+    dbo:award res:award-Q13452528,
+        res:award-Q1483763,
+        res:award-Q1502249,
+        res:award-Q20887171,
+        res:award-Q2089918,
+        res:award-Q3404782 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q235115> ;
+    ex:hasContribution res:contribution-Q104123-Q235115-actor ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

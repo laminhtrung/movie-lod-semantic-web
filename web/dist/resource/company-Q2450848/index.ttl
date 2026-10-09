@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:company-Q2450848 a dbo:Company ;
+    rdfs:label "StudioCanal"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2450848> ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

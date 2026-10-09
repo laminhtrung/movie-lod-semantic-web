@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q103569-Q56005-director a ex:Credit ;
+    rdfs:label "Alien — director — Ridley Scott" ;
+    ex:inFilm res:film-Q103569 ;
+    ex:participant res:person-Q56005 ;
+    ex:role ex:DirectorRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

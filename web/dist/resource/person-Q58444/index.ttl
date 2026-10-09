@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q58444 a dbo:Person ;
+    rdfs:label "Liam Neeson"@en ;
+    dbo:award res:award-Q10762848,
+        res:award-Q1131356,
+        res:award-Q11415560,
+        res:award-Q2089923,
+        res:award-Q4167639,
+        res:award-Q503034 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q58444> ;
+    ex:hasContribution res:contribution-Q166262-Q58444-actor,
+        res:contribution-Q483941-Q58444-actor ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

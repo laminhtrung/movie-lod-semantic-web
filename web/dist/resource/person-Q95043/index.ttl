@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q95043 a dbo:Person ;
+    rdfs:label "James Caan"@en ;
+    dbo:award res:award-Q17985761 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q95043> ;
+    ex:hasContribution res:contribution-Q184768-Q95043-actor,
+        res:contribution-Q47703-Q95043-actor ;
+    ex:sourceSnapshot res:source-8c6fb43b7aa45e3aebfc36f9 .
+

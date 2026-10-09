@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:genre-Q20442589 a dbo:MovieGenre ;
+    rdfs:label "LGBTQ-related film"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20442589> ;
+    ex:sourceSnapshot res:source-8c53dd10280f0a6d0cab26d2 .
+

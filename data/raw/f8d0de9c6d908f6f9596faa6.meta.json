@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Godfather.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:55.919646+00:00",
+  "sha256": "4bb48e073201b4e955b780ae4df67680363f0b8068dc0c70d85f7c73ffe3a51a",
+  "path": "data/raw/f8d0de9c6d908f6f9596faa6.json",
+  "http_status": 200
+}

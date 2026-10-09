@@ -1,0 +1,164 @@
+[
+  {
+    "file": "02.rq",
+    "label": "Inception: year, duration and director",
+    "mode": "asserted",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT ?title ?year ?runtimeSeconds ?director WHERE { res:film-Q25188 rdfs:label ?title ; ex:releaseYear ?year ; dbo:runtime ?runtimeSeconds ; dbo:director ?person . ?person rdfs:label ?director }\n"
+  },
+  {
+    "file": "01.rq",
+    "label": "List films",
+    "mode": "asserted",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a dbo:Film . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "03.rq",
+    "label": "Directors of Inception",
+    "mode": "asserted",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { res:film-Q25188 dbo:director ?s . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "04.rq",
+    "label": "Inception credits and roles",
+    "mode": "asserted",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT ?personName ?roleName WHERE { res:film-Q25188 ex:contributionOf ?credit . ?credit ex:contributionBy ?person ; ex:hasRole ?role . ?person rdfs:label ?personName . ?role rdfs:label ?roleName } ORDER BY ?roleName ?personName\n"
+  },
+  {
+    "file": "05.rq",
+    "label": "Films directed by Nolan",
+    "mode": "asserted",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s dbo:director res:person-Q25191 . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "06.rq",
+    "label": "Companies credited on Inception",
+    "mode": "asserted",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { res:film-Q25188 dbo:productionCompany ?s . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "07.rq",
+    "label": "Awards of Inception",
+    "mode": "asserted",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { res:film-Q25188 dbo:award ?s . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "08.rq",
+    "label": "Runtime in seconds",
+    "mode": "asserted",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { res:film-Q25188 dbo:runtime ?s . OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "09.rq",
+    "label": "Film genres through the parent class",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?f a dbo:Film ; dbo:genre ?s . ?s a dbo:Genre . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "10.rq",
+    "label": "Persons through Agent hierarchy",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a dbo:Agent . FILTER EXISTS { ?s a dbo:Person } FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "11.rq",
+    "label": "Production companies",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a dbo:Company . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "12.rq",
+    "label": "Film subclasses",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s rdfs:subClassOf+ dbo:Film . OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "13.rq",
+    "label": "Actors through Artist hierarchy",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a dbo:Artist . FILTER EXISTS { ?s a dbo:Actor } FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "14.rq",
+    "label": "Inferred Actors",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a dbo:Actor . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "15.rq",
+    "label": "Inferred Filmmakers",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:Filmmaker . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "16.rq",
+    "label": "Inferred Action films",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:ActionFilm . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "17.rq",
+    "label": "Award-winning films",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:AwardWinningFilm . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "18.rq",
+    "label": "People with at least two provably distinct credits",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:MultiCreditContributor . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "19.rq",
+    "label": "People with at least three provably distinct credits",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:ThreeCreditContributor . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "20.rq",
+    "label": "Writer-directors",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:WriterDirector . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "21.rq",
+    "label": "Actor-filmmakers",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:ActorFilmmaker . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "22.rq",
+    "label": "Award-winning filmmakers",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:AwardWinningFilmmaker . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "23.rq",
+    "label": "Award-winning action films",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:AwardWinningActionFilm . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "24.rq",
+    "label": "Action/drama crossing films",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { ?s a ex:GenreCrossingFilm . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "25.rq",
+    "label": "Nolan contributions through property chain",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { res:person-Q25191 ex:contributedTo ?s . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "26.rq",
+    "label": "Nolan films through inverse director",
+    "mode": "reasoned",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?label WHERE { res:person-Q25191 ex:directed ?s . FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\")) OPTIONAL { ?s rdfs:label ?label } } ORDER BY ?s\n"
+  },
+  {
+    "file": "27.rq",
+    "label": "Types present only after reasoning",
+    "mode": "dataset",
+    "query": "PREFIX ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?s ?type WHERE {\n GRAPH <urn:movie:reasoned> { ?s a ?type }\n FILTER(STRSTARTS(STR(?s), \"https://laminhtrung.github.io/movie-lod-semantic-web/resource/\") && STRSTARTS(STR(?type), \"https://laminhtrung.github.io/movie-lod-semantic-web/ontology#\"))\n FILTER NOT EXISTS { GRAPH <urn:movie:asserted> { ?s a ?type } }\n} ORDER BY ?type ?s\n"
+  }
+]

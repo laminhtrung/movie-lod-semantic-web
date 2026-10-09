@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Tenet.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:47:40.144307+00:00",
+  "sha256": "57bf80cb4704118575aae7636ddec47a3730fc3bab2c09a1e47b469665781672",
+  "path": "data/raw/c68a7e4b85fbedc1bf4748ba.json",
+  "http_status": 200
+}

@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q15648198-Q20873879-producer a ex:Contribution ;
+    rdfs:label "Whiplash — producer — Michel Litvak" ;
+    ex:contributionBy res:person-Q20873879 ;
+    ex:contributionTo res:film-Q15648198 ;
+    ex:hasRole ex:ProducerRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

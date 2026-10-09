@@ -1,0 +1,35 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q36949 a dbo:Person ;
+    rdfs:label "Robert De Niro"@en ;
+    dbo:award res:award-Q103916,
+        res:award-Q1059569,
+        res:award-Q106291,
+        res:award-Q10855195,
+        res:award-Q10855271,
+        res:award-Q127421432,
+        res:award-Q13452531,
+        res:award-Q14539884,
+        res:award-Q1631998,
+        res:award-Q17144,
+        res:award-Q1738793,
+        res:award-Q19020,
+        res:award-Q209459,
+        res:award-Q28007416,
+        res:award-Q292044,
+        res:award-Q3241784,
+        res:award-Q48965436,
+        res:award-Q580231,
+        res:award-Q593098,
+        res:award-Q640353,
+        res:award-Q716909,
+        res:award-Q908858 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q36949> ;
+    ex:hasContribution res:contribution-Q184768-Q36949-actor,
+        res:contribution-Q42047-Q36949-actor ;
+    ex:sourceSnapshot res:source-b5b73be0267261c9c9a2b7ca .
+

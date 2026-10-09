@@ -1,0 +1,23 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q193048 a dbo:Person ;
+    rdfs:label "Laurence Fishburne"@en ;
+    dbo:award res:award-Q105447,
+        res:award-Q110613177,
+        res:award-Q1131356,
+        res:award-Q123737,
+        res:award-Q1474410,
+        res:award-Q1590605,
+        res:award-Q191874,
+        res:award-Q2604800,
+        res:award-Q28445727,
+        res:award-Q7243506,
+        res:award-Q734036 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q193048> ;
+    ex:hasContribution res:contribution-Q83495-Q193048-actor ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+

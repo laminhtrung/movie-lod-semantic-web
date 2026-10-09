@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q950104 a dbo:Person ;
+    rdfs:label "Michael Jace"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q950104> ;
+    ex:hasContribution res:contribution-Q134773-Q950104-actor ;
+    ex:sourceSnapshot res:source-8c6fb43b7aa45e3aebfc36f9 .
+

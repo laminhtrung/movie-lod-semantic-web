@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q155653-Q55400-director a ex:Credit ;
+    rdfs:label "Spirited Away — director — Hayao Miyazaki" ;
+    ex:inFilm res:film-Q155653 ;
+    ex:participant res:person-Q55400 ;
+    ex:role ex:DirectorRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

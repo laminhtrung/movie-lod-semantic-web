@@ -1,0 +1,2081 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MovieLOD — DBpedia-based movie ontology · MovieLOD</title><link rel="stylesheet" href="/movie-lod-semantic-web/style.css"><link rel="alternate" type="text/turtle" href="/movie-lod-semantic-web/ontology/index.ttl"><script type="application/ld+json">[
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducerRole",
+    "@type": [
+      "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Producer"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WritingContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "WritingContribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N2f9d5c35fbb044b2bfd12edd0ea7d436"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2f9d5c35fbb044b2bfd12edd0ea7d436",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+          },
+          {
+            "@id": "_:N9a9d8eac8a2143b2bb751b8fe4c4993b"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N9a9d8eac8a2143b2bb751b8fe4c4993b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributedTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+          },
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionTo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Award",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Award"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#actedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributedTo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/starring"
+      }
+    ]
+  },
+  {
+    "@id": "_:N20dd4ec2de2c437c83a5b678c95378f7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Producer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Person"
+          },
+          {
+            "@id": "_:N93a6e07f41ec42b686eeab4047c636e0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N93a6e07f41ec42b686eeab4047c636e0",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducingContribution"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local controlled role values, not subclasses of Person."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ContributionRole"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducingContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ProducingContribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:Nc8ebd8020f2c4ef5a3a45f9fc7bcadd9"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc8ebd8020f2c4ef5a3a45f9fc7bcadd9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+          },
+          {
+            "@id": "_:N4f53c33e07014b25a838bb5f3c422ca9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N4f53c33e07014b25a838bb5f3c422ca9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducerRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"
+      }
+    ]
+  },
+  {
+    "@id": "_:N94e0cf1da8c4498bb93c35b1d162d9e6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/MovieDirector"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Person"
+          },
+          {
+            "@id": "_:N6abdbab8aa9f45179df03ec88a6b504a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N6abdbab8aa9f45179df03ec88a6b504a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectingContribution"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectingContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "DirectingContribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:Nec95b631854d47b6bf54278419a95fdc"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nec95b631854d47b6bf54278419a95fdc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+          },
+          {
+            "@id": "_:N399868e09df349f796b6fb5f7724faf2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N399868e09df349f796b6fb5f7724faf2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectorRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Artist",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Artist"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#directed",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributedTo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/director"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A local credit association with one person, film and role; not the person or film itself."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:N171be3aa9a66430d88d9167d372c04b3"
+      },
+      {
+        "@id": "_:Ncf0b9dfd792a40278d201a42792d4c65"
+      },
+      {
+        "@id": "_:N2fa16a423e02484d96db1ac8ac8566e0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N171be3aa9a66430d88d9167d372c04b3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncf0b9dfd792a40278d201a42792d4c65",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionTo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2fa16a423e02484d96db1ac8ac8566e0",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActingContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ActingContribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N26587c71dfe744cb9553824274014daa"
+      }
+    ]
+  },
+  {
+    "@id": "_:N26587c71dfe744cb9553824274014daa",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+          },
+          {
+            "@id": "_:Ncba505bc389a4845a7b7f3edefd16b57"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncba505bc389a4845a7b7f3edefd16b57",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorRole"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "AwardWinningFilm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:Nf234bc6bbcd049e69f237ced0b2f0e2c"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf234bc6bbcd049e69f237ced0b2f0e2c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Film"
+          },
+          {
+            "@id": "_:Na03db55b6619496f8cf11bd85a15fe8b"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Na03db55b6619496f8cf11bd85a15fe8b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://dbpedia.org/ontology/award"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://dbpedia.org/ontology/Award"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/starring",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Actor"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#retrievedAt",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#MultiCreditContributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "At least two semantically distinct credit records. Different roles prove their distinctness; the name is shorthand and does not exclude repeated same-role credits."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "MultiCreditContributor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N32400ab5143e467f826bf9fa7b54f5d3"
+      }
+    ]
+  },
+  {
+    "@id": "_:N32400ab5143e467f826bf9fa7b54f5d3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Person"
+          },
+          {
+            "@id": "_:N88e2de5f3c7e401d863a06e41d7e294a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N88e2de5f3c7e401d863a06e41d7e294a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minQualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "2"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorRole",
+    "@type": [
+      "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Actor"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/MovieGenre",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "MovieGenre"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Genre"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://rdfs.org/ns/void#Dataset",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse VoID dataset, remove ex:Dataset clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Dataset"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Work",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Work"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/genre",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Genre"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/runtime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Organisation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Organisation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Filmmaker"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N52d41e84963a4fc1bebd3ad3b5b61cf9"
+      }
+    ]
+  },
+  {
+    "@id": "_:N52d41e84963a4fc1bebd3ad3b5b61cf9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Person"
+          },
+          {
+            "@id": "_:N94efc2f0388548dc89cf90d738565a2e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N94efc2f0388548dc89cf90d738565a2e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:N24246635d8a848519fb9eadbb5ce81d6"
+          },
+          {
+            "@id": "_:N67380e47e93849888a448b2481cc77e7"
+          },
+          {
+            "@id": "_:N28e347bd8b3a410dae46dc972ec97b5a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N24246635d8a848519fb9eadbb5ce81d6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectingContribution"
+      }
+    ]
+  },
+  {
+    "@id": "_:N67380e47e93849888a448b2481cc77e7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WritingContribution"
+      }
+    ]
+  },
+  {
+    "@id": "_:N28e347bd8b3a410dae46dc972ec97b5a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducingContribution"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sourceUrl",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/country",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Country"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/ScreenWriter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ScreenWriter"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Writer"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Company",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Company"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Organisation"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ActionGenre"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/MovieGenre"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectorRole",
+    "@type": [
+      "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Director"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/productionCompany",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Company"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilmmaker",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "AwardWinningFilmmaker"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N44a6f1a9da884996a2a297b4275b8572"
+      }
+    ]
+  },
+  {
+    "@id": "_:N44a6f1a9da884996a2a297b4275b8572",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker"
+          },
+          {
+            "@id": "_:Nd0de0d63709143e790791d9593f2f91e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd0de0d63709143e790791d9593f2f91e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://dbpedia.org/ontology/award"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://dbpedia.org/ontology/Award"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Genre",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Genre"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DramaGenre",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "DramaGenre"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/MovieGenre"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Producer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Producer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/writer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/language",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Language"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Film",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Work"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#releaseYear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterDirector",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A person with both directing and writing credits in this dataset; classification is never manually asserted."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "WriterDirector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N000d837f833f4212a970d41e9b9cf941"
+      }
+    ]
+  },
+  {
+    "@id": "_:N000d837f833f4212a970d41e9b9cf941",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/MovieDirector"
+          },
+          {
+            "@id": "http://dbpedia.org/ontology/ScreenWriter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/MovieDirector",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "MovieDirector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Country",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Country"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Writer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Writer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterRole",
+    "@type": [
+      "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Writer"
+      }
+    ]
+  },
+  {
+    "@id": "_:N60a5af5bcae94f89bba526a829bcbaa7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDifferent"
+    ],
+    "http://www.w3.org/2002/07/owl#distinctMembers": [
+      {
+        "@list": [
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorRole"
+          },
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectorRole"
+          },
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterRole"
+          },
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducerRole"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sourceSnapshot",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Language",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Language"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sha256",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#GenreCrossingFilm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Film carrying both action and drama genre memberships; this is not an unproved two-distinct-genre cardinality claim."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "GenreCrossingFilm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N9e9b0290eb204d7881dd86a333a24396"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9e9b0290eb204d7881dd86a333a24396",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Film"
+          },
+          {
+            "@id": "_:N3de77fc4c09c4e21941985ecf7d567de"
+          },
+          {
+            "@id": "_:N9f413a93ff5d497080acbf54b5edbacd"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N3de77fc4c09c4e21941985ecf7d567de",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://dbpedia.org/ontology/genre"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9f413a93ff5d497080acbf54b5edbacd",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://dbpedia.org/ontology/genre"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DramaGenre"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/Actor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Reuse DBpedia meaning and its supported superclass; no local clone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Artist"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningActionFilm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "AwardWinningActionFilm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N9b3aaccf7c18499b98a73a2655d75d7b"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9b3aaccf7c18499b98a73a2655d75d7b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionFilm"
+          },
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbfe7bc52a0544d469ea5f2eaf0e67763",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/ScreenWriter"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Person"
+          },
+          {
+            "@id": "_:N163cd58d50f848a7bafcf3ee3577c4e7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N163cd58d50f848a7bafcf3ee3577c4e7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WritingContribution"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "MovieLOD — DBpedia-based movie ontology"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "3.0.0"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ThreeCreditContributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "At least three distinct credit records; three different role fillers prove distinctness. Not exactly three roles or an exhaustive career description."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ThreeCreditContributor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:Nc3ec8a21be1a4ddba336acaa8930f687"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc3ec8a21be1a4ddba336acaa8930f687",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Person"
+          },
+          {
+            "@id": "_:N49940b06dfaf4061a1652d8f1382e7e1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N49940b06dfaf4061a1652d8f1382e7e1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minQualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "3"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/award",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Award"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#productionOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Company"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Work"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/productionCompany"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/producer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A retrieved response record, not a domain entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "SourceSnapshot"
+      }
+    ]
+  },
+  {
+    "@id": "http://dbpedia.org/ontology/director",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionFilm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ActionFilm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Film"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N508aa5803e164de29b2bfdd967ef1a10"
+      }
+    ]
+  },
+  {
+    "@id": "_:N508aa5803e164de29b2bfdd967ef1a10",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Film"
+          },
+          {
+            "@id": "_:N66650e8a46594c99a57d783aa7d18dd3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N66650e8a46594c99a57d783aa7d18dd3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://dbpedia.org/ontology/genre"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre"
+      }
+    ]
+  },
+  {
+    "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorFilmmaker",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ActorFilmmaker"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://dbpedia.org/ontology/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:Nc1c1143f06e344ea8d17e8fc512984e2"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc1c1143f06e344ea8d17e8fc512984e2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://dbpedia.org/ontology/Actor"
+          },
+          {
+            "@id": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker"
+          }
+        ]
+      }
+    ]
+  }
+]</script></head><body class="resource-page"><main><a href="/movie-lod-semantic-web/">← MovieLOD</a><h1>MovieLOD — DBpedia-based movie ontology</h1><p class="iri">https://laminhtrung.github.io/movie-lod-semantic-web/ontology</p><p><a href="/movie-lod-semantic-web/ontology/index.ttl">Download RDF (Turtle)</a></p><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Ontology">Ontology</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>MovieLOD — DBpedia-based movie ontology</td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#versionInfo">versionInfo</a></td><td>3.0.0</td></tr></tbody></table><section id="N000d837f833f4212a970d41e9b9cf941"><h2>N000d837f833f4212a970d41e9b9cf941 — N000d837f833f4212a970d41e9b9cf941</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>Nb129153634614614a84be625bbe00747</td></tr></table></section><section id="N20dd4ec2de2c437c83a5b678c95378f7"><h2>N20dd4ec2de2c437c83a5b678c95378f7 — N20dd4ec2de2c437c83a5b678c95378f7</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Producer">Producer</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>Nc5a5491795e44a29a22feff886381ff8</td></tr></table></section><section id="N26587c71dfe744cb9553824274014daa"><h2>N26587c71dfe744cb9553824274014daa — N26587c71dfe744cb9553824274014daa</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N9be6fb65dab942f8a50c6f99917fbb33</td></tr></table></section><section id="N2f9d5c35fbb044b2bfd12edd0ea7d436"><h2>N2f9d5c35fbb044b2bfd12edd0ea7d436 — N2f9d5c35fbb044b2bfd12edd0ea7d436</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>Naa61782c4a8e494e8232e1dee01fa179</td></tr></table></section><section id="N32400ab5143e467f826bf9fa7b54f5d3"><h2>N32400ab5143e467f826bf9fa7b54f5d3 — N32400ab5143e467f826bf9fa7b54f5d3</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>Nb2f8c3fb6bb54b98a052c1f22fa437c0</td></tr></table></section><section id="N44a6f1a9da884996a2a297b4275b8572"><h2>N44a6f1a9da884996a2a297b4275b8572 — N44a6f1a9da884996a2a297b4275b8572</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N065102b17f8f4ce3bbea6ca4daf27dc9</td></tr></table></section><section id="N508aa5803e164de29b2bfdd967ef1a10"><h2>N508aa5803e164de29b2bfdd967ef1a10 — N508aa5803e164de29b2bfdd967ef1a10</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N1993484918984432a61ea2e88919acdd</td></tr></table></section><section id="N52d41e84963a4fc1bebd3ad3b5b61cf9"><h2>N52d41e84963a4fc1bebd3ad3b5b61cf9 — N52d41e84963a4fc1bebd3ad3b5b61cf9</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>Nb429c34fa88d454bb9b1cc765a83e510</td></tr></table></section><section id="N94e0cf1da8c4498bb93c35b1d162d9e6"><h2>N94e0cf1da8c4498bb93c35b1d162d9e6 — N94e0cf1da8c4498bb93c35b1d162d9e6</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/MovieDirector">MovieDirector</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>Ncf50bff0e9624d9680c090f6ded960c4</td></tr></table></section><section id="N94efc2f0388548dc89cf90d738565a2e"><h2>N94efc2f0388548dc89cf90d738565a2e — N94efc2f0388548dc89cf90d738565a2e</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#unionOf">unionOf</a></td><td>Nfaa9de9f7e5647c6b09ba4ddd991df8c</td></tr></table></section><section id="N9b3aaccf7c18499b98a73a2655d75d7b"><h2>N9b3aaccf7c18499b98a73a2655d75d7b — N9b3aaccf7c18499b98a73a2655d75d7b</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N4c2341727f1649ab87e5fbb8ea1b0f91</td></tr></table></section><section id="N9e9b0290eb204d7881dd86a333a24396"><h2>N9e9b0290eb204d7881dd86a333a24396 — N9e9b0290eb204d7881dd86a333a24396</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N31cdd45b51924fa8bdf2e641480d5c11</td></tr></table></section><section id="Nbfe7bc52a0544d469ea5f2eaf0e67763"><h2>Nbfe7bc52a0544d469ea5f2eaf0e67763 — Nbfe7bc52a0544d469ea5f2eaf0e67763</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/ScreenWriter">ScreenWriter</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>Na83ebd6481464d1ebe8e032ae56aa2ff</td></tr></table></section><section id="Nc1c1143f06e344ea8d17e8fc512984e2"><h2>Nc1c1143f06e344ea8d17e8fc512984e2 — Nc1c1143f06e344ea8d17e8fc512984e2</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N3d8ec8c14ca74c4eaf916dae3406ffa1</td></tr></table></section><section id="Nc3ec8a21be1a4ddba336acaa8930f687"><h2>Nc3ec8a21be1a4ddba336acaa8930f687 — Nc3ec8a21be1a4ddba336acaa8930f687</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N36f123c84ccd4a428086d20ec1126b8a</td></tr></table></section><section id="Nc8ebd8020f2c4ef5a3a45f9fc7bcadd9"><h2>Nc8ebd8020f2c4ef5a3a45f9fc7bcadd9 — Nc8ebd8020f2c4ef5a3a45f9fc7bcadd9</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N3cd7d25d6c8648c6810873af229d2501</td></tr></table></section><section id="Nec95b631854d47b6bf54278419a95fdc"><h2>Nec95b631854d47b6bf54278419a95fdc — Nec95b631854d47b6bf54278419a95fdc</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N94c865f0b57e46d38be103fe632a2ea6</td></tr></table></section><section id="Nf234bc6bbcd049e69f237ced0b2f0e2c"><h2>Nf234bc6bbcd049e69f237ced0b2f0e2c — Nf234bc6bbcd049e69f237ced0b2f0e2c</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#intersectionOf">intersectionOf</a></td><td>N35fe793cdbae46c4a3c587225d5956b2</td></tr></table></section><section id="Actor"><h2>Actor — Actor</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Actor</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Artist">Artist</a></td></tr></table></section><section id="Agent"><h2>Agent — Agent</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Agent</td></tr></table></section><section id="Artist"><h2>Artist — Artist</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Artist</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr></table></section><section id="Award"><h2>Award — Award</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Award</td></tr></table></section><section id="Company"><h2>Company — Company</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Company</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Organisation">Organisation</a></td></tr></table></section><section id="Country"><h2>Country — Country</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Country</td></tr></table></section><section id="Film"><h2>Film — Film</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Film</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Work">Work</a></td></tr></table></section><section id="Genre"><h2>Genre — Genre</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Genre</td></tr></table></section><section id="Language"><h2>Language — Language</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Language</td></tr></table></section><section id="MovieDirector"><h2>MovieDirector — MovieDirector</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>MovieDirector</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr></table></section><section id="MovieGenre"><h2>MovieGenre — MovieGenre</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>MovieGenre</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Genre">Genre</a></td></tr></table></section><section id="Organisation"><h2>Organisation — Organisation</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Organisation</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Agent">Agent</a></td></tr></table></section><section id="Person"><h2>Person — Person</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Person</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Agent">Agent</a></td></tr></table></section><section id="Producer"><h2>Producer — Producer</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Producer</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr></table></section><section id="ScreenWriter"><h2>ScreenWriter — ScreenWriter</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>ScreenWriter</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Writer">Writer</a></td></tr></table></section><section id="Work"><h2>Work — Work</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Work</td></tr></table></section><section id="Writer"><h2>Writer — Writer</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse DBpedia meaning and its supported superclass; no local clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Writer</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr></table></section><section id="Dataset"><h2>Dataset — Dataset</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Reuse VoID dataset, remove ex:Dataset clone.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Dataset</td></tr></table></section><section id="ActingContribution"><h2>ActingContribution — ActingContribution</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>ActingContribution</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="/movie-lod-semantic-web/ontology#Contribution">Contribution</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N26587c71dfe744cb9553824274014daa</td></tr></table></section><section id="ActionFilm"><h2>ActionFilm — ActionFilm</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>ActionFilm</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Film">Film</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N508aa5803e164de29b2bfdd967ef1a10</td></tr></table></section><section id="ActionGenre"><h2>ActionGenre — ActionGenre</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>ActionGenre</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/MovieGenre">MovieGenre</a></td></tr></table></section><section id="ActorFilmmaker"><h2>ActorFilmmaker — ActorFilmmaker</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>ActorFilmmaker</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>Nc1c1143f06e344ea8d17e8fc512984e2</td></tr></table></section><section id="ActorRole"><h2>ActorRole — Actor</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#NamedIndividual">NamedIndividual</a></td></tr><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="/movie-lod-semantic-web/ontology#ContributionRole">ContributionRole</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Actor</td></tr></table></section><section id="AwardWinningActionFilm"><h2>AwardWinningActionFilm — AwardWinningActionFilm</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>AwardWinningActionFilm</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Film">Film</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N9b3aaccf7c18499b98a73a2655d75d7b</td></tr></table></section><section id="AwardWinningFilm"><h2>AwardWinningFilm — AwardWinningFilm</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>AwardWinningFilm</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Film">Film</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>Nf234bc6bbcd049e69f237ced0b2f0e2c</td></tr></table></section><section id="AwardWinningFilmmaker"><h2>AwardWinningFilmmaker — AwardWinningFilmmaker</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>AwardWinningFilmmaker</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N44a6f1a9da884996a2a297b4275b8572</td></tr></table></section><section id="Contribution"><h2>Contribution — Contribution</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>A local credit association with one person, film and role; not the person or film itself.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Contribution</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td>N171be3aa9a66430d88d9167d372c04b3</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td>N2fa16a423e02484d96db1ac8ac8566e0</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td>Ncf0b9dfd792a40278d201a42792d4c65</td></tr></table></section><section id="ContributionRole"><h2>ContributionRole — ContributionRole</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local controlled role values, not subclasses of Person.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>ContributionRole</td></tr></table></section><section id="DirectingContribution"><h2>DirectingContribution — DirectingContribution</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>DirectingContribution</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="/movie-lod-semantic-web/ontology#Contribution">Contribution</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>Nec95b631854d47b6bf54278419a95fdc</td></tr></table></section><section id="DirectorRole"><h2>DirectorRole — Director</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#NamedIndividual">NamedIndividual</a></td></tr><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="/movie-lod-semantic-web/ontology#ContributionRole">ContributionRole</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Director</td></tr></table></section><section id="DramaGenre"><h2>DramaGenre — DramaGenre</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>DramaGenre</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/MovieGenre">MovieGenre</a></td></tr></table></section><section id="Filmmaker"><h2>Filmmaker — Filmmaker</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Filmmaker</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N52d41e84963a4fc1bebd3ad3b5b61cf9</td></tr></table></section><section id="GenreCrossingFilm"><h2>GenreCrossingFilm — GenreCrossingFilm</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Film carrying both action and drama genre memberships; this is not an unproved two-distinct-genre cardinality claim.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>GenreCrossingFilm</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Film">Film</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N9e9b0290eb204d7881dd86a333a24396</td></tr></table></section><section id="MultiCreditContributor"><h2>MultiCreditContributor — MultiCreditContributor</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>At least two semantically distinct credit records. Different roles prove their distinctness; the name is shorthand and does not exclude repeated same-role credits.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>MultiCreditContributor</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N32400ab5143e467f826bf9fa7b54f5d3</td></tr></table></section><section id="ProducerRole"><h2>ProducerRole — Producer</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#NamedIndividual">NamedIndividual</a></td></tr><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="/movie-lod-semantic-web/ontology#ContributionRole">ContributionRole</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Producer</td></tr></table></section><section id="ProducingContribution"><h2>ProducingContribution — ProducingContribution</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>ProducingContribution</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="/movie-lod-semantic-web/ontology#Contribution">Contribution</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>Nc8ebd8020f2c4ef5a3a45f9fc7bcadd9</td></tr></table></section><section id="SourceSnapshot"><h2>SourceSnapshot — SourceSnapshot</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>A retrieved response record, not a domain entity.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>SourceSnapshot</td></tr></table></section><section id="ThreeCreditContributor"><h2>ThreeCreditContributor — ThreeCreditContributor</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>At least three distinct credit records; three different role fillers prove distinctness. Not exactly three roles or an exhaustive career description.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>ThreeCreditContributor</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>Nc3ec8a21be1a4ddba336acaa8930f687</td></tr></table></section><section id="WriterDirector"><h2>WriterDirector — WriterDirector</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>A person with both directing and writing credits in this dataset; classification is never manually asserted.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>WriterDirector</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="http://dbpedia.org/ontology/Person">Person</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N000d837f833f4212a970d41e9b9cf941</td></tr></table></section><section id="WriterRole"><h2>WriterRole — Writer</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#NamedIndividual">NamedIndividual</a></td></tr><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="/movie-lod-semantic-web/ontology#ContributionRole">ContributionRole</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>Writer</td></tr></table></section><section id="WritingContribution"><h2>WritingContribution — WritingContribution</h2><table><tr><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></td><td><a href="http://www.w3.org/2002/07/owl#Class">Class</a></td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td><td>Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td><td>WritingContribution</td></tr><tr><td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">subClassOf</a></td><td><a href="/movie-lod-semantic-web/ontology#Contribution">Contribution</a></td></tr><tr><td><a href="http://www.w3.org/2002/07/owl#equivalentClass">equivalentClass</a></td><td>N2f9d5c35fbb044b2bfd12edd0ea7d436</td></tr></table></section><footer>Source data: Wikidata, DBpedia. <a href="/movie-lod-semantic-web/LICENSE-DATA.txt">License and attribution</a>.</footer></main></body></html>

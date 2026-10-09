@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q535906 a dbo:Person ;
+    rdfs:label "Sho Kosugi"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q535906> ;
+    ex:hasContribution res:contribution-Q184768-Q535906-actor ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

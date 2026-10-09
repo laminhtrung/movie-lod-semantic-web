@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q361215 a dbo:Person ;
+    rdfs:label "Anthony Michael Hall"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q361215> ;
+    ex:hasContribution res:contribution-Q163872-Q361215-actor ;
+    ex:sourceSnapshot res:source-70350d2b565eee56f834c56a .
+

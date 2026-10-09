@@ -1,0 +1,17 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q484400 a dbo:Person ;
+    rdfs:label "Song Kang-ho"@en ;
+    dbo:award res:award-Q2447242,
+        res:award-Q4806629,
+        res:award-Q496411,
+        res:award-Q586140,
+        res:award-Q97474308 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q484400> ;
+    ex:hasContribution res:contribution-Q61448040-Q484400-actor ;
+    ex:sourceSnapshot res:source-da3b5f106516c6082cf64a1b .
+

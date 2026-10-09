@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q1472235 a dbo:Award ;
+    rdfs:label "Golden Globe Award for Best Original Song"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1472235> ;
+    ex:sourceSnapshot res:source-8f5d01b5c9c2be92e7bf466a .
+

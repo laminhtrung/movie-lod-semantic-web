@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q105706491 a dbo:Person ;
+    rdfs:label "Jeong E-suh"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q105706491> ;
+    ex:hasContribution res:contribution-Q61448040-Q105706491-actor ;
+    ex:sourceSnapshot res:source-125e8e07aa0b622e289724a2 .
+

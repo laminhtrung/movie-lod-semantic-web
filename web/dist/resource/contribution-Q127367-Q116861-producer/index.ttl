@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q127367-Q116861-producer a ex:Contribution ;
+    rdfs:label "The Lord of the Rings: The Fellowship of the Ring — producer — Fran Walsh" ;
+    ex:contributionBy res:person-Q116861 ;
+    ex:contributionTo res:film-Q127367 ;
+    ex:hasRole ex:ProducerRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

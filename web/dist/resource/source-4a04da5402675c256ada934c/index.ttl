@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-4a04da5402675c256ada934c a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/Parasite_%282019_film%29.json> ;
+    ex:retrievedAt "2026-10-06T08:42:04.293+00:00"^^xsd:dateTime ;
+    ex:sha256 "4a04da5402675c256ada934c074c5adb3f9a90b406be0c7274bb013213d30c8b" ;
+    ex:sourceUrl "https://dbpedia.org/data/Parasite_%282019_film%29.json"^^xsd:anyURI .
+

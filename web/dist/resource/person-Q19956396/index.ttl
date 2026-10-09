@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q19956396 a dbo:Person ;
+    rdfs:label "David Lancaster"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19956396> ;
+    ex:hasContribution res:contribution-Q15648198-Q19956396-producer ;
+    ex:sourceSnapshot res:source-8c53dd10280f0a6d0cab26d2 .
+

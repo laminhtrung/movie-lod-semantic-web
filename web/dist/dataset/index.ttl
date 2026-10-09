@@ -1,0 +1,12 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<https://laminhtrung.github.io/movie-lod-semantic-web/dataset> a void:Dataset ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dct:source <https://dbpedia.org/>,
+        <https://www.wikidata.org/> ;
+    dct:title "MovieLOD course dataset" ;
+    void:dataDump <https://laminhtrung.github.io/movie-lod-semantic-web/data/movies.ttl> ;
+    rdfs:seeAlso <https://laminhtrung.github.io/movie-lod-semantic-web/#query> .
+

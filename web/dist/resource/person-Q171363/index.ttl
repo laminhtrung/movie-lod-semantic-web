@@ -1,0 +1,20 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q171363 a dbo:Person ;
+    rdfs:label "Viggo Mortensen"@en ;
+    dbo:award res:award-Q12344311,
+        res:award-Q18601721,
+        res:award-Q3110027,
+        res:award-Q40024,
+        res:award-Q48781665,
+        res:award-Q518675,
+        res:award-Q908858 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q171363> ;
+    ex:hasContribution res:contribution-Q127367-Q171363-actor,
+        res:contribution-Q131074-Q171363-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

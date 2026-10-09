@@ -1,0 +1,122 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q133654 a dbo:Film ;
+    rdfs:label "The Silence of the Lambs"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q103360,
+        res:award-Q103618,
+        res:award-Q103916,
+        res:award-Q1071903,
+        res:award-Q107258,
+        res:award-Q1259362,
+        res:award-Q1789102,
+        res:award-Q1789544,
+        res:award-Q1790273,
+        res:award-Q1790281,
+        res:award-Q1966965,
+        res:award-Q2947548,
+        res:award-Q400007,
+        res:award-Q463085,
+        res:award-Q5211221,
+        res:award-Q5280675,
+        res:award-Q687123,
+        res:award-Q696972,
+        res:award-Q696998,
+        res:award-Q8038458,
+        res:award-Q894592 ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q48987 ;
+    dbo:genre res:genre-Q109629396,
+        res:genre-Q109733304,
+        res:genre-Q109733630,
+        res:genre-Q113485322,
+        res:genre-Q130232,
+        res:genre-Q19367312,
+        res:genre-Q200092,
+        res:genre-Q20442589,
+        res:genre-Q2484376,
+        res:genre-Q63214877,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q1293513,
+        res:person-Q6390767,
+        res:person-Q7363558 ;
+    dbo:productionCompany res:company-Q891732 ;
+    dbo:runtime 7.08e+03 ;
+    dbo:starring res:person-Q114179,
+        res:person-Q1163293,
+        res:person-Q1366460,
+        res:person-Q1421128,
+        res:person-Q19631403,
+        res:person-Q23306199,
+        res:person-Q235725,
+        res:person-Q266313,
+        res:person-Q2903297,
+        res:person-Q313009,
+        res:person-Q318292,
+        res:person-Q3500828,
+        res:person-Q3783517,
+        res:person-Q41351,
+        res:person-Q431356,
+        res:person-Q433520,
+        res:person-Q459933,
+        res:person-Q4653820,
+        res:person-Q4682002,
+        res:person-Q4961428,
+        res:person-Q5115321,
+        res:person-Q51511,
+        res:person-Q5364564,
+        res:person-Q561689,
+        res:person-Q573332,
+        res:person-Q6390767,
+        res:person-Q65932,
+        res:person-Q687234,
+        res:person-Q943589 ;
+    dbo:writer res:person-Q721671 ;
+    owl:sameAs <http://dbpedia.org/resource/The_Silence_of_the_Lambs_(film)>,
+        <http://www.wikidata.org/entity/Q133654> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q133654> ;
+    ex:contributionOf res:contribution-Q133654-Q114179-actor,
+        res:contribution-Q133654-Q1163293-actor,
+        res:contribution-Q133654-Q1293513-producer,
+        res:contribution-Q133654-Q1366460-actor,
+        res:contribution-Q133654-Q1421128-actor,
+        res:contribution-Q133654-Q19631403-actor,
+        res:contribution-Q133654-Q23306199-actor,
+        res:contribution-Q133654-Q235725-actor,
+        res:contribution-Q133654-Q266313-actor,
+        res:contribution-Q133654-Q2903297-actor,
+        res:contribution-Q133654-Q313009-actor,
+        res:contribution-Q133654-Q318292-actor,
+        res:contribution-Q133654-Q3500828-actor,
+        res:contribution-Q133654-Q3783517-actor,
+        res:contribution-Q133654-Q41351-actor,
+        res:contribution-Q133654-Q431356-actor,
+        res:contribution-Q133654-Q433520-actor,
+        res:contribution-Q133654-Q459933-actor,
+        res:contribution-Q133654-Q4653820-actor,
+        res:contribution-Q133654-Q4682002-actor,
+        res:contribution-Q133654-Q48987-director,
+        res:contribution-Q133654-Q4961428-actor,
+        res:contribution-Q133654-Q5115321-actor,
+        res:contribution-Q133654-Q51511-actor,
+        res:contribution-Q133654-Q5364564-actor,
+        res:contribution-Q133654-Q561689-actor,
+        res:contribution-Q133654-Q573332-actor,
+        res:contribution-Q133654-Q6390767-actor,
+        res:contribution-Q133654-Q6390767-producer,
+        res:contribution-Q133654-Q65932-actor,
+        res:contribution-Q133654-Q687234-actor,
+        res:contribution-Q133654-Q721671-writer,
+        res:contribution-Q133654-Q7363558-producer,
+        res:contribution-Q133654-Q943589-actor ;
+    ex:releaseYear 1991 ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9,
+        res:source-c11540fa3bdf45d9df424841 .
+

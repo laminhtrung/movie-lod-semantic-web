@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q1607467 a dbo:Person ;
+    rdfs:label "Henryk Bista"@en ;
+    dbo:award res:award-Q15715250,
+        res:award-Q21948568,
+        res:award-Q21954203,
+        res:award-Q21954284,
+        res:award-Q4026808,
+        res:award-Q6805081 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607467> ;
+    ex:hasContribution res:contribution-Q483941-Q1607467-actor ;
+    ex:sourceSnapshot res:source-663206da4be1168eca278e08 .
+

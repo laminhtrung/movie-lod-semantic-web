@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "language": "Vietnamese",
+  "ontology_version": "3.0.0",
+  "owl_sha256": "c75fb9caad895cbc18ba316e4bfb7bc1be1ef7f3701ff214276a1a21acc4eecd",
+  "canonical_owl_unchanged": true,
+  "mp4_included": false,
+  "examples": {
+    "nolan_films": {
+      "asserted": 8,
+      "reasoned": 8
+    },
+    "writer_directors": {
+      "asserted": 0,
+      "reasoned": 10
+    },
+    "contributed_to": {
+      "asserted": 0,
+      "reasoned": 8
+    },
+    "nolan_min3": {
+      "asserted": false,
+      "reasoned": true
+    },
+    "query27_rows": 1261
+  },
+  "pdf_pages": 26,
+  "toc_pages": {
+    "1. Bắt đầu từ câu hỏi nghiên cứu": 3,
+    "2. Bức tranh tổng thể của project": 4,
+    "3. Các khái niệm nền: RDF, IRI và literal": 4,
+    "4. Ontology, knowledge graph, class và individual": 6,
+    "5. Vì sao reuse DBpedia?": 7,
+    "6. Dữ liệu thực tế và cách đọc các con số": 8,
+    "7. Contribution: phần mô hình hóa quan trọng nhất": 9,
+    "8. Đọc object property và các tiên đề quan hệ": 11,
+    "9. Đọc OWL restriction và equivalent class": 12,
+    "10. Reasoner, thế giới mở và cardinality": 13,
+    "11. SPARQL: đặt câu hỏi trên đúng graph": 16,
+    "12. Thực hành trong Protégé": 18,
+    "13. Linked Data, identity và provenance": 20,
+    "14. Các trường hợp nên dùng để bảo vệ bài": 20,
+    "15. Câu hỏi ôn tập và trả lời ngắn": 21,
+    "16. Tự đánh giá đã hiểu project chưa": 22,
+    "Phụ lục A. Các file cần đọc và vai trò": 23,
+    "Phụ lục B. Chạy query bản mới bằng Python": 24,
+    "Phụ lục C. Thư mục minh chứng và phạm vi tái lập": 25,
+    "Tài liệu tham khảo để học thêm": 25
+  },
+  "authored_diagrams": 3,
+  "diagram_note": "Conceptual illustrations derived from real facts and axioms, not app/Protege screenshots",
+  "artifacts": {
+    "docs/Huong_dan_doc_hieu_project.md": "e394e7cd5316bc0e05ac01ab3cba5d68ab11b2ce6825e5eaeedbe23513eaaa85",
+    "docs/Huong_dan_doc_hieu_project.html": "602e2348591996f3e6a3b22487cf9d0ba4fb695b1776943ec54bca83a6876942",
+    "docs/Huong_dan_doc_hieu_project.docx": "c82c72626d341772c6b8ca94ff8b00ff3ccb3b53acad22f9e40b07bc7c6f2b0e",
+    "docs/Huong_dan_doc_hieu_project.pdf": "e1f72e25c9f7b6be41245f5c77fd8fda514ad6b2cd3a748e2114c7b58729aea7",
+    "docs/guide_images/01_pipeline.png": "09382075c1d831b39935090d63d663d60a52e2cfd209d78812f90eddfd4d1453",
+    "docs/guide_images/02_contribution.png": "8a6edc04525df2a846f1ccf30c56ba8aeb1d8ed943509fd6c47ef05d9071e6be",
+    "docs/guide_images/03_reasoning.png": "994d7c94321ce78cda44ac215dc577a8d529cd1409ea55c8f978a25434969240"
+  }
+}

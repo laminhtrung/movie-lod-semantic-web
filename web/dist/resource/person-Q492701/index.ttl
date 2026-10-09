@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q492701 a dbo:Person ;
+    rdfs:label "Choi Woo-shik"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q492701> ;
+    ex:hasContribution res:contribution-Q61448040-Q492701-actor ;
+    ex:sourceSnapshot res:source-da3b5f106516c6082cf64a1b .
+

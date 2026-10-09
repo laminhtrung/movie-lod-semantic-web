@@ -1,0 +1,24 @@
+................                                                         [100%]
+=============================== warnings summary ===============================
+../movie_lod_complete/.venv/lib/python3.9/site-packages/rdflib/graph.py:2508
+  /Users/gnexla/master_DS/Semantic_web/project/movie_lod_complete/.venv/lib/python3.9/site-packages/rdflib/graph.py:2508: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+    context = self.default_context
+
+../movie_lod_complete/.venv/lib/python3.9/site-packages/rdflib/plugins/parsers/trig.py:155
+  /Users/gnexla/master_DS/Semantic_web/project/movie_lod_complete/.venv/lib/python3.9/site-packages/rdflib/plugins/parsers/trig.py:155: DeprecationWarning: ConjunctiveGraph is deprecated, use Dataset instead.
+    conj_graph = ConjunctiveGraph(store=graph.store, identifier=graph.identifier)
+
+../movie_lod_complete/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35
+  /Users/gnexla/master_DS/Semantic_web/project/movie_lod_complete/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+    warnings.warn(
+
+tests/test_application.py::test_query_modes_return_genuine_before_after_membership
+  /Users/gnexla/master_DS/Semantic_web/project/movie_lod_complete/.venv/lib/python3.9/site-packages/rdflib/graph.py:1721: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+    query_graph = self.default_context.identifier
+
+tests/test_ontology.py::test_primary_exports_are_synchronized_and_hermit_safe
+  /Users/gnexla/master_DS/Semantic_web/project/movie_lod_complete/.venv/lib/python3.9/site-packages/rdflib/plugins/parsers/jsonld.py:159: DeprecationWarning: ConjunctiveGraph is deprecated, use Dataset instead.
+    conj_sink = ConjunctiveGraph(store=sink.store, identifier=sink.identifier)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+16 passed, 5 warnings in 111.93s (0:01:51)

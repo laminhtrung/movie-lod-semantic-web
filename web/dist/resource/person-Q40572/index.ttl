@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q40572 a dbo:Person ;
+    rdfs:label "Heath Ledger"@en ;
+    dbo:award res:award-Q1062026,
+        res:award-Q106291,
+        res:award-Q1258647,
+        res:award-Q1260789,
+        res:award-Q548389,
+        res:award-Q723830 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q40572> ;
+    ex:hasContribution res:contribution-Q163872-Q40572-actor ;
+    ex:sourceSnapshot res:source-9e94454ce34a83ba6f3dd0b6 .
+

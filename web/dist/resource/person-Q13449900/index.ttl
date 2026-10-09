@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q13449900 a dbo:Person ;
+    rdfs:label "Jason Blum"@en ;
+    dbo:award res:award-Q24895051,
+        res:award-Q7243506 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q13449900> ;
+    ex:hasContribution res:contribution-Q15648198-Q13449900-producer ;
+    ex:sourceSnapshot res:source-d575e89ee6f63a14842d22cf .
+

@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q242951 a dbo:Person ;
+    rdfs:label "Emma Thomas"@en ;
+    dbo:award res:award-Q102427 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q242951> ;
+    ex:hasContribution res:contribution-Q13417189-Q242951-producer,
+        res:contribution-Q163872-Q242951-producer,
+        res:contribution-Q166262-Q242951-producer,
+        res:contribution-Q21935651-Q242951-producer,
+        res:contribution-Q25188-Q242951-producer,
+        res:contribution-Q46551-Q242951-producer,
+        res:contribution-Q63985561-Q242951-producer ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

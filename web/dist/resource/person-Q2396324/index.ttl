@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q2396324 a dbo:Person ;
+    rdfs:label "David Giler"@en ;
+    dbo:award res:award-Q3414212 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2396324> ;
+    ex:hasContribution res:contribution-Q103569-Q2396324-producer ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

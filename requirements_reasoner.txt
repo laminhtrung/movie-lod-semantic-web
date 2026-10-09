@@ -1,0 +1,2 @@
+# Optional CLI reasoner checks; requires Java 8+.
+owlready2==0.49

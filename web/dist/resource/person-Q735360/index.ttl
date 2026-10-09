@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q735360 a dbo:Person ;
+    rdfs:label "Giorgio Cantarini"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q735360> ;
+    ex:hasContribution res:contribution-Q128518-Q735360-actor ;
+    ex:sourceSnapshot res:source-b5f24e75cf7a988a6c070475 .
+

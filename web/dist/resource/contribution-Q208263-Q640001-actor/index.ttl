@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q208263-Q640001-actor a ex:Contribution ;
+    rdfs:label "The Green Mile — actor — Dabbs Greer" ;
+    ex:contributionBy res:person-Q640001 ;
+    ex:contributionTo res:film-Q208263 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

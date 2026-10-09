@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Pulp_Fiction.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:57.536965+00:00",
+  "sha256": "918dad9e995eae829e9881e1bb1ebb7a36c9f14bb15a72a7c3b9bc1e55c9ee2e",
+  "path": "data/raw/8ec416f26e961f9f23c2df23.json",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&languages=en&ids=Q973829%7CQ97474308%7CQ977915%7CQ978420%7CQ981030%7CQ989439%7CQ989442%7CQ989445%7CQ989447%7CQ989449%7CQ989453%7CQ99212276&props=labels%7Cdescriptions",
+  "provider": "Wikidata",
+  "retrieved_at": "2026-10-07T15:00:34.049427+00:00",
+  "sha256": "2e03a262c96a36d048623d7c11490186330d097915eae0a8cde983e8d101ca79",
+  "path": "data/raw/8750baa2abfe2f1c727b76a7.json",
+  "http_status": 200
+}

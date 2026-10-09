@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q184768-Q245808-actor a ex:Contribution ;
+    rdfs:label "The Godfather Part II — actor — Roman Coppola" ;
+    ex:contributionBy res:person-Q245808 ;
+    ex:contributionTo res:film-Q184768 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

@@ -1,0 +1,137 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q42047 a dbo:Film ;
+    rdfs:label "Goodfellas"@en ;
+    dbo:award res:award-Q106291,
+        res:award-Q1966965 ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q41148 ;
+    dbo:genre res:genre-Q109733630,
+        res:genre-Q11304653,
+        res:genre-Q113485322,
+        res:genre-Q116514801,
+        res:genre-Q130232,
+        res:genre-Q17013749,
+        res:genre-Q19367312,
+        res:genre-Q2484376,
+        res:genre-Q542475,
+        res:genre-Q645928,
+        res:genre-Q7444356,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q950428 ;
+    dbo:productionCompany res:company-Q126399 ;
+    dbo:runtime 8.76e+03 ;
+    dbo:starring res:person-Q1066037,
+        res:person-Q111549296,
+        res:person-Q111549302,
+        res:person-Q111549303,
+        res:person-Q1334725,
+        res:person-Q1369720,
+        res:person-Q1373450,
+        res:person-Q15040582,
+        res:person-Q16104953,
+        res:person-Q172678,
+        res:person-Q1744181,
+        res:person-Q17490321,
+        res:person-Q17581458,
+        res:person-Q2012197,
+        res:person-Q20178,
+        res:person-Q211280,
+        res:person-Q229319,
+        res:person-Q238671,
+        res:person-Q2442701,
+        res:person-Q2586583,
+        res:person-Q2594868,
+        res:person-Q2660468,
+        res:person-Q269669,
+        res:person-Q29585307,
+        res:person-Q3082480,
+        res:person-Q310190,
+        res:person-Q317358,
+        res:person-Q328409,
+        res:person-Q362353,
+        res:person-Q36949,
+        res:person-Q3764465,
+        res:person-Q3847733,
+        res:person-Q3854240,
+        res:person-Q3898080,
+        res:person-Q441713,
+        res:person-Q447892,
+        res:person-Q463407,
+        res:person-Q4931077,
+        res:person-Q4932564,
+        res:person-Q5115597,
+        res:person-Q516692,
+        res:person-Q5363720,
+        res:person-Q5486229,
+        res:person-Q726201,
+        res:person-Q764622,
+        res:person-Q813336,
+        res:person-Q937922 ;
+    dbo:writer res:person-Q41148,
+        res:person-Q450279 ;
+    owl:sameAs <http://dbpedia.org/resource/Goodfellas>,
+        <http://www.wikidata.org/entity/Q42047> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q42047> ;
+    ex:contributionOf res:contribution-Q42047-Q1066037-actor,
+        res:contribution-Q42047-Q111549296-actor,
+        res:contribution-Q42047-Q111549302-actor,
+        res:contribution-Q42047-Q111549303-actor,
+        res:contribution-Q42047-Q1334725-actor,
+        res:contribution-Q42047-Q1369720-actor,
+        res:contribution-Q42047-Q1373450-actor,
+        res:contribution-Q42047-Q15040582-actor,
+        res:contribution-Q42047-Q16104953-actor,
+        res:contribution-Q42047-Q172678-actor,
+        res:contribution-Q42047-Q1744181-actor,
+        res:contribution-Q42047-Q17490321-actor,
+        res:contribution-Q42047-Q17581458-actor,
+        res:contribution-Q42047-Q2012197-actor,
+        res:contribution-Q42047-Q20178-actor,
+        res:contribution-Q42047-Q211280-actor,
+        res:contribution-Q42047-Q229319-actor,
+        res:contribution-Q42047-Q238671-actor,
+        res:contribution-Q42047-Q2442701-actor,
+        res:contribution-Q42047-Q2586583-actor,
+        res:contribution-Q42047-Q2594868-actor,
+        res:contribution-Q42047-Q2660468-actor,
+        res:contribution-Q42047-Q269669-actor,
+        res:contribution-Q42047-Q29585307-actor,
+        res:contribution-Q42047-Q3082480-actor,
+        res:contribution-Q42047-Q310190-actor,
+        res:contribution-Q42047-Q317358-actor,
+        res:contribution-Q42047-Q328409-actor,
+        res:contribution-Q42047-Q362353-actor,
+        res:contribution-Q42047-Q36949-actor,
+        res:contribution-Q42047-Q3764465-actor,
+        res:contribution-Q42047-Q3847733-actor,
+        res:contribution-Q42047-Q3854240-actor,
+        res:contribution-Q42047-Q3898080-actor,
+        res:contribution-Q42047-Q41148-director,
+        res:contribution-Q42047-Q41148-writer,
+        res:contribution-Q42047-Q441713-actor,
+        res:contribution-Q42047-Q447892-actor,
+        res:contribution-Q42047-Q450279-writer,
+        res:contribution-Q42047-Q463407-actor,
+        res:contribution-Q42047-Q4931077-actor,
+        res:contribution-Q42047-Q4932564-actor,
+        res:contribution-Q42047-Q5115597-actor,
+        res:contribution-Q42047-Q516692-actor,
+        res:contribution-Q42047-Q5363720-actor,
+        res:contribution-Q42047-Q5486229-actor,
+        res:contribution-Q42047-Q726201-actor,
+        res:contribution-Q42047-Q764622-actor,
+        res:contribution-Q42047-Q813336-actor,
+        res:contribution-Q42047-Q937922-actor,
+        res:contribution-Q42047-Q950428-producer ;
+    ex:releaseYear 1990 ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9,
+        res:source-a4d0cf955f9ab00f6c81990a .
+

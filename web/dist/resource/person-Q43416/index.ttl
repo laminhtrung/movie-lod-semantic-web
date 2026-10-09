@@ -1,0 +1,17 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q43416 a dbo:Person ;
+    rdfs:label "Keanu Reeves"@en ;
+    dbo:award res:award-Q1161103,
+        res:award-Q17985761,
+        res:award-Q4220900,
+        res:award-Q4220901,
+        res:award-Q604370 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q43416> ;
+    ex:hasContribution res:contribution-Q83495-Q43416-actor ;
+    ex:sourceSnapshot res:source-9e94454ce34a83ba6f3dd0b6 .
+

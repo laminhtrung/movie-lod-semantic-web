@@ -1,0 +1,38 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q55400 a dbo:Person ;
+    rdfs:label "Hayao Miyazaki"@en ;
+    dbo:award res:award-Q1000104,
+        res:award-Q106800,
+        res:award-Q10916695,
+        res:award-Q13452528,
+        res:award-Q1471837,
+        res:award-Q154590,
+        res:award-Q20002163,
+        res:award-Q20649162,
+        res:award-Q2510955,
+        res:award-Q2545449,
+        res:award-Q2687578,
+        res:award-Q3241784,
+        res:award-Q36460247,
+        res:award-Q378567,
+        res:award-Q4769231,
+        res:award-Q4769236,
+        res:award-Q48961500,
+        res:award-Q51703129,
+        res:award-Q644077,
+        res:award-Q720434,
+        res:award-Q727328,
+        res:award-Q732997,
+        res:award-Q8025998,
+        res:award-Q85196003,
+        res:award-Q878902 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q55400> ;
+    ex:hasContribution res:contribution-Q155653-Q55400-director,
+        res:contribution-Q155653-Q55400-writer ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

@@ -1,0 +1,21 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q495980 a dbo:Person ;
+    rdfs:label "Bong Joon-ho"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q103360,
+        res:award-Q13452524,
+        res:award-Q179808,
+        res:award-Q41417,
+        res:award-Q496411,
+        res:award-Q5873868 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q495980> ;
+    ex:hasContribution res:contribution-Q61448040-Q495980-director,
+        res:contribution-Q61448040-Q495980-producer,
+        res:contribution-Q61448040-Q495980-writer ;
+    ex:sourceSnapshot res:source-da3b5f106516c6082cf64a1b .
+

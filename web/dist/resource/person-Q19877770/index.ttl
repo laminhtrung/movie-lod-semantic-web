@@ -1,0 +1,21 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q19877770 a dbo:Person ;
+    rdfs:label "Timothée Chalamet"@en ;
+    dbo:award res:award-Q125749682,
+        res:award-Q1538791,
+        res:award-Q181883,
+        res:award-Q18681625,
+        res:award-Q24904939,
+        res:award-Q2544859,
+        res:award-Q28402571,
+        res:award-Q654620,
+        res:award-Q922322 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q19877770> ;
+    ex:hasContribution res:contribution-Q13417189-Q19877770-actor ;
+    ex:sourceSnapshot res:source-8c53dd10280f0a6d0cab26d2 .
+

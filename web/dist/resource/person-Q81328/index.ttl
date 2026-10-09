@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q81328 a dbo:Person ;
+    rdfs:label "Harrison Ford"@en ;
+    dbo:award res:award-Q1150306,
+        res:award-Q17985761,
+        res:award-Q292044,
+        res:award-Q5020532,
+        res:award-Q640353,
+        res:award-Q727282,
+        res:award-Q8038186 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q81328> ;
+    ex:hasContribution res:contribution-Q184843-Q81328-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

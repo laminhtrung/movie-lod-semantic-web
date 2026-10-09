@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q6306950 a dbo:Person ;
+    rdfs:label "Julian Arahanga"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6306950> ;
+    ex:hasContribution res:contribution-Q83495-Q6306950-actor ;
+    ex:sourceSnapshot res:source-f4ca917e06a8755924ffd24a .
+

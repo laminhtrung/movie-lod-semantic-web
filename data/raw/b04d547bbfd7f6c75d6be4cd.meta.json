@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Godfather_Part_II.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:56.658618+00:00",
+  "sha256": "ceb513dddfb87c1cc7690b848fda0a61ace68a1b9f89df20cc351ef81626b402",
+  "path": "data/raw/b04d547bbfd7f6c75d6be4cd.json",
+  "http_status": 200
+}

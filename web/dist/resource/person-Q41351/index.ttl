@@ -1,0 +1,34 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q41351 a dbo:Person ;
+    rdfs:label "Jodie Foster"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q10294045,
+        res:award-Q103618,
+        res:award-Q105447,
+        res:award-Q10855271,
+        res:award-Q1129487,
+        res:award-Q1413741,
+        res:award-Q1713744,
+        res:award-Q17985761,
+        res:award-Q21595675,
+        res:award-Q2544851,
+        res:award-Q3404521,
+        res:award-Q463085,
+        res:award-Q4834543,
+        res:award-Q48781665,
+        res:award-Q5412594,
+        res:award-Q56085709,
+        res:award-Q640353,
+        res:award-Q673229,
+        res:award-Q687123,
+        res:award-Q787123,
+        res:award-Q822907 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q41351> ;
+    ex:hasContribution res:contribution-Q133654-Q41351-actor ;
+    ex:sourceSnapshot res:source-9e94454ce34a83ba6f3dd0b6 .
+

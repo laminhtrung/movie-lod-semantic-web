@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q295445 a dbo:Person ;
+    rdfs:label "Frank Darabont"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q295445> ;
+    ex:hasContribution res:contribution-Q172241-Q295445-director,
+        res:contribution-Q172241-Q295445-writer,
+        res:contribution-Q208263-Q295445-director,
+        res:contribution-Q208263-Q295445-producer,
+        res:contribution-Q208263-Q295445-writer ;
+    ex:sourceSnapshot res:source-24e2ab3470e472768aa25d26 .
+

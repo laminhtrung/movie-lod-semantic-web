@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Inception.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:52.952071+00:00",
+  "sha256": "514bd35dd455093667eb081f16532da02c5c89ca1d10f5197d1cfdd701434b68",
+  "path": "data/raw/cabf83fab4ab096c9d3721a7.json",
+  "http_status": 200
+}

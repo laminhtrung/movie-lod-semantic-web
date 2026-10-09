@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q61448040-Q24867395-actor a ex:Contribution ;
+    rdfs:label "Parasite — actor — Park Myung-hoon" ;
+    ex:contributionBy res:person-Q24867395 ;
+    ex:contributionTo res:film-Q61448040 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

@@ -1,0 +1,71 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q61448040 a dbo:Film ;
+    rdfs:label "Parasite"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q103360,
+        res:award-Q105304,
+        res:award-Q1524205,
+        res:award-Q179808,
+        res:award-Q2925687,
+        res:award-Q30632400,
+        res:award-Q387380,
+        res:award-Q41375,
+        res:award-Q41417,
+        res:award-Q4649838,
+        res:award-Q518675,
+        res:award-Q828289,
+        res:award-Q922263 ;
+    dbo:country res:country-Q884 ;
+    dbo:director res:person-Q495980 ;
+    dbo:genre res:genre-Q2484376,
+        res:genre-Q53094,
+        res:genre-Q859369 ;
+    dbo:language res:language-Q9176 ;
+    dbo:producer res:person-Q495980,
+        res:person-Q83945397 ;
+    dbo:productionCompany res:company-Q5012265,
+        res:company-Q86110392 ;
+    dbo:runtime 7.92e+03 ;
+    dbo:starring res:person-Q105706491,
+        res:person-Q16177322,
+        res:person-Q18700040,
+        res:person-Q21710318,
+        res:person-Q24867395,
+        res:person-Q484400,
+        res:person-Q489681,
+        res:person-Q492701,
+        res:person-Q5116234,
+        res:person-Q55733858,
+        res:person-Q626347 ;
+    dbo:writer res:person-Q495980,
+        res:person-Q81911860 ;
+    owl:sameAs <http://dbpedia.org/resource/Parasite_(2019_film)>,
+        <http://www.wikidata.org/entity/Q61448040> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q61448040> ;
+    ex:contributionOf res:contribution-Q61448040-Q105706491-actor,
+        res:contribution-Q61448040-Q16177322-actor,
+        res:contribution-Q61448040-Q18700040-actor,
+        res:contribution-Q61448040-Q21710318-actor,
+        res:contribution-Q61448040-Q24867395-actor,
+        res:contribution-Q61448040-Q484400-actor,
+        res:contribution-Q61448040-Q489681-actor,
+        res:contribution-Q61448040-Q492701-actor,
+        res:contribution-Q61448040-Q495980-director,
+        res:contribution-Q61448040-Q495980-producer,
+        res:contribution-Q61448040-Q495980-writer,
+        res:contribution-Q61448040-Q5116234-actor,
+        res:contribution-Q61448040-Q55733858-actor,
+        res:contribution-Q61448040-Q626347-actor,
+        res:contribution-Q61448040-Q81911860-writer,
+        res:contribution-Q61448040-Q83945397-producer ;
+    ex:releaseYear 2019 ;
+    ex:sourceSnapshot res:source-4a04da5402675c256ada934c,
+        res:source-767abf09b55092603628beb7 .
+

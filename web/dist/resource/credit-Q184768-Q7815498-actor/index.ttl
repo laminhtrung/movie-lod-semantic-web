@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q184768-Q7815498-actor a ex:Credit ;
+    rdfs:label "The Godfather Part II — actor — Tom Dahlgren" ;
+    ex:inFilm res:film-Q184768 ;
+    ex:participant res:person-Q7815498 ;
+    ex:role ex:ActorRole ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

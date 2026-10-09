@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q3182047 a dbo:Person ;
+    rdfs:label "Anatoly Sagalevich"@en ;
+    dbo:award res:award-Q185493,
+        res:award-Q2525430,
+        res:award-Q654471,
+        res:award-Q960966 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3182047> ;
+    ex:hasContribution res:contribution-Q44578-Q3182047-actor ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

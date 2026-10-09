@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q603317 a dbo:Person ;
+    rdfs:label "Bill Irwin"@en ;
+    dbo:award res:award-Q1316544,
+        res:award-Q1445521,
+        res:award-Q1543268,
+        res:award-Q2899916 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q603317> ;
+    ex:hasContribution res:contribution-Q13417189-Q603317-actor ;
+    ex:sourceSnapshot res:source-f4ca917e06a8755924ffd24a .
+

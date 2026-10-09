@@ -1,0 +1,111 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q166262 a dbo:Film ;
+    rdfs:label "Batman Begins"@en ;
+    dbo:country res:country-Q145,
+        res:country-Q30 ;
+    dbo:director res:person-Q25191 ;
+    dbo:genre res:genre-Q130232,
+        res:genre-Q1535153,
+        res:genre-Q188473,
+        res:genre-Q19367312,
+        res:genre-Q2421031,
+        res:genre-Q319221,
+        res:genre-Q3745429,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q242951,
+        res:person-Q2740357,
+        res:person-Q521038 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q2924461,
+        res:company-Q621364,
+        res:company-Q984047 ;
+    dbo:runtime 8.4e+03 ;
+    dbo:starring res:person-Q1058562,
+        res:person-Q1108562,
+        res:person-Q123351,
+        res:person-Q1262715,
+        res:person-Q12858652,
+        res:person-Q1313592,
+        res:person-Q16149374,
+        res:person-Q1619100,
+        res:person-Q174346,
+        res:person-Q1859256,
+        res:person-Q202589,
+        res:person-Q211322,
+        res:person-Q211553,
+        res:person-Q2132927,
+        res:person-Q213574,
+        res:person-Q434291,
+        res:person-Q45772,
+        res:person-Q465981,
+        res:person-Q468915,
+        res:person-Q48337,
+        res:person-Q515044,
+        res:person-Q530578,
+        res:person-Q544038,
+        res:person-Q58444,
+        res:person-Q613029,
+        res:person-Q674451,
+        res:person-Q718382,
+        res:person-Q7609915,
+        res:person-Q7670520,
+        res:person-Q777260,
+        res:person-Q7817052,
+        res:person-Q83492,
+        res:person-Q933428 ;
+    dbo:writer res:person-Q25191,
+        res:person-Q352010 ;
+    owl:sameAs <http://dbpedia.org/resource/Batman_Begins>,
+        <http://www.wikidata.org/entity/Q166262> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q166262> ;
+    ex:contributionOf res:contribution-Q166262-Q1058562-actor,
+        res:contribution-Q166262-Q1108562-actor,
+        res:contribution-Q166262-Q123351-actor,
+        res:contribution-Q166262-Q1262715-actor,
+        res:contribution-Q166262-Q12858652-actor,
+        res:contribution-Q166262-Q1313592-actor,
+        res:contribution-Q166262-Q16149374-actor,
+        res:contribution-Q166262-Q1619100-actor,
+        res:contribution-Q166262-Q174346-actor,
+        res:contribution-Q166262-Q1859256-actor,
+        res:contribution-Q166262-Q202589-actor,
+        res:contribution-Q166262-Q211322-actor,
+        res:contribution-Q166262-Q211553-actor,
+        res:contribution-Q166262-Q2132927-actor,
+        res:contribution-Q166262-Q213574-actor,
+        res:contribution-Q166262-Q242951-producer,
+        res:contribution-Q166262-Q25191-director,
+        res:contribution-Q166262-Q25191-writer,
+        res:contribution-Q166262-Q2740357-producer,
+        res:contribution-Q166262-Q352010-writer,
+        res:contribution-Q166262-Q434291-actor,
+        res:contribution-Q166262-Q45772-actor,
+        res:contribution-Q166262-Q465981-actor,
+        res:contribution-Q166262-Q468915-actor,
+        res:contribution-Q166262-Q48337-actor,
+        res:contribution-Q166262-Q515044-actor,
+        res:contribution-Q166262-Q521038-producer,
+        res:contribution-Q166262-Q530578-actor,
+        res:contribution-Q166262-Q544038-actor,
+        res:contribution-Q166262-Q58444-actor,
+        res:contribution-Q166262-Q613029-actor,
+        res:contribution-Q166262-Q674451-actor,
+        res:contribution-Q166262-Q718382-actor,
+        res:contribution-Q166262-Q7609915-actor,
+        res:contribution-Q166262-Q7670520-actor,
+        res:contribution-Q166262-Q777260-actor,
+        res:contribution-Q166262-Q7817052-actor,
+        res:contribution-Q166262-Q83492-actor,
+        res:contribution-Q166262-Q933428-actor ;
+    ex:releaseYear 2005 ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c,
+        res:source-dd68be11edb49634d61ecba8 .
+

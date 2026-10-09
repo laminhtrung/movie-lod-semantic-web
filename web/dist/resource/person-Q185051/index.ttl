@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q185051 a dbo:Person ;
+    rdfs:label "Christopher Walken"@en ;
+    dbo:award res:award-Q106291,
+        res:award-Q1095395,
+        res:award-Q1131356,
+        res:award-Q1260789,
+        res:award-Q48781665,
+        res:award-Q548389 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q185051> ;
+    ex:hasContribution res:contribution-Q104123-Q185051-actor ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+

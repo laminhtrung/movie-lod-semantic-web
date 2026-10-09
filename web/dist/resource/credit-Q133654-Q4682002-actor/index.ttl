@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q133654-Q4682002-actor a ex:Credit ;
+    rdfs:label "The Silence of the Lambs — actor — Adelle Lutz" ;
+    ex:inFilm res:film-Q133654 ;
+    ex:participant res:person-Q4682002 ;
+    ex:role ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

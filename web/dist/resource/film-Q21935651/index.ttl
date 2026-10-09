@@ -1,0 +1,95 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q21935651 a dbo:Film ;
+    rdfs:label "Dunkirk"@en ;
+    dbo:award res:award-Q1966965,
+        res:award-Q281939,
+        res:award-Q488645,
+        res:award-Q830079 ;
+    dbo:country res:country-Q142,
+        res:country-Q145,
+        res:country-Q30,
+        res:country-Q55 ;
+    dbo:director res:person-Q25191 ;
+    dbo:genre res:genre-Q130232,
+        res:genre-Q17013749,
+        res:genre-Q369747 ;
+    dbo:language res:language-Q150,
+        res:language-Q1860,
+        res:language-Q188 ;
+    dbo:producer res:person-Q242951,
+        res:person-Q25191,
+        res:person-Q95817606 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q21116815,
+        res:company-Q2450848,
+        res:company-Q27646824,
+        res:company-Q29836837,
+        res:company-Q655067,
+        res:company-Q984047 ;
+    dbo:runtime 6.36e+03 ;
+    dbo:starring res:person-Q123351,
+        res:person-Q12858652,
+        res:person-Q17005758,
+        res:person-Q1945936,
+        res:person-Q200355,
+        res:person-Q202589,
+        res:person-Q208026,
+        res:person-Q22910218,
+        res:person-Q245880,
+        res:person-Q27535227,
+        res:person-Q27535240,
+        res:person-Q27758467,
+        res:person-Q28542230,
+        res:person-Q28915096,
+        res:person-Q324572,
+        res:person-Q33133445,
+        res:person-Q3626966,
+        res:person-Q374273,
+        res:person-Q5365734,
+        res:person-Q55294,
+        res:person-Q6113745,
+        res:person-Q717194,
+        res:person-Q888617 ;
+    dbo:writer res:person-Q25191 ;
+    owl:sameAs <http://dbpedia.org/resource/Dunkirk_(2017_film)>,
+        <http://www.wikidata.org/entity/Q21935651> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q21935651> ;
+    ex:contributionOf res:contribution-Q21935651-Q123351-actor,
+        res:contribution-Q21935651-Q12858652-actor,
+        res:contribution-Q21935651-Q17005758-actor,
+        res:contribution-Q21935651-Q1945936-actor,
+        res:contribution-Q21935651-Q200355-actor,
+        res:contribution-Q21935651-Q202589-actor,
+        res:contribution-Q21935651-Q208026-actor,
+        res:contribution-Q21935651-Q22910218-actor,
+        res:contribution-Q21935651-Q242951-producer,
+        res:contribution-Q21935651-Q245880-actor,
+        res:contribution-Q21935651-Q25191-director,
+        res:contribution-Q21935651-Q25191-producer,
+        res:contribution-Q21935651-Q25191-writer,
+        res:contribution-Q21935651-Q27535227-actor,
+        res:contribution-Q21935651-Q27535240-actor,
+        res:contribution-Q21935651-Q27758467-actor,
+        res:contribution-Q21935651-Q28542230-actor,
+        res:contribution-Q21935651-Q28915096-actor,
+        res:contribution-Q21935651-Q324572-actor,
+        res:contribution-Q21935651-Q33133445-actor,
+        res:contribution-Q21935651-Q3626966-actor,
+        res:contribution-Q21935651-Q374273-actor,
+        res:contribution-Q21935651-Q5365734-actor,
+        res:contribution-Q21935651-Q55294-actor,
+        res:contribution-Q21935651-Q6113745-actor,
+        res:contribution-Q21935651-Q717194-actor,
+        res:contribution-Q21935651-Q888617-actor,
+        res:contribution-Q21935651-Q95817606-producer ;
+    ex:releaseYear 2017 ;
+    ex:sourceSnapshot res:source-1baac09ed03ce36de65d716d,
+        res:source-56d8b57c83cb1ad3dc2d2e0c .
+

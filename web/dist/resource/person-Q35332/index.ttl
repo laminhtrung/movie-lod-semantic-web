@@ -1,0 +1,29 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q35332 a dbo:Person ;
+    rdfs:label "Brad Pitt"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q106291,
+        res:award-Q1258647,
+        res:award-Q139184,
+        res:award-Q1790281,
+        res:award-Q1967731,
+        res:award-Q2089923,
+        res:award-Q3077281,
+        res:award-Q518675,
+        res:award-Q548389,
+        res:award-Q5569066,
+        res:award-Q5569172,
+        res:award-Q604370,
+        res:award-Q723830,
+        res:award-Q894591,
+        res:award-Q922396 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q35332> ;
+    ex:hasContribution res:contribution-Q190050-Q35332-actor,
+        res:contribution-Q190908-Q35332-actor ;
+    ex:sourceSnapshot res:source-70350d2b565eee56f834c56a .
+

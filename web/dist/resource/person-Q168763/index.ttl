@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q168763 a dbo:Person ;
+    rdfs:label "Liv Tyler"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q168763> ;
+    ex:hasContribution res:contribution-Q127367-Q168763-actor,
+        res:contribution-Q131074-Q168763-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

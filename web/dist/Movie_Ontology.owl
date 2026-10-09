@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N3d8ec8c14ca74c4eaf916dae3406ffa1">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Actor"/>
+    <rdf:rest rdf:nodeID="Nd96bd470423b471ca3de0045eadb6881"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <rdfs:range rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2fa16a423e02484d96db1ac8ac8566e0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"/>
+    <owl:onClass rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na83ebd6481464d1ebe8e032ae56aa2ff">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdf:rest rdf:nodeID="N7df1a165f7964ea989eee57af821de81"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducerRole">
+    <rdf:type rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Producer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4c2341727f1649ab87e5fbb8ea1b0f91">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionFilm"/>
+    <rdf:rest rdf:nodeID="Nbc16eb1460594db3a0f47aed72e9f214"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sourceUrl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f9232f8088c40da8584d3645d1e2231">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectorRole"/>
+    <rdf:rest rdf:nodeID="N9e1106fd612c4dfa9eed39e3b51c9471"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DramaGenre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">DramaGenre</rdfs:label>
+    <rdfs:comment xml:lang="en">Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/MovieGenre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6abdbab8aa9f45179df03ec88a6b504a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectingContribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/ScreenWriter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ScreenWriter</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Writer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/starring">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Work"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Actor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ThreeCreditContributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ThreeCreditContributor</rdfs:label>
+    <rdfs:comment xml:lang="en">At least three distinct credit records; three different role fillers prove distinctness. Not exactly three roles or an exhaustive career description.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <owl:equivalentClass rdf:nodeID="Nc3ec8a21be1a4ddba336acaa8930f687"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Company">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Company</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a9d8eac8a2143b2bb751b8fe4c4993b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"/>
+    <owl:hasValue rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfaa9de9f7e5647c6b09ba4ddd991df8c">
+    <rdf:first rdf:nodeID="N24246635d8a848519fb9eadbb5ce81d6"/>
+    <rdf:rest rdf:nodeID="N44e37586852c4e419f37e3b1bf28c53f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3cd7d25d6c8648c6810873af229d2501">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <rdf:rest rdf:nodeID="Na1d72b8f74c34a55893ab65619551c4f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N94e0cf1da8c4498bb93c35b1d162d9e6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Ncf50bff0e9624d9680c090f6ded960c4"/>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/MovieDirector"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N49940b06dfaf4061a1652d8f1382e7e1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <owl:onClass rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne6b10d8ef8fb40ac9639dd92bccdb8c9">
+    <rdf:first rdf:nodeID="N94efc2f0388548dc89cf90d738565a2e"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActingContribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ActingContribution</rdfs:label>
+    <rdfs:comment xml:lang="en">Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <owl:equivalentClass rdf:nodeID="N26587c71dfe744cb9553824274014daa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7df1a165f7964ea989eee57af821de81">
+    <rdf:first rdf:nodeID="N163cd58d50f848a7bafcf3ee3577c4e7"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88e2de5f3c7e401d863a06e41d7e294a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <owl:onClass rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#MultiCreditContributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">MultiCreditContributor</rdfs:label>
+    <rdfs:comment xml:lang="en">At least two semantically distinct credit records. Different roles prove their distinctness; the name is shorthand and does not exclude repeated same-role credits.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <owl:equivalentClass rdf:nodeID="N32400ab5143e467f826bf9fa7b54f5d3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">SourceSnapshot</rdfs:label>
+    <rdfs:comment xml:lang="en">A retrieved response record, not a domain entity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N93a6e07f41ec42b686eeab4047c636e0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducingContribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#GenreCrossingFilm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">GenreCrossingFilm</rdfs:label>
+    <rdfs:comment xml:lang="en">Film carrying both action and drama genre memberships; this is not an unproved two-distinct-genre cardinality claim.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:equivalentClass rdf:nodeID="N9e9b0290eb204d7881dd86a333a24396"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Filmmaker</rdfs:label>
+    <rdfs:comment xml:lang="en">Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <owl:equivalentClass rdf:nodeID="N52d41e84963a4fc1bebd3ad3b5b61cf9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorFilmmaker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ActorFilmmaker</rdfs:label>
+    <rdfs:comment xml:lang="en">Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <owl:equivalentClass rdf:nodeID="Nc1c1143f06e344ea8d17e8fc512984e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/writer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Work"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N508aa5803e164de29b2bfdd967ef1a10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N1993484918984432a61ea2e88919acdd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#actedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Actor"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:inverseOf rdf:resource="http://dbpedia.org/ontology/starring"/>
+    <rdfs:subPropertyOf rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributedTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/MovieDirector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">MovieDirector</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc3ec8a21be1a4ddba336acaa8930f687">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N36f123c84ccd4a428086d20ec1126b8a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#retrievedAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N163cd58d50f848a7bafcf3ee3577c4e7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WritingContribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05137d0445574aa89d34ba6d7a96cb9d">
+    <rdf:first rdf:nodeID="Nd0de0d63709143e790791d9593f2f91e"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na03db55b6619496f8cf11bd85a15fe8b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://dbpedia.org/ontology/award"/>
+    <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/Award"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterRole">
+    <rdf:type rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Writer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e9b0290eb204d7881dd86a333a24396">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N31cdd45b51924fa8bdf2e641480d5c11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc1c1143f06e344ea8d17e8fc512984e2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N3d8ec8c14ca74c4eaf916dae3406ffa1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5d9df0169cfa4b6897601667d8339239">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/ScreenWriter"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd7033894a3d462da6e5e111e0c647f0">
+    <rdf:first rdf:nodeID="Ncba505bc389a4845a7b7f3edefd16b57"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N94efc2f0388548dc89cf90d738565a2e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nfaa9de9f7e5647c6b09ba4ddd991df8c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducingContribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ProducingContribution</rdfs:label>
+    <rdfs:comment xml:lang="en">Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <owl:equivalentClass rdf:nodeID="Nc8ebd8020f2c4ef5a3a45f9fc7bcadd9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9be6fb65dab942f8a50c6f99917fbb33">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <rdf:rest rdf:nodeID="Ndd7033894a3d462da6e5e111e0c647f0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionFilm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ActionFilm</rdfs:label>
+    <rdfs:comment xml:lang="en">Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:equivalentClass rdf:nodeID="N508aa5803e164de29b2bfdd967ef1a10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncf0b9dfd792a40278d201a42792d4c65">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionTo"/>
+    <owl:onClass rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncba505bc389a4845a7b7f3edefd16b57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"/>
+    <owl:hasValue rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdfs.org/ns/void#Dataset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse VoID dataset, remove ex:Dataset clone.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Writer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Writer</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N06c7e8af83e24a7abdefed901cb7e267">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <rdf:rest rdf:nodeID="N5545f933039f45598cf4a73870945054"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20dd4ec2de2c437c83a5b678c95378f7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nc5a5491795e44a29a22feff886381ff8"/>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Producer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N31cdd45b51924fa8bdf2e641480d5c11">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <rdf:rest rdf:nodeID="Na8555b9430d845568cf193100a3e30ab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/MovieGenre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">MovieGenre</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilmmaker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">AwardWinningFilmmaker</rdfs:label>
+    <rdfs:comment xml:lang="en">Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <owl:equivalentClass rdf:nodeID="N44a6f1a9da884996a2a297b4275b8572"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa61782c4a8e494e8232e1dee01fa179">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <rdf:rest rdf:nodeID="Ne729f10e571046579d1f3be7b2dc5b8f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Producer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Producer</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67380e47e93849888a448b2481cc77e7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WritingContribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f413a93ff5d497080acbf54b5edbacd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://dbpedia.org/ontology/genre"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DramaGenre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0de0d63709143e790791d9593f2f91e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://dbpedia.org/ontology/award"/>
+    <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/Award"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/award">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Award"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc5a5491795e44a29a22feff886381ff8">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdf:rest rdf:nodeID="Nd16541eb69bd43c8aaea58295f194d23"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sourceSnapshot">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Contribution</rdfs:label>
+    <rdfs:comment xml:lang="en">A local credit association with one person, film and role; not the person or film itself.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N171be3aa9a66430d88d9167d372c04b3"/>
+    <rdfs:subClassOf rdf:nodeID="Ncf0b9dfd792a40278d201a42792d4c65"/>
+    <rdfs:subClassOf rdf:nodeID="N2fa16a423e02484d96db1ac8ac8566e0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Language</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f53c33e07014b25a838bb5f3c422ca9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"/>
+    <owl:hasValue rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducerRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Organisation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Organisation</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:propertyChainAxiom rdf:nodeID="N06c7e8af83e24a7abdefed901cb7e267"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:inverseOf rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#sha256">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#SourceSnapshot"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd16541eb69bd43c8aaea58295f194d23">
+    <rdf:first rdf:nodeID="N93a6e07f41ec42b686eeab4047c636e0"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">AwardWinningFilm</rdfs:label>
+    <rdfs:comment xml:lang="en">Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:equivalentClass rdf:nodeID="Nf234bc6bbcd049e69f237ced0b2f0e2c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <rdfs:range rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24246635d8a848519fb9eadbb5ce81d6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectingContribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Artist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Artist</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36f123c84ccd4a428086d20ec1126b8a">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdf:rest rdf:nodeID="N44a26b7360024b11b16a88e8a896622e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdfs:range rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <owl:inverseOf rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningActionFilm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">AwardWinningActionFilm</rdfs:label>
+    <rdfs:comment xml:lang="en">Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:equivalentClass rdf:nodeID="N9b3aaccf7c18499b98a73a2655d75d7b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterDirector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">WriterDirector</rdfs:label>
+    <rdfs:comment xml:lang="en">A person with both directing and writing credits in this dataset; classification is never manually asserted.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <owl:equivalentClass rdf:nodeID="N000d837f833f4212a970d41e9b9cf941"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WritingContribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">WritingContribution</rdfs:label>
+    <rdfs:comment xml:lang="en">Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <owl:equivalentClass rdf:nodeID="N2f9d5c35fbb044b2bfd12edd0ea7d436"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ContributionRole</rdfs:label>
+    <rdfs:comment xml:lang="en">Local controlled role values, not subclasses of Person.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Work">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Work</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Film">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Film</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N44e37586852c4e419f37e3b1bf28c53f">
+    <rdf:first rdf:nodeID="N67380e47e93849888a448b2481cc77e7"/>
+    <rdf:rest rdf:nodeID="Nf58fb9cb78e0468283efadfc025bf90d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec95b631854d47b6bf54278419a95fdc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N94c865f0b57e46d38be103fe632a2ea6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#directed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <owl:inverseOf rdf:resource="http://dbpedia.org/ontology/director"/>
+    <rdfs:subPropertyOf rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributedTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#releaseYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectingContribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">DirectingContribution</rdfs:label>
+    <rdfs:comment xml:lang="en">Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <owl:equivalentClass rdf:nodeID="Nec95b631854d47b6bf54278419a95fdc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne20f820f1f5a4de0bbf086ca5afdce5e">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorRole"/>
+    <rdf:rest rdf:nodeID="N5f9232f8088c40da8584d3645d1e2231"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf234bc6bbcd049e69f237ced0b2f0e2c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N35fe793cdbae46c4a3c587225d5956b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3de77fc4c09c4e21941985ecf7d567de">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://dbpedia.org/ontology/genre"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N28e347bd8b3a410dae46dc972ec97b5a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasContribution"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducingContribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1993484918984432a61ea2e88919acdd">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <rdf:rest rdf:nodeID="N4fff11f6be004ab9831e06608f83f6b9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N171be3aa9a66430d88d9167d372c04b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionBy"/>
+    <owl:onClass rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Genre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Genre</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/genre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N60a5af5bcae94f89bba526a829bcbaa7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+    <owl:distinctMembers rdf:nodeID="Ne20f820f1f5a4de0bbf086ca5afdce5e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/productionCompany">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Work"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Company"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/producer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Work"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/runtime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Work"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66650e8a46594c99a57d783aa7d18dd3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://dbpedia.org/ontology/genre"/>
+    <owl:someValuesFrom rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N44a26b7360024b11b16a88e8a896622e">
+    <rdf:first rdf:nodeID="N49940b06dfaf4061a1652d8f1382e7e1"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N94c865f0b57e46d38be103fe632a2ea6">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <rdf:rest rdf:nodeID="Nfd0f033bf2074801ab68c620dfc0ac51"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Needee2ff78c2414e80c40e2882e97270">
+    <rdf:first rdf:nodeID="N6abdbab8aa9f45179df03ec88a6b504a"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N358bcfc5880f48bbbbcc1d05a1c79ff7">
+    <rdf:first rdf:nodeID="Na03db55b6619496f8cf11bd85a15fe8b"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectorRole">
+    <rdf:type rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Director</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N32400ab5143e467f826bf9fa7b54f5d3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nb2f8c3fb6bb54b98a052c1f22fa437c0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionInfo>3.0.0</owl:versionInfo>
+    <rdfs:label xml:lang="en">MovieLOD — DBpedia-based movie ontology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N52d41e84963a4fc1bebd3ad3b5b61cf9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nb429c34fa88d454bb9b1cc765a83e510"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb429c34fa88d454bb9b1cc765a83e510">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdf:rest rdf:nodeID="Ne6b10d8ef8fb40ac9639dd92bccdb8c9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbc16eb1460594db3a0f47aed72e9f214">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#AwardWinningFilm"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncf50bff0e9624d9680c090f6ded960c4">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdf:rest rdf:nodeID="Needee2ff78c2414e80c40e2882e97270"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4fff11f6be004ab9831e06608f83f6b9">
+    <rdf:first rdf:nodeID="N66650e8a46594c99a57d783aa7d18dd3"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2270cb9e1f44e8c9131c52396b3d36a">
+    <rdf:first rdf:nodeID="N88e2de5f3c7e401d863a06e41d7e294a"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActionGenre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ActionGenre</rdfs:label>
+    <rdfs:comment xml:lang="en">Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/MovieGenre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfe7bc52a0544d469ea5f2eaf0e67763">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Na83ebd6481464d1ebe8e032ae56aa2ff"/>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/ScreenWriter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ActorRole">
+    <rdf:type rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ContributionRole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f9d5c35fbb044b2bfd12edd0ea7d436">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Naa61782c4a8e494e8232e1dee01fa179"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Contribution"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na1d72b8f74c34a55893ab65619551c4f">
+    <rdf:first rdf:nodeID="N4f53c33e07014b25a838bb5f3c422ca9"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e1106fd612c4dfa9eed39e3b51c9471">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#WriterRole"/>
+    <rdf:rest rdf:nodeID="N3e1481f374de49b8bb439364fdc68f0f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N26587c71dfe744cb9553824274014daa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N9be6fb65dab942f8a50c6f99917fbb33"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b3aaccf7c18499b98a73a2655d75d7b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N4c2341727f1649ab87e5fbb8ea1b0f91"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35fe793cdbae46c4a3c587225d5956b2">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <rdf:rest rdf:nodeID="N358bcfc5880f48bbbbcc1d05a1c79ff7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf58fb9cb78e0468283efadfc025bf90d">
+    <rdf:first rdf:nodeID="N28e347bd8b3a410dae46dc972ec97b5a"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Agent</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8555b9430d845568cf193100a3e30ab">
+    <rdf:first rdf:nodeID="N3de77fc4c09c4e21941985ecf7d567de"/>
+    <rdf:rest rdf:nodeID="Ned49e4b89dae42dc8b49c1952d579156"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5545f933039f45598cf4a73870945054">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#contributionTo"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Actor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N065102b17f8f4ce3bbea6ca4daf27dc9">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker"/>
+    <rdf:rest rdf:nodeID="N05137d0445574aa89d34ba6d7a96cb9d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#productionOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Company"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Work"/>
+    <owl:inverseOf rdf:resource="http://dbpedia.org/ontology/productionCompany"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne729f10e571046579d1f3be7b2dc5b8f">
+    <rdf:first rdf:nodeID="N9a9d8eac8a2143b2bb751b8fe4c4993b"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/director">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Film"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb129153634614614a84be625bbe00747">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/MovieDirector"/>
+    <rdf:rest rdf:nodeID="N5d9df0169cfa4b6897601667d8339239"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N399868e09df349f796b6fb5f7724faf2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#hasRole"/>
+    <owl:hasValue rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#DirectorRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N000d837f833f4212a970d41e9b9cf941">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nb129153634614614a84be625bbe00747"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc8ebd8020f2c4ef5a3a45f9fc7bcadd9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N3cd7d25d6c8648c6810873af229d2501"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Award">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Award</rdfs:label>
+    <rdfs:comment xml:lang="en">Reuse DBpedia meaning and its supported superclass; no local clone.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd96bd470423b471ca3de0045eadb6881">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#Filmmaker"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ned49e4b89dae42dc8b49c1952d579156">
+    <rdf:first rdf:nodeID="N9f413a93ff5d497080acbf54b5edbacd"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N44a6f1a9da884996a2a297b4275b8572">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N065102b17f8f4ce3bbea6ca4daf27dc9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd0f033bf2074801ab68c620dfc0ac51">
+    <rdf:first rdf:nodeID="N399868e09df349f796b6fb5f7724faf2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb2f8c3fb6bb54b98a052c1f22fa437c0">
+    <rdf:first rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdf:rest rdf:nodeID="Nf2270cb9e1f44e8c9131c52396b3d36a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e1481f374de49b8bb439364fdc68f0f">
+    <rdf:first rdf:resource="https://laminhtrung.github.io/movie-lod-semantic-web/ontology#ProducerRole"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+</rdf:RDF>

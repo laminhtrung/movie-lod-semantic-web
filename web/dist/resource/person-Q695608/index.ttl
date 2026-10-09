@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q695608 a dbo:Person ;
+    rdfs:label "Arnold Kopelson"@en ;
+    dbo:award res:award-Q102427 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q695608> ;
+    ex:hasContribution res:contribution-Q190908-Q695608-producer ;
+    ex:sourceSnapshot res:source-02a565dc091a4655cc178303 .
+

@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q128518-Q1252563-producer a ex:Contribution ;
+    rdfs:label "Gladiator — producer — Douglas Wick" ;
+    ex:contributionBy res:person-Q1252563 ;
+    ex:contributionTo res:film-Q128518 ;
+    ex:hasRole ex:ProducerRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q4992254 a dbo:Award ;
+    rdfs:label "Grammy Award for Best Music Film"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4992254> ;
+    ex:sourceSnapshot res:source-db039a90c2a01890f1927744 .
+

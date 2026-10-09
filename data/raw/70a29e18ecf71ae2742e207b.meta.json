@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/La_La_Land.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:05.570287+00:00",
+  "sha256": "39bf11b99eaea7b3ce3926934598c6437531f13cf1b6c71a5a880b4fa344818a",
+  "path": "data/raw/70a29e18ecf71ae2742e207b.json",
+  "http_status": 200
+}

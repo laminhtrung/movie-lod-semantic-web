@@ -1,0 +1,170 @@
+{
+  "url": "http://127.0.0.1:8017/movie-lod-semantic-web/?browser=1",
+  "checked_at": "2026-10-09T16:19:53.210080+00:00",
+  "checks": [
+    {
+      "query": "02.rq",
+      "status": "1 result · 0.01 s",
+      "passed": true
+    },
+    {
+      "query": "01.rq",
+      "status": "30 results · 0.03 s",
+      "passed": true
+    },
+    {
+      "query": "03.rq",
+      "status": "1 result · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "04.rq",
+      "status": "25 results · 0.24 s",
+      "passed": true
+    },
+    {
+      "query": "05.rq",
+      "status": "8 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "06.rq",
+      "status": "4 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "07.rq",
+      "status": "7 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "08.rq",
+      "status": "1 result · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "09.rq",
+      "status": "75 results · 1.04 s",
+      "passed": true
+    },
+    {
+      "query": "10.rq",
+      "status": "851 results · 2.27 s",
+      "passed": true
+    },
+    {
+      "query": "11.rq",
+      "status": "45 results · 0.06 s",
+      "passed": true
+    },
+    {
+      "query": "12.rq",
+      "status": "4 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "13.rq",
+      "status": "769 results · 1.94 s",
+      "passed": true
+    },
+    {
+      "query": "14.rq",
+      "status": "769 results · 1.37 s",
+      "passed": true
+    },
+    {
+      "query": "15.rq",
+      "status": "89 results · 0.14 s",
+      "passed": true
+    },
+    {
+      "query": "16.rq",
+      "status": "12 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "17.rq",
+      "status": "26 results · 0.02 s",
+      "passed": true
+    },
+    {
+      "query": "18.rq",
+      "status": "17 results · 0.01 s",
+      "passed": true
+    },
+    {
+      "query": "19.rq",
+      "status": "7 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "20.rq",
+      "status": "10 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "21.rq",
+      "status": "7 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "22.rq",
+      "status": "65 results · 0.10 s",
+      "passed": true
+    },
+    {
+      "query": "23.rq",
+      "status": "10 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "24.rq",
+      "status": "8 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "25.rq",
+      "status": "8 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "26.rq",
+      "status": "8 results · 0.00 s",
+      "passed": true
+    },
+    {
+      "query": "27.rq",
+      "status": "1261 results · 6.55 s",
+      "passed": true
+    },
+    {
+      "query": "CONSTRUCT",
+      "status": "3 results · 0.01 s",
+      "passed": true
+    },
+    {
+      "query": "DESCRIBE",
+      "status": "83 results · 0.01 s",
+      "passed": true
+    },
+    {
+      "query": "ASK min3 asserted",
+      "status": "False",
+      "passed": true
+    },
+    {
+      "query": "ASK min3 reasoned",
+      "status": "True",
+      "passed": true
+    }
+  ],
+  "invalid_query_recovery": true,
+  "uncaught_errors": [],
+  "dataset_responses": [
+    {
+      "url": "http://127.0.0.1:8017/movie-lod-semantic-web/data/movies.ttl",
+      "status": 200,
+      "content_type": "text/turtle"
+    }
+  ]
+}

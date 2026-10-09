@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "source_identity_links_preserved": true,
+  "film_count": 30,
+  "actual_property_chain_pairs": 965,
+  "queries_executed": 27,
+  "new_domain_inferred_classes": 7,
+  "min2": 17,
+  "min3": 7,
+  "no_unique_name_assumption": true,
+  "inferred_actor_without_overriding_dbpedia": true,
+  "runtime_seconds_conversion_verified": true,
+  "graph_digest_matches_actual_reasoner_input": true,
+  "mp4_removed_by_request": true
+}

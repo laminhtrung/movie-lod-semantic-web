@@ -1,0 +1,28 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q180338 a dbo:Person ;
+    rdfs:label "Christopher Lee"@en ;
+    dbo:award res:award-Q12201477,
+        res:award-Q13452531,
+        res:award-Q15715251,
+        res:award-Q2309070,
+        res:award-Q2354625,
+        res:award-Q24051551,
+        res:award-Q2701827,
+        res:award-Q2702037,
+        res:award-Q3910469,
+        res:award-Q524516,
+        res:award-Q64964808,
+        res:award-Q684444,
+        res:award-Q787148,
+        res:award-Q821717,
+        res:award-Q833163 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q180338> ;
+    ex:hasContribution res:contribution-Q127367-Q180338-actor,
+        res:contribution-Q131074-Q180338-actor ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+

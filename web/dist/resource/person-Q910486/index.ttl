@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q910486 a dbo:Person ;
+    rdfs:label "Bret McKenzie"@en ;
+    dbo:award res:award-Q112243,
+        res:award-Q19694514 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q910486> ;
+    ex:hasContribution res:contribution-Q127367-Q910486-actor,
+        res:contribution-Q131074-Q910486-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

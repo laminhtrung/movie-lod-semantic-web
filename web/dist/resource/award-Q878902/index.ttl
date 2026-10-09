@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q878902 a dbo:Award ;
+    rdfs:label "Golden Globe Award for Best Animated Feature Film"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q878902> ;
+    ex:sourceSnapshot res:source-843595b65d6fcdb3ca5c20e8 .
+

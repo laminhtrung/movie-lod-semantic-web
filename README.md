@@ -17,7 +17,7 @@ File đầy đủ để mở trong Protégé: [Movie_Knowledge_Graph.owl](ontolo
 | [Mô tả ontology](docs/Mo_ta_ontology.pdf) / [thiết kế chi tiết](docs/DBpedia_OWL_Design.html) | Class/property inventory, Manchester expressions, căn cứ nguồn và 27 queries |
 | [Kết quả reasoner](docs/Ket_qua_reasoner.pdf) | Kết quả trên đúng full OWL và giới hạn diễn giải |
 | [Checklist ảnh](docs/Checklist_anh_Protege.pdf) | Vị trí ảnh Protégé cần bổ sung; không phải ảnh đã chụp |
-| [Demo trực tiếp](docs/Kich_ban_video.pdf) | Kịch bản thao tác; giữ tên file để tương thích liên kết, không chứa video |
+| [Demo trực tiếp](docs/Kich_ban_demo.pdf) | Kịch bản thao tác trực tiếp; không chứa video |
 | [Đối chiếu yêu cầu](CHAM_DIEM.pdf) | Minh chứng kỹ thuật và các giới hạn; không phải điểm chính thức |
 | Gói bàn giao ZIP | Tạo ngoài repo bằng `src/sync_document_assets.py`; không commit ZIP vào Git |
 
@@ -55,14 +55,14 @@ make all JAVA=/path/to/java
 WriterDirector: 0 trước, 10 sau. Query 01–08 dùng source facts; 09–26 dùng inference; 27 dùng Dataset/TriG. Web tự chọn scope theo mẫu, đổi scope rồi bấm Run để so sánh. Endpoint Flask cục bộ `/sparql?mode=asserted|reasoned|dataset` đọc cùng exports. GitHub Pages phục vụ web tĩnh; truy vấn công khai chạy trong trình duyệt bằng Comunica, không có backend Flask công khai. Browser Comunica tải các graph đã tính; không chạy reasoner cho từng request.
 
 ```bash
-.venv/bin/python src/make_slides_video.py --slides-only
+.venv/bin/python src/make_slides.py --slides-only
 .venv/bin/python src/make_short_slides.py
 .venv/bin/python src/make_report.py
 .venv/bin/python src/make_docs.py
 .venv/bin/python src/sync_document_assets.py
 ```
 
-Các trình tạo tài liệu không cần video. Evidence hiện tại gồm 15 tests, 27 competency queries, browser/query checks và đối chiếu public RDF. Consistency không chứng minh factual accuracy hay completeness; source matching chưa có annotated ground truth. Lịch sử Git không được viết lại khi xoá MP4.
+Các trình tạo tài liệu không cần video. Evidence hiện tại gồm 16 tests, 27 competency queries, browser/query checks và đối chiếu public RDF. Consistency không chứng minh factual accuracy hay completeness; source matching chưa có annotated ground truth. Lịch sử Git không được viết lại khi xoá MP4.
 
 ## Repo và gói bàn giao
 

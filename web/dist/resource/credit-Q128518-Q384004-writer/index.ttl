@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q128518-Q384004-writer a ex:Credit ;
+    rdfs:label "Gladiator — writer — John Logan" ;
+    ex:inFilm res:film-Q128518 ;
+    ex:participant res:person-Q384004 ;
+    ex:role ex:WriterRole ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7 .
+

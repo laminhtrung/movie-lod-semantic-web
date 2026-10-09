@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q190908-Q505689-writer a ex:Contribution ;
+    rdfs:label "Seven — writer — Andrew Kevin Walker" ;
+    ex:contributionBy res:person-Q505689 ;
+    ex:contributionTo res:film-Q190908 ;
+    ex:hasRole ex:WriterRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

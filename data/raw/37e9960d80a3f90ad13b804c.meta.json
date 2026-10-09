@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Goodfellas.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:59.474211+00:00",
+  "sha256": "a4d0cf955f9ab00f6c81990a9dded7d59403eff21731b49e176a24104198e27d",
+  "path": "data/raw/37e9960d80a3f90ad13b804c.json",
+  "http_status": 200
+}

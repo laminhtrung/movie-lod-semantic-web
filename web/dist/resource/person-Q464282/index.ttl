@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q464282 a dbo:Person ;
+    rdfs:label "Bill Finger"@en ;
+    dbo:award res:award-Q108677027,
+        res:award-Q2687578,
+        res:award-Q36460247 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q464282> ;
+    ex:hasContribution res:contribution-Q163872-Q464282-writer ;
+    ex:sourceSnapshot res:source-784aba8cd47bf4430b0f4f9b .
+

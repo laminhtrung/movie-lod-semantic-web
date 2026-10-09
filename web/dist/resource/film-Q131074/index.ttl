@@ -1,0 +1,133 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q131074 a dbo:Film ;
+    rdfs:label "The Lord of the Rings: The Return of the King"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q103360,
+        res:award-Q1056240,
+        res:award-Q107258,
+        res:award-Q112243,
+        res:award-Q116775735,
+        res:award-Q17748520,
+        res:award-Q277536,
+        res:award-Q277751,
+        res:award-Q281939,
+        res:award-Q393686,
+        res:award-Q487136,
+        res:award-Q488651,
+        res:award-Q5211226,
+        res:award-Q830079 ;
+    dbo:country res:country-Q30,
+        res:country-Q664 ;
+    dbo:director res:person-Q4465 ;
+    dbo:genre res:genre-Q157394,
+        res:genre-Q319221 ;
+    dbo:language res:language-Q1860,
+        res:language-Q42365,
+        res:language-Q56383,
+        res:language-Q56437 ;
+    dbo:producer res:person-Q116861,
+        res:person-Q4465,
+        res:person-Q808917 ;
+    dbo:productionCompany res:company-Q3569323,
+        res:company-Q79202 ;
+    dbo:runtime 1.2e+04 ;
+    dbo:starring res:person-Q132430,
+        res:person-Q1388807,
+        res:person-Q152165,
+        res:person-Q15819828,
+        res:person-Q16455,
+        res:person-Q168763,
+        res:person-Q170510,
+        res:person-Q171363,
+        res:person-Q1779182,
+        res:person-Q180338,
+        res:person-Q189351,
+        res:person-Q191104,
+        res:person-Q2061535,
+        res:person-Q206922,
+        res:person-Q223091,
+        res:person-Q2426862,
+        res:person-Q2445092,
+        res:person-Q270878,
+        res:person-Q276425,
+        res:person-Q294975,
+        res:person-Q296328,
+        res:person-Q310515,
+        res:person-Q312399,
+        res:person-Q315118,
+        res:person-Q329734,
+        res:person-Q3330820,
+        res:person-Q339083,
+        res:person-Q3645492,
+        res:person-Q44467,
+        res:person-Q4465,
+        res:person-Q483771,
+        res:person-Q505940,
+        res:person-Q704314,
+        res:person-Q737607,
+        res:person-Q780432,
+        res:person-Q80966,
+        res:person-Q910486,
+        res:person-Q966678 ;
+    dbo:writer res:person-Q116854,
+        res:person-Q116861,
+        res:person-Q4465 ;
+    owl:sameAs <http://dbpedia.org/resource/The_Lord_of_the_Rings:_The_Return_of_the_King>,
+        <http://www.wikidata.org/entity/Q131074> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q131074> ;
+    ex:contributionOf res:contribution-Q131074-Q116854-writer,
+        res:contribution-Q131074-Q116861-producer,
+        res:contribution-Q131074-Q116861-writer,
+        res:contribution-Q131074-Q132430-actor,
+        res:contribution-Q131074-Q1388807-actor,
+        res:contribution-Q131074-Q152165-actor,
+        res:contribution-Q131074-Q15819828-actor,
+        res:contribution-Q131074-Q16455-actor,
+        res:contribution-Q131074-Q168763-actor,
+        res:contribution-Q131074-Q170510-actor,
+        res:contribution-Q131074-Q171363-actor,
+        res:contribution-Q131074-Q1779182-actor,
+        res:contribution-Q131074-Q180338-actor,
+        res:contribution-Q131074-Q189351-actor,
+        res:contribution-Q131074-Q191104-actor,
+        res:contribution-Q131074-Q2061535-actor,
+        res:contribution-Q131074-Q206922-actor,
+        res:contribution-Q131074-Q223091-actor,
+        res:contribution-Q131074-Q2426862-actor,
+        res:contribution-Q131074-Q2445092-actor,
+        res:contribution-Q131074-Q270878-actor,
+        res:contribution-Q131074-Q276425-actor,
+        res:contribution-Q131074-Q294975-actor,
+        res:contribution-Q131074-Q296328-actor,
+        res:contribution-Q131074-Q310515-actor,
+        res:contribution-Q131074-Q312399-actor,
+        res:contribution-Q131074-Q315118-actor,
+        res:contribution-Q131074-Q329734-actor,
+        res:contribution-Q131074-Q3330820-actor,
+        res:contribution-Q131074-Q339083-actor,
+        res:contribution-Q131074-Q3645492-actor,
+        res:contribution-Q131074-Q44467-actor,
+        res:contribution-Q131074-Q4465-actor,
+        res:contribution-Q131074-Q4465-director,
+        res:contribution-Q131074-Q4465-producer,
+        res:contribution-Q131074-Q4465-writer,
+        res:contribution-Q131074-Q483771-actor,
+        res:contribution-Q131074-Q505940-actor,
+        res:contribution-Q131074-Q704314-actor,
+        res:contribution-Q131074-Q737607-actor,
+        res:contribution-Q131074-Q780432-actor,
+        res:contribution-Q131074-Q808917-producer,
+        res:contribution-Q131074-Q80966-actor,
+        res:contribution-Q131074-Q910486-actor,
+        res:contribution-Q131074-Q966678-actor ;
+    ex:releaseYear 2003 ;
+    ex:sourceSnapshot res:source-10558aa20ca8607275e5aa7a,
+        res:source-767abf09b55092603628beb7 .
+

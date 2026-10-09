@@ -1,0 +1,20 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q170428 a dbo:Person ;
+    rdfs:label "Helena Bonham Carter"@en ;
+    dbo:award res:award-Q10354944,
+        res:award-Q12201477,
+        res:award-Q1502249,
+        res:award-Q2530270,
+        res:award-Q40024,
+        res:award-Q518675,
+        res:award-Q787123,
+        res:award-Q849771 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q170428> ;
+    ex:hasContribution res:contribution-Q190050-Q170428-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q483941-Q291141-writer a ex:Contribution ;
+    rdfs:label "Schindler's List — writer — Steven Zaillian" ;
+    ex:contributionBy res:person-Q291141 ;
+    ex:contributionTo res:film-Q483941 ;
+    ex:hasRole ex:WriterRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

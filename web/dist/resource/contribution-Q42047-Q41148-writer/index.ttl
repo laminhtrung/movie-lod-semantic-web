@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q42047-Q41148-writer a ex:Contribution ;
+    rdfs:label "Goodfellas — writer — Martin Scorsese" ;
+    ex:contributionBy res:person-Q41148 ;
+    ex:contributionTo res:film-Q42047 ;
+    ex:hasRole ex:WriterRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

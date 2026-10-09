@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-a4d0cf955f9ab00f6c81990a a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/Goodfellas.json> ;
+    ex:retrievedAt "2026-10-06T08:41:59.474+00:00"^^xsd:dateTime ;
+    ex:sha256 "a4d0cf955f9ab00f6c81990a9dded7d59403eff21731b49e176a24104198e27d" ;
+    ex:sourceUrl "https://dbpedia.org/data/Goodfellas.json"^^xsd:anyURI .
+

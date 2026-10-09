@@ -1,0 +1,37 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q3772 a dbo:Person ;
+    rdfs:label "Quentin Tarantino"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q105447,
+        res:award-Q113068,
+        res:award-Q13452531,
+        res:award-Q1789102,
+        res:award-Q179808,
+        res:award-Q17985761,
+        res:award-Q24051550,
+        res:award-Q25405526,
+        res:award-Q311836,
+        res:award-Q3404975,
+        res:award-Q3703457,
+        res:award-Q41375,
+        res:award-Q41417,
+        res:award-Q4743376,
+        res:award-Q5211225,
+        res:award-Q52382875,
+        res:award-Q670282,
+        res:award-Q716909,
+        res:award-Q727282,
+        res:award-Q833154,
+        res:award-Q849124,
+        res:award-Q849771 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3772> ;
+    ex:hasContribution res:contribution-Q104123-Q3772-actor,
+        res:contribution-Q104123-Q3772-director,
+        res:contribution-Q104123-Q3772-writer ;
+    ex:sourceSnapshot res:source-b5b73be0267261c9c9a2b7ca .
+

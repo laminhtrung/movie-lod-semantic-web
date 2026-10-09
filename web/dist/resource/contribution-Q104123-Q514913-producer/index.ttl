@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q104123-Q514913-producer a ex:Contribution ;
+    rdfs:label "Pulp Fiction — producer — Lawrence Bender" ;
+    ex:contributionBy res:person-Q514913 ;
+    ex:contributionTo res:film-Q104123 ;
+    ex:hasRole ex:ProducerRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

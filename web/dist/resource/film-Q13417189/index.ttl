@@ -1,0 +1,88 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q13417189 a dbo:Film ;
+    rdfs:label "Interstellar"@en ;
+    dbo:award res:award-Q1131772,
+        res:award-Q393686 ;
+    dbo:country res:country-Q145,
+        res:country-Q30 ;
+    dbo:director res:person-Q25191 ;
+    dbo:genre res:genre-Q104765957,
+        res:genre-Q130232,
+        res:genre-Q20443008,
+        res:genre-Q2484376,
+        res:genre-Q319221,
+        res:genre-Q471839,
+        res:genre-Q725757 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q242951,
+        res:person-Q25191 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q159846,
+        res:company-Q621364,
+        res:company-Q984047 ;
+    dbo:runtime 1.014e+04 ;
+    dbo:starring res:person-Q117415,
+        res:person-Q1174630,
+        res:person-Q123351,
+        res:person-Q175535,
+        res:person-Q188955,
+        res:person-Q19877770,
+        res:person-Q19981241,
+        res:person-Q211144,
+        res:person-Q218800,
+        res:person-Q229313,
+        res:person-Q235725,
+        res:person-Q2604240,
+        res:person-Q2636244,
+        res:person-Q270730,
+        res:person-Q277978,
+        res:person-Q311271,
+        res:person-Q368037,
+        res:person-Q451880,
+        res:person-Q461623,
+        res:person-Q5368467,
+        res:person-Q603317,
+        res:person-Q94913 ;
+    dbo:writer res:person-Q25191,
+        res:person-Q372788 ;
+    owl:sameAs <http://dbpedia.org/resource/Interstellar_(film)>,
+        <http://www.wikidata.org/entity/Q13417189> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q13417189> ;
+    ex:contributionOf res:contribution-Q13417189-Q117415-actor,
+        res:contribution-Q13417189-Q1174630-actor,
+        res:contribution-Q13417189-Q123351-actor,
+        res:contribution-Q13417189-Q175535-actor,
+        res:contribution-Q13417189-Q188955-actor,
+        res:contribution-Q13417189-Q19877770-actor,
+        res:contribution-Q13417189-Q19981241-actor,
+        res:contribution-Q13417189-Q211144-actor,
+        res:contribution-Q13417189-Q218800-actor,
+        res:contribution-Q13417189-Q229313-actor,
+        res:contribution-Q13417189-Q235725-actor,
+        res:contribution-Q13417189-Q242951-producer,
+        res:contribution-Q13417189-Q25191-director,
+        res:contribution-Q13417189-Q25191-producer,
+        res:contribution-Q13417189-Q25191-writer,
+        res:contribution-Q13417189-Q2604240-actor,
+        res:contribution-Q13417189-Q2636244-actor,
+        res:contribution-Q13417189-Q270730-actor,
+        res:contribution-Q13417189-Q277978-actor,
+        res:contribution-Q13417189-Q311271-actor,
+        res:contribution-Q13417189-Q368037-actor,
+        res:contribution-Q13417189-Q372788-writer,
+        res:contribution-Q13417189-Q451880-actor,
+        res:contribution-Q13417189-Q461623-actor,
+        res:contribution-Q13417189-Q5368467-actor,
+        res:contribution-Q13417189-Q603317-actor,
+        res:contribution-Q13417189-Q94913-actor ;
+    ex:releaseYear 2014 ;
+    ex:sourceSnapshot res:source-3b78c4260ce558e6273b2799,
+        res:source-56d8b57c83cb1ad3dc2d2e0c .
+

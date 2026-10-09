@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q362353 a dbo:Person ;
+    rdfs:label "Vincent Gallo"@en ;
+    dbo:award res:award-Q2089923 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q362353> ;
+    ex:hasContribution res:contribution-Q42047-Q362353-actor ;
+    ex:sourceSnapshot res:source-70350d2b565eee56f834c56a .
+

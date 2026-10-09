@@ -1,0 +1,8 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&languages=en&sites=enwiki&titles=Inception%7CInterstellar+%28film%29%7CThe+Dark+Knight%7CMemento+%28film%29%7CDunkirk+%282017+film%29%7CThe+Prestige%7CBatman+Begins%7CTenet%7CThe+Godfather%7CThe+Godfather+Part+II&props=labels%7Cdescriptions%7Csitelinks%7Cclaims",
+  "provider": "Wikidata",
+  "retrieved_at": "2026-10-06T08:43:21.455429+00:00",
+  "sha256": "56d8b57c83cb1ad3dc2d2e0cf47035801fede896cc0dca296a6e8ff1e0c246e1",
+  "path": "data/raw/1db5b6a369cc85140c7afe5e.json",
+  "http_status": 200
+}

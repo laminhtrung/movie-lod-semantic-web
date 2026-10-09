@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q313048 a dbo:Person ;
+    rdfs:label "Bob Kane"@en ;
+    dbo:award res:award-Q17985761,
+        res:award-Q2687578,
+        res:award-Q36460247 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q313048> ;
+    ex:hasContribution res:contribution-Q163872-Q313048-writer ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

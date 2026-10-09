@@ -1,0 +1,130 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q47703 a dbo:Film ;
+    rdfs:label "The Godfather"@en ;
+    dbo:award res:award-Q1011509,
+        res:award-Q102427,
+        res:award-Q103916,
+        res:award-Q107258,
+        res:award-Q1966965,
+        res:award-Q593098,
+        res:award-Q849124 ;
+    dbo:country res:country-Q30,
+        res:country-Q38 ;
+    dbo:director res:person-Q56094 ;
+    dbo:genre res:genre-Q109733630,
+        res:genre-Q11304653,
+        res:genre-Q113485322,
+        res:genre-Q116514801,
+        res:genre-Q130232,
+        res:genre-Q17013749,
+        res:genre-Q19367312,
+        res:genre-Q2484376,
+        res:genre-Q652256,
+        res:genre-Q7444356,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860,
+        res:language-Q652 ;
+    dbo:producer res:person-Q280490 ;
+    dbo:productionCompany res:company-Q159846,
+        res:company-Q17305146 ;
+    dbo:runtime 1.05e+04 ;
+    dbo:starring res:person-Q102642,
+        res:person-Q10390375,
+        res:person-Q108622,
+        res:person-Q1147417,
+        res:person-Q134317151,
+        res:person-Q1352034,
+        res:person-Q1622732,
+        res:person-Q16575211,
+        res:person-Q16745067,
+        res:person-Q171736,
+        res:person-Q193628,
+        res:person-Q19956031,
+        res:person-Q2300160,
+        res:person-Q245808,
+        res:person-Q29585307,
+        res:person-Q296177,
+        res:person-Q318220,
+        res:person-Q323166,
+        res:person-Q34012,
+        res:person-Q3694232,
+        res:person-Q376261,
+        res:person-Q380872,
+        res:person-Q3809461,
+        res:person-Q3811107,
+        res:person-Q41163,
+        res:person-Q464714,
+        res:person-Q524930,
+        res:person-Q554430,
+        res:person-Q558492,
+        res:person-Q56333356,
+        res:person-Q658614,
+        res:person-Q673482,
+        res:person-Q7298995,
+        res:person-Q734043,
+        res:person-Q752652,
+        res:person-Q786720,
+        res:person-Q946196,
+        res:person-Q95043,
+        res:person-Q960676,
+        res:person-Q975161 ;
+    dbo:writer res:person-Q182870,
+        res:person-Q56094 ;
+    owl:sameAs <http://dbpedia.org/resource/The_Godfather>,
+        <http://www.wikidata.org/entity/Q47703> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q47703> ;
+    ex:contributionOf res:contribution-Q47703-Q102642-actor,
+        res:contribution-Q47703-Q10390375-actor,
+        res:contribution-Q47703-Q108622-actor,
+        res:contribution-Q47703-Q1147417-actor,
+        res:contribution-Q47703-Q134317151-actor,
+        res:contribution-Q47703-Q1352034-actor,
+        res:contribution-Q47703-Q1622732-actor,
+        res:contribution-Q47703-Q16575211-actor,
+        res:contribution-Q47703-Q16745067-actor,
+        res:contribution-Q47703-Q171736-actor,
+        res:contribution-Q47703-Q182870-writer,
+        res:contribution-Q47703-Q193628-actor,
+        res:contribution-Q47703-Q19956031-actor,
+        res:contribution-Q47703-Q2300160-actor,
+        res:contribution-Q47703-Q245808-actor,
+        res:contribution-Q47703-Q280490-producer,
+        res:contribution-Q47703-Q29585307-actor,
+        res:contribution-Q47703-Q296177-actor,
+        res:contribution-Q47703-Q318220-actor,
+        res:contribution-Q47703-Q323166-actor,
+        res:contribution-Q47703-Q34012-actor,
+        res:contribution-Q47703-Q3694232-actor,
+        res:contribution-Q47703-Q376261-actor,
+        res:contribution-Q47703-Q380872-actor,
+        res:contribution-Q47703-Q3809461-actor,
+        res:contribution-Q47703-Q3811107-actor,
+        res:contribution-Q47703-Q41163-actor,
+        res:contribution-Q47703-Q464714-actor,
+        res:contribution-Q47703-Q524930-actor,
+        res:contribution-Q47703-Q554430-actor,
+        res:contribution-Q47703-Q558492-actor,
+        res:contribution-Q47703-Q56094-director,
+        res:contribution-Q47703-Q56094-writer,
+        res:contribution-Q47703-Q56333356-actor,
+        res:contribution-Q47703-Q658614-actor,
+        res:contribution-Q47703-Q673482-actor,
+        res:contribution-Q47703-Q7298995-actor,
+        res:contribution-Q47703-Q734043-actor,
+        res:contribution-Q47703-Q752652-actor,
+        res:contribution-Q47703-Q786720-actor,
+        res:contribution-Q47703-Q946196-actor,
+        res:contribution-Q47703-Q95043-actor,
+        res:contribution-Q47703-Q960676-actor,
+        res:contribution-Q47703-Q975161-actor ;
+    ex:releaseYear 1972 ;
+    ex:sourceSnapshot res:source-4bb48e073201b4e955b780ae,
+        res:source-56d8b57c83cb1ad3dc2d2e0c .
+

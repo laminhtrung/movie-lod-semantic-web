@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q208263-Q311169-actor a ex:Credit ;
+    rdfs:label "The Green Mile — actor — Graham Greene" ;
+    ex:inFilm res:film-Q208263 ;
+    ex:participant res:person-Q311169 ;
+    ex:role ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

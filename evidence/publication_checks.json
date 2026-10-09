@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-09T16:52:43.400762+07:00",
+  "authentication": "No cookies, credentials or signed-in browser session supplied",
+  "summary": {
+    "all_urls_public_http_200": true,
+    "all_rdf_graphs_match_local": true,
+    "open_license_present": true,
+    "film_iri_has_machine_readable_description": true,
+    "local_data_triples": 18595,
+    "local_schema_triples": 442,
+    "local_named_classes": 37,
+    "publication_complete": true
+  },
+  "checks": [
+    {
+      "path": "/",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/",
+      "http_status": 200,
+      "content_type": "text/html",
+      "sha256": "27de235fc233cd7a62b1d5bfe4a7a85d5d1004686f8050312469f22605711cf1"
+    },
+    {
+      "path": "/dataset",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/dataset",
+      "http_status": 200,
+      "content_type": "text/html",
+      "sha256": "e3ddb808a67706fbc9b9363e2f1db4e656d46e52e459ff4b03b16672ddcacc47"
+    },
+    {
+      "path": "/data/movies.ttl",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/data/movies.ttl",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "sha256": "d25bca8e8ca5b4b20ef2018132d7cfd6f7bceac92a83abf12b439fe3cea6a143",
+      "triples": 18595,
+      "matches_local_graph": true
+    },
+    {
+      "path": "/data/movies.jsonld",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/data/movies.jsonld",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "sha256": "72bdfc9b208810bf50a0b17b79a28c829e85470fad8fcdd30ce3c03d328ae24d",
+      "triples": 18595,
+      "matches_local_graph": true
+    },
+    {
+      "path": "/ontology.ttl",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/ontology.ttl",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "sha256": "bd2200927d70985d4c14702572651879cde045df1d0ba5b99a9639b4204ebaa4",
+      "triples": 442,
+      "matches_local_graph": true,
+      "named_classes": 37
+    },
+    {
+      "path": "/resource/film-Q25188",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q25188",
+      "http_status": 200,
+      "content_type": "text/html",
+      "sha256": "ca6d2f9d6e4e0d431d378a1aae23b3d3650cddba6fab592d3271c006d29b11e1",
+      "html_has_rdf_link": true
+    },
+    {
+      "path": "/resource/film-Q25188/index.ttl",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q25188/index.ttl",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "sha256": "130ca23233bb8b1f17d4ab2eabca26ec6c93c4a2ceb13327402dad8e125491d7",
+      "triples": 83,
+      "matches_local_graph": true
+    },
+    {
+      "path": "/LICENSE-DATA.txt",
+      "url": "https://laminhtrung.github.io/movie-lod-semantic-web/LICENSE-DATA.txt",
+      "http_status": 200,
+      "content_type": "text/plain",
+      "sha256": "547bfac7ae05d3b6910e1e702a7c4865c880654b7bcc7c9e5fa327cbf3dfb3a7",
+      "open_license_present": true
+    }
+  ]
+}

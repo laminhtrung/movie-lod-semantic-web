@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q361443 a dbo:Person ;
+    rdfs:label "Bud Yorkin"@en ;
+    dbo:award res:award-Q1044427,
+        res:award-Q1277961,
+        res:award-Q56085715 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q361443> ;
+    ex:hasContribution res:contribution-Q184843-Q361443-producer ;
+    ex:sourceSnapshot res:source-70350d2b565eee56f834c56a .
+

@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-27a4a609adeeb8f61665592b a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/Schindler%27s_List.json> ;
+    ex:retrievedAt "2026-10-06T08:42:00.972+00:00"^^xsd:dateTime ;
+    ex:sha256 "27a4a609adeeb8f61665592b896403f98842e49daced7a49065a144e12cbe668" ;
+    ex:sourceUrl "https://dbpedia.org/data/Schindler%27s_List.json"^^xsd:anyURI .
+

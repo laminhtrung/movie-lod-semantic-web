@@ -1,0 +1,49 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q41148 a dbo:Person ;
+    rdfs:label "Martin Scorsese"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q103360,
+        res:award-Q10855195,
+        res:award-Q10855216,
+        res:award-Q10855271,
+        res:award-Q1111310,
+        res:award-Q1128506,
+        res:award-Q122167901,
+        res:award-Q1337827,
+        res:award-Q13634272,
+        res:award-Q139184,
+        res:award-Q14539974,
+        res:award-Q154590,
+        res:award-Q1738793,
+        res:award-Q1789102,
+        res:award-Q179808,
+        res:award-Q17985761,
+        res:award-Q268670,
+        res:award-Q287062,
+        res:award-Q292044,
+        res:award-Q3101822,
+        res:award-Q3319305,
+        res:award-Q42309226,
+        res:award-Q4992254,
+        res:award-Q510175,
+        res:award-Q5211225,
+        res:award-Q52382875,
+        res:award-Q583972,
+        res:award-Q586356,
+        res:award-Q640353,
+        res:award-Q6542686,
+        res:award-Q727282,
+        res:award-Q739694,
+        res:award-Q787131,
+        res:award-Q787148,
+        res:award-Q849771 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q41148> ;
+    ex:hasContribution res:contribution-Q42047-Q41148-director,
+        res:contribution-Q42047-Q41148-writer ;
+    ex:sourceSnapshot res:source-9e94454ce34a83ba6f3dd0b6 .
+

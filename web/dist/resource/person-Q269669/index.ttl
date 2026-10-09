@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q269669 a dbo:Person ;
+    rdfs:label "Illeana Douglas"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q269669> ;
+    ex:hasContribution res:contribution-Q42047-Q269669-actor ;
+    ex:sourceSnapshot res:source-464bad042398ab7517cf2b19 .
+

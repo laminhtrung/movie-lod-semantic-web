@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q808917 a dbo:Person ;
+    rdfs:label "Barrie M. Osborne"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q3414212 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q808917> ;
+    ex:hasContribution res:contribution-Q127367-Q808917-producer,
+        res:contribution-Q131074-Q808917-producer ;
+    ex:sourceSnapshot res:source-b5f24e75cf7a988a6c070475 .
+

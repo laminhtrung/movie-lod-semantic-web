@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-66f865586a63256fe1fef0e2 a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/Titanic_%281997_film%29.json> ;
+    ex:retrievedAt "2026-10-06T08:42:01.900+00:00"^^xsd:dateTime ;
+    ex:sha256 "66f865586a63256fe1fef0e214f600a7854106f42979d2afbb69dfd87c1fde69" ;
+    ex:sourceUrl "https://dbpedia.org/data/Titanic_%281997_film%29.json"^^xsd:anyURI .
+

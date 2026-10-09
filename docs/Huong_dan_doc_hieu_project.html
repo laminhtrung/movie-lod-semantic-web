@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi-VN" xml:lang="vi-VN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MovieLOD — Hướng dẫn đọc hiểu project và kiến thức liên quan</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <style>body{font-family:"Times New Roman",serif;font-size:19px;line-height:1.65;color:#203442;max-width:1100px;margin:24px auto;padding:24px}h1,h2{color:#075a66;line-height:1.3}h1{margin-top:40px;border-bottom:2px solid #d7e9eb;padding-bottom:8px}a{color:#006e88}table{display:block;overflow-x:auto;width:100%;border-collapse:collapse;font-size:17px}th,td{padding:10px;border:1px solid #c6d7dc;text-align:left;vertical-align:top}th{background:#eaf4f5}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#edf3f5;padding:18px;line-height:1.5;font-size:14px}code{font-family:Menlo,monospace;font-size:.8em;overflow-wrap:anywhere}img{max-width:100%;height:auto}nav{background:#edf7f8;padding:20px}p{overflow-wrap:anywhere}</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">MovieLOD — Hướng dẫn đọc hiểu project và kiến thức
+liên quan</h1>
+<p class="subtitle">Từ dữ liệu phim đến ontology, OWL reasoning và
+SPARQL</p>
+<p class="date">Đối chiếu ontology 3.0.0 ngày 09/10/2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#bắt-đầu-từ-câu-hỏi-nghiên-cứu"
+id="toc-bắt-đầu-từ-câu-hỏi-nghiên-cứu">1. Bắt đầu từ câu hỏi nghiên
+cứu</a>
+<ul>
+<li><a href="#phạm-vi-tài-liệu-và-phiên-bản-cần-đọc"
+id="toc-phạm-vi-tài-liệu-và-phiên-bản-cần-đọc">1.1. Phạm vi tài liệu và
+phiên bản cần đọc</a></li>
+<li><a href="#ba-cách-đọc" id="toc-ba-cách-đọc">1.2. Ba cách
+đọc</a></li>
+</ul></li>
+<li><a href="#bức-tranh-tổng-thể-của-project"
+id="toc-bức-tranh-tổng-thể-của-project">2. Bức tranh tổng thể của
+project</a></li>
+<li><a href="#các-khái-niệm-nền-rdf-iri-và-literal"
+id="toc-các-khái-niệm-nền-rdf-iri-và-literal">3. Các khái niệm nền: RDF,
+IRI và literal</a>
+<ul>
+<li><a href="#đọc-một-triple-như-một-câu"
+id="toc-đọc-một-triple-như-một-câu">3.1. Đọc một triple như một
+câu</a></li>
+<li><a href="#prefix-là-viết-tắt-không-phải-một-thực-thể-mới"
+id="toc-prefix-là-viết-tắt-không-phải-một-thực-thể-mới">3.2. Prefix là
+viết tắt, không phải một thực thể mới</a></li>
+<li><a href="#cú-pháp-thường-gặp-khi-xem-turtle"
+id="toc-cú-pháp-thường-gặp-khi-xem-turtle">3.3. Cú pháp thường gặp khi
+xem Turtle</a></li>
+</ul></li>
+<li><a href="#ontology-knowledge-graph-class-và-individual"
+id="toc-ontology-knowledge-graph-class-và-individual">4. Ontology,
+knowledge graph, class và individual</a>
+<ul>
+<li><a href="#phân-biệt-bản-thiết-kế-với-dữ-liệu-cụ-thể"
+id="toc-phân-biệt-bản-thiết-kế-với-dữ-liệu-cụ-thể">4.1. Phân biệt bản
+thiết kế với dữ liệu cụ thể</a></li>
+<li><a href="#class-không-phải-individual"
+id="toc-class-không-phải-individual">4.2. Class không phải
+individual</a></li>
+<li><a href="#hierarchy-là-quan-hệ-bao-hàm"
+id="toc-hierarchy-là-quan-hệ-bao-hàm">4.3. Hierarchy là quan hệ bao
+hàm</a></li>
+</ul></li>
+<li><a href="#vì-sao-reuse-dbpedia" id="toc-vì-sao-reuse-dbpedia">5. Vì
+sao reuse DBpedia?</a>
+<ul>
+<li><a href="#reuse-nghĩa-là-dùng-đúng-iri-và-đúng-ngữ-nghĩa"
+id="toc-reuse-nghĩa-là-dùng-đúng-iri-và-đúng-ngữ-nghĩa">5.1. Reuse nghĩa
+là dùng đúng IRI và đúng ngữ nghĩa</a></li>
+<li><a href="#reuse-class-và-liên-kết-individual-là-hai-việc-khác-nhau"
+id="toc-reuse-class-và-liên-kết-individual-là-hai-việc-khác-nhau">5.2.
+Reuse class và liên kết individual là hai việc khác nhau</a></li>
+<li><a href="#khi-nào-tạo-extension-riêng"
+id="toc-khi-nào-tạo-extension-riêng">5.3. Khi nào tạo extension
+riêng?</a></li>
+</ul></li>
+<li><a href="#dữ-liệu-thực-tế-và-cách-đọc-các-con-số"
+id="toc-dữ-liệu-thực-tế-và-cách-đọc-các-con-số">6. Dữ liệu thực tế và
+cách đọc các con số</a>
+<ul>
+<li><a href="#các-trường-nguồn-làm-căn-cứ"
+id="toc-các-trường-nguồn-làm-căn-cứ">6.1. Các trường nguồn làm căn
+cứ</a></li>
+<li><a href="#quy-mô-của-file-owl-cuối"
+id="toc-quy-mô-của-file-owl-cuối">6.2. Quy mô của file OWL cuối</a></li>
+</ul></li>
+<li><a href="#contribution-phần-mô-hình-hóa-quan-trọng-nhất"
+id="toc-contribution-phần-mô-hình-hóa-quan-trọng-nhất">7. Contribution:
+phần mô hình hóa quan trọng nhất</a>
+<ul>
+<li><a href="#vì-sao-không-chỉ-dùng-một-cạnh-phimngười"
+id="toc-vì-sao-không-chỉ-dùng-một-cạnh-phimngười">7.1. Vì sao không chỉ
+dùng một cạnh phim–người?</a></li>
+<li><a href="#đọc-một-record-thực-tế"
+id="toc-đọc-một-record-thực-tế">7.2. Đọc một record thực tế</a></li>
+<li><a href="#person-role-và-credit-không-được-đánh-đồng"
+id="toc-person-role-và-credit-không-được-đánh-đồng">7.3. Person, role và
+credit không được đánh đồng</a></li>
+</ul></li>
+<li><a href="#đọc-object-property-và-các-tiên-đề-quan-hệ"
+id="toc-đọc-object-property-và-các-tiên-đề-quan-hệ">8. Đọc object
+property và các tiên đề quan hệ</a>
+<ul>
+<li><a
+href="#domainrange-là-tiên-đề-suy-luận-không-phải-form-validation"
+id="toc-domainrange-là-tiên-đề-suy-luận-không-phải-form-validation">8.1.
+Domain/range là tiên đề suy luận, không phải form validation</a></li>
+<li><a href="#inverse-đọc-cùng-quan-hệ-theo-chiều-ngược-lại"
+id="toc-inverse-đọc-cùng-quan-hệ-theo-chiều-ngược-lại">8.2. Inverse: đọc
+cùng quan hệ theo chiều ngược lại</a></li>
+<li><a href="#subproperty-quan-hệ-cụ-thể-nằm-trong-quan-hệ-rộng-hơn"
+id="toc-subproperty-quan-hệ-cụ-thể-nằm-trong-quan-hệ-rộng-hơn">8.3.
+Subproperty: quan hệ cụ thể nằm trong quan hệ rộng hơn</a></li>
+<li><a href="#property-chain-nối-các-quan-hệ-theo-đúng-thứ-tự"
+id="toc-property-chain-nối-các-quan-hệ-theo-đúng-thứ-tự">8.4. Property
+chain: nối các quan hệ theo đúng thứ tự</a></li>
+<li><a href="#functional-không-có-nghĩa-ô-này-bắt-buộc-điền"
+id="toc-functional-không-có-nghĩa-ô-này-bắt-buộc-điền">8.5. Functional
+không có nghĩa “ô này bắt buộc điền”</a></li>
+</ul></li>
+<li><a href="#đọc-owl-restriction-và-equivalent-class"
+id="toc-đọc-owl-restriction-và-equivalent-class">9. Đọc OWL restriction
+và equivalent class</a>
+<ul>
+<li><a href="#từ-khóa-và-chiều-kết-luận"
+id="toc-từ-khóa-và-chiều-kết-luận">9.1. Từ khóa và chiều kết
+luận</a></li>
+<li><a href="#filmmaker-hợp-của-ba-loại-credit"
+id="toc-filmmaker-hợp-của-ba-loại-credit">9.2. Filmmaker: hợp của ba
+loại credit</a></li>
+<li><a href="#writerdirector-giao-của-hai-nghề-được-suy-ra"
+id="toc-writerdirector-giao-của-hai-nghề-được-suy-ra">9.3.
+WriterDirector: giao của hai nghề được suy ra</a></li>
+<li><a href="#genrecrossingfilm-không-thay-thế-multigenrefilm"
+id="toc-genrecrossingfilm-không-thay-thế-multigenrefilm">9.4.
+GenreCrossingFilm không thay thế MultiGenreFilm</a></li>
+<li><a href="#class-dựa-trên-award-có-giới-hạn-gì"
+id="toc-class-dựa-trên-award-có-giới-hạn-gì">9.5. Class dựa trên award
+có giới hạn gì?</a></li>
+</ul></li>
+<li><a href="#reasoner-thế-giới-mở-và-cardinality"
+id="toc-reasoner-thế-giới-mở-và-cardinality">10. Reasoner, thế giới mở
+và cardinality</a>
+<ul>
+<li><a href="#reasoner-suy-ra-điều-đã-được-tiên-đề-cho-phép"
+id="toc-reasoner-suy-ra-điều-đã-được-tiên-đề-cho-phép">10.1. Reasoner
+suy ra điều đã được tiên đề cho phép</a></li>
+<li><a href="#asserted-khác-inferred"
+id="toc-asserted-khác-inferred">10.2. Asserted khác inferred</a></li>
+<li><a href="#open-world-assumption"
+id="toc-open-world-assumption">10.3. Open World Assumption</a></li>
+<li><a href="#owl-không-có-unique-name-assumption"
+id="toc-owl-không-có-unique-name-assumption">10.4. OWL không có Unique
+Name Assumption</a></li>
+<li><a href="#vì-sao-min-3-contribution-của-nolan-suy-ra-được"
+id="toc-vì-sao-min-3-contribution-của-nolan-suy-ra-được">10.5. Vì sao
+min 3 Contribution của Nolan suy ra được?</a></li>
+<li><a href="#kết-quả-classification-cần-nhớ"
+id="toc-kết-quả-classification-cần-nhớ">10.6. Kết quả classification cần
+nhớ</a></li>
+</ul></li>
+<li><a href="#sparql-đặt-câu-hỏi-trên-đúng-graph"
+id="toc-sparql-đặt-câu-hỏi-trên-đúng-graph">11. SPARQL: đặt câu hỏi trên
+đúng graph</a>
+<ul>
+<li><a href="#bộ-phận-chính-của-một-query"
+id="toc-bộ-phận-chính-của-một-query">11.1. Bộ phận chính của một
+query</a></li>
+<li><a href="#query-đọc-trực-tiếp-nolan-đạo-diễn-phim-nào"
+id="toc-query-đọc-trực-tiếp-nolan-đạo-diễn-phim-nào">11.2. Query đọc
+trực tiếp: Nolan đạo diễn phim nào?</a></li>
+<li><a href="#query-lớp-suy-luận-ai-là-writerdirector"
+id="toc-query-lớp-suy-luận-ai-là-writerdirector">11.3. Query lớp suy
+luận: ai là WriterDirector?</a></li>
+<li><a href="#kiểm-tra-riêng-nolan" id="toc-kiểm-tra-riêng-nolan">11.4.
+Kiểm tra riêng Nolan</a></li>
+<li><a href="#quan-hệ-qua-property-chain"
+id="toc-quan-hệ-qua-property-chain">11.5. Quan hệ qua property
+chain</a></li>
+<li><a href="#bộ-27-câu-hỏi-nằm-ở-đâu"
+id="toc-bộ-27-câu-hỏi-nằm-ở-đâu">11.6. Bộ 27 câu hỏi nằm ở đâu?</a></li>
+<li><a href="#tại-sao-website-trả-0-dù-hermit-có-kết-quả"
+id="toc-tại-sao-website-trả-0-dù-hermit-có-kết-quả">11.7. Tại sao
+website trả 0 dù HermiT có kết quả?</a></li>
+</ul></li>
+<li><a href="#thực-hành-trong-protégé"
+id="toc-thực-hành-trong-protégé">12. Thực hành trong Protégé</a>
+<ul>
+<li><a href="#mở-file-và-định-hướng"
+id="toc-mở-file-và-định-hướng">12.1. Mở file và định hướng</a></li>
+<li><a href="#chạy-reasoner-và-đọc-inferred-view"
+id="toc-chạy-reasoner-và-đọc-inferred-view">12.2. Chạy reasoner và đọc
+inferred view</a></li>
+<li><a href="#bốn-ảnh-chụp-hữu-ích-để-giải-thích-bài"
+id="toc-bốn-ảnh-chụp-hữu-ích-để-giải-thích-bài">12.3. Bốn ảnh chụp hữu
+ích để giải thích bài</a></li>
+<li><a href="#khi-gặp-lỗi-hoặc-thấy-kết-quả-trống"
+id="toc-khi-gặp-lỗi-hoặc-thấy-kết-quả-trống">12.4. Khi gặp lỗi hoặc thấy
+kết quả trống</a></li>
+</ul></li>
+<li><a href="#linked-data-identity-và-provenance"
+id="toc-linked-data-identity-và-provenance">13. Linked Data, identity và
+provenance</a>
+<ul>
+<li><a href="#vì-sao-cần-http-iri-và-liên-kết-ngoài"
+id="toc-vì-sao-cần-http-iri-và-liên-kết-ngoài">13.1. Vì sao cần HTTP IRI
+và liên kết ngoài?</a></li>
+<li><a href="#sameas-mạnh-hơn-có-liên-quan"
+id="toc-sameas-mạnh-hơn-có-liên-quan">13.2. sameAs mạnh hơn “có liên
+quan”</a></li>
+<li><a href="#sourcesnapshot-giúp-kiểm-tra-điều-gì"
+id="toc-sourcesnapshot-giúp-kiểm-tra-điều-gì">13.3. SourceSnapshot giúp
+kiểm tra điều gì?</a></li>
+</ul></li>
+<li><a href="#các-trường-hợp-nên-dùng-để-bảo-vệ-bài"
+id="toc-các-trường-hợp-nên-dùng-để-bảo-vệ-bài">14. Các trường hợp nên
+dùng để bảo vệ bài</a>
+<ul>
+<li><a href="#actor-suy-luận-dựa-vào-vocabulary-được-reuse"
+id="toc-actor-suy-luận-dựa-vào-vocabulary-được-reuse">14.1. Actor: suy
+luận dựa vào vocabulary được reuse</a></li>
+<li><a href="#filmmaker-đi-qua-credit-model"
+id="toc-filmmaker-đi-qua-credit-model">14.2. Filmmaker: đi qua credit
+model</a></li>
+<li><a href="#writerdirector-kết-hợp-hai-nghề"
+id="toc-writerdirector-kết-hợp-hai-nghề">14.3. WriterDirector: kết hợp
+hai nghề</a></li>
+<li><a
+href="#threecreditcontributor-cardinality-có-chứng-minh-distinctness"
+id="toc-threecreditcontributor-cardinality-có-chứng-minh-distinctness">14.4.
+ThreeCreditContributor: cardinality có chứng minh distinctness</a></li>
+<li><a href="#awardwinningactionfilm-kết-hợp-hai-nhánh-điều-kiện"
+id="toc-awardwinningactionfilm-kết-hợp-hai-nhánh-điều-kiện">14.5.
+AwardWinningActionFilm: kết hợp hai nhánh điều kiện</a></li>
+</ul></li>
+<li><a href="#câu-hỏi-ôn-tập-và-trả-lời-ngắn"
+id="toc-câu-hỏi-ôn-tập-và-trả-lời-ngắn">15. Câu hỏi ôn tập và trả lời
+ngắn</a></li>
+<li><a href="#tự-đánh-giá-đã-hiểu-project-chưa"
+id="toc-tự-đánh-giá-đã-hiểu-project-chưa">16. Tự đánh giá đã hiểu
+project chưa</a></li>
+<li><a href="#phụ-lục-a.-các-file-cần-đọc-và-vai-trò"
+id="toc-phụ-lục-a.-các-file-cần-đọc-và-vai-trò">Phụ lục A. Các file cần
+đọc và vai trò</a></li>
+<li><a href="#phụ-lục-b.-chạy-query-bản-mới-bằng-python"
+id="toc-phụ-lục-b.-chạy-query-bản-mới-bằng-python">Phụ lục B. Chạy query
+bản mới bằng Python</a></li>
+<li><a href="#phụ-lục-c.-thư-mục-minh-chứng-và-phạm-vi-tái-lập"
+id="toc-phụ-lục-c.-thư-mục-minh-chứng-và-phạm-vi-tái-lập">Phụ lục C. Thư
+mục minh chứng và phạm vi tái lập</a></li>
+<li><a href="#tài-liệu-tham-khảo-để-học-thêm"
+id="toc-tài-liệu-tham-khảo-để-học-thêm">Tài liệu tham khảo để học
+thêm</a>
+<ul>
+<li><a href="#hosting-github-pages"
+id="toc-hosting-github-pages">Hosting GitHub Pages</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="bắt-đầu-từ-câu-hỏi-nghiên-cứu">1. Bắt đầu từ câu hỏi nghiên
+cứu</h1>
+<p>Project dùng dữ liệu phim để trả lời hai loại câu hỏi. Loại thứ nhất
+đọc trực tiếp thông tin đã thu thập: Inception do ai đạo diễn, có diễn
+viên nào, được sản xuất ở đâu và dài bao nhiêu giây. Loại thứ hai hỏi
+kiến thức chưa được gán thành nhãn trong dữ liệu đầu vào: ai là
+Filmmaker, ai vừa là đạo diễn vừa là biên kịch, ai có ít nhất ba
+Contribution khác nhau, phim hành động nào đã nhận giải thưởng.</p>
+<p>Phần học thuật nằm ở việc mô tả rõ các khái niệm, tái sử dụng
+vocabulary chuẩn, định nghĩa điều kiện phân loại và kiểm tra những kết
+luận mà ontology cho phép suy ra. Website là một giao diện khai thác dữ
+liệu; nó không tự thay thế ontology hoặc reasoner.</p>
+<p><strong>Có thể giới thiệu project bằng đoạn sau:</strong> “MovieLOD
+xây dựng một knowledge graph từ dữ liệu phim đã thu thập. Chúng tôi
+reuse DBpedia cho các khái niệm phổ biến, bổ sung mô hình Contribution
+để biểu diễn vai trò của người tham gia, dùng OWL để suy luận kiến thức
+mới và dùng SPARQL để kiểm tra các câu hỏi năng lực.”</p>
+<h2 id="phạm-vi-tài-liệu-và-phiên-bản-cần-đọc">1.1. Phạm vi tài liệu và
+phiên bản cần đọc</h2>
+<p>Tài liệu này giải thích <strong>ontology 3.0.0 trong
+<code>ontology/Movie_Knowledge_Graph.owl</code></strong>. Đây là file
+đầy đủ để mở trong Protégé. File <code>Movie_Ontology.owl</code> chỉ
+chứa schema, nên mở riêng file đó sẽ không thấy đầy đủ các phim và
+người.</p>
+<p>Ontology, dataset ứng dụng, các scope truy vấn và tài liệu đều dùng
+bản 3.0.0. Bản cũ có ex:Actor hoặc ex:hasGenre đã được thay bằng
+dbo:Actor và dbo:genre. Bộ build hiện xuất lại model mới nhất. MP4 đã
+được xóa theo yêu cầu; minh chứng dùng ảnh, log và demo trực tiếp.</p>
+<h2 id="ba-cách-đọc">1.2. Ba cách đọc</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Mục tiêu</th>
+<th>Các phần nên đọc trước</th>
+<th>Sau khi đọc cần làm được</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hiểu để thuyết trình</td>
+<td>1–6, 8–10, 14</td>
+<td>Kể được dữ liệu → mô hình → quy tắc → kiến thức mới</td>
+</tr>
+<tr>
+<td>Tự kiểm tra trong Protégé</td>
+<td>3–10, 12</td>
+<td>Tìm đúng cá thể, đọc restriction và xem inferred types</td>
+</tr>
+<tr>
+<td>Hiểu truy vấn và mã xử lý</td>
+<td>7–8, 11, 13, phụ lục</td>
+<td>Chọn đúng graph, chạy query và phân biệt các công cụ</td>
+</tr>
+</tbody>
+</table>
+<h1 id="bức-tranh-tổng-thể-của-project">2. Bức tranh tổng thể của
+project</h1>
+<figure>
+<img src="guide_images/01_pipeline.png" style="width:15cm"
+alt="Hình 1. Luồng kiến thức của MovieLOD. Sơ đồ do tác giả tài liệu dựng, không phải ảnh chụp ứng dụng." />
+<figcaption aria-hidden="true">Hình 1. Luồng kiến thức của MovieLOD. Sơ
+đồ do tác giả tài liệu dựng, không phải ảnh chụp ứng dụng.</figcaption>
+</figure>
+<p>Các bước có vai trò khác nhau:</p>
+<ol type="1">
+<li><strong>Thu thập:</strong> lấy các claim và nhãn thực thể từ dữ liệu
+Wikidata đã crawl; sử dụng DBpedia để kiểm tra vocabulary và liên kết
+phim.</li>
+<li><strong>Chuẩn hóa:</strong> chọn giá trị theo chính sách rõ ràng,
+đổi đơn vị thời lượng, tạo IRI và ghi xuất xứ.</li>
+<li><strong>Mô hình hóa:</strong> biểu diễn phim, người, thể loại, giải
+thưởng, công ty và Contribution bằng RDF; định nghĩa schema bằng
+OWL.</li>
+<li><strong>Suy luận:</strong> dùng các tiên đề để suy ra membership và
+quan hệ. Reasoner không tự đọc Wikipedia để bổ sung các thông tin
+thiếu.</li>
+<li><strong>Truy vấn:</strong> SPARQL đặt câu hỏi trên graph đã chọn.
+Nếu graph chưa có hoặc chưa tính entailment, query về inferred class có
+thể trả 0.</li>
+</ol>
+<p><strong>Ví dụ xuyên suốt:</strong> nguồn có claim Nolan là đạo
+diễn/biên kịch/nhà sản xuất của Inception. Dữ liệu biểu diễn ba credit
+record với ba role. Ontology định nghĩa các loại Contribution và điều
+kiện Filmmaker. Reasoner suy ra Nolan thuộc Filmmaker, WriterDirector và
+ThreeCreditContributor; người đọc kiểm tra các type này bằng Protégé
+hoặc graph kết quả suy luận.</p>
+<h1 id="các-khái-niệm-nền-rdf-iri-và-literal">3. Các khái niệm nền: RDF,
+IRI và literal</h1>
+<h2 id="đọc-một-triple-như-một-câu">3.1. Đọc một triple như một câu</h2>
+<p>RDF biểu diễn thông tin bằng ba thành phần: subject, predicate,
+object. Object có thể là một thực thể hoặc một literal. IRI định danh
+đối tượng/quan hệ; literal biểu diễn giá trị như số hoặc chuỗi. Turtle
+và RDF/XML là hai cách ghi graph RDF ra file, không phải hai mô hình
+kiến thức khác nhau. <a href="https://www.w3.org/TR/rdf11-primer/">W3C
+RDF Primer</a></p>
+<p>Trong project, câu “Inception có đạo diễn là Christopher Nolan” được
+ghi:</p>
+<pre class="turtle"><code>res:film-Q25188 dbo:director res:person-Q25191 .</code></pre>
+<p>Đọc từ trái sang phải:</p>
+<table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Giá trị</th>
+<th>Nghĩa trong câu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subject</td>
+<td><code>res:film-Q25188</code></td>
+<td>Cá thể Inception</td>
+</tr>
+<tr>
+<td>Predicate</td>
+<td><code>dbo:director</code></td>
+<td>Quan hệ phim → đạo diễn</td>
+</tr>
+<tr>
+<td>Object</td>
+<td><code>res:person-Q25191</code></td>
+<td>Cá thể Christopher Nolan</td>
+</tr>
+</tbody>
+</table>
+<p>Câu về thời lượng có object là literal:</p>
+<pre class="turtle"><code>res:film-Q25188 dbo:runtime &quot;8880.0&quot;^^xsd:double .</code></pre>
+<p><code>8880.0</code> là giá trị; <code>xsd:double</code> là datatype.
+Trong OWL 3.0.0, đơn vị của <code>dbo:runtime</code> là
+<strong>giây</strong>, nên Inception có 8.880 giây, tương đương 148
+phút. Không so trực tiếp con số 8.880 này với trường phút của ứng dụng
+cũ.</p>
+<h2 id="prefix-là-viết-tắt-không-phải-một-thực-thể-mới">3.2. Prefix là
+viết tắt, không phải một thực thể mới</h2>
+<p>Các ví dụ trong tài liệu dùng:</p>
+<pre class="turtle"><code>@prefix dbo: &lt;http://dbpedia.org/ontology/&gt; .
+@prefix ex: &lt;https://laminhtrung.github.io/movie-lod-semantic-web/ontology#&gt; .
+@prefix res: &lt;https://laminhtrung.github.io/movie-lod-semantic-web/resource/&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</code></pre>
+<p><code>dbo:Film</code> là một IRI thuộc vocabulary DBpedia.
+<code>res:film-Q25188</code> là IRI cá thể phim của project. Hai chuỗi
+cùng chứa từ “film” nhưng có vai trò khác nhau.</p>
+<h2 id="cú-pháp-thường-gặp-khi-xem-turtle">3.3. Cú pháp thường gặp khi
+xem Turtle</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Ký hiệu</th>
+<th>Cách đọc trong project</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a</code></td>
+<td>Viết tắt của <code>rdf:type</code></td>
+</tr>
+<tr>
+<td><code>;</code></td>
+<td>Tiếp tục khai báo predicate khác cho cùng subject</td>
+</tr>
+<tr>
+<td><code>,</code></td>
+<td>Thêm object cho cùng subject/predicate</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>Kết thúc nhóm khai báo</td>
+</tr>
+<tr>
+<td><code>"Inception"@en</code></td>
+<td>Chuỗi có nhãn ngôn ngữ tiếng Anh</td>
+</tr>
+<tr>
+<td><code>^^xsd:integer</code></td>
+<td>Giá trị có datatype integer</td>
+</tr>
+<tr>
+<td><code>[ ... ]</code> / blank node</td>
+<td>Một node không có IRI riêng; thường dùng ghi restriction hoặc biểu
+thức lớp</td>
+</tr>
+</tbody>
+</table>
+<p>Không cần học thuộc mọi blank node trong RDF/XML. Khi mở Protégé, nên
+đọc các biểu thức restriction tương ứng để hiểu ý nghĩa.</p>
+<h1 id="ontology-knowledge-graph-class-và-individual">4. Ontology,
+knowledge graph, class và individual</h1>
+<h2 id="phân-biệt-bản-thiết-kế-với-dữ-liệu-cụ-thể">4.1. Phân biệt bản
+thiết kế với dữ liệu cụ thể</h2>
+<p>Trong project, <strong>ontology</strong> mô tả class, property và
+tiên đề; <strong>knowledge graph</strong> chứa các cá thể, quan hệ và
+giá trị cụ thể, kết hợp với schema để khai thác ngữ nghĩa. File OWL đầy
+đủ chứa cả hai phần. Có thể phân biệt bằng ba nhóm thuật ngữ học
+thuật:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Nhóm</th>
+<th>Đọc như thế nào?</th>
+<th>Ví dụ của MovieLOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TBox</td>
+<td>Kiến thức về lớp</td>
+<td>Actor là subclass của Artist; Filmmaker có định nghĩa bằng
+restriction</td>
+</tr>
+<tr>
+<td>RBox</td>
+<td>Kiến thức về quan hệ</td>
+<td>contributionBy inverseOf hasContribution; property chain tạo
+contributedTo</td>
+</tr>
+<tr>
+<td>ABox</td>
+<td>Kiến thức về cá thể</td>
+<td>Inception có director Nolan; một Contribution có DirectorRole</td>
+</tr>
+</tbody>
+</table>
+<p>Đây là cách chia nội dung để giải thích, không nhất thiết là ba file
+độc lập.</p>
+<h2 id="class-không-phải-individual">4.2. Class không phải
+individual</h2>
+<pre class="turtle"><code>dbo:Film a owl:Class .
+res:film-Q25188 a dbo:Film .</code></pre>
+<p>Dòng đầu nói Film là lớp; dòng sau nói Inception là cá thể thuộc lớp
+Film. “ActionFilm là một lớp” khác với “Inception thuộc ActionFilm”.
+Trước reasoning, cá thể phim có thể chỉ có type Film; sau reasoning, có
+thêm type ActionFilm nếu các điều kiện được thỏa mãn.</p>
+<p>Trong model này, <strong>ActorRole là individual thuộc
+ContributionRole</strong>, không phải subclass của Person. Một role mô
+tả vai trò của credit record; nó không tự là một người diễn viên.</p>
+<h2 id="hierarchy-là-quan-hệ-bao-hàm">4.3. Hierarchy là quan hệ bao
+hàm</h2>
+<p>Ví dụ reuse từ DBpedia trong module:</p>
+<pre class="text"><code>Actor ⊑ Artist ⊑ Person ⊑ Agent
+Company ⊑ Organisation ⊑ Agent
+Film ⊑ Work
+MovieGenre ⊑ Genre</code></pre>
+<p>Dấu <code>⊑</code> đọc là “là lớp con của”. Nếu một người được suy ra
+là Actor, người đó cũng thuộc các lớp cha trong chuỗi. Hierarchy không
+có nghĩa rằng Actor chỉ được phép có đúng một nghề; một người vẫn có thể
+thuộc nhiều lớp.</p>
+<h1 id="vì-sao-reuse-dbpedia">5. Vì sao reuse DBpedia?</h1>
+<h2 id="reuse-nghĩa-là-dùng-đúng-iri-và-đúng-ngữ-nghĩa">5.1. Reuse nghĩa
+là dùng đúng IRI và đúng ngữ nghĩa</h2>
+<p>MovieLOD dùng trực tiếp <code>dbo:Film</code>,
+<code>dbo:Person</code>, <code>dbo:Actor</code>,
+<code>dbo:Company</code>, <code>dbo:Award</code>,
+<code>dbo:MovieGenre</code>, <code>dbo:Country</code> và
+<code>dbo:Language</code>. Quan hệ phổ biến dùng
+<code>dbo:director</code>, <code>dbo:starring</code>,
+<code>dbo:writer</code>, <code>dbo:producer</code>,
+<code>dbo:productionCompany</code>, <code>dbo:award</code>,
+<code>dbo:genre</code>, <code>dbo:country</code>,
+<code>dbo:language</code>.</p>
+<p>Không chỉ thay tiền tố <code>ex:</code> thành <code>dbo:</code> rồi
+giữ nguyên mọi giả định. Phải kiểm tra chiều quan hệ, domain, range,
+datatype và đơn vị. Ví dụ, <code>dbo:starring</code> có domain Work và
+range Actor; <code>dbo:runtime</code> dùng giây và
+<code>xsd:double</code>. <a
+href="https://dbpedia.org/ontology/starring">DBpedia starring</a>, <a
+href="https://dbpedia.org/ontology/runtime">DBpedia runtime</a></p>
+<h2 id="reuse-class-và-liên-kết-individual-là-hai-việc-khác-nhau">5.2.
+Reuse class và liên kết individual là hai việc khác nhau</h2>
+<ul>
+<li><code>res:film-Q25188 a dbo:Film</code>: reuse vocabulary để phân
+loại một phim.</li>
+<li><code>res:film-Q25188 owl:sameAs &lt;http://www.wikidata.org/entity/Q25188&gt;</code>:
+khẳng định hai IRI nói đến cùng cá thể.</li>
+</ul>
+<p>Reuse <code>dbo:Film</code> không có nghĩa toàn bộ dữ liệu phim được
+lấy từ DBpedia. Phải nhìn provenance để biết dữ liệu của từng phát biểu
+xuất phát từ đâu.</p>
+<h2 id="khi-nào-tạo-extension-riêng">5.3. Khi nào tạo extension
+riêng?</h2>
+<p>Các custom class cần mô tả ý nghĩa mà lớp nền chưa thể hiện:
+Contribution là credit record; DirectingContribution là credit với role
+đạo diễn; WriterDirector là người thỏa cả hai nhóm điều kiện trong mẫu
+dữ liệu; AwardWinningActionFilm kết hợp điều kiện thể loại và giải
+thưởng.</p>
+<p><code>ex:Filmmaker</code> trong project là tập người có credit đạo
+diễn, biên kịch hoặc nhà sản xuất trong dữ liệu đã thu thập. Nó không
+thay thế định nghĩa nghề nghiệp toàn cầu của DBpedia.
+<code>dbo:MovieDirector</code> chỉ mô tả nhánh đạo diễn và được reuse
+cho suy luận nghề tương ứng.</p>
+<p>Nguyên tắc đọc: <strong>khái niệm nền dùng chung → reuse; subset có
+nghĩa riêng và có dữ liệu hỗ trợ → extension; cấu trúc credit riêng →
+custom model</strong>.</p>
+<h1 id="dữ-liệu-thực-tế-và-cách-đọc-các-con-số">6. Dữ liệu thực tế và
+cách đọc các con số</h1>
+<h2 id="các-trường-nguồn-làm-căn-cứ">6.1. Các trường nguồn làm căn
+cứ</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Claim / metadata</th>
+<th>Nội dung đã thu thập</th>
+<th>Biểu diễn trong model 3.0.0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P31</td>
+<td>Instance of</td>
+<td>Film; kiểm tra human Q5 cho Person</td>
+</tr>
+<tr>
+<td>P57</td>
+<td>Director</td>
+<td>dbo:director và credit DirectorRole</td>
+</tr>
+<tr>
+<td>P161</td>
+<td>Cast member</td>
+<td>dbo:starring và credit ActorRole</td>
+</tr>
+<tr>
+<td>P58</td>
+<td>Screenwriter</td>
+<td>dbo:writer và credit WriterRole</td>
+</tr>
+<tr>
+<td>P162</td>
+<td>Producer</td>
+<td>dbo:producer và credit ProducerRole</td>
+</tr>
+<tr>
+<td>P136</td>
+<td>Genre</td>
+<td>dbo:genre → dbo:MovieGenre</td>
+</tr>
+<tr>
+<td>P272</td>
+<td>Production company</td>
+<td>dbo:productionCompany → dbo:Company</td>
+</tr>
+<tr>
+<td>P166</td>
+<td>Award received</td>
+<td>dbo:award → dbo:Award</td>
+</tr>
+<tr>
+<td>P495 / P364</td>
+<td>Country of origin / language</td>
+<td>dbo:country / dbo:language</td>
+</tr>
+<tr>
+<td>P2047</td>
+<td>Duration</td>
+<td>Đổi đơn vị thành giây cho dbo:runtime</td>
+</tr>
+<tr>
+<td>P577</td>
+<td>Publication/release time</td>
+<td>ex:releaseYear: năm Gregorian sớm nhất theo chính sách chọn giá
+trị</td>
+</tr>
+<tr>
+<td>URL, retrieval time, SHA-256</td>
+<td>Metadata phản hồi crawl</td>
+<td>SourceSnapshot và provenance</td>
+</tr>
+</tbody>
+</table>
+<p>Không có trường budget, gross, IMDb ID hoặc ratings trong tập field
+đã crawl của project này; không trình bày chúng như dữ liệu đã được bổ
+sung. Năm 2010 được giữ ở mức năm; không tự biến thành ngày 01/01/2010
+khi nguồn không cung cấp độ chính xác đó.</p>
+<h2 id="quy-mô-của-file-owl-cuối">6.2. Quy mô của file OWL cuối</h2>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chỉ tiêu</th>
+<th style="text-align: right;">Giá trị</th>
+<th>Cách hiểu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phim / người</td>
+<td style="text-align: right;">30 / 851</td>
+<td>Mẫu phim có chủ đích và người liên quan</td>
+</tr>
+<tr>
+<td>Contribution</td>
+<td style="text-align: right;">1.010</td>
+<td>Record theo bộ phim–người–role</td>
+</tr>
+<tr>
+<td>Công ty / genre / award</td>
+<td style="text-align: right;">45 / 75 / 672</td>
+<td>Các thực thể đã có trong dữ liệu</td>
+</tr>
+<tr>
+<td>Quốc gia / ngôn ngữ</td>
+<td style="text-align: right;">11 / 15</td>
+<td>Thực thể được tham chiếu từ phim</td>
+</tr>
+<tr>
+<td>SourceSnapshot</td>
+<td style="text-align: right;">76</td>
+<td>Phản hồi nguồn có metadata</td>
+</tr>
+<tr>
+<td>Lớp có tên</td>
+<td style="text-align: right;">37</td>
+<td>Không đếm anonymous class expression là lớp có tên</td>
+</tr>
+<tr>
+<td>Object / datatype property</td>
+<td style="text-align: right;">19 / 5</td>
+<td>Không tính mọi annotation/built-in predicate vào hai nhóm này</td>
+</tr>
+<tr>
+<td>Triple trong OWL đầy đủ</td>
+<td style="text-align: right;">19.025</td>
+<td>Bao gồm schema và dữ liệu khai báo; chưa thêm toàn bộ closure suy
+luận</td>
+</tr>
+<tr>
+<td>Role individual</td>
+<td style="text-align: right;">4</td>
+<td>DirectorRole, ActorRole, WriterRole, ProducerRole</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lưu ý về phạm vi đếm:</strong> các kết quả classification
+được thống kê theo IRI <code>res:</code> để tránh tính lại alias
+Wikidata/DBpedia. Bốn role nằm dưới <code>ex:</code>, nên số 0 ở hàng
+ContributionRole trong báo cáo chỉ đếm <code>res:</code> không có nghĩa
+ontology không có role. Khi báo cáo tổng số role, đếm cả bốn individual
+<code>ex:*Role</code>.</p>
+<p>Nguồn số liệu: file OWL cuối và
+<code>evidence/ontology_design/final_owl_checks.json</code>. Dataset
+nguồn có 18.595 triple; schema 442 triple; full OWL có 19.025 triple do
+một số role triples xuất hiện ở cả hai graph.</p>
+<h1 id="contribution-phần-mô-hình-hóa-quan-trọng-nhất">7. Contribution:
+phần mô hình hóa quan trọng nhất</h1>
+<h2 id="vì-sao-không-chỉ-dùng-một-cạnh-phimngười">7.1. Vì sao không chỉ
+dùng một cạnh phim–người?</h2>
+<p>Cạnh <code>Inception dbo:director Nolan</code> đủ để trả lời ai là
+đạo diễn. Tuy nhiên, một người có nhiều role, trên nhiều phim, và mỗi
+credit cần có nguồn. Contribution tạo một record trung gian gắn
+<strong>một người, một phim và một role</strong>. Record này cũng có thể
+mang provenance.</p>
+<p>Trong graph, Nolan có 22 IRI credit record thuộc các phim trong mẫu,
+và có credit đạo diễn trên 8 phim. Con số 22 là số record định danh
+trong dữ liệu, không tự là chứng minh OWL rằng có 22 cá thể credit khác
+nhau. Ta sẽ dùng ba role khác nhau để chứng minh chắc chắn lower bound
+trong phần cardinality.</p>
+<figure>
+<img src="guide_images/02_contribution.png" style="width:15cm"
+alt="Hình 2. Ba credit thực tế của Nolan trên Inception. Mỗi record có một role; đây là sơ đồ mô hình, không phải screenshot Protégé." />
+<figcaption aria-hidden="true">Hình 2. Ba credit thực tế của Nolan trên
+Inception. Mỗi record có một role; đây là sơ đồ mô hình, không phải
+screenshot Protégé.</figcaption>
+</figure>
+<h2 id="đọc-một-record-thực-tế">7.2. Đọc một record thực tế</h2>
+<pre class="turtle"><code>res:person-Q25191 a dbo:Person ;
+    ex:hasContribution res:contribution-Q25188-Q25191-director .
+
+res:contribution-Q25188-Q25191-director
+    a ex:Contribution ;
+    ex:contributionBy res:person-Q25191 ;
+    ex:contributionTo res:film-Q25188 ;
+    ex:hasRole ex:DirectorRole .</code></pre>
+<p>Có thể suy ra loại record:</p>
+<pre class="text"><code>DirectingContribution EquivalentTo:
+    Contribution and (hasRole value DirectorRole)</code></pre>
+<p>Record đầu vào chỉ được khai báo Contribution. Type
+DirectingContribution là kết quả của định nghĩa OWL, không phải một nhãn
+người viết thêm để giả lập reasoning.</p>
+<h2 id="person-role-và-credit-không-được-đánh-đồng">7.3. Person, role và
+credit không được đánh đồng</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Đối tượng</th>
+<th>Ví dụ</th>
+<th>Loại</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Person</td>
+<td>Christopher Nolan</td>
+<td>dbo:Person</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>DirectorRole</td>
+<td>ex:ContributionRole individual</td>
+</tr>
+<tr>
+<td>Credit record</td>
+<td>contribution-Q25188-Q25191-director</td>
+<td>ex:Contribution; suy ra DirectingContribution</td>
+</tr>
+<tr>
+<td>Film</td>
+<td>Inception</td>
+<td>dbo:Film</td>
+</tr>
+</tbody>
+</table>
+<p>Ba record đạo diễn, biên kịch và nhà sản xuất của Nolan trên
+Inception có thể tồn tại đồng thời. Không cần gán Nolan vào một class tổ
+hợp thủ công hoặc coi ba role là ba người khác nhau.</p>
+<h1 id="đọc-object-property-và-các-tiên-đề-quan-hệ">8. Đọc object
+property và các tiên đề quan hệ</h1>
+<h2 id="domainrange-là-tiên-đề-suy-luận-không-phải-form-validation">8.1.
+Domain/range là tiên đề suy luận, không phải form validation</h2>
+<p>Với <code>dbo:starring</code>, một triple có chủ thể là work và đối
+tượng là actor theo domain/range của property. Domain/range có thể giúp
+suy ra type của hai đầu quan hệ; không nên đọc chúng như điều kiện lọc
+bỏ mọi triple có endpoint chưa được gán type. <a
+href="https://www.w3.org/TR/rdf-schema/">W3C RDF Schema</a></p>
+<p>Ví dụ, nếu dữ liệu có <code>Film dbo:starring Person</code>, reasoner
+có thể suy ra Person thuộc <code>dbo:Actor</code>. Bản 3.0.0 sử dụng
+đúng range đã có của DBpedia và hierarchy Actor → Artist → Person →
+Agent; không định nghĩa lại Actor bằng một equivalent class riêng.</p>
+<p>Nếu một endpoint vốn được khai báo thuộc một class không tương thích
+và ontology có disjointness liên quan, việc suy ra thêm type có thể dẫn
+đến inconsistency. Domain/range tự nó không phải một báo cáo “thiếu
+trường” như hệ thống nhập liệu.</p>
+<h2 id="inverse-đọc-cùng-quan-hệ-theo-chiều-ngược-lại">8.2. Inverse: đọc
+cùng quan hệ theo chiều ngược lại</h2>
+<pre class="text"><code>contributionBy inverseOf hasContribution
+contributionTo inverseOf contributionOf
+ex:directed inverseOf dbo:director</code></pre>
+<p>Từ credit <code>contributionBy Nolan</code>, suy ra
+<code>Nolan hasContribution credit</code>. Từ
+<code>Inception director Nolan</code>, suy ra
+<code>Nolan directed Inception</code>. Hai chiều thể hiện cùng liên kết
+nhưng đổi vị trí subject/object.</p>
+<h2 id="subproperty-quan-hệ-cụ-thể-nằm-trong-quan-hệ-rộng-hơn">8.3.
+Subproperty: quan hệ cụ thể nằm trong quan hệ rộng hơn</h2>
+<p><code>ex:directed subPropertyOf ex:contributedTo</code> có nghĩa: nếu
+Nolan directed một phim thì Nolan contributedTo phim đó. Chiều ngược lại
+không đúng: biết contributedTo không đủ kết luận người đó là đạo diễn vì
+còn có thể là diễn viên, biên kịch hoặc nhà sản xuất.</p>
+<h2 id="property-chain-nối-các-quan-hệ-theo-đúng-thứ-tự">8.4. Property
+chain: nối các quan hệ theo đúng thứ tự</h2>
+<pre class="text"><code>hasContribution o contributionTo → contributedTo</code></pre>
+<p>Từ <code>Nolan hasContribution credit</code> và
+<code>credit contributionTo Inception</code>, suy ra
+<code>Nolan contributedTo Inception</code>. Ký hiệu <code>o</code> là
+phép hợp thành quan hệ, không phải một property mới.</p>
+<p>Bản kiểm thử đã xác nhận <strong>965 cặp người–phim</strong> được
+materialize bằng inverse/subproperty/chain rules. Đây là số cặp, không
+phải số Contribution: nhiều role của cùng một người trên cùng phim vẫn
+có thể tạo một cặp người–phim.</p>
+<h2 id="functional-không-có-nghĩa-ô-này-bắt-buộc-điền">8.5. Functional
+không có nghĩa “ô này bắt buộc điền”</h2>
+<p><code>hasRole</code>, <code>contributionBy</code>,
+<code>contributionTo</code> là functional trong credit model. Nếu cùng
+một record có hai endpoint qua cùng property, OWL có thể buộc hai
+endpoint đồng nhất. Nếu chúng được chứng minh là khác nhau, ontology có
+thể trở nên inconsistent. Không được mặc định rằng reasoner sẽ báo lỗi
+ngay chỉ vì một record được ghi bằng hai IRI endpoint khác nhau.</p>
+<p><code>hasContribution</code> không bị giới hạn chỉ một credit cho mỗi
+người. Cardinality không đặt trên <code>contributedTo</code> vì đó là
+quan hệ non-simple do property chain; trong mô hình này, các restriction
+số lượng đặt trên quan hệ đơn giản <code>hasContribution</code>.</p>
+<h1 id="đọc-owl-restriction-và-equivalent-class">9. Đọc OWL restriction
+và equivalent class</h1>
+<h2 id="từ-khóa-và-chiều-kết-luận">9.1. Từ khóa và chiều kết luận</h2>
+<p>Manchester Syntax là cách hiển thị biểu thức lớp dễ đọc. Các từ khóa
+cơ bản trong project là <code>and</code>, <code>or</code>,
+<code>some</code>, <code>value</code>, <code>min</code>,
+<code>exactly</code>. EquivalentTo định nghĩa điều kiện cần và đủ;
+SubClassOf chỉ đưa ra một chiều bao hàm. OWL cũng có <code>only</code>
+để giới hạn loại filler, nhưng không phải mọi keyword đều được dùng
+trong ontology cuối. <a href="https://www.w3.org/TR/owl2-syntax/">W3C
+OWL Structural Specification</a></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Biểu thức</th>
+<th>Cách đọc với ví dụ project</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Person and ...</code></td>
+<td>Phải thỏa Person và điều kiện phía sau</td>
+</tr>
+<tr>
+<td><code>A or B</code></td>
+<td>Thỏa A hoặc B; có thể thỏa cả hai</td>
+</tr>
+<tr>
+<td><code>hasContribution some DirectingContribution</code></td>
+<td>Có ít nhất một credit thuộc DirectingContribution</td>
+</tr>
+<tr>
+<td><code>hasRole value DirectorRole</code></td>
+<td>Có liên kết hasRole đến đúng role individual này</td>
+</tr>
+<tr>
+<td><code>hasContribution min 3 Contribution</code></td>
+<td>Có ít nhất ba filler Contribution thực sự khác nhau</td>
+</tr>
+<tr>
+<td><code>contributionTo exactly 1 Film</code></td>
+<td>Chính xác một filler thuộc Film cho endpoint của credit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="filmmaker-hợp-của-ba-loại-credit">9.2. Filmmaker: hợp của ba
+loại credit</h2>
+<pre class="text"><code>Filmmaker EquivalentTo:
+    dbo:Person and (
+        hasContribution some DirectingContribution
+        or hasContribution some WritingContribution
+        or hasContribution some ProducingContribution
+    )</code></pre>
+<p>Nolan thỏa nhánh directing; cũng có writing và producing credit. Có
+nhiều nhánh thỏa điều kiện không tạo ra nhiều Nolan. Ngược lại, một
+người chỉ có acting credit không tự trở thành Filmmaker theo định nghĩa
+riêng của project.</p>
+<h2 id="writerdirector-giao-của-hai-nghề-được-suy-ra">9.3.
+WriterDirector: giao của hai nghề được suy ra</h2>
+<pre class="text"><code>WriterDirector EquivalentTo:
+    dbo:MovieDirector and dbo:ScreenWriter</code></pre>
+<p>Từ credit directing, restriction một chiều suy ra nghề
+<code>dbo:MovieDirector</code>. Từ credit writing, suy ra
+<code>dbo:ScreenWriter</code>. Nếu cùng người thỏa cả hai, suy ra
+WriterDirector. Không gán trực tiếp type WriterDirector vào dữ liệu
+crawl.</p>
+<h2 id="genrecrossingfilm-không-thay-thế-multigenrefilm">9.4.
+GenreCrossingFilm không thay thế MultiGenreFilm</h2>
+<p>GenreCrossingFilm trong project yêu cầu có genre thỏa ActionGenre và
+có genre thỏa DramaGenre. Một genre hybrid có thể thỏa cả hai bucket; do
+đó biểu thức này không tự chứng minh có hai genre individual khác nhau.
+Đó là lý do không dùng nó làm bằng chứng trá hình cho cardinality
+<code>min 2 genre</code>.</p>
+<h2 id="class-dựa-trên-award-có-giới-hạn-gì">9.5. Class dựa trên award
+có giới hạn gì?</h2>
+<p>AwardWinningFilm yêu cầu Film có <code>dbo:award</code> đến một
+Award. AwardWinningFilmmaker yêu cầu Filmmaker có award. Điều này chỉ
+phản ánh claim award đã thu thập; không tự chứng minh mọi award của một
+người là giải điện ảnh, giải có uy tín ngang nhau hoặc đạt được vì một
+phim cụ thể.</p>
+<h1 id="reasoner-thế-giới-mở-và-cardinality">10. Reasoner, thế giới mở
+và cardinality</h1>
+<h2 id="reasoner-suy-ra-điều-đã-được-tiên-đề-cho-phép">10.1. Reasoner
+suy ra điều đã được tiên đề cho phép</h2>
+<p>HermiT đọc các assertion và tiên đề OWL, kiểm tra tính nhất quán,
+phân loại class và suy ra type của individual. Một ontology consistent
+chưa chứng minh rằng nó đầy đủ hoặc mọi dữ kiện đều đúng ngoài đời. Quy
+tắc và dữ liệu đầu vào vẫn cần đánh giá chất lượng. <a
+href="https://www.w3.org/TR/owl2-primer/">W3C OWL Primer</a></p>
+<p>Trong lần kiểm tra file cuối, HermiT chạy thành công, không tìm thấy
+named class bất khả thỏa và kết quả membership khớp bản đã kiểm
+chứng.</p>
+<figure>
+<img src="guide_images/03_reasoning.png" style="width:15cm"
+alt="Hình 3. Các bước suy luận cho Nolan: role → loại credit → nghề → lớp kết hợp. Sơ đồ mô tả tiên đề hiện có, không biểu diễn thứ tự thực thi bắt buộc của reasoner." />
+<figcaption aria-hidden="true">Hình 3. Các bước suy luận cho Nolan: role
+→ loại credit → nghề → lớp kết hợp. Sơ đồ mô tả tiên đề hiện có, không
+biểu diễn thứ tự thực thi bắt buộc của reasoner.</figcaption>
+</figure>
+<h2 id="asserted-khác-inferred">10.2. Asserted khác inferred</h2>
+<ul>
+<li>Asserted: đầu vào ghi <code>credit a Contribution</code> và
+<code>credit hasRole DirectorRole</code>.</li>
+<li>Inferred: reasoner kết luận credit thuộc DirectingContribution và
+người sở hữu credit thỏa các class liên quan.</li>
+</ul>
+<p>Protégé có thể hiển thị inferred type mà chưa ghi nó thành assertion
+trong file OWL. Vì vậy, đóng/mở một OWL chỉ chứa facts và schema vẫn cần
+chạy reasoner. File <code>inferred.ttl</code> là kết quả export để truy
+vấn, không phải bằng chứng rằng dữ liệu đầu vào đã gán những type
+đó.</p>
+<h2 id="open-world-assumption">10.3. Open World Assumption</h2>
+<p>OWL không mặc định rằng graph đã liệt kê mọi phát biểu đúng. Không
+thấy award trong graph không đủ kết luận cá thể chắc chắn chưa từng nhận
+giải. Không thấy credit thứ tư không đủ kết luận cá thể chỉ có ba
+credit. Không thấy quan hệ trong một query cũng có thể chỉ là do chọn
+sai graph hoặc chưa thực hiện entailment.</p>
+<p>Một restriction <code>exactly 1</code> có thể được thỏa bởi filler
+chưa được ghi rõ. Vì thế, cần kiểm tra cấu trúc dữ liệu riêng nếu muốn
+phát hiện record thiếu person/film/role. Đây là bài toán validation,
+khác với consistency reasoning.</p>
+<h2 id="owl-không-có-unique-name-assumption">10.4. OWL không có Unique
+Name Assumption</h2>
+<p>Hai IRI khác nhau có thể cùng chỉ một cá thể. Minimum cardinality cần
+các filler khác nhau về mặt ngữ nghĩa, không chỉ khác chuỗi IRI.
+Identity và inequality là một phần của ngữ nghĩa OWL. <a
+href="https://www.w3.org/TR/owl2-direct-semantics/">W3C OWL Direct
+Semantics</a></p>
+<p>Dữ liệu có hai genre QID khác nhau và SPARQL đếm được hai IRI không
+tự chứng minh <code>min 2 genre</code>. Bản kiểm thử MultiGenreFilm đã
+trả <strong>0 cá thể được HermiT suy ra</strong>. Không thêm blanket
+AllDifferent cho genre/award/film chỉ để làm tăng số kết quả.</p>
+<h2 id="vì-sao-min-3-contribution-của-nolan-suy-ra-được">10.5. Vì sao
+min 3 Contribution của Nolan suy ra được?</h2>
+<p>Nolan có ba credit trên Inception: directing, writing, producing. Mỗi
+credit trỏ đến một role khác nhau. Các role được thiết kế là các giá trị
+khác nhau của vocabulary kiểm soát và có AllDifferent; hasRole là
+functional.</p>
+<p>Nếu hai credit là cùng một cá thể, cá thể đó phải có hai role khác
+nhau qua cùng functional property, dẫn đến mâu thuẫn. Vì vậy, ba credit
+đó không thể đồng nhất. HermiT có đủ căn cứ kết luận có ít nhất ba
+Contribution khác nhau; từ đó cũng thỏa <code>min 2</code>.</p>
+<pre class="text"><code>MultiCreditContributor EquivalentTo:
+    dbo:Person and (hasContribution min 2 Contribution)
+
+ThreeCreditContributor EquivalentTo:
+    dbo:Person and (hasContribution min 3 Contribution)</code></pre>
+<p>Hai tên class nói về số credit khác nhau, <strong>không định nghĩa
+chính xác hai/ba nghề hoặc toàn bộ lịch sử nghề nghiệp của người
+đó</strong>. Một người có thể đạt class bằng những credit khác role như
+ví dụ, hoặc bằng một chứng minh inequality khác mà ontology cho
+phép.</p>
+<h2 id="kết-quả-classification-cần-nhớ">10.6. Kết quả classification cần
+nhớ</h2>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Class</th>
+<th style="text-align: right;">Cá thể local suy ra</th>
+<th>Điểm cần giải thích</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dbo:Actor</td>
+<td style="text-align: right;">769</td>
+<td>Range của dbo:starring; không dùng ex:Actor</td>
+</tr>
+<tr>
+<td>ex:Filmmaker</td>
+<td style="text-align: right;">89</td>
+<td>Có directing/writing/producing credit</td>
+</tr>
+<tr>
+<td>ex:ActionFilm</td>
+<td style="text-align: right;">12</td>
+<td>Genre thỏa bucket ActionGenre</td>
+</tr>
+<tr>
+<td>ex:AwardWinningFilm</td>
+<td style="text-align: right;">26</td>
+<td>Film có award</td>
+</tr>
+<tr>
+<td>ex:MultiCreditContributor</td>
+<td style="text-align: right;">17</td>
+<td>Ít nhất 2 credit được chứng minh khác nhau</td>
+</tr>
+<tr>
+<td>ex:ThreeCreditContributor</td>
+<td style="text-align: right;">7</td>
+<td>Ít nhất 3 credit được chứng minh khác nhau</td>
+</tr>
+<tr>
+<td>ex:WriterDirector</td>
+<td style="text-align: right;">10</td>
+<td>MovieDirector và ScreenWriter</td>
+</tr>
+<tr>
+<td>ex:ActorFilmmaker</td>
+<td style="text-align: right;">7</td>
+<td>Actor và Filmmaker</td>
+</tr>
+<tr>
+<td>ex:AwardWinningFilmmaker</td>
+<td style="text-align: right;">65</td>
+<td>Filmmaker có award</td>
+</tr>
+<tr>
+<td>ex:AwardWinningActionFilm</td>
+<td style="text-align: right;">10</td>
+<td>ActionFilm và AwardWinningFilm</td>
+</tr>
+<tr>
+<td>ex:GenreCrossingFilm</td>
+<td style="text-align: right;">8</td>
+<td>Có action/drama membership; không khẳng định hai genre khác
+nhau</td>
+</tr>
+</tbody>
+</table>
+<p>Số liệu chỉ mô tả mẫu đang kiểm tra. Một class có ít cá thể không tự
+chứng minh class kém; một class có nhiều cá thể không tự chứng minh
+ontology tốt.</p>
+<h1 id="sparql-đặt-câu-hỏi-trên-đúng-graph">11. SPARQL: đặt câu hỏi trên
+đúng graph</h1>
+<h2 id="bộ-phận-chính-của-một-query">11.1. Bộ phận chính của một
+query</h2>
+<p>Trong SPARQL, <code>PREFIX</code> đặt viết tắt, <code>SELECT</code>
+chọn biến trả về, <code>WHERE</code> mô tả mẫu graph,
+<code>FILTER</code> đặt điều kiện và <code>ORDER BY</code> sắp xếp.
+<code>DISTINCT</code> loại bản ghi kết quả trùng; nó không tạo ra các
+tiên đề khác biệt của OWL. <a
+href="https://www.w3.org/TR/sparql11-query/">W3C SPARQL 1.1</a></p>
+<p>Dùng prefix sau cho các query minh họa:</p>
+<pre class="sparql"><code>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX ex: &lt;https://laminhtrung.github.io/movie-lod-semantic-web/ontology#&gt;
+PREFIX res: &lt;https://laminhtrung.github.io/movie-lod-semantic-web/resource/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;</code></pre>
+<h2 id="query-đọc-trực-tiếp-nolan-đạo-diễn-phim-nào">11.2. Query đọc
+trực tiếp: Nolan đạo diễn phim nào?</h2>
+<pre class="sparql"><code>SELECT DISTINCT ?film ?name WHERE {
+  ?film a dbo:Film ; dbo:director res:person-Q25191 ; rdfs:label ?name .
+  FILTER(STRSTARTS(STR(?film),
+    &quot;https://laminhtrung.github.io/movie-lod-semantic-web/resource/&quot;))
+}
+ORDER BY ?name</code></pre>
+<p>Chạy trên asserted graph đã đủ; kết quả là <strong>8 phim</strong>.
+Việc dùng hai mẫu graph tương đương một phép nối dữ liệu; chưa phải một
+minh chứng OWL reasoning riêng.</p>
+<h2 id="query-lớp-suy-luận-ai-là-writerdirector">11.3. Query lớp suy
+luận: ai là WriterDirector?</h2>
+<pre class="sparql"><code>SELECT DISTINCT ?person ?name WHERE {
+  ?person a ex:WriterDirector ; rdfs:label ?name .
+  FILTER(STRSTARTS(STR(?person),
+    &quot;https://laminhtrung.github.io/movie-lod-semantic-web/resource/&quot;))
+}
+ORDER BY ?name</code></pre>
+<p>Chạy trên asserted graph: <strong>0</strong>. Chạy trên schema +
+asserted + inferred graph: <strong>10</strong>. Đây là minh chứng tốt vì
+type WriterDirector không được gán trong đầu vào.</p>
+<h2 id="kiểm-tra-riêng-nolan">11.4. Kiểm tra riêng Nolan</h2>
+<pre class="sparql"><code>ASK { res:person-Q25191 a ex:ThreeCreditContributor }</code></pre>
+<p>Asserted graph trả false; reasoned graph trả true. False ở đây nghĩa
+query không tìm được assertion phù hợp trong graph đang xét, không phải
+một phủ định OWL rằng Nolan chắc chắn không thuộc class.</p>
+<h2 id="quan-hệ-qua-property-chain">11.5. Quan hệ qua property
+chain</h2>
+<pre class="sparql"><code>SELECT DISTINCT ?film WHERE {
+  res:person-Q25191 ex:contributedTo ?film .
+  FILTER(STRSTARTS(STR(?film),
+    &quot;https://laminhtrung.github.io/movie-lod-semantic-web/resource/&quot;))
+}
+ORDER BY ?film</code></pre>
+<p>Trong sample này, reasoned graph có <strong>8 phim</strong> cho
+Nolan; asserted graph chưa có contributedTo. Đừng giải thích chain là
+một thao tác thu thập nguồn mới: các endpoint đã tồn tại trong credit
+facts.</p>
+<h2 id="bộ-27-câu-hỏi-nằm-ở-đâu">11.6. Bộ 27 câu hỏi nằm ở đâu?</h2>
+<p><code>queries/01.rq</code> đến <code>27.rq</code> là bộ truy vấn của
+bản ontology mới. Câu 01–08 đọc dữ liệu trực tiếp; 09–13 kiểm tra
+hierarchy; 14–26 dùng knowledge sau suy luận; 27 so sánh named graph
+asserted và reasoned. Kết quả đã ghi ở
+<code>evidence/ontology_design/query_results.json</code>.</p>
+<p>Đối với query 27, cần nạp <code>before_after.trig</code> vào RDF
+Dataset có hai named graph <code>urn:movie:asserted</code> và
+<code>urn:movie:reasoned</code>. Nạp TriG thành một graph phẳng sẽ làm
+mất cách phân biệt này.</p>
+<h2 id="tại-sao-website-trả-0-dù-hermit-có-kết-quả">11.7. Tại sao
+website trả 0 dù HermiT có kết quả?</h2>
+<p>Website và endpoint hỗ trợ Source facts, With OWL inference và
+Before/after named graphs. Query WriterDirector trả zero ở source scope
+và 10 ở inference scope. Query 27 cần dataset scope. Chọn đúng scope
+trước khi kết luận dữ liệu hoặc ontology sai; HermiT đã chạy trong
+pipeline, không chạy lại cho từng request.</p>
+<h1 id="thực-hành-trong-protégé">12. Thực hành trong Protégé</h1>
+<h2 id="mở-file-và-định-hướng">12.1. Mở file và định hướng</h2>
+<ol type="1">
+<li>Mở Protégé, chọn <strong>File → Open</strong> và mở
+<code>ontology/Movie_Knowledge_Graph.owl</code>.</li>
+<li>Trong <strong>Active Ontology</strong>, kiểm tra version 3.0.0.</li>
+<li>Trong <strong>Classes</strong>, tìm Film, Person, Actor,
+Contribution, Filmmaker và WriterDirector. Prefix/cách rút gọn tên có
+thể thay đổi theo cấu hình hiển thị.</li>
+<li>Trong <strong>Object properties</strong>, xem starring có range
+Actor; xem inverse của contributionBy và chain của contributedTo.</li>
+<li>Trong <strong>Individuals</strong>, tìm <code>person-Q25191</code>
+hoặc nhãn Christopher Nolan.</li>
+</ol>
+<p>Không mở file schema-only rồi kết luận dữ liệu cá thể bị mất. Không
+import toàn bộ DBpedia từ Internet chỉ để chạy file này: module đã chứa
+các tiên đề nền được chọn cho model.</p>
+<h2 id="chạy-reasoner-và-đọc-inferred-view">12.2. Chạy reasoner và đọc
+inferred view</h2>
+<ol type="1">
+<li>Chọn <strong>Reasoner → HermiT</strong>.</li>
+<li>Chọn <strong>Reasoner → Start reasoner</strong>, đợi phân loại hoàn
+tất.</li>
+<li>Xem class hierarchy và individual types ở inferred view; tên
+tab/cách hiện mục inferred tùy bản Protégé.</li>
+<li>Kiểm tra Nolan có Filmmaker, WriterDirector, MultiCreditContributor,
+ThreeCreditContributor và các nghề DBpedia liên quan.</li>
+<li>Mở các credit của Nolan trên Inception; kiểm tra role
+Director/Writer/Producer và inferred credit subclass.</li>
+</ol>
+<p>Nếu sử dụng DL Query, nhập biểu thức lớp như
+<code>ex:Filmmaker</code> hoặc
+<code>dbo:Person and (ex:hasContribution some ex:DirectingContribution)</code>
+và chọn truy vấn instances. DL Query là truy vấn theo class expression,
+không phải nơi dán SPARQL SELECT.</p>
+<h2 id="bốn-ảnh-chụp-hữu-ích-để-giải-thích-bài">12.3. Bốn ảnh chụp hữu
+ích để giải thích bài</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Ảnh tự chụp</th>
+<th>Nội dung cần thấy</th>
+<th>Chứng minh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hierarchy</td>
+<td>Actor → Artist → Person → Agent; Film → Work</td>
+<td>Reuse vocabulary và lớp cha</td>
+</tr>
+<tr>
+<td>Credit</td>
+<td>Inception/Nolan/director record, role và inferred
+DirectingContribution</td>
+<td>Association model và hasValue</td>
+</tr>
+<tr>
+<td>Nolan inferred types</td>
+<td>WriterDirector, Filmmaker, ThreeCreditContributor</td>
+<td>Knowledge mới sau reasoning</td>
+</tr>
+<tr>
+<td>Restrictions</td>
+<td>Functional hasRole, role AllDifferent, min 3 restriction</td>
+<td>Căn cứ phân biệt credit cho cardinality</td>
+</tr>
+</tbody>
+</table>
+<p>Tài liệu này dùng sơ đồ do tác giả dựng để giải thích, không dùng
+hình giả làm ảnh reasoner. Khi chụp evidence, ghi phiên bản ontology và
+trạng thái reasoner; ảnh asserted view chưa chứng minh đã chạy suy
+luận.</p>
+<h2 id="khi-gặp-lỗi-hoặc-thấy-kết-quả-trống">12.4. Khi gặp lỗi hoặc thấy
+kết quả trống</h2>
+<ul>
+<li><strong>Timestamp malformed:</strong> dùng đúng file OWL cuối. Các
+retrieval timestamp đã xuất đến ba chữ số thập phân để tương thích
+HermiT đang kiểm tra; chuỗi có nhiều chữ số thập phân không nhất thiết
+sai chuẩn XSD, nhưng có thể không được bản reasoner cũ chấp nhận.</li>
+<li><strong>Không thấy inferred type:</strong> kiểm tra đã chọn đúng
+reasoner, chạy xong, mở đúng cá thể và đang xem inferred view.</li>
+<li><strong>Query trả 0:</strong> kiểm tra đúng prefix, tên property của
+bản mới và đúng graph; không tự sửa facts để ép membership.</li>
+<li><strong>Mở OWL quá lâu:</strong> phân biệt thời gian nạp file với
+phân loại. Lần chạy CLI gần nhất khoảng 65 giây trên môi trường hiện
+tại; không cam kết mọi máy có cùng thời gian.</li>
+</ul>
+<h1 id="linked-data-identity-và-provenance">13. Linked Data, identity và
+provenance</h1>
+<h2 id="vì-sao-cần-http-iri-và-liên-kết-ngoài">13.1. Vì sao cần HTTP IRI
+và liên kết ngoài?</h2>
+<p>Linked Data dùng định danh để kết nối mô tả về cùng hoặc liên quan
+thực thể giữa các nguồn, và hỗ trợ tra cứu dữ liệu bằng các chuẩn
+Web/RDF. HTTP IRI có thể dùng để truy cập mô tả; liên kết ngoài tạo cơ
+hội nối dữ liệu giữa các graph. <a
+href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Data
+principles</a></p>
+<p>Trong project, IRI của phim/người có hậu tố QID, nhãn để con người
+đọc và owl:sameAs đến thực thể Wikidata. Một số phim còn có link DBpedia
+đã kiểm tra theo chính sách liên kết. Không chọn sameAs chỉ vì hai tên
+giống nhau.</p>
+<h2 id="sameas-mạnh-hơn-có-liên-quan">13.2. sameAs mạnh hơn “có liên
+quan”</h2>
+<p>sameAs tuyên bố cùng một cá thể; reasoner có thể thay thế alias trong
+các phát biểu. Vì vậy, một phim có IRI local, Wikidata và DBpedia không
+phải ba phim khác nhau. Khi thống kê query, project giới hạn IRI local
+để giữ một đơn vị đếm nhất quán.</p>
+<p>Nếu chỉ biết một thực thể “liên quan đến”, không có đủ căn cứ đồng
+nhất, phải dùng quan hệ yếu hơn phù hợp thay vì sameAs. Một identity
+link sai có thể làm lan truyền thông tin sai qua nhiều query.</p>
+<h2 id="sourcesnapshot-giúp-kiểm-tra-điều-gì">13.3. SourceSnapshot giúp
+kiểm tra điều gì?</h2>
+<p>Một snapshot ghi URL phản hồi, thời điểm lấy và SHA-256 của nội dung.
+Nhờ đó người đọc kiểm tra được phát biểu dựa trên phản hồi nào, có thay
+đổi nguồn hay không và byte nguồn có khớp danh mục không.</p>
+<p>Hash khớp chứng minh tính toàn vẹn byte theo danh mục, không chứng
+minh dữ liệu Wikidata/DBpedia hoàn toàn chính xác. Thời điểm retrievedAt
+là thời điểm thu thập phản hồi, không phải ngày phát hành phim hay ngày
+thực thể ngoài đời được tạo ra.</p>
+<h1 id="các-trường-hợp-nên-dùng-để-bảo-vệ-bài">14. Các trường hợp nên
+dùng để bảo vệ bài</h1>
+<h2 id="actor-suy-luận-dựa-vào-vocabulary-được-reuse">14.1. Actor: suy
+luận dựa vào vocabulary được reuse</h2>
+<p>Đầu vào có quan hệ starring; range chuẩn là Actor; hierarchy tiếp tục
+đưa cá thể vào Artist/Person/Agent. Giá trị học thuật: dùng ngữ nghĩa có
+sẵn của vocabulary, không tạo ex:Actor hoặc gán type để giả lập kết
+quả.</p>
+<h2 id="filmmaker-đi-qua-credit-model">14.2. Filmmaker: đi qua credit
+model</h2>
+<p>Role → credit subclass → existential restriction của Person →
+Filmmaker. Nolan là ví dụ thật. Giá trị học thuật: credit mang ngữ cảnh
+và provenance; quy tắc phân loại được ghi trong schema.</p>
+<h2 id="writerdirector-kết-hợp-hai-nghề">14.3. WriterDirector: kết hợp
+hai nghề</h2>
+<p>Directing credit và writing credit tạo hai nghề DBpedia; giao hai
+nghề tạo WriterDirector. Giá trị học thuật: một lớp mới có nghĩa rõ,
+không gán thủ công một nhãn tổ hợp.</p>
+<h2
+id="threecreditcontributor-cardinality-có-chứng-minh-distinctness">14.4.
+ThreeCreditContributor: cardinality có chứng minh distinctness</h2>
+<p>Ba role khác nhau và hasRole functional làm ba credit không thể đồng
+nhất. Giá trị học thuật: xử lý đúng sự khác biệt giữa distinct RDF terms
+và semantically different individuals.</p>
+<h2 id="awardwinningactionfilm-kết-hợp-hai-nhánh-điều-kiện">14.5.
+AwardWinningActionFilm: kết hợp hai nhánh điều kiện</h2>
+<p>Film có action genre và award; reasoner suy ra ActionFilm,
+AwardWinningFilm, rồi class giao. Giá trị học thuật: knowledge mới xuất
+phát từ nhiều nhánh facts, không cần thêm assertion của lớp giao.</p>
+<p><strong>Không nói “SQL không làm được”.</strong> SQL có thể dùng
+joins, recursive queries hoặc rules để tái tạo nhiều kết quả. Điểm mạnh
+ở đây là vocabulary dùng chung, tiên đề công khai, kiểm tra consistency
+và entailment dưới ngữ nghĩa OWL. Việc so sánh phải xét nhu cầu thực tế,
+không tuyên bố Semantic Web luôn thay thế cơ sở dữ liệu quan hệ.</p>
+<h1 id="câu-hỏi-ôn-tập-và-trả-lời-ngắn">15. Câu hỏi ôn tập và trả lời
+ngắn</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Câu hỏi</th>
+<th>Trả lời cần nắm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ontology khác bảng dữ liệu ở đâu?</td>
+<td>Ontology ghi meaning/axiom; bảng/RDF facts ghi đối tượng và giá trị
+cụ thể. Có thể kết hợp cả hai trong hệ thống.</td>
+</tr>
+<tr>
+<td>Film có phải Inception không?</td>
+<td>Film là class; Inception là individual thuộc class.</td>
+</tr>
+<tr>
+<td>dbo: khác res: ở đâu?</td>
+<td>dbo: vocabulary DBpedia; res: IRI cá thể của project.</td>
+</tr>
+<tr>
+<td>Reuse DBpedia có phải copy data DBpedia?</td>
+<td>Không. Reuse vocabulary và thu thập facts là hai việc khác
+nhau.</td>
+</tr>
+<tr>
+<td>Vì sao thêm Contribution?</td>
+<td>Biểu diễn người–phim–role như association record có ngữ cảnh và
+provenance.</td>
+</tr>
+<tr>
+<td>Vì sao Role là individual?</td>
+<td>Các role là giá trị cụ thể của vocabulary kiểm soát, không phải
+người.</td>
+</tr>
+<tr>
+<td>EquivalentTo khác SubClassOf?</td>
+<td>EquivalentTo hai chiều; SubClassOf chỉ một chiều.</td>
+</tr>
+<tr>
+<td>Domain/range có kiểm tra thiếu field không?</td>
+<td>Chủ yếu dùng suy luận type; structural validation là bước khác.</td>
+</tr>
+<tr>
+<td>Reasoner consistent thì data đúng hết?</td>
+<td>Không; consistency, completeness và factual accuracy là ba vấn đề
+khác nhau.</td>
+</tr>
+<tr>
+<td>Không có award có nghĩa chưa từng đoạt giải?</td>
+<td>Không dưới open-world semantics.</td>
+</tr>
+<tr>
+<td>Hai IRI genre có nghĩa hai genre khác nhau?</td>
+<td>Không tự động; cần căn cứ inequality.</td>
+</tr>
+<tr>
+<td>Exactly 1 có báo record thiếu role?</td>
+<td>Không bảo đảm; filler có thể chưa được ghi rõ.</td>
+</tr>
+<tr>
+<td>Vì sao min 3 credit của Nolan đạt?</td>
+<td>Khác role + functional hasRole → credit không thể đồng nhất.</td>
+</tr>
+<tr>
+<td>Vì sao có 17 MultiCredit nhưng chỉ 7 ThreeCredit?</td>
+<td>Điều kiện min 3 mạnh hơn min 2; tập min 3 nằm trong min 2.</td>
+</tr>
+<tr>
+<td>Vì sao 1.010 credit nhưng chỉ 965 cặp contributedTo?</td>
+<td>Cùng người và phim có thể có nhiều role/credit nhưng chỉ một cặp
+endpoint.</td>
+</tr>
+<tr>
+<td>GenreCrossing có nghĩa MultiGenre không?</td>
+<td>Không: một hybrid genre có thể thỏa hai bucket.</td>
+</tr>
+<tr>
+<td>Query inferred class trả 0 thì làm gì?</td>
+<td>Kiểm tra graph, reasoning/materialization và vocabulary.</td>
+</tr>
+<tr>
+<td>DL Query có chạy SPARQL không?</td>
+<td>Không; DL Query dùng class expressions.</td>
+</tr>
+<tr>
+<td>OWL file và Turtle có khác knowledge model không?</td>
+<td>Là các serialization của graph; phải so graph/axiom thay vì so
+byte.</td>
+</tr>
+<tr>
+<td>Hạn chế nghiên cứu của mẫu là gì?</td>
+<td>Mẫu 30 phim có chủ đích, field hữu hạn, mapping genre theo nhãn,
+identity/source còn cần đánh giá.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="tự-đánh-giá-đã-hiểu-project-chưa">16. Tự đánh giá đã hiểu
+project chưa</h1>
+<p>Hãy tự làm sáu việc trước khi thuyết trình:</p>
+<ol type="1">
+<li>Đọc một triple và chỉ đúng subject, predicate, object.</li>
+<li>Vẽ được Contribution nối Person–Film–Role mà không biến role thành
+Person.</li>
+<li>Mở đúng OWL 3.0.0 và tìm ba credit của Nolan trên Inception.</li>
+<li>Giải thích một chuỗi inference từ facts đến type chưa asserted.</li>
+<li>Chạy query WriterDirector trên asserted và reasoned graph, giải
+thích khác biệt 0/10.</li>
+<li>Giải thích vì sao min 3 Contribution được suy ra nhưng
+MultiGenreFilm không được suy ra với dữ liệu hiện có.</li>
+</ol>
+<p>Nếu làm được cả sáu, bạn đã nắm phần cốt lõi. Tiếp theo đọc bảng
+inventory để hiểu các class/property còn lại, thay vì học thuộc số lớp
+hoặc toàn bộ cấu trúc thư mục.</p>
+<h1 id="phụ-lục-a.-các-file-cần-đọc-và-vai-trò">Phụ lục A. Các file cần
+đọc và vai trò</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>File / thư mục</th>
+<th>Dùng khi nào?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ontology/Movie_Knowledge_Graph.owl</td>
+<td>OWL cuối 3.0.0, đầy đủ schema và facts, mở trong Protégé</td>
+</tr>
+<tr>
+<td>ontology/Movie_Ontology.owl / movie.ttl</td>
+<td>Schema module, xem định nghĩa class/property</td>
+</tr>
+<tr>
+<td>evidence/ontology_design/asserted.ttl</td>
+<td>Facts bản mới trước reasoning</td>
+</tr>
+<tr>
+<td>evidence/ontology_design/schema.ttl</td>
+<td>Schema thiết kế đã kiểm chứng; annotation phiên bản design có thể
+khác OWL xuất cuối</td>
+</tr>
+<tr>
+<td>evidence/ontology_design/inferred.ttl</td>
+<td>Type HermiT export và quan hệ inverse/subproperty/chain OWL RL
+materialize</td>
+</tr>
+<tr>
+<td>evidence/ontology_design/before_after.trig</td>
+<td>Dataset asserted/reasoned để so sánh bằng query 27</td>
+</tr>
+<tr>
+<td>evidence/ontology_design/final_owl_checks.json</td>
+<td>Hash đúng OWL cuối, consistency, class counts và thời điểm chạy</td>
+</tr>
+<tr>
+<td>evidence/ontology_design/final_owl_hermit.log</td>
+<td>Log reasoner trực tiếp trên OWL cuối</td>
+</tr>
+<tr>
+<td>evidence/ontology_design/query_results.json</td>
+<td>Kết quả 27 câu hỏi trên bộ graph thiết kế mới</td>
+</tr>
+<tr>
+<td>docs/DBpedia_OWL_Design.html</td>
+<td>Inventory, Manchester/OWL expressions, demo và semantic reuse
+audit</td>
+</tr>
+<tr>
+<td>data/raw và collected.json</td>
+<td>Phản hồi/claim nguồn để đối chiếu provenance</td>
+</tr>
+<tr>
+<td>src/ontology_design.py / finalize_ontology.py</td>
+<td>Tạo/kiểm chứng thiết kế và xuất OWL cuối</td>
+</tr>
+<tr>
+<td>src/server.py và web/dist</td>
+<td>Endpoint cục bộ và ứng dụng web; ba scope dùng exports 3.0.0</td>
+</tr>
+</tbody>
+</table>
+<p><code>src/build.py</code> xuất RDF/OWL canonical;
+<code>src/reason.py</code> chạy HermiT và lưu inference;
+<code>src/validate.py</code> kiểm tra dữ liệu, nguồn và 27 queries;
+<code>src/query.py</code> hỗ trợ –mode asserted/reasoned/dataset.
+<code>make all</code> chạy collect → build → reason → validate → test
+theo model 3.0.0.</p>
+<h1 id="phụ-lục-b.-chạy-query-bản-mới-bằng-python">Phụ lục B. Chạy query
+bản mới bằng Python</h1>
+<p>Tại thư mục gốc project, dùng môi trường <code>.venv</code> đã có
+RDFLib. Ví dụ sau kiểm tra câu hỏi WriterDirector mà không sửa file dữ
+liệu và không tạo video:</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdflib <span class="im">import</span> Graph</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> Path.cwd()</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>folder <span class="op">=</span> root <span class="op">/</span> <span class="st">&quot;evidence&quot;</span> <span class="op">/</span> <span class="st">&quot;ontology_design&quot;</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>asserted <span class="op">=</span> Graph().parse(folder <span class="op">/</span> <span class="st">&quot;asserted.ttl&quot;</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>reasoned <span class="op">=</span> (</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    Graph().parse(folder <span class="op">/</span> <span class="st">&quot;schema.ttl&quot;</span>)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> asserted</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> Graph().parse(folder <span class="op">/</span> <span class="st">&quot;inferred.ttl&quot;</span>)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> (root <span class="op">/</span> <span class="st">&quot;queries&quot;</span> <span class="op">/</span> <span class="st">&quot;design&quot;</span> <span class="op">/</span> <span class="st">&quot;20.rq&quot;</span>).read_text()</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Asserted:&quot;</span>, <span class="bu">len</span>(<span class="bu">list</span>(asserted.query(query))))</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Reasoned:&quot;</span>, <span class="bu">len</span>(<span class="bu">list</span>(reasoned.query(query))))</span></code></pre></div>
+<p>Lưu thành một file <code>.py</code> rồi chạy
+<code>.venv/bin/python &lt;tên-file&gt;.py</code>. Kết quả mong đợi:
+Asserted 0, Reasoned 10. Muốn thử câu khác, đổi tên file query; xem
+query-results để biết graph và số dòng phù hợp.</p>
+<p>Để xem chỉ các inferred type mới bằng query 27:</p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdflib <span class="im">import</span> Dataset</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> Path.cwd()</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>dataset <span class="op">=</span> Dataset()</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>dataset.parse(</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    root <span class="op">/</span> <span class="st">&quot;evidence/ontology_design/before_after.trig&quot;</span>,</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">format</span><span class="op">=</span><span class="st">&quot;trig&quot;</span>,</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> (root <span class="op">/</span> <span class="st">&quot;queries/27.rq&quot;</span>).read_text()</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row <span class="kw">in</span> dataset.query(query):</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(row.s, row.<span class="bu">type</span>)</span></code></pre></div>
+<p>Phân biệt một query có thể thực thi được với một query có đủ graph
+cần thiết. Đổi cú pháp SELECT đúng không thể thay thế việc nạp
+entailment phù hợp.</p>
+<h1 id="phụ-lục-c.-thư-mục-minh-chứng-và-phạm-vi-tái-lập">Phụ lục C. Thư
+mục minh chứng và phạm vi tái lập</h1>
+<p>Số liệu trong tài liệu này được đối chiếu từ OWL 3.0.0 và các JSON
+kiểm thử hiện tại. Các ví dụ về Nolan/Inception lấy trực tiếp từ graph;
+ba hình là sơ đồ tác giả dựng từ mô hình, không phải ảnh chụp app hoặc
+Protégé. File <code>evidence/reading_guide/checks.json</code> ghi hash
+đầu vào, các query kiểm tra và thông tin sản phẩm tài liệu.</p>
+<p>Tài liệu hướng dẫn này bổ sung kiến thức để đọc và thực hành; không
+thay cho báo cáo học thuật 15 trang. MP4 đã bị loại theo yêu cầu; không
+có video trong bộ hiện tại.</p>
+<h1 id="tài-liệu-tham-khảo-để-học-thêm">Tài liệu tham khảo để học
+thêm</h1>
+<ol type="1">
+<li><a href="https://www.w3.org/TR/rdf11-primer/">W3C RDF 1.1
+Primer</a>: triple, IRI, literal và serialization.</li>
+<li><a href="https://www.w3.org/TR/rdf-schema/">W3C RDF Schema</a>:
+hierarchy và domain/range.</li>
+<li><a href="https://www.w3.org/TR/owl2-primer/">W3C OWL 2 Primer</a>:
+ontology, reasoning và ví dụ ngữ nghĩa.</li>
+<li><a href="https://www.w3.org/TR/owl2-syntax/">W3C OWL Structural
+Specification</a>: class expressions và restriction.</li>
+<li><a href="https://www.w3.org/TR/owl2-direct-semantics/">W3C OWL
+Direct Semantics</a>: entailment và identity.</li>
+<li><a href="https://www.w3.org/TR/sparql11-query/">W3C SPARQL 1.1
+Query</a>: cú pháp truy vấn.</li>
+<li><a href="https://www.w3.org/DesignIssues/LinkedData.html">Linked
+Data principles</a>: định danh và liên kết dữ liệu.</li>
+<li><a href="https://dbpedia.org/ontology/starring">DBpedia
+starring</a>, <a
+href="https://dbpedia.org/ontology/runtime">runtime</a>, <a
+href="https://dbpedia.org/ontology/MovieGenre">MovieGenre</a>: các term
+được reuse.</li>
+<li>Minh chứng project:
+<code>evidence/ontology_design/final_owl_checks.json</code>,
+<code>query_results.json</code>, <code>source_mapping.json</code>; đối
+chiếu file OWL khi số liệu hoặc snapshot thay đổi.</li>
+</ol>
+<h2 id="hosting-github-pages">Hosting GitHub Pages</h2>
+<p>Website: https://laminhtrung.github.io/movie-lod-semantic-web/ Repo
+độc lập: https://github.com/laminhtrung/movie-lod-semantic-web</p>
+<p>Bản công khai dùng Comunica để truy vấn ngay trong trình duyệt.
+GitHub Pages không chạy Flask và không cung cấp API <code>/sparql</code>
+của Python. Endpoint và content negotiation 303 chỉ được kiểm tra trên
+server cục bộ; Pages cung cấp trang resource và các liên kết tải RDF
+tĩnh. Chọn source facts / inference / before-after theo câu hỏi. IRI
+dùng URL GitHub Pages canonical; không bỏ prefix tên repo khi chép đường
+dẫn. Push <code>main</code> kích hoạt workflow Pages. Không có video
+demo.</p>
+</body>
+</html>

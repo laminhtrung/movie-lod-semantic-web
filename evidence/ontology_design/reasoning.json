@@ -1,0 +1,372 @@
+{
+  "consistent": true,
+  "hermit_exit_code": 0,
+  "graph_digest": "1101174562024117624110310720825993428171465850579388584929626665182586135534822355",
+  "unsatisfiable_named_classes": [],
+  "counts": {
+    "dbo:Writer": {
+      "asserted": 0,
+      "reasoned": 34,
+      "new": 34,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116854",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174454"
+      ]
+    },
+    "ex:ContributionRole": {
+      "asserted": 0,
+      "reasoned": 0,
+      "new": 0,
+      "examples": []
+    },
+    "ex:Filmmaker": {
+      "asserted": 0,
+      "reasoned": 89,
+      "new": 89,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116854",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174454"
+      ]
+    },
+    "ex:ActionGenre": {
+      "asserted": 3,
+      "reasoned": 3,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q188473",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q20656232",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q3990883"
+      ]
+    },
+    "dbo:MovieDirector": {
+      "asserted": 0,
+      "reasoned": 17,
+      "new": 17,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18350026",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q184903",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q187364"
+      ]
+    },
+    "ex:SourceSnapshot": {
+      "asserted": 76,
+      "reasoned": 76,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/source-01c22ef7d3be4b100d5dac26",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/source-02a565dc091a4655cc178303",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/source-07172c2f78ac33d912a721a2"
+      ]
+    },
+    "ex:DirectingContribution": {
+      "asserted": 0,
+      "reasoned": 31,
+      "new": 31,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q56005-director",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q104123-Q3772-director",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q127367-Q4465-director"
+      ]
+    },
+    "ex:GenreCrossingFilm": {
+      "asserted": 0,
+      "reasoned": 8,
+      "new": 8,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q104123",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q128518",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q163872"
+      ]
+    },
+    "ex:ActionFilm": {
+      "asserted": 0,
+      "reasoned": 12,
+      "new": 12,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q103569",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q104123",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q127367"
+      ]
+    },
+    "ex:Contribution": {
+      "asserted": 1010,
+      "reasoned": 1010,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q102124-actor",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q1537983-producer",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q200405-actor"
+      ]
+    },
+    "dbo:Actor": {
+      "asserted": 0,
+      "reasoned": 769,
+      "new": 769,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1016897",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102124",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102642"
+      ]
+    },
+    "dbo:Person": {
+      "asserted": 851,
+      "reasoned": 851,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1016897",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102124",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102642"
+      ]
+    },
+    "ex:ProducingContribution": {
+      "asserted": 0,
+      "reasoned": 73,
+      "new": 73,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q1537983-producer",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q2396324-producer",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q350422-producer"
+      ]
+    },
+    "ex:ActingContribution": {
+      "asserted": 0,
+      "reasoned": 855,
+      "new": 855,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q102124-actor",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q200405-actor",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q223091-actor"
+      ]
+    },
+    "ex:AwardWinningFilmmaker": {
+      "asserted": 0,
+      "reasoned": 65,
+      "new": 65,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116854",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174454"
+      ]
+    },
+    "ex:AwardWinningFilm": {
+      "asserted": 0,
+      "reasoned": 26,
+      "new": 26,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q103569",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q104123",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q127367"
+      ]
+    },
+    "ex:MultiCreditContributor": {
+      "asserted": 0,
+      "reasoned": 17,
+      "new": 17,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174454",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18350026"
+      ]
+    },
+    "dbo:Producer": {
+      "asserted": 0,
+      "reasoned": 57,
+      "new": 57,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174454",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1176945"
+      ]
+    },
+    "dbo:Film": {
+      "asserted": 30,
+      "reasoned": 30,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q103569",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q104123",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q127367"
+      ]
+    },
+    "dbo:ScreenWriter": {
+      "asserted": 0,
+      "reasoned": 34,
+      "new": 34,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116854",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q116861",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1174454"
+      ]
+    },
+    "dbo:Language": {
+      "asserted": 15,
+      "reasoned": 15,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/language-Q150",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/language-Q1860",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/language-Q188"
+      ]
+    },
+    "dbo:Company": {
+      "asserted": 45,
+      "reasoned": 45,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q1188938",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q126399",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q159846"
+      ]
+    },
+    "ex:WriterDirector": {
+      "asserted": 0,
+      "reasoned": 10,
+      "new": 10,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q18350026",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q295445"
+      ]
+    },
+    "dbo:Country": {
+      "asserted": 11,
+      "reasoned": 11,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/country-Q142",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/country-Q145",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/country-Q17"
+      ]
+    },
+    "ex:ThreeCreditContributor": {
+      "asserted": 0,
+      "reasoned": 7,
+      "new": 7,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q25191",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q295445",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3772"
+      ]
+    },
+    "dbo:Agent": {
+      "asserted": 0,
+      "reasoned": 896,
+      "new": 896,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q1188938",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q126399",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q159846"
+      ]
+    },
+    "dbo:Artist": {
+      "asserted": 0,
+      "reasoned": 769,
+      "new": 769,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q1016897",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102124",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q102642"
+      ]
+    },
+    "dbo:MovieGenre": {
+      "asserted": 75,
+      "reasoned": 75,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q102260466",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q102429885",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q102706436"
+      ]
+    },
+    "dbo:Genre": {
+      "asserted": 0,
+      "reasoned": 75,
+      "new": 75,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q102260466",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q102429885",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q102706436"
+      ]
+    },
+    "dbo:Award": {
+      "asserted": 672,
+      "reasoned": 672,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/award-Q1000104",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/award-Q1011509",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/award-Q1011547"
+      ]
+    },
+    "dbo:Organisation": {
+      "asserted": 0,
+      "reasoned": 45,
+      "new": 45,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q1188938",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q126399",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/company-Q159846"
+      ]
+    },
+    "ex:WritingContribution": {
+      "asserted": 0,
+      "reasoned": 51,
+      "new": 51,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q3056094-writer",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q103569-Q498430-writer",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/contribution-Q104123-Q3772-writer"
+      ]
+    },
+    "ex:AwardWinningActionFilm": {
+      "asserted": 0,
+      "reasoned": 10,
+      "new": 10,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q103569",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q104123",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q127367"
+      ]
+    },
+    "ex:DramaGenre": {
+      "asserted": 9,
+      "reasoned": 9,
+      "new": 0,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q113485322",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q116456802",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/genre-Q116514801"
+      ]
+    },
+    "ex:ActorFilmmaker": {
+      "asserted": 0,
+      "reasoned": 7,
+      "new": 7,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q3772",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q42574",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/person-Q4465"
+      ]
+    },
+    "dbo:Work": {
+      "asserted": 0,
+      "reasoned": 30,
+      "new": 30,
+      "examples": [
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q103569",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q104123",
+        "https://laminhtrung.github.io/movie-lod-semantic-web/resource/film-Q127367"
+      ]
+    }
+  },
+  "cardinality": {
+    "min2_contributions": 17,
+    "min3_contributions": 7,
+    "MultiGenreFilm": 0,
+    "note": "Role distinctness + functional hasRole; negative genre test remains scoped to the same semantic domain facts."
+  },
+  "object_property_method": "OWL RL inverse/subproperty/chain rules",
+  "video_status": "Removed"
+}

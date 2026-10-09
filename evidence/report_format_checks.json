@@ -1,0 +1,63 @@
+{
+  "language": "English",
+  "pages": 15,
+  "target_pages": 15,
+  "font": "Times New Roman",
+  "font_size_pt": 13,
+  "line_spacing": 1.5,
+  "alignment": "justified body text",
+  "paper": "A4",
+  "margins_cm": {
+    "left": 3,
+    "right": 2,
+    "top": 2,
+    "bottom": 2
+  },
+  "figures": 11,
+  "figure_source": "1 figure retained from supplied slide PDF; 10 author-generated diagrams and verified result panels",
+  "source_manifest": "evidence/report_image_sources.json",
+  "cover_members": [
+    [
+      "Lã Minh Trung",
+      "20251319M"
+    ],
+    [
+      "Nguyễn Thu Uyên",
+      "20252279M"
+    ],
+    [
+      "Nguyễn Thị Nhã Linh",
+      "20261262M"
+    ],
+    [
+      "Nguyễn Khắc Thái Bình",
+      "20251324M"
+    ]
+  ],
+  "supervisor": "TS. Đỗ Bá Lâm",
+  "institution": "Hanoi University of Science and Technology",
+  "toc": "Dedicated page; hierarchical paragraphs, dotted leaders and right-aligned page numbers; no table",
+  "docx_sha256": "827c1847d4e167c035c4e139dddafdba151f879d4db543cecb648af72177511d",
+  "pdf_sha256": "76ce8be3f3e1882ac8b00b7c75f82914cf2100d1533da6d9bba6e5bcfc627115",
+  "video_modified": false,
+  "verified": true,
+  "actual_pdf_fonts": [
+    "BAAAAA+TimesNewRomanPS-BoldMT",
+    "CAAAAA+TimesNewRomanPSMT",
+    "DAAAAA+TimesNewRomanPS-ItalicMT"
+  ],
+  "actual_pdf_text_sizes": [
+    13.0
+  ],
+  "all_visible_word_runs_times_new_roman_13": true,
+  "all_visible_body_paragraphs_line_spacing_1_5": true,
+  "page_numbers_verified": true,
+  "page_titles_match_plan": true,
+  "all_figures_have_attributed_sources": true,
+  "figures_from_supplied_pdf": 1,
+  "author_generated_diagrams": 10,
+  "cover_names_ids_and_supervisor_verified": true,
+  "official_logo_on_cover": true,
+  "toc_own_page_no_table": true,
+  "toc_dotted_leaders": 20
+}

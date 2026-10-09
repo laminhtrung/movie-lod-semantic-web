@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q352203 a dbo:Person ;
+    rdfs:label "Bob Gunton"@en ;
+    dbo:award res:award-Q1095395,
+        res:award-Q5305711 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q352203> ;
+    ex:hasContribution res:contribution-Q172241-Q352203-actor ;
+    ex:sourceSnapshot res:source-70350d2b565eee56f834c56a .
+

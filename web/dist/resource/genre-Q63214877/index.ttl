@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:genre-Q63214877 a dbo:MovieGenre,
+        ex:DramaGenre ;
+    rdfs:label "psychological drama film"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q63214877> ;
+    ex:sourceSnapshot res:source-f4ca917e06a8755924ffd24a .
+

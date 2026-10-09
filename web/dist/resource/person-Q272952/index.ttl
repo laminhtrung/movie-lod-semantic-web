@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q272952 a dbo:Person ;
+    rdfs:label "Bonnie Hunt"@en ;
+    dbo:award res:award-Q105447 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q272952> ;
+    ex:hasContribution res:contribution-Q208263-Q272952-actor ;
+    ex:sourceSnapshot res:source-464bad042398ab7517cf2b19 .
+

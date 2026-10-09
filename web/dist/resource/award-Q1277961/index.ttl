@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q1277961 a dbo:Award ;
+    rdfs:label "Primetime Emmy Award for Outstanding Directing for a Comedy Series"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1277961> ;
+    ex:sourceSnapshot res:source-3d57d215578392c20b927aed .
+

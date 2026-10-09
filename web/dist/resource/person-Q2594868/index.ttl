@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q2594868 a dbo:Person ;
+    rdfs:label "Victor Colicchio"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2594868> ;
+    ex:hasContribution res:contribution-Q42047-Q2594868-actor ;
+    ex:sourceSnapshot res:source-b82d4cd24c4fcbc751ccf4dc .
+

@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-434da39b2ee00c238aca8cf8 a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/Alien_%28film%29.json> ;
+    ex:retrievedAt "2026-10-06T08:42:02.697+00:00"^^xsd:dateTime ;
+    ex:sha256 "434da39b2ee00c238aca8cf88a51391913ad0af99cb7447840fbd4b91d1cd7cf" ;
+    ex:sourceUrl "https://dbpedia.org/data/Alien_%28film%29.json"^^xsd:anyURI .
+

@@ -1,0 +1,34 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q484523 a dbo:Person ;
+    rdfs:label "Jared Leto"@en ;
+    dbo:award res:award-Q106291,
+        res:award-Q107058305,
+        res:award-Q1260789,
+        res:award-Q1635307,
+        res:award-Q175235,
+        res:award-Q19829650,
+        res:award-Q1983113,
+        res:award-Q19868021,
+        res:award-Q2294693,
+        res:award-Q28226224,
+        res:award-Q506565,
+        res:award-Q5211229,
+        res:award-Q5461359,
+        res:award-Q602299,
+        res:award-Q641316,
+        res:award-Q723830,
+        res:award-Q7413655,
+        res:award-Q7589628,
+        res:award-Q7826367,
+        res:award-Q7914165,
+        res:award-Q7971821,
+        res:award-Q922348 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q484523> ;
+    ex:hasContribution res:contribution-Q190050-Q484523-actor ;
+    ex:sourceSnapshot res:source-da3b5f106516c6082cf64a1b .
+

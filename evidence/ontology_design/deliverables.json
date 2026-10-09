@@ -1,0 +1,10 @@
+{
+  "artifacts": {
+    "docs/DBpedia_OWL_Design.md": "cd26baa23bae1ab1e181c46d6d30e42c4956835b150273e8d47a224bc5edbf4e",
+    "docs/DBpedia_OWL_Design.html": "cf8674e1a2383364fd54504966d3de6a9a2f3eabaa154ea4b34944202ca03b5f",
+    "docs/DBpedia_OWL_Design.docx": "2453e772fb17ee3ee5f6d89da56bb6d5b80643d1af083ef17cbaa272c2a0c295"
+  },
+  "application_version": "3.0.0",
+  "mp4_included": false,
+  "release_bundle": "../movie_lod_github_deliverables/Bo_tai_lieu_thuyet_trinh.zip"
+}

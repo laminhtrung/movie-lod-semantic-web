@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q104123-Q109232-actor a ex:Contribution ;
+    rdfs:label "Pulp Fiction — actor — Rosanna Arquette" ;
+    ex:contributionBy res:person-Q109232 ;
+    ex:contributionTo res:film-Q104123 ;
+    ex:hasRole ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

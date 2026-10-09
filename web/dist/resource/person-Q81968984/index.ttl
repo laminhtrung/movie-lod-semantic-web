@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q81968984 a dbo:Person ;
+    rdfs:label "Miri Fabian"@en ;
+    dbo:award res:award-Q6414195 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q81968984> ;
+    ex:hasContribution res:contribution-Q483941-Q81968984-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

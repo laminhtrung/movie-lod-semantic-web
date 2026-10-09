@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:country-Q38 a dbo:Country ;
+    rdfs:label "Italy"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q38> ;
+    ex:sourceSnapshot res:source-b5b73be0267261c9c9a2b7ca .
+

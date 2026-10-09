@@ -1,0 +1,92 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q46551 a dbo:Film ;
+    rdfs:label "The Prestige"@en ;
+    dbo:country res:country-Q145,
+        res:country-Q30 ;
+    dbo:director res:person-Q25191 ;
+    dbo:genre res:genre-Q102706436,
+        res:genre-Q1200678,
+        res:genre-Q130232,
+        res:genre-Q157394,
+        res:genre-Q2484376 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q242951,
+        res:person-Q25191,
+        res:person-Q2820085 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q3875639,
+        res:company-Q497155,
+        res:company-Q984047 ;
+    dbo:runtime 7.5e+03 ;
+    dbo:starring res:person-Q10306924,
+        res:person-Q1123336,
+        res:person-Q123351,
+        res:person-Q1516734,
+        res:person-Q16239443,
+        res:person-Q1691277,
+        res:person-Q1750774,
+        res:person-Q206922,
+        res:person-Q228868,
+        res:person-Q230534,
+        res:person-Q272823,
+        res:person-Q280198,
+        res:person-Q3054443,
+        res:person-Q338355,
+        res:person-Q34436,
+        res:person-Q3946344,
+        res:person-Q440971,
+        res:person-Q45772,
+        res:person-Q466789,
+        res:person-Q4993338,
+        res:person-Q5383,
+        res:person-Q560413,
+        res:person-Q587641,
+        res:person-Q604485,
+        res:person-Q723101 ;
+    dbo:writer res:person-Q25191,
+        res:person-Q372788,
+        res:person-Q707796 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q46551> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q46551> ;
+    ex:contributionOf res:contribution-Q46551-Q10306924-actor,
+        res:contribution-Q46551-Q1123336-actor,
+        res:contribution-Q46551-Q123351-actor,
+        res:contribution-Q46551-Q1516734-actor,
+        res:contribution-Q46551-Q16239443-actor,
+        res:contribution-Q46551-Q1691277-actor,
+        res:contribution-Q46551-Q1750774-actor,
+        res:contribution-Q46551-Q206922-actor,
+        res:contribution-Q46551-Q228868-actor,
+        res:contribution-Q46551-Q230534-actor,
+        res:contribution-Q46551-Q242951-producer,
+        res:contribution-Q46551-Q25191-director,
+        res:contribution-Q46551-Q25191-producer,
+        res:contribution-Q46551-Q25191-writer,
+        res:contribution-Q46551-Q272823-actor,
+        res:contribution-Q46551-Q280198-actor,
+        res:contribution-Q46551-Q2820085-producer,
+        res:contribution-Q46551-Q3054443-actor,
+        res:contribution-Q46551-Q338355-actor,
+        res:contribution-Q46551-Q34436-actor,
+        res:contribution-Q46551-Q372788-writer,
+        res:contribution-Q46551-Q3946344-actor,
+        res:contribution-Q46551-Q440971-actor,
+        res:contribution-Q46551-Q45772-actor,
+        res:contribution-Q46551-Q466789-actor,
+        res:contribution-Q46551-Q4993338-actor,
+        res:contribution-Q46551-Q5383-actor,
+        res:contribution-Q46551-Q560413-actor,
+        res:contribution-Q46551-Q587641-actor,
+        res:contribution-Q46551-Q604485-actor,
+        res:contribution-Q46551-Q707796-writer,
+        res:contribution-Q46551-Q723101-actor ;
+    ex:releaseYear 2006 ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

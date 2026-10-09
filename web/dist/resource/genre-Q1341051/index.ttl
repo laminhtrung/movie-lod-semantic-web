@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:genre-Q1341051 a dbo:MovieGenre ;
+    rdfs:label "post-apocalyptic film"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1341051> ;
+    ex:sourceSnapshot res:source-d575e89ee6f63a14842d22cf .
+

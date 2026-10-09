@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q13452531 a dbo:Award ;
+    rdfs:label "Commandeur des Arts et des Lettres‎"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q13452531> ;
+    ex:sourceSnapshot res:source-3d57d215578392c20b927aed .
+

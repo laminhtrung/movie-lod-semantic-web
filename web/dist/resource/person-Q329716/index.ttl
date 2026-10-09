@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q329716 a dbo:Person ;
+    rdfs:label "Michael Jeter"@en ;
+    dbo:award res:award-Q1095395,
+        res:award-Q1131356,
+        res:award-Q1285970,
+        res:award-Q1723064 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q329716> ;
+    ex:hasContribution res:contribution-Q208263-Q329716-actor ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

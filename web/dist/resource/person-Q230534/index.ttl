@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q230534 a dbo:Person ;
+    rdfs:label "Rebecca Hall"@en ;
+    dbo:award res:award-Q109012141,
+        res:award-Q20180674,
+        res:award-Q24905095,
+        res:award-Q2925695,
+        res:award-Q3147245,
+        res:award-Q4921555,
+        res:award-Q60768236 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q230534> ;
+    ex:hasContribution res:contribution-Q46551-Q230534-actor ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

@@ -1,0 +1,74 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q172241 a dbo:Film ;
+    rdfs:label "The Shawshank Redemption"@en ;
+    dbo:award res:award-Q1966965,
+        res:award-Q4745055 ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q295445 ;
+    dbo:genre res:genre-Q130232,
+        res:genre-Q586250,
+        res:genre-Q663106,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q7034951 ;
+    dbo:productionCompany res:company-Q186941,
+        res:company-Q622848 ;
+    dbo:runtime 8.52e+03 ;
+    dbo:starring res:person-Q1139190,
+        res:person-Q1176208,
+        res:person-Q152542,
+        res:person-Q15665021,
+        res:person-Q2690748,
+        res:person-Q313040,
+        res:person-Q352203,
+        res:person-Q360313,
+        res:person-Q3827125,
+        res:person-Q443343,
+        res:person-Q4488,
+        res:person-Q4722037,
+        res:person-Q48337,
+        res:person-Q4908187,
+        res:person-Q6239926,
+        res:person-Q687311,
+        res:person-Q693301,
+        res:person-Q719256,
+        res:person-Q733776,
+        res:person-Q95048 ;
+    dbo:writer res:person-Q295445 ;
+    owl:sameAs <http://dbpedia.org/resource/The_Shawshank_Redemption>,
+        <http://www.wikidata.org/entity/Q172241> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q172241> ;
+    ex:contributionOf res:contribution-Q172241-Q1139190-actor,
+        res:contribution-Q172241-Q1176208-actor,
+        res:contribution-Q172241-Q152542-actor,
+        res:contribution-Q172241-Q15665021-actor,
+        res:contribution-Q172241-Q2690748-actor,
+        res:contribution-Q172241-Q295445-director,
+        res:contribution-Q172241-Q295445-writer,
+        res:contribution-Q172241-Q313040-actor,
+        res:contribution-Q172241-Q352203-actor,
+        res:contribution-Q172241-Q360313-actor,
+        res:contribution-Q172241-Q3827125-actor,
+        res:contribution-Q172241-Q443343-actor,
+        res:contribution-Q172241-Q4488-actor,
+        res:contribution-Q172241-Q4722037-actor,
+        res:contribution-Q172241-Q48337-actor,
+        res:contribution-Q172241-Q4908187-actor,
+        res:contribution-Q172241-Q6239926-actor,
+        res:contribution-Q172241-Q687311-actor,
+        res:contribution-Q172241-Q693301-actor,
+        res:contribution-Q172241-Q7034951-producer,
+        res:contribution-Q172241-Q719256-actor,
+        res:contribution-Q172241-Q733776-actor,
+        res:contribution-Q172241-Q95048-actor ;
+    ex:releaseYear 1994 ;
+    ex:sourceSnapshot res:source-29faa784a977498431b6fa25,
+        res:source-3e29244a71b9cd1900b290d9 .
+

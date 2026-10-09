@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q384004 a dbo:Person ;
+    rdfs:label "John Logan"@en ;
+    dbo:award res:award-Q1799442 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q384004> ;
+    ex:hasContribution res:contribution-Q128518-Q384004-writer ;
+    ex:sourceSnapshot res:source-b5b73be0267261c9c9a2b7ca .
+

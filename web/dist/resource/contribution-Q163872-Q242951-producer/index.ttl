@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q163872-Q242951-producer a ex:Contribution ;
+    rdfs:label "The Dark Knight — producer — Emma Thomas" ;
+    ex:contributionBy res:person-Q242951 ;
+    ex:contributionTo res:film-Q163872 ;
+    ex:hasRole ex:ProducerRole ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:credit-Q483941-Q1937615-actor a ex:Credit ;
+    rdfs:label "Schindler's List — actor — Olaf Lubaszenko" ;
+    ex:inFilm res:film-Q483941 ;
+    ex:participant res:person-Q1937615 ;
+    ex:role ex:ActorRole ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9 .
+

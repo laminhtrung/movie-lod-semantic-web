@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-1baac09ed03ce36de65d716d a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/Dunkirk_%282017_film%29.json> ;
+    ex:retrievedAt "2026-10-06T08:41:54.743+00:00"^^xsd:dateTime ;
+    ex:sha256 "1baac09ed03ce36de65d716d822a7e3755256c1d3ca96eb60da40c7fa47cf8dc" ;
+    ex:sourceUrl "https://dbpedia.org/data/Dunkirk_%282017_film%29.json"^^xsd:anyURI .
+

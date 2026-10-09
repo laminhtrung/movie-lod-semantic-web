@@ -1,0 +1,74 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q15648198 a dbo:Film ;
+    rdfs:label "Whiplash"@en ;
+    dbo:award res:award-Q106291,
+        res:award-Q1419872,
+        res:award-Q281939,
+        res:award-Q3114765,
+        res:award-Q3774974,
+        res:award-Q830079 ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q18350026 ;
+    dbo:genre res:genre-Q130232,
+        res:genre-Q842256 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q13449900,
+        res:person-Q19955710,
+        res:person-Q19956396,
+        res:person-Q20873879 ;
+    dbo:productionCompany res:company-Q16984664,
+        res:company-Q20714622 ;
+    dbo:runtime 6.36e+03 ;
+    dbo:starring res:person-Q1189389,
+        res:person-Q150482,
+        res:person-Q2642437,
+        res:person-Q267330,
+        res:person-Q29109394,
+        res:person-Q3208206,
+        res:person-Q3784932,
+        res:person-Q3853048,
+        res:person-Q4204710,
+        res:person-Q430922,
+        res:person-Q46677,
+        res:person-Q509013,
+        res:person-Q6379293,
+        res:person-Q6425724,
+        res:person-Q6829330,
+        res:person-Q842585 ;
+    dbo:writer res:person-Q18350026 ;
+    owl:sameAs <http://dbpedia.org/resource/Whiplash_(2014_film)>,
+        <http://www.wikidata.org/entity/Q15648198> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q15648198> ;
+    ex:contributionOf res:contribution-Q15648198-Q1189389-actor,
+        res:contribution-Q15648198-Q13449900-producer,
+        res:contribution-Q15648198-Q150482-actor,
+        res:contribution-Q15648198-Q18350026-director,
+        res:contribution-Q15648198-Q18350026-writer,
+        res:contribution-Q15648198-Q19955710-producer,
+        res:contribution-Q15648198-Q19956396-producer,
+        res:contribution-Q15648198-Q20873879-producer,
+        res:contribution-Q15648198-Q2642437-actor,
+        res:contribution-Q15648198-Q267330-actor,
+        res:contribution-Q15648198-Q29109394-actor,
+        res:contribution-Q15648198-Q3208206-actor,
+        res:contribution-Q15648198-Q3784932-actor,
+        res:contribution-Q15648198-Q3853048-actor,
+        res:contribution-Q15648198-Q4204710-actor,
+        res:contribution-Q15648198-Q430922-actor,
+        res:contribution-Q15648198-Q46677-actor,
+        res:contribution-Q15648198-Q509013-actor,
+        res:contribution-Q15648198-Q6379293-actor,
+        res:contribution-Q15648198-Q6425724-actor,
+        res:contribution-Q15648198-Q6829330-actor,
+        res:contribution-Q15648198-Q842585-actor ;
+    ex:releaseYear 2014 ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7,
+        res:source-f95e7e29ea62942fd98edef5 .
+

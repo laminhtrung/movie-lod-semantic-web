@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-e0eadfa4c16c886d17ae5833 a ex:SourceSnapshot ;
+    rdfs:label "Wikidata source snapshot" ;
+    prov:wasDerivedFrom <https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&languages=en&ids=Q353978%7CQ355209%7CQ3560613%7CQ356541%7CQ3573137%7CQ358990%7CQ360313%7CQ361215%7CQ362353%7CQ3626966%7CQ36301%7CQ363271%7CQ3645492%7CQ3660357%7CQ36767%7CQ368037%7CQ3694232%7CQ36949%7CQ369747%7CQ37269398%7CQ372788%7CQ374273%7CQ374447%7CQ3745429%7CQ3749387%7CQ375356%7CQ376131%7CQ376261%7CQ3764465%7CQ3772%7CQ3783517%7CQ3784932%7CQ379830%7CQ38%7CQ380872%7CQ3809461%7CQ38111%7CQ3811107%7CQ3827125%7CQ384004&props=labels%7Cdescriptions%7Cclaims> ;
+    ex:retrievedAt "2026-10-06T08:46:15.593675+00:00"^^xsd:dateTime ;
+    ex:sha256 "e0eadfa4c16c886d17ae5833118833e1923bd103149c093f19d9355e2fdd5309" ;
+    ex:sourceUrl "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&languages=en&ids=Q353978%7CQ355209%7CQ3560613%7CQ356541%7CQ3573137%7CQ358990%7CQ360313%7CQ361215%7CQ362353%7CQ3626966%7CQ36301%7CQ363271%7CQ3645492%7CQ3660357%7CQ36767%7CQ368037%7CQ3694232%7CQ36949%7CQ369747%7CQ37269398%7CQ372788%7CQ374273%7CQ374447%7CQ3745429%7CQ3749387%7CQ375356%7CQ376131%7CQ376261%7CQ3764465%7CQ3772%7CQ3783517%7CQ3784932%7CQ379830%7CQ38%7CQ380872%7CQ3809461%7CQ38111%7CQ3811107%7CQ3827125%7CQ384004&props=labels%7Cdescriptions%7Cclaims"^^xsd:anyURI .
+

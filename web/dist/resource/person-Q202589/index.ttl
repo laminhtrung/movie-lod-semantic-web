@@ -1,0 +1,20 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q202589 a dbo:Person ;
+    rdfs:label "Cillian Murphy"@en ;
+    dbo:award res:award-Q103916,
+        res:award-Q2296147,
+        res:award-Q400007,
+        res:award-Q593098,
+        res:award-Q654620 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q202589> ;
+    ex:hasContribution res:contribution-Q163872-Q202589-actor,
+        res:contribution-Q166262-Q202589-actor,
+        res:contribution-Q21935651-Q202589-actor,
+        res:contribution-Q25188-Q202589-actor ;
+    ex:sourceSnapshot res:source-8c53dd10280f0a6d0cab26d2 .
+

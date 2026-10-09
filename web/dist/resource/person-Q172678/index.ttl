@@ -1,0 +1,20 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q172678 a dbo:Person ;
+    rdfs:label "Samuel L. Jackson"@en ;
+    dbo:award res:award-Q17985761,
+        res:award-Q311836,
+        res:award-Q548389,
+        res:award-Q586140,
+        res:award-Q708135,
+        res:award-Q727328,
+        res:award-Q819973 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q172678> ;
+    ex:hasContribution res:contribution-Q104123-Q172678-actor,
+        res:contribution-Q42047-Q172678-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

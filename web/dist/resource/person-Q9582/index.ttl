@@ -1,0 +1,27 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q9582 a dbo:Person ;
+    rdfs:label "Gerald Ford"@en ;
+    dbo:award res:award-Q101242891,
+        res:award-Q17144,
+        res:award-Q2079534,
+        res:award-Q219070,
+        res:award-Q23058979,
+        res:award-Q2338071,
+        res:award-Q2338107,
+        res:award-Q28950956,
+        res:award-Q3046356,
+        res:award-Q42307030,
+        res:award-Q5282987,
+        res:award-Q5480301,
+        res:award-Q60658956,
+        res:award-Q721743,
+        res:award-Q7781991 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9582> ;
+    ex:hasContribution res:contribution-Q134773-Q9582-actor ;
+    ex:sourceSnapshot res:source-8c6fb43b7aa45e3aebfc36f9 .
+

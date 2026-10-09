@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Titanic_%281997_film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:01.900779+00:00",
+  "sha256": "66f865586a63256fe1fef0e214f600a7854106f42979d2afbb69dfd87c1fde69",
+  "path": "data/raw/b252a479c68091a736e81c51.json",
+  "http_status": 200
+}

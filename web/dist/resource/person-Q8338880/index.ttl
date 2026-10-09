@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q8338880 a dbo:Person ;
+    rdfs:label "Jerzy Nowak"@en ;
+    dbo:award res:award-Q1702885,
+        res:award-Q1983581,
+        res:award-Q21954284 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8338880> ;
+    ex:hasContribution res:contribution-Q483941-Q8338880-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

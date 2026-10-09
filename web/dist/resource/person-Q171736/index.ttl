@@ -1,0 +1,22 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q171736 a dbo:Person ;
+    rdfs:label "Robert Duvall"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q103916,
+        res:award-Q1260789,
+        res:award-Q1789030,
+        res:award-Q17985761,
+        res:award-Q2611552,
+        res:award-Q548389,
+        res:award-Q908858,
+        res:award-Q989453 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q171736> ;
+    ex:hasContribution res:contribution-Q184768-Q171736-actor,
+        res:contribution-Q47703-Q171736-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

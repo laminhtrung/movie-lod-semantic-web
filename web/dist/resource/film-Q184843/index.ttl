@@ -1,0 +1,78 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q184843 a dbo:Film ;
+    rdfs:label "Blade Runner"@en ;
+    dbo:award res:award-Q1870452,
+        res:award-Q3414212,
+        res:award-Q508166,
+        res:award-Q778870 ;
+    dbo:country res:country-Q30,
+        res:country-Q8646 ;
+    dbo:director res:person-Q56005 ;
+    dbo:genre res:genre-Q113485322,
+        res:genre-Q130232,
+        res:genre-Q174526,
+        res:genre-Q185867,
+        res:genre-Q188473,
+        res:genre-Q1894374,
+        res:genre-Q19367312,
+        res:genre-Q20443008,
+        res:genre-Q2421031,
+        res:genre-Q2484376,
+        res:genre-Q471839,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q361443,
+        res:person-Q3808035,
+        res:person-Q656655 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q3980774,
+        res:company-Q951774 ;
+    dbo:runtime 6.72e+03 ;
+    dbo:starring res:person-Q1353691,
+        res:person-Q1372770,
+        res:person-Q1691628,
+        res:person-Q207596,
+        res:person-Q211415,
+        res:person-Q213574,
+        res:person-Q230736,
+        res:person-Q236702,
+        res:person-Q3143555,
+        res:person-Q358990,
+        res:person-Q498420,
+        res:person-Q723780,
+        res:person-Q81328 ;
+    dbo:writer res:person-Q1177114,
+        res:person-Q1372703 ;
+    owl:sameAs <http://dbpedia.org/resource/Blade_Runner>,
+        <http://www.wikidata.org/entity/Q184843> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q184843> ;
+    ex:contributionOf res:contribution-Q184843-Q1177114-writer,
+        res:contribution-Q184843-Q1353691-actor,
+        res:contribution-Q184843-Q1372703-writer,
+        res:contribution-Q184843-Q1372770-actor,
+        res:contribution-Q184843-Q1691628-actor,
+        res:contribution-Q184843-Q207596-actor,
+        res:contribution-Q184843-Q211415-actor,
+        res:contribution-Q184843-Q213574-actor,
+        res:contribution-Q184843-Q230736-actor,
+        res:contribution-Q184843-Q236702-actor,
+        res:contribution-Q184843-Q3143555-actor,
+        res:contribution-Q184843-Q358990-actor,
+        res:contribution-Q184843-Q361443-producer,
+        res:contribution-Q184843-Q3808035-producer,
+        res:contribution-Q184843-Q498420-actor,
+        res:contribution-Q184843-Q56005-director,
+        res:contribution-Q184843-Q656655-producer,
+        res:contribution-Q184843-Q723780-actor,
+        res:contribution-Q184843-Q81328-actor ;
+    ex:releaseYear 1982 ;
+    ex:sourceSnapshot res:source-732753dcab1a96503b548910,
+        res:source-767abf09b55092603628beb7 .
+

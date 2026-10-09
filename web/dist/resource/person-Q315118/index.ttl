@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q315118 a dbo:Person ;
+    rdfs:label "Marton Csokas"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q315118> ;
+    ex:hasContribution res:contribution-Q127367-Q315118-actor,
+        res:contribution-Q131074-Q315118-actor ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

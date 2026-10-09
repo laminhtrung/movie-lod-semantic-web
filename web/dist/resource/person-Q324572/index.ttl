@@ -1,0 +1,23 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q324572 a dbo:Person ;
+    rdfs:label "Mark Rylance"@en ;
+    dbo:award res:award-Q106291,
+        res:award-Q1131356,
+        res:award-Q1445521,
+        res:award-Q1474410,
+        res:award-Q16933033,
+        res:award-Q28470,
+        res:award-Q2925701,
+        res:award-Q4167639,
+        res:award-Q5305701,
+        res:award-Q548389,
+        res:award-Q833163 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q324572> ;
+    ex:hasContribution res:contribution-Q21935651-Q324572-actor ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

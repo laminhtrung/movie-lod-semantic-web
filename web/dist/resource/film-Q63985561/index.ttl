@@ -1,0 +1,67 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q63985561 a dbo:Film ;
+    rdfs:label "Tenet"@en ;
+    dbo:country res:country-Q145,
+        res:country-Q30 ;
+    dbo:director res:person-Q25191 ;
+    dbo:genre res:genre-Q104765957,
+        res:genre-Q188473,
+        res:genre-Q2297927,
+        res:genre-Q2484376,
+        res:genre-Q471839 ;
+    dbo:language res:language-Q1860,
+        res:language-Q7737,
+        res:language-Q8798,
+        res:language-Q9072 ;
+    dbo:producer res:person-Q242951,
+        res:person-Q25191 ;
+    dbo:productionCompany res:company-Q126399,
+        res:company-Q984047 ;
+    dbo:runtime 9e+03 ;
+    dbo:starring res:person-Q123351,
+        res:person-Q158558,
+        res:person-Q16325426,
+        res:person-Q20090576,
+        res:person-Q232868,
+        res:person-Q2835788,
+        res:person-Q3499384,
+        res:person-Q36767,
+        res:person-Q4120019,
+        res:person-Q4228271,
+        res:person-Q432873,
+        res:person-Q45923,
+        res:person-Q5362676,
+        res:person-Q55294,
+        res:person-Q726130 ;
+    dbo:writer res:person-Q25191 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q63985561> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q63985561> ;
+    ex:contributionOf res:contribution-Q63985561-Q123351-actor,
+        res:contribution-Q63985561-Q158558-actor,
+        res:contribution-Q63985561-Q16325426-actor,
+        res:contribution-Q63985561-Q20090576-actor,
+        res:contribution-Q63985561-Q232868-actor,
+        res:contribution-Q63985561-Q242951-producer,
+        res:contribution-Q63985561-Q25191-director,
+        res:contribution-Q63985561-Q25191-producer,
+        res:contribution-Q63985561-Q25191-writer,
+        res:contribution-Q63985561-Q2835788-actor,
+        res:contribution-Q63985561-Q3499384-actor,
+        res:contribution-Q63985561-Q36767-actor,
+        res:contribution-Q63985561-Q4120019-actor,
+        res:contribution-Q63985561-Q4228271-actor,
+        res:contribution-Q63985561-Q432873-actor,
+        res:contribution-Q63985561-Q45923-actor,
+        res:contribution-Q63985561-Q5362676-actor,
+        res:contribution-Q63985561-Q55294-actor,
+        res:contribution-Q63985561-Q726130-actor ;
+    ex:releaseYear 2020 ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

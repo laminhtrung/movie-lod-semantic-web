@@ -1,0 +1,17 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q173399 a dbo:Person ;
+    rdfs:label "Elliot Page"@en ;
+    dbo:award res:award-Q115796547,
+        res:award-Q1371682,
+        res:award-Q2544851,
+        res:award-Q604370,
+        res:award-Q923408 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q173399> ;
+    ex:hasContribution res:contribution-Q25188-Q173399-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

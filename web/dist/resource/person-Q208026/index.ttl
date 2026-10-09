@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q208026 a dbo:Person ;
+    rdfs:label "Tom Hardy"@en ;
+    dbo:award res:award-Q12201477,
+        res:award-Q4835654,
+        res:award-Q918660 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q208026> ;
+    ex:hasContribution res:contribution-Q21935651-Q208026-actor,
+        res:contribution-Q25188-Q208026-actor ;
+    ex:sourceSnapshot res:source-8c53dd10280f0a6d0cab26d2 .
+

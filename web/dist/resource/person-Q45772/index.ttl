@@ -1,0 +1,17 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q45772 a dbo:Person ;
+    rdfs:label "Christian Bale"@en ;
+    dbo:award res:award-Q106291,
+        res:award-Q15830911,
+        res:award-Q24051551 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q45772> ;
+    ex:hasContribution res:contribution-Q163872-Q45772-actor,
+        res:contribution-Q166262-Q45772-actor,
+        res:contribution-Q46551-Q45772-actor ;
+    ex:sourceSnapshot res:source-784aba8cd47bf4430b0f4f9b .
+

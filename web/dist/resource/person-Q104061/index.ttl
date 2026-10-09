@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q104061 a dbo:Person ;
+    rdfs:label "Steve Buscemi"@en ;
+    dbo:award res:award-Q165313,
+        res:award-Q2294693,
+        res:award-Q2414252,
+        res:award-Q2530270,
+        res:award-Q311836,
+        res:award-Q593098 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q104061> ;
+    ex:hasContribution res:contribution-Q104123-Q104061-actor ;
+    ex:sourceSnapshot res:source-125e8e07aa0b622e289724a2 .
+

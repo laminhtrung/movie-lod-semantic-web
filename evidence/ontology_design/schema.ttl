@@ -1,0 +1,397 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dbo:country a owl:ObjectProperty ;
+    rdfs:range dbo:Country .
+
+dbo:language a owl:ObjectProperty ;
+    rdfs:range dbo:Language .
+
+dbo:producer a owl:ObjectProperty ;
+    rdfs:domain dbo:Work ;
+    rdfs:range dbo:Agent .
+
+dbo:runtime a owl:DatatypeProperty ;
+    rdfs:domain dbo:Work ;
+    rdfs:range xsd:double .
+
+dbo:writer a owl:ObjectProperty ;
+    rdfs:domain dbo:Work ;
+    rdfs:range dbo:Person .
+
+void:Dataset a owl:Class ;
+    rdfs:label "Dataset"@en ;
+    rdfs:comment "Reuse VoID dataset, remove ex:Dataset clone."@en .
+
+<https://laminhtrung.github.io/movie-lod-semantic-web/ontology> a owl:Ontology ;
+    rdfs:label "MovieLOD — DBpedia-based movie ontology"@en ;
+    owl:versionInfo "3.0.0" .
+
+ex:ActingContribution a owl:Class ;
+    rdfs:label "ActingContribution"@en ;
+    rdfs:comment "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record."@en ;
+    rdfs:subClassOf ex:Contribution ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ex:Contribution [ a owl:Restriction ;
+                        owl:hasValue ex:ActorRole ;
+                        owl:onProperty ex:hasRole ] ) ] .
+
+ex:ActorFilmmaker a owl:Class ;
+    rdfs:label "ActorFilmmaker"@en ;
+    rdfs:comment "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."@en ;
+    rdfs:subClassOf dbo:Person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( dbo:Actor ex:Filmmaker ) ] .
+
+ex:AwardWinningActionFilm a owl:Class ;
+    rdfs:label "AwardWinningActionFilm"@en ;
+    rdfs:comment "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."@en ;
+    rdfs:subClassOf dbo:Film ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ex:ActionFilm ex:AwardWinningFilm ) ] .
+
+ex:AwardWinningFilmmaker a owl:Class ;
+    rdfs:label "AwardWinningFilmmaker"@en ;
+    rdfs:comment "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."@en ;
+    rdfs:subClassOf dbo:Person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ex:Filmmaker [ a owl:Restriction ;
+                        owl:onProperty dbo:award ;
+                        owl:someValuesFrom dbo:Award ] ) ] .
+
+ex:GenreCrossingFilm a owl:Class ;
+    rdfs:label "GenreCrossingFilm"@en ;
+    rdfs:comment "Film carrying both action and drama genre memberships; this is not an unproved two-distinct-genre cardinality claim."@en ;
+    rdfs:subClassOf dbo:Film ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( dbo:Film [ a owl:Restriction ;
+                        owl:onProperty dbo:genre ;
+                        owl:someValuesFrom ex:ActionGenre ] [ a owl:Restriction ;
+                        owl:onProperty dbo:genre ;
+                        owl:someValuesFrom ex:DramaGenre ] ) ] .
+
+ex:MultiCreditContributor a owl:Class ;
+    rdfs:label "MultiCreditContributor"@en ;
+    rdfs:comment "At least two semantically distinct credit records. Different roles prove their distinctness; the name is shorthand and does not exclude repeated same-role credits."@en ;
+    rdfs:subClassOf dbo:Person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( dbo:Person [ a owl:Restriction ;
+                        owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                        owl:onClass ex:Contribution ;
+                        owl:onProperty ex:hasContribution ] ) ] .
+
+ex:ThreeCreditContributor a owl:Class ;
+    rdfs:label "ThreeCreditContributor"@en ;
+    rdfs:comment "At least three distinct credit records; three different role fillers prove distinctness. Not exactly three roles or an exhaustive career description."@en ;
+    rdfs:subClassOf dbo:Person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( dbo:Person [ a owl:Restriction ;
+                        owl:minQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+                        owl:onClass ex:Contribution ;
+                        owl:onProperty ex:hasContribution ] ) ] .
+
+ex:WriterDirector a owl:Class ;
+    rdfs:label "WriterDirector"@en ;
+    rdfs:comment "A person with both directing and writing credits in this dataset; classification is never manually asserted."@en ;
+    rdfs:subClassOf dbo:Person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( dbo:MovieDirector dbo:ScreenWriter ) ] .
+
+ex:actedIn a owl:ObjectProperty ;
+    rdfs:domain dbo:Actor ;
+    rdfs:range dbo:Film ;
+    rdfs:subPropertyOf ex:contributedTo ;
+    owl:inverseOf dbo:starring .
+
+ex:directed a owl:ObjectProperty ;
+    rdfs:domain dbo:Person ;
+    rdfs:range dbo:Film ;
+    rdfs:subPropertyOf ex:contributedTo ;
+    owl:inverseOf dbo:director .
+
+ex:productionOf a owl:ObjectProperty ;
+    rdfs:domain dbo:Company ;
+    rdfs:range dbo:Work ;
+    owl:inverseOf dbo:productionCompany .
+
+ex:releaseYear a owl:DatatypeProperty ;
+    rdfs:domain dbo:Film ;
+    rdfs:range xsd:integer .
+
+ex:retrievedAt a owl:DatatypeProperty ;
+    rdfs:domain ex:SourceSnapshot ;
+    rdfs:range xsd:dateTime .
+
+ex:sha256 a owl:DatatypeProperty ;
+    rdfs:domain ex:SourceSnapshot ;
+    rdfs:range xsd:string .
+
+ex:sourceSnapshot a owl:ObjectProperty ;
+    rdfs:range ex:SourceSnapshot .
+
+ex:sourceUrl a owl:DatatypeProperty ;
+    rdfs:domain ex:SourceSnapshot ;
+    rdfs:range xsd:anyURI .
+
+dbo:Artist a owl:Class ;
+    rdfs:label "Artist"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Person .
+
+dbo:Country a owl:Class ;
+    rdfs:label "Country"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en .
+
+dbo:Language a owl:Class ;
+    rdfs:label "Language"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en .
+
+dbo:Organisation a owl:Class ;
+    rdfs:label "Organisation"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Agent .
+
+dbo:Producer a owl:Class ;
+    rdfs:label "Producer"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Person .
+
+dbo:Writer a owl:Class ;
+    rdfs:label "Writer"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Person .
+
+dbo:director a owl:ObjectProperty ;
+    rdfs:domain dbo:Film ;
+    rdfs:range dbo:Person .
+
+dbo:productionCompany a owl:ObjectProperty ;
+    rdfs:domain dbo:Work ;
+    rdfs:range dbo:Company .
+
+dbo:starring a owl:ObjectProperty ;
+    rdfs:domain dbo:Work ;
+    rdfs:range dbo:Actor .
+
+ex:ActionFilm a owl:Class ;
+    rdfs:label "ActionFilm"@en ;
+    rdfs:comment "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."@en ;
+    rdfs:subClassOf dbo:Film ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( dbo:Film [ a owl:Restriction ;
+                        owl:onProperty dbo:genre ;
+                        owl:someValuesFrom ex:ActionGenre ] ) ] .
+
+ex:AwardWinningFilm a owl:Class ;
+    rdfs:label "AwardWinningFilm"@en ;
+    rdfs:comment "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."@en ;
+    rdfs:subClassOf dbo:Film ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( dbo:Film [ a owl:Restriction ;
+                        owl:onProperty dbo:award ;
+                        owl:someValuesFrom dbo:Award ] ) ] .
+
+ex:DramaGenre a owl:Class ;
+    rdfs:label "DramaGenre"@en ;
+    rdfs:comment "Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module."@en ;
+    rdfs:subClassOf dbo:MovieGenre .
+
+ex:contributionOf a owl:ObjectProperty ;
+    rdfs:domain dbo:Film ;
+    rdfs:range ex:Contribution .
+
+dbo:Company a owl:Class ;
+    rdfs:label "Company"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Organisation .
+
+dbo:Genre a owl:Class ;
+    rdfs:label "Genre"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en .
+
+dbo:MovieDirector a owl:Class ;
+    rdfs:label "MovieDirector"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Person .
+
+dbo:MovieGenre a owl:Class ;
+    rdfs:label "MovieGenre"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Genre .
+
+dbo:ScreenWriter a owl:Class ;
+    rdfs:label "ScreenWriter"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Writer .
+
+dbo:award a owl:ObjectProperty ;
+    rdfs:range dbo:Award .
+
+ex:ActionGenre a owl:Class ;
+    rdfs:label "ActionGenre"@en ;
+    rdfs:comment "Local normalized film-genre bucket selected by matching the crawled English label; no DBpedia class of this narrow meaning in reference module."@en ;
+    rdfs:subClassOf dbo:MovieGenre .
+
+ex:ActorRole a owl:NamedIndividual,
+        ex:ContributionRole ;
+    rdfs:label "Actor"@en .
+
+ex:DirectingContribution a owl:Class ;
+    rdfs:label "DirectingContribution"@en ;
+    rdfs:comment "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record."@en ;
+    rdfs:subClassOf ex:Contribution ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ex:Contribution [ a owl:Restriction ;
+                        owl:hasValue ex:DirectorRole ;
+                        owl:onProperty ex:hasRole ] ) ] .
+
+ex:DirectorRole a owl:NamedIndividual,
+        ex:ContributionRole ;
+    rdfs:label "Director"@en .
+
+ex:Filmmaker a owl:Class ;
+    rdfs:label "Filmmaker"@en ;
+    rdfs:comment "Local dataset-specific OWL-defined subset; not a replacement for a DBpedia base class."@en ;
+    rdfs:subClassOf dbo:Person ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( dbo:Person [ a owl:Class ;
+                        owl:unionOf ( [ a owl:Restriction ;
+                                    owl:onProperty ex:hasContribution ;
+                                    owl:someValuesFrom ex:DirectingContribution ] [ a owl:Restriction ;
+                                    owl:onProperty ex:hasContribution ;
+                                    owl:someValuesFrom ex:WritingContribution ] [ a owl:Restriction ;
+                                    owl:onProperty ex:hasContribution ;
+                                    owl:someValuesFrom ex:ProducingContribution ] ) ] ) ] .
+
+ex:ProducerRole a owl:NamedIndividual,
+        ex:ContributionRole ;
+    rdfs:label "Producer"@en .
+
+ex:ProducingContribution a owl:Class ;
+    rdfs:label "ProducingContribution"@en ;
+    rdfs:comment "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record."@en ;
+    rdfs:subClassOf ex:Contribution ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ex:Contribution [ a owl:Restriction ;
+                        owl:hasValue ex:ProducerRole ;
+                        owl:onProperty ex:hasRole ] ) ] .
+
+ex:WriterRole a owl:NamedIndividual,
+        ex:ContributionRole ;
+    rdfs:label "Writer"@en .
+
+ex:WritingContribution a owl:Class ;
+    rdfs:label "WritingContribution"@en ;
+    rdfs:comment "Local credit record classified by a fixed role; DBpedia Actor describes a person, not this record."@en ;
+    rdfs:subClassOf ex:Contribution ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ex:Contribution [ a owl:Restriction ;
+                        owl:hasValue ex:WriterRole ;
+                        owl:onProperty ex:hasRole ] ) ] .
+
+ex:contributedTo a owl:ObjectProperty ;
+    rdfs:domain dbo:Person ;
+    rdfs:range dbo:Film ;
+    owl:propertyChainAxiom ( ex:hasContribution ex:contributionTo ) .
+
+ex:contributionBy a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain ex:Contribution ;
+    rdfs:range dbo:Person .
+
+ex:contributionTo a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain ex:Contribution ;
+    rdfs:range dbo:Film ;
+    owl:inverseOf ex:contributionOf .
+
+dbo:Actor a owl:Class ;
+    rdfs:label "Actor"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Artist .
+
+dbo:Agent a owl:Class ;
+    rdfs:label "Agent"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en .
+
+dbo:Award a owl:Class ;
+    rdfs:label "Award"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en .
+
+dbo:genre a owl:ObjectProperty ;
+    rdfs:range dbo:Genre .
+
+ex:SourceSnapshot a owl:Class ;
+    rdfs:label "SourceSnapshot"@en ;
+    rdfs:comment "A retrieved response record, not a domain entity."@en .
+
+ex:hasRole a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain ex:Contribution ;
+    rdfs:range ex:ContributionRole .
+
+ex:ContributionRole a owl:Class ;
+    rdfs:label "ContributionRole"@en ;
+    rdfs:comment "Local controlled role values, not subclasses of Person."@en .
+
+dbo:Work a owl:Class ;
+    rdfs:label "Work"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en .
+
+ex:hasContribution a owl:ObjectProperty ;
+    rdfs:domain dbo:Person ;
+    rdfs:range ex:Contribution ;
+    owl:inverseOf ex:contributionBy .
+
+dbo:Film a owl:Class ;
+    rdfs:label "Film"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Work .
+
+ex:Contribution a owl:Class ;
+    rdfs:label "Contribution"@en ;
+    rdfs:comment "A local credit association with one person, film and role; not the person or film itself."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass ex:ContributionRole ;
+            owl:onProperty ex:hasRole ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass dbo:Person ;
+            owl:onProperty ex:contributionBy ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass dbo:Film ;
+            owl:onProperty ex:contributionTo ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+dbo:Person a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "Reuse DBpedia meaning and its supported superclass; no local clone."@en ;
+    rdfs:subClassOf dbo:Agent .
+
+[] a owl:Class ;
+    rdfs:subClassOf dbo:MovieDirector ;
+    owl:intersectionOf ( dbo:Person [ a owl:Restriction ;
+                owl:onProperty ex:hasContribution ;
+                owl:someValuesFrom ex:DirectingContribution ] ) .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( ex:ActorRole ex:DirectorRole ex:WriterRole ex:ProducerRole ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf dbo:ScreenWriter ;
+    owl:intersectionOf ( dbo:Person [ a owl:Restriction ;
+                owl:onProperty ex:hasContribution ;
+                owl:someValuesFrom ex:WritingContribution ] ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf dbo:Producer ;
+    owl:intersectionOf ( dbo:Person [ a owl:Restriction ;
+                owl:onProperty ex:hasContribution ;
+                owl:someValuesFrom ex:ProducingContribution ] ) .
+

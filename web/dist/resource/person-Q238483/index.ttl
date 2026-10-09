@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q238483 a dbo:Person ;
+    rdfs:label "Amanda Plummer"@en ;
+    dbo:award res:award-Q1131356,
+        res:award-Q3062632,
+        res:award-Q627778,
+        res:award-Q989449 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q238483> ;
+    ex:hasContribution res:contribution-Q104123-Q238483-actor ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

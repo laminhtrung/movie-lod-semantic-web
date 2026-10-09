@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q7482626 a dbo:Person ;
+    rdfs:label "Steve Tisch"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q17985761,
+        res:award-Q5513594 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7482626> ;
+    ex:hasContribution res:contribution-Q134773-Q7482626-producer ;
+    ex:sourceSnapshot res:source-b5f24e75cf7a988a6c070475 .
+

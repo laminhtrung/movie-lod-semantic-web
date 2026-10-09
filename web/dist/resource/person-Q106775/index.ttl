@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q106775 a dbo:Person ;
+    rdfs:label "Richard Harris"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q181883,
+        res:award-Q190353,
+        res:award-Q4970084,
+        res:award-Q514445,
+        res:award-Q5593890,
+        res:award-Q586140 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q106775> ;
+    ex:hasContribution res:contribution-Q128518-Q106775-actor ;
+    ex:sourceSnapshot res:source-125e8e07aa0b622e289724a2 .
+

@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q320093 a dbo:Person ;
+    rdfs:label "Tom Skerritt"@en ;
+    dbo:award res:award-Q21595675,
+        res:award-Q989439 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q320093> ;
+    ex:hasContribution res:contribution-Q103569-Q320093-actor ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

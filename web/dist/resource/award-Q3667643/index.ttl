@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q3667643 a dbo:Award ;
+    rdfs:label "Chicago Film Critics Association Award for Best Cinematography"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3667643> ;
+    ex:sourceSnapshot res:source-b5b73be0267261c9c9a2b7ca .
+

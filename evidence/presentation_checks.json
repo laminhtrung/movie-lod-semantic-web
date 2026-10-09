@@ -1,0 +1,30 @@
+{
+  "slides": 24,
+  "notes": 24,
+  "slide_language": "English",
+  "speaker_notes_language": "English",
+  "placeholder_language": "Vietnamese",
+  "vietnamese_placeholder_slides": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    14,
+    16,
+    18,
+    21
+  ],
+  "unexpected_non_english_text": [],
+  "outside_shapes": [],
+  "pdf_searchable": true,
+  "evidence_images": [
+    "12_sources_en.png",
+    "docs/sync_images/verification.png"
+  ],
+  "pptx_sha256": "04f835eec0537d68d375b4a2a7d128b55f130c7950e40aca5c4d0357fad8aa01",
+  "pdf_sha256": "e6a38e196d21b1d41f60a11c995ced2f592cc996cfc2fd2ab227c2b6a68f602b",
+  "mp4_included": false
+}

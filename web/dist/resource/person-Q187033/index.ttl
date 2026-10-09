@@ -1,0 +1,24 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q187033 a dbo:Person ;
+    rdfs:label "Sally Field"@en ;
+    dbo:award res:award-Q10294045,
+        res:award-Q103618,
+        res:award-Q1631998,
+        res:award-Q1738793,
+        res:award-Q1789030,
+        res:award-Q17985761,
+        res:award-Q2414873,
+        res:award-Q3062632,
+        res:award-Q52382875,
+        res:award-Q56085709,
+        res:award-Q989445,
+        res:award-Q989447 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q187033> ;
+    ex:hasContribution res:contribution-Q134773-Q187033-actor ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+

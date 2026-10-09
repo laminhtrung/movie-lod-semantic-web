@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q706935 a dbo:Person ;
+    rdfs:label "William Nicholson"@en ;
+    dbo:award res:award-Q10762848,
+        res:award-Q39477935,
+        res:award-Q452283 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q706935> ;
+    ex:hasContribution res:contribution-Q128518-Q706935-writer ;
+    ex:sourceSnapshot res:source-02a565dc091a4655cc178303 .
+

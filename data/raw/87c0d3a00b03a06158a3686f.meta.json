@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Prestige.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:47:40.166798+00:00",
+  "sha256": "bd42f844610bf98c87075ba254f84e799df1770d7dcf66a81e2514c3754b9617",
+  "path": "data/raw/87c0d3a00b03a06158a3686f.json",
+  "http_status": 200
+}

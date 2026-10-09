@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q44857 a dbo:Person ;
+    rdfs:label "John Legend"@en ;
+    dbo:award res:award-Q112241213,
+        res:award-Q112243,
+        res:award-Q1453643,
+        res:award-Q1472235,
+        res:award-Q28445711,
+        res:award-Q6952065,
+        res:award-Q7821798 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q44857> ;
+    ex:hasContribution res:contribution-Q20856802-Q44857-actor ;
+    ex:sourceSnapshot res:source-784aba8cd47bf4430b0f4f9b .
+

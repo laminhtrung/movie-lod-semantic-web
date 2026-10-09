@@ -1,0 +1,17 @@
+digraph G {rankdir=TB;node [shape=box,style="rounded,filled",fillcolor="#E9F4F5",fontname="Times New Roman",fontsize=16,color="#247A86"];edge [color="#247A86",fontname="Times New Roman",fontsize=12];
+    role [label="Facts: Nolan has directing + writing credits
+Credit roles: DirectorRole / WriterRole",fillcolor="#FEF0D8"];
+    d [label="DirectingContribution
+hasRole value DirectorRole"];
+    w [label="WritingContribution
+hasRole value WriterRole"];
+    md [label="dbo:MovieDirector
+credit existential restriction"];
+    sw [label="dbo:ScreenWriter
+credit existential restriction"];
+    wd [label="ex:WriterDirector
+MovieDirector AND ScreenWriter",fillcolor="#D7ECE0"];
+    fm [label="ex:Filmmaker
+directing OR writing OR producing",fillcolor="#D7ECE0"];
+    role->d;role->w;d->md;w->sw;md->wd;sw->wd;d->fm;w->fm;
+    }

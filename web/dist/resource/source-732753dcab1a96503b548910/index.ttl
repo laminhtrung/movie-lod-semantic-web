@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-732753dcab1a96503b548910 a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/Blade_Runner.json> ;
+    ex:retrievedAt "2026-10-06T08:42:03.630+00:00"^^xsd:dateTime ;
+    ex:sha256 "732753dcab1a96503b5489109a4b5d0f12446695416e281e46edfe62e1bccef2" ;
+    ex:sourceUrl "https://dbpedia.org/data/Blade_Runner.json"^^xsd:anyURI .
+

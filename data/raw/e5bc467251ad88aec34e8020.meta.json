@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Silence_of_the_Lambs_%28film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:59.923541+00:00",
+  "sha256": "c11540fa3bdf45d9df4248414bdae48bb0ad336d449594e918700cc1cc835d09",
+  "path": "data/raw/e5bc467251ad88aec34e8020.json",
+  "http_status": 200
+}

@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q211280 a dbo:Person ;
+    rdfs:label "Ray Liotta"@en ;
+    dbo:award res:award-Q14705795,
+        res:award-Q2604800 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q211280> ;
+    ex:hasContribution res:contribution-Q42047-Q211280-actor ;
+    ex:sourceSnapshot res:source-95de1603c72929d3b2973622 .
+

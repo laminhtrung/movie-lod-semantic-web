@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q311169 a dbo:Person ;
+    rdfs:label "Graham Greene"@en ;
+    dbo:award res:award-Q125030530,
+        res:award-Q1277463,
+        res:award-Q15278101,
+        res:award-Q5297422 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q311169> ;
+    ex:hasContribution res:contribution-Q208263-Q311169-actor ;
+    ex:sourceSnapshot res:source-24e2ab3470e472768aa25d26 .
+

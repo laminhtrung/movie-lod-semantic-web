@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q48987 a dbo:Person ;
+    rdfs:label "Jonathan Demme"@en ;
+    dbo:award res:award-Q103360,
+        res:award-Q1789102,
+        res:award-Q5280675 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q48987> ;
+    ex:hasContribution res:contribution-Q133654-Q48987-director ;
+    ex:sourceSnapshot res:source-da3b5f106516c6082cf64a1b .
+

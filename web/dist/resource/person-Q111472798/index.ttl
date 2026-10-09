@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q111472798 a dbo:Person ;
+    rdfs:label "Grzegorz Kwas"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q111472798> ;
+    ex:hasContribution res:contribution-Q483941-Q111472798-actor ;
+    ex:sourceSnapshot res:source-1c42d282f795483c77a94b24 .
+

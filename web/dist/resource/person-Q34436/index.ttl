@@ -1,0 +1,19 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q34436 a dbo:Person ;
+    rdfs:label "Scarlett Johansson"@en ;
+    dbo:award res:award-Q10294045,
+        res:award-Q1131356,
+        res:award-Q17985761,
+        res:award-Q604370,
+        res:award-Q627778,
+        res:award-Q687123,
+        res:award-Q727282 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q34436> ;
+    ex:hasContribution res:contribution-Q46551-Q34436-actor ;
+    ex:sourceSnapshot res:source-70350d2b565eee56f834c56a .
+

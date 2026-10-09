@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q505689 a dbo:Person ;
+    rdfs:label "Andrew Kevin Walker"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q505689> ;
+    ex:hasContribution res:contribution-Q190908-Q505689-actor,
+        res:contribution-Q190908-Q505689-writer ;
+    ex:sourceSnapshot res:source-9dbe0aef3dbb0e67f93e0d3d .
+

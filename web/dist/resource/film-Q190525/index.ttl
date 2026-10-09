@@ -1,0 +1,63 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q190525 a dbo:Film ;
+    rdfs:label "Memento"@en ;
+    dbo:award res:award-Q12143912,
+        res:award-Q1966965 ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q25191 ;
+    dbo:genre res:genre-Q1200678,
+        res:genre-Q130232,
+        res:genre-Q185867,
+        res:genre-Q200092,
+        res:genre-Q21401869,
+        res:genre-Q2421031,
+        res:genre-Q2484376,
+        res:genre-Q52162262,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q1611265,
+        res:person-Q7650980 ;
+    dbo:productionCompany res:company-Q3875639,
+        res:company-Q632323 ;
+    dbo:runtime 6.78e+03 ;
+    dbo:starring res:person-Q1319539,
+        res:person-Q206890,
+        res:person-Q223745,
+        res:person-Q231807,
+        res:person-Q270622,
+        res:person-Q296883,
+        res:person-Q376131,
+        res:person-Q467496,
+        res:person-Q530578,
+        res:person-Q551558,
+        res:person-Q718382 ;
+    dbo:writer res:person-Q25191 ;
+    owl:sameAs <http://dbpedia.org/resource/Memento_(film)>,
+        <http://www.wikidata.org/entity/Q190525> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q190525> ;
+    ex:contributionOf res:contribution-Q190525-Q1319539-actor,
+        res:contribution-Q190525-Q1611265-producer,
+        res:contribution-Q190525-Q206890-actor,
+        res:contribution-Q190525-Q223745-actor,
+        res:contribution-Q190525-Q231807-actor,
+        res:contribution-Q190525-Q25191-director,
+        res:contribution-Q190525-Q25191-writer,
+        res:contribution-Q190525-Q270622-actor,
+        res:contribution-Q190525-Q296883-actor,
+        res:contribution-Q190525-Q376131-actor,
+        res:contribution-Q190525-Q467496-actor,
+        res:contribution-Q190525-Q530578-actor,
+        res:contribution-Q190525-Q551558-actor,
+        res:contribution-Q190525-Q718382-actor,
+        res:contribution-Q190525-Q7650980-producer ;
+    ex:releaseYear 2000 ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c,
+        res:source-f6cf607b6ee77f9747015585 .
+

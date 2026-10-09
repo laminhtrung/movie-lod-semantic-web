@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q4722037 a dbo:Person ;
+    rdfs:label "Alfonso Freeman"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4722037> ;
+    ex:hasContribution res:contribution-Q172241-Q4722037-actor,
+        res:contribution-Q190908-Q4722037-actor ;
+    ex:sourceSnapshot res:source-da3b5f106516c6082cf64a1b .
+

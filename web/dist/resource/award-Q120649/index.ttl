@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q120649 a dbo:Award ;
+    rdfs:label "Rawlings Gold Glove Award"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q120649> ;
+    ex:sourceSnapshot res:source-5fada19eb43d66d6a7ca80cc .
+

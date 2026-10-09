@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Green_Mile_%28film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:01.017577+00:00",
+  "sha256": "20fe8b45a0358744817c64b8926f8c1d5c92c8a5993f40f75fea990e39cd4fdc",
+  "path": "data/raw/c40c045e8c6a55bc4ccf8782.json",
+  "http_status": 200
+}

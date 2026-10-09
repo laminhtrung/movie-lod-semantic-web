@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q87676 a dbo:Person ;
+    rdfs:label "Alexander Held"@en ;
+    dbo:award res:award-Q812332 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q87676> ;
+    ex:hasContribution res:contribution-Q483941-Q87676-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

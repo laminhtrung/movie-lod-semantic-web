@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q5362676 a dbo:Person ;
+    rdfs:label "Elizabeth Debicki"@en ;
+    dbo:award res:award-Q1259395,
+        res:award-Q1285504,
+        res:award-Q133176305,
+        res:award-Q1769490,
+        res:award-Q2414873,
+        res:award-Q3002941 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5362676> ;
+    ex:hasContribution res:contribution-Q63985561-Q5362676-actor ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

@@ -1,0 +1,36 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q170510 a dbo:Person ;
+    rdfs:label "Ian McKellen"@en ;
+    dbo:award res:award-Q12201477,
+        res:award-Q1258647,
+        res:award-Q1260789,
+        res:award-Q1445521,
+        res:award-Q16947520,
+        res:award-Q2296147,
+        res:award-Q3053245,
+        res:award-Q4769235,
+        res:award-Q518675,
+        res:award-Q5186883,
+        res:award-Q5305701,
+        res:award-Q5513593,
+        res:award-Q6500761,
+        res:award-Q6500762,
+        res:award-Q6500767,
+        res:award-Q6500777,
+        res:award-Q7552552,
+        res:award-Q833163,
+        res:award-Q908858,
+        res:award-Q911797,
+        res:award-Q922322,
+        res:award-Q922396,
+        res:award-Q932281 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q170510> ;
+    ex:hasContribution res:contribution-Q127367-Q170510-actor,
+        res:contribution-Q131074-Q170510-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

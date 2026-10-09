@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q24867395 a dbo:Person ;
+    rdfs:label "Park Myung-hoon"@en ;
+    dbo:award res:award-Q16184868,
+        res:award-Q4986375 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q24867395> ;
+    ex:hasContribution res:contribution-Q61448040-Q24867395-actor ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

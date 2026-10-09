@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MovieLOD · Explore movie data</title>
+  <meta name="description" content="Explore movie data with source records and links to Wikidata and DBpedia. Write and run SPARQL queries.">
+  <link rel="icon" href="/movie-lod-semantic-web/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/movie-lod-semantic-web/style.css">
+  <script defer src="/movie-lod-semantic-web/vendor/comunica-browser.js"></script><script defer src="/movie-lod-semantic-web/app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/movie-lod-semantic-web/">◧ Movie<span>LOD</span></a><nav aria-label="Navigation"><a href="#query">Queries</a><a href="#films">Films</a><a href="/movie-lod-semantic-web/ontology">Ontology</a><a href="/movie-lod-semantic-web/dataset">Dataset</a></nav><a class="download" href="/movie-lod-semantic-web/data/movies.ttl" download>Download RDF ↗</a></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">SEMANTIC WEB / MOVIES</p><h1>Ask questions about movie data.</h1><p>Explore ontology 3.0.0: source facts, inferred knowledge and links to Wikidata and DBpedia.</p></div><div id="stats" class="stats" aria-live="polite"><span>Loading data…</span></div></section>
+  <section id="query" class="workspace" aria-label="SPARQL query workspace">
+    <div class="editor-panel"><div class="panel-heading"><h2>SPARQL <span>Query language</span></h2><label for="sample">Sample queries</label><select id="sample" aria-label="Choose a sample query"></select></div><label for="query-mode">Knowledge scope</label><select id="query-mode" aria-label="Knowledge scope"><option value="asserted">Source facts</option><option value="reasoned">With OWL inference</option><option value="dataset">Before / after named graphs</option></select><label class="sr-only" for="query-text">Enter a SPARQL query</label><textarea id="query-text" spellcheck="false" autocapitalize="off" rows="17"></textarea><div class="actions"><button id="run" type="button">Run query <span>Ctrl ↵</span></button><button id="copy" class="secondary" type="button">Copy</button></div><p class="editor-note">SELECT: get a table · ASK: test a condition · CONSTRUCT: create an RDF graph.</p></div>
+    <div class="results-panel"><div class="panel-heading result-heading"><h2>Results</h2><button id="export" class="secondary" type="button" disabled>Download results</button></div><p id="status" role="status" aria-live="polite">Preparing query…</p><div id="results" class="results"><p class="empty">Run a query to see its results here.</p></div><p id="engine-note" class="editor-note"></p></div>
+  </section>
+  <section class="help"><strong>Reading an RDF statement:</strong><span>Inception <b>→ director →</b> Christopher Nolan.</span><span><code>ex:</code> is the project vocabulary; <code>dbo:</code> is the DBpedia vocabulary; variables start with <code>?</code>.</span></section>
+  <section id="films"><div class="section-heading"><div><p class="eyebrow">COLLECTED DATA</p><h2>Films in the dataset</h2></div><label>Find a film <input id="search" type="search" placeholder="Film title or director" autocomplete="off"></label></div><div id="film-list" class="film-grid"></div></section>
+  <footer><p>Sources: <a href="https://www.wikidata.org/">Wikidata</a> and <a href="https://dbpedia.org/">DBpedia</a>. <a href="/movie-lod-semantic-web/LICENSE-DATA.txt">CC BY-SA 4.0 data license and attribution</a>.</p><div><a href="/movie-lod-semantic-web/data/movies.ttl">Turtle</a><a href="/movie-lod-semantic-web/data/movies.jsonld">JSON-LD</a><a href="/movie-lod-semantic-web/data/films.csv">CSV</a><a href="/movie-lod-semantic-web/Movie_Knowledge_Graph.owl">Full OWL</a><a href="/movie-lod-semantic-web/docs/Bao_cao.pdf">Report (English PDF)</a><a href="/movie-lod-semantic-web/docs/Bao_cao.docx">Report (Word)</a><a href="/movie-lod-semantic-web/docs/Slide.pdf">Slides (English)</a></div></footer>
+</main>
+</body></html>

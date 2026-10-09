@@ -1,0 +1,21 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q229313 a dbo:Person ;
+    rdfs:label "Jessica Chastain"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q103618,
+        res:award-Q105447,
+        res:award-Q108857021,
+        res:award-Q1129487,
+        res:award-Q1713744,
+        res:award-Q2462064,
+        res:award-Q29561486,
+        res:award-Q518675 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q229313> ;
+    ex:hasContribution res:contribution-Q13417189-Q229313-actor ;
+    ex:sourceSnapshot res:source-95de1603c72929d3b2973622 .
+

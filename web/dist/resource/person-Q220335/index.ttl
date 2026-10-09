@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q220335 a dbo:Person ;
+    rdfs:label "William Fichtner"@en ;
+    dbo:award res:award-Q518675 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q220335> ;
+    ex:hasContribution res:contribution-Q163872-Q220335-actor ;
+    ex:sourceSnapshot res:source-95de1603c72929d3b2973622 .
+

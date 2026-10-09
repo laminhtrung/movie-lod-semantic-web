@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q296328 a dbo:Person ;
+    rdfs:label "David Wenham"@en ;
+    dbo:award res:award-Q4649797,
+        res:award-Q4649813,
+        res:award-Q518675,
+        res:award-Q9678710 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q296328> ;
+    ex:hasContribution res:contribution-Q131074-Q296328-actor ;
+    ex:sourceSnapshot res:source-24e2ab3470e472768aa25d26 .
+

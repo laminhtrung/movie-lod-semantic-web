@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q174346 a dbo:Person ;
+    rdfs:label "Katie Holmes"@en ;
+    dbo:award res:award-Q1266111,
+        res:award-Q133176305,
+        res:award-Q18154856,
+        res:award-Q56085709 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q174346> ;
+    ex:hasContribution res:contribution-Q166262-Q174346-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

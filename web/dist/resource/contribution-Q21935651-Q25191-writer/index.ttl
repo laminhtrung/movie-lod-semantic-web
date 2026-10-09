@@ -1,0 +1,11 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:contribution-Q21935651-Q25191-writer a ex:Contribution ;
+    rdfs:label "Dunkirk — writer — Christopher Nolan" ;
+    ex:contributionBy res:person-Q25191 ;
+    ex:contributionTo res:film-Q21935651 ;
+    ex:hasRole ex:WriterRole ;
+    ex:sourceSnapshot res:source-56d8b57c83cb1ad3dc2d2e0c .
+

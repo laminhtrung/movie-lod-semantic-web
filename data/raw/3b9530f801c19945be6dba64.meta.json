@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Forrest_Gump.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:57.935103+00:00",
+  "sha256": "5f45d5b12765005d781b993ddf3040b14b28224880f184526cd37dd1667331cd",
+  "path": "data/raw/3b9530f801c19945be6dba64.json",
+  "http_status": 200
+}

@@ -1,0 +1,20 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q200405 a dbo:Person ;
+    rdfs:label "John Hurt"@en ;
+    dbo:award res:award-Q12201477,
+        res:award-Q2925701,
+        res:award-Q400007,
+        res:award-Q4834546,
+        res:award-Q4970084,
+        res:award-Q548389,
+        res:award-Q723830,
+        res:award-Q833163 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q200405> ;
+    ex:hasContribution res:contribution-Q103569-Q200405-actor ;
+    ex:sourceSnapshot res:source-8c53dd10280f0a6d0cab26d2 .
+

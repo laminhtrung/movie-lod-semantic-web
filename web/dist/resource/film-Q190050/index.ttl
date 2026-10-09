@@ -1,0 +1,98 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q190050 a dbo:Film ;
+    rdfs:label "Fight Club"@en ;
+    dbo:award res:award-Q110728909,
+        res:award-Q22055485,
+        res:award-Q28044798,
+        res:award-Q28044812,
+        res:award-Q943908 ;
+    dbo:country res:country-Q183,
+        res:country-Q30 ;
+    dbo:director res:person-Q184903 ;
+    dbo:genre res:genre-Q130232,
+        res:genre-Q21401869,
+        res:genre-Q2484376,
+        res:genre-Q590103 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q705631,
+        res:person-Q961183 ;
+    dbo:productionCompany res:company-Q434841,
+        res:company-Q466459 ;
+    dbo:runtime 8.34e+03 ;
+    dbo:starring res:person-Q1139511,
+        res:person-Q125904,
+        res:person-Q1368141,
+        res:person-Q139341,
+        res:person-Q15288220,
+        res:person-Q152929,
+        res:person-Q15808775,
+        res:person-Q16186952,
+        res:person-Q170428,
+        res:person-Q21074794,
+        res:person-Q22575750,
+        res:person-Q23001654,
+        res:person-Q2357826,
+        res:person-Q28974005,
+        res:person-Q2965857,
+        res:person-Q325814,
+        res:person-Q329859,
+        res:person-Q330801,
+        res:person-Q3378785,
+        res:person-Q352012,
+        res:person-Q35332,
+        res:person-Q3898029,
+        res:person-Q484523,
+        res:person-Q4993338,
+        res:person-Q5336101,
+        res:person-Q849641,
+        res:person-Q953588,
+        res:person-Q964006 ;
+    dbo:writer res:person-Q268181,
+        res:person-Q3178961 ;
+    owl:sameAs <http://dbpedia.org/resource/Fight_Club>,
+        <http://www.wikidata.org/entity/Q190050> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q190050> ;
+    ex:contributionOf res:contribution-Q190050-Q1139511-actor,
+        res:contribution-Q190050-Q125904-actor,
+        res:contribution-Q190050-Q1368141-actor,
+        res:contribution-Q190050-Q139341-actor,
+        res:contribution-Q190050-Q15288220-actor,
+        res:contribution-Q190050-Q152929-actor,
+        res:contribution-Q190050-Q15808775-actor,
+        res:contribution-Q190050-Q16186952-actor,
+        res:contribution-Q190050-Q170428-actor,
+        res:contribution-Q190050-Q184903-director,
+        res:contribution-Q190050-Q21074794-actor,
+        res:contribution-Q190050-Q22575750-actor,
+        res:contribution-Q190050-Q23001654-actor,
+        res:contribution-Q190050-Q2357826-actor,
+        res:contribution-Q190050-Q268181-writer,
+        res:contribution-Q190050-Q28974005-actor,
+        res:contribution-Q190050-Q2965857-actor,
+        res:contribution-Q190050-Q3178961-writer,
+        res:contribution-Q190050-Q325814-actor,
+        res:contribution-Q190050-Q329859-actor,
+        res:contribution-Q190050-Q330801-actor,
+        res:contribution-Q190050-Q3378785-actor,
+        res:contribution-Q190050-Q352012-actor,
+        res:contribution-Q190050-Q35332-actor,
+        res:contribution-Q190050-Q3898029-actor,
+        res:contribution-Q190050-Q484523-actor,
+        res:contribution-Q190050-Q4993338-actor,
+        res:contribution-Q190050-Q5336101-actor,
+        res:contribution-Q190050-Q705631-producer,
+        res:contribution-Q190050-Q849641-actor,
+        res:contribution-Q190050-Q953588-actor,
+        res:contribution-Q190050-Q961183-producer,
+        res:contribution-Q190050-Q964006-actor ;
+    ex:releaseYear 1999 ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9,
+        res:source-c96843096ba6ca1de9f0ab22 .
+

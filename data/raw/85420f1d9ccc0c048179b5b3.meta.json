@@ -1,0 +1,8 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&languages=en&sites=enwiki&titles=Titanic+%281997+film%29%7CGladiator+%282000+film%29%7CAlien+%28film%29%7CBlade+Runner%7CSpirited+Away%7CParasite+%282019+film%29%7CWhiplash+%282014+film%29%7CLa+La+Land%7CThe+Lord+of+the+Rings%3A+The+Fellowship+of+the+Ring%7CThe+Lord+of+the+Rings%3A+The+Return+of+the+King&props=labels%7Cdescriptions%7Csitelinks%7Cclaims",
+  "provider": "Wikidata",
+  "retrieved_at": "2026-10-06T08:38:16.834612+00:00",
+  "sha256": "767abf09b55092603628beb7bdbba576aed8786e54de65fc0772cfe7b4cbd8a6",
+  "path": "data/raw/85420f1d9ccc0c048179b5b3.json",
+  "http_status": 200
+}

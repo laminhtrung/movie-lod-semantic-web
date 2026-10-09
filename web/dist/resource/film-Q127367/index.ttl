@@ -1,0 +1,107 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q127367 a dbo:Film ;
+    rdfs:label "The Lord of the Rings: The Fellowship of the Ring"@en ;
+    dbo:award res:award-Q131520,
+        res:award-Q139184,
+        res:award-Q3414212,
+        res:award-Q393686,
+        res:award-Q487136,
+        res:award-Q488651 ;
+    dbo:country res:country-Q30,
+        res:country-Q664 ;
+    dbo:director res:person-Q4465 ;
+    dbo:genre res:genre-Q157394,
+        res:genre-Q188473,
+        res:genre-Q319221,
+        res:genre-Q326439 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q116861,
+        res:person-Q22676727,
+        res:person-Q4465,
+        res:person-Q808917 ;
+    dbo:productionCompany res:company-Q3569323,
+        res:company-Q79202 ;
+    dbo:runtime 1.068e+04 ;
+    dbo:starring res:person-Q1388807,
+        res:person-Q152165,
+        res:person-Q16455,
+        res:person-Q1655613,
+        res:person-Q168763,
+        res:person-Q170510,
+        res:person-Q171363,
+        res:person-Q180338,
+        res:person-Q189351,
+        res:person-Q191104,
+        res:person-Q206922,
+        res:person-Q223091,
+        res:person-Q2598175,
+        res:person-Q270878,
+        res:person-Q276425,
+        res:person-Q30717048,
+        res:person-Q315118,
+        res:person-Q3330820,
+        res:person-Q3390280,
+        res:person-Q3390514,
+        res:person-Q339083,
+        res:person-Q44467,
+        res:person-Q4465,
+        res:person-Q469179,
+        res:person-Q483771,
+        res:person-Q5363234,
+        res:person-Q737607,
+        res:person-Q80966,
+        res:person-Q910486 ;
+    dbo:writer res:person-Q116854,
+        res:person-Q116861,
+        res:person-Q4465 ;
+    owl:sameAs <http://dbpedia.org/resource/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring>,
+        <http://www.wikidata.org/entity/Q127367> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q127367> ;
+    ex:contributionOf res:contribution-Q127367-Q116854-writer,
+        res:contribution-Q127367-Q116861-producer,
+        res:contribution-Q127367-Q116861-writer,
+        res:contribution-Q127367-Q1388807-actor,
+        res:contribution-Q127367-Q152165-actor,
+        res:contribution-Q127367-Q16455-actor,
+        res:contribution-Q127367-Q1655613-actor,
+        res:contribution-Q127367-Q168763-actor,
+        res:contribution-Q127367-Q170510-actor,
+        res:contribution-Q127367-Q171363-actor,
+        res:contribution-Q127367-Q180338-actor,
+        res:contribution-Q127367-Q189351-actor,
+        res:contribution-Q127367-Q191104-actor,
+        res:contribution-Q127367-Q206922-actor,
+        res:contribution-Q127367-Q223091-actor,
+        res:contribution-Q127367-Q22676727-producer,
+        res:contribution-Q127367-Q2598175-actor,
+        res:contribution-Q127367-Q270878-actor,
+        res:contribution-Q127367-Q276425-actor,
+        res:contribution-Q127367-Q30717048-actor,
+        res:contribution-Q127367-Q315118-actor,
+        res:contribution-Q127367-Q3330820-actor,
+        res:contribution-Q127367-Q3390280-actor,
+        res:contribution-Q127367-Q3390514-actor,
+        res:contribution-Q127367-Q339083-actor,
+        res:contribution-Q127367-Q44467-actor,
+        res:contribution-Q127367-Q4465-actor,
+        res:contribution-Q127367-Q4465-director,
+        res:contribution-Q127367-Q4465-producer,
+        res:contribution-Q127367-Q4465-writer,
+        res:contribution-Q127367-Q469179-actor,
+        res:contribution-Q127367-Q483771-actor,
+        res:contribution-Q127367-Q5363234-actor,
+        res:contribution-Q127367-Q737607-actor,
+        res:contribution-Q127367-Q808917-producer,
+        res:contribution-Q127367-Q80966-actor,
+        res:contribution-Q127367-Q910486-actor ;
+    ex:releaseYear 2001 ;
+    ex:sourceSnapshot res:source-767abf09b55092603628beb7,
+        res:source-db3aa6ebce337e38917bd5c3 .
+

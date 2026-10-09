@@ -1,0 +1,15 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q175535 a dbo:Person ;
+    rdfs:label "Matt Damon"@en ;
+    dbo:award res:award-Q17985761,
+        res:award-Q3473889,
+        res:award-Q41417 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q175535> ;
+    ex:hasContribution res:contribution-Q13417189-Q175535-actor ;
+    ex:sourceSnapshot res:source-7a2dcb888d960de21c471cf9 .
+

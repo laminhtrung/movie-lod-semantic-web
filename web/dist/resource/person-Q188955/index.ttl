@@ -1,0 +1,18 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q188955 a dbo:Person ;
+    rdfs:label "Matthew McConaughey"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q103916,
+        res:award-Q105447,
+        res:award-Q17985761,
+        res:award-Q25338504,
+        res:award-Q654620 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q188955> ;
+    ex:hasContribution res:contribution-Q13417189-Q188955-actor ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+

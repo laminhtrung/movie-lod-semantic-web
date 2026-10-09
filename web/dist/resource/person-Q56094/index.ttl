@@ -1,0 +1,44 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q56094 a dbo:Person ;
+    rdfs:label "Francis Ford Coppola"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q102427,
+        res:award-Q103360,
+        res:award-Q107258,
+        res:award-Q10855195,
+        res:award-Q1111310,
+        res:award-Q1415017,
+        res:award-Q1483605,
+        res:award-Q1738793,
+        res:award-Q1789102,
+        res:award-Q179808,
+        res:award-Q21595675,
+        res:award-Q268670,
+        res:award-Q2687578,
+        res:award-Q292044,
+        res:award-Q3241784,
+        res:award-Q329157,
+        res:award-Q3319305,
+        res:award-Q3404975,
+        res:award-Q3885347,
+        res:award-Q41417,
+        res:award-Q5020532,
+        res:award-Q52382875,
+        res:award-Q580231,
+        res:award-Q775086,
+        res:award-Q787131,
+        res:award-Q844273,
+        res:award-Q908858 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q56094> ;
+    ex:hasContribution res:contribution-Q184768-Q56094-director,
+        res:contribution-Q184768-Q56094-producer,
+        res:contribution-Q184768-Q56094-writer,
+        res:contribution-Q47703-Q56094-director,
+        res:contribution-Q47703-Q56094-writer ;
+    ex:sourceSnapshot res:source-ab4921807c89cf717964e3c4 .
+

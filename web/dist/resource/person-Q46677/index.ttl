@@ -1,0 +1,12 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q46677 a dbo:Person ;
+    rdfs:label "Melissa Benoist"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q46677> ;
+    ex:hasContribution res:contribution-Q15648198-Q46677-actor ;
+    ex:sourceSnapshot res:source-784aba8cd47bf4430b0f4f9b .
+

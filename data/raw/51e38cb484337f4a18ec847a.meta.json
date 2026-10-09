@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Parasite_%282019_film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:04.293893+00:00",
+  "sha256": "4a04da5402675c256ada934c074c5adb3f9a90b406be0c7274bb013213d30c8b",
+  "path": "data/raw/51e38cb484337f4a18ec847a.json",
+  "http_status": 200
+}

@@ -1,0 +1,32 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q42574 a dbo:Person ;
+    rdfs:label "James Cameron"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q103360,
+        res:award-Q1111310,
+        res:award-Q1150306,
+        res:award-Q1421666,
+        res:award-Q15278107,
+        res:award-Q17985761,
+        res:award-Q21041879,
+        res:award-Q281939,
+        res:award-Q3405093,
+        res:award-Q3414212,
+        res:award-Q4287207,
+        res:award-Q48961500,
+        res:award-Q5020532,
+        res:award-Q5211225,
+        res:award-Q586356,
+        res:award-Q857933 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q42574> ;
+    ex:hasContribution res:contribution-Q44578-Q42574-actor,
+        res:contribution-Q44578-Q42574-director,
+        res:contribution-Q44578-Q42574-producer,
+        res:contribution-Q44578-Q42574-writer ;
+    ex:sourceSnapshot res:source-9e94454ce34a83ba6f3dd0b6 .
+

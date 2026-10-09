@@ -1,0 +1,23 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q8927 a dbo:Person ;
+    rdfs:label "Marion Cotillard"@en ;
+    dbo:award res:award-Q1011564,
+        res:award-Q10294045,
+        res:award-Q103618,
+        res:award-Q105687604,
+        res:award-Q10855271,
+        res:award-Q13452524,
+        res:award-Q1377738,
+        res:award-Q1769490,
+        res:award-Q24241,
+        res:award-Q2607188,
+        res:award-Q687123 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8927> ;
+    ex:hasContribution res:contribution-Q25188-Q8927-actor ;
+    ex:sourceSnapshot res:source-9264f1267bdcba7b243a5f53 .
+

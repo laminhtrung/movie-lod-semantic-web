@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:award-Q1257399 a dbo:Award ;
+    rdfs:label "Saturn Award for Best Supporting Actress"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1257399> ;
+    ex:sourceSnapshot res:source-d575e89ee6f63a14842d22cf .
+

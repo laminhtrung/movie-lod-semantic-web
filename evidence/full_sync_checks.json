@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-09T15:56:48.216986+00:00",
+  "ontology_version": "3.0.0",
+  "canonical_static_public_graphs": [
+    {
+      "path": "/data/movies.ttl",
+      "triples": 18595,
+      "local_static_public_isomorphic": true
+    },
+    {
+      "path": "/data/movies.jsonld",
+      "triples": 18595,
+      "local_static_public_isomorphic": true
+    },
+    {
+      "path": "/ontology.ttl",
+      "triples": 442,
+      "local_static_public_isomorphic": true
+    },
+    {
+      "path": "/Movie_Knowledge_Graph.owl",
+      "triples": 19025,
+      "local_static_public_isomorphic": true
+    },
+    {
+      "path": "/Movie_Ontology.owl",
+      "triples": 442,
+      "local_static_public_isomorphic": true
+    },
+    {
+      "path": "/data/reasoned.ttl",
+      "triples": 24941,
+      "local_static_public_isomorphic": true
+    },
+    {
+      "path": "/data/inferred_classes.ttl",
+      "triples": 11498,
+      "local_static_public_isomorphic": true
+    }
+  ],
+  "named_graphs": [
+    {
+      "graph": "urn:movie:asserted",
+      "triples": 18595,
+      "matches": true
+    },
+    {
+      "graph": "urn:movie:reasoned",
+      "triples": 24941,
+      "matches": true
+    }
+  ],
+  "public_documents": [
+    {
+      "file": "Slide.pptx",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Slide.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Slide_ngan_13.pptx",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Slide_ngan_13.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Bao_cao.docx",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Bao_cao.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Huong_dan_A_Z.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Huong_dan_thao_tac_chi_tiet.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Mo_ta_ontology.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "DBpedia_OWL_Design.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Ket_qua_reasoner.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Script_thuyet_trinh.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Script_thuyet_trinh_ngan_13.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Checklist_anh_Protege.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Kich_ban_video.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Huong_dan_doc_hieu_project.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Huong_dan_doc_hieu_project.docx",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "DBpedia_OWL_Design.html",
+      "public_document_content_matches": true,
+      "hosting_challenge_script_ignored": true
+    },
+    {
+      "file": "DBpedia_OWL_Design.docx",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "Huong_dan_doc_hieu_project.html",
+      "public_document_content_matches": true,
+      "hosting_challenge_script_ignored": true
+    },
+    {
+      "file": "guide_images/01_pipeline.png",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "guide_images/03_reasoning.png",
+      "public_sha256_matches": true
+    },
+    {
+      "file": "guide_images/02_contribution.png",
+      "public_sha256_matches": true
+    }
+  ],
+  "mp4_files": 0,
+  "mp4_entries_in_current_archives": 0,
+  "zip_archives_checked": [],
+  "current_site_archive_checked": "../movie_lod_github_deliverables/site_current.tar.gz",
+  "canonical_queries_verified": 27,
+  "statistics_match": true
+}

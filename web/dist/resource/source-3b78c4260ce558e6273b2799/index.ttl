@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-3b78c4260ce558e6273b2799 a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/Interstellar_%28film%29.json> ;
+    ex:retrievedAt "2026-10-06T08:41:52.812+00:00"^^xsd:dateTime ;
+    ex:sha256 "3b78c4260ce558e6273b27999b84102d5cbcc34d7343300113055db337135e5c" ;
+    ex:sourceUrl "https://dbpedia.org/data/Interstellar_%28film%29.json"^^xsd:anyURI .
+

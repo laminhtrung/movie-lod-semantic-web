@@ -1,0 +1,55 @@
+{
+  "method": "HermiT types and OWL RL relationships; no COUNT classification",
+  "rl_defined": [
+    "ActingContribution",
+    "DirectingContribution",
+    "WritingContribution",
+    "ProducingContribution",
+    "Filmmaker",
+    "ActionFilm",
+    "AwardWinningFilm",
+    "WriterDirector",
+    "ActorFilmmaker",
+    "AwardWinningFilmmaker",
+    "AwardWinningActionFilm",
+    "GenreCrossingFilm"
+  ],
+  "cardinality_defined": [
+    "MultiCreditContributor",
+    "ThreeCreditContributor"
+  ],
+  "inferred_counts": {
+    "ActingContribution": 855,
+    "DirectingContribution": 31,
+    "WritingContribution": 51,
+    "ProducingContribution": 73,
+    "Filmmaker": 89,
+    "ActionFilm": 12,
+    "AwardWinningFilm": 26,
+    "WriterDirector": 10,
+    "ActorFilmmaker": 7,
+    "AwardWinningFilmmaker": 65,
+    "AwardWinningActionFilm": 10,
+    "GenreCrossingFilm": 8,
+    "MultiCreditContributor": 17,
+    "ThreeCreditContributor": 7
+  },
+  "asserted_counts": {
+    "ActingContribution": 0,
+    "DirectingContribution": 0,
+    "WritingContribution": 0,
+    "ProducingContribution": 0,
+    "Filmmaker": 0,
+    "ActionFilm": 0,
+    "AwardWinningFilm": 0,
+    "WriterDirector": 0,
+    "ActorFilmmaker": 0,
+    "AwardWinningFilmmaker": 0,
+    "AwardWinningActionFilm": 0,
+    "GenreCrossingFilm": 0,
+    "MultiCreditContributor": 0,
+    "ThreeCreditContributor": 0
+  },
+  "detected_errors": [],
+  "version": "3.0.0"
+}

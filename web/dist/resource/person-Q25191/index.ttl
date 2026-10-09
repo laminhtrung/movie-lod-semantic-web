@@ -1,0 +1,45 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q25191 a dbo:Person ;
+    rdfs:label "Christopher Nolan"@en ;
+    dbo:award res:award-Q102427,
+        res:award-Q103360,
+        res:award-Q105447,
+        res:award-Q1056240,
+        res:award-Q12143912,
+        res:award-Q12201477,
+        res:award-Q16058279,
+        res:award-Q3405197,
+        res:award-Q586356,
+        res:award-Q787131,
+        res:award-Q833154,
+        res:award-Q833163 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25191> ;
+    ex:hasContribution res:contribution-Q13417189-Q25191-director,
+        res:contribution-Q13417189-Q25191-producer,
+        res:contribution-Q13417189-Q25191-writer,
+        res:contribution-Q163872-Q25191-director,
+        res:contribution-Q163872-Q25191-producer,
+        res:contribution-Q163872-Q25191-writer,
+        res:contribution-Q166262-Q25191-director,
+        res:contribution-Q166262-Q25191-writer,
+        res:contribution-Q190525-Q25191-director,
+        res:contribution-Q190525-Q25191-writer,
+        res:contribution-Q21935651-Q25191-director,
+        res:contribution-Q21935651-Q25191-producer,
+        res:contribution-Q21935651-Q25191-writer,
+        res:contribution-Q25188-Q25191-director,
+        res:contribution-Q25188-Q25191-producer,
+        res:contribution-Q25188-Q25191-writer,
+        res:contribution-Q46551-Q25191-director,
+        res:contribution-Q46551-Q25191-producer,
+        res:contribution-Q46551-Q25191-writer,
+        res:contribution-Q63985561-Q25191-director,
+        res:contribution-Q63985561-Q25191-producer,
+        res:contribution-Q63985561-Q25191-writer ;
+    ex:sourceSnapshot res:source-b82d4cd24c4fcbc751ccf4dc .
+

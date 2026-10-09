@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Lord_of_the_Rings%3A_The_Return_of_the_King.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:06.692268+00:00",
+  "sha256": "10558aa20ca8607275e5aa7a47c185f1e5c4f5a48d2001d35adbb7af0c81bfe9",
+  "path": "data/raw/ff60ef3329e6251470804e8f.json",
+  "http_status": 200
+}

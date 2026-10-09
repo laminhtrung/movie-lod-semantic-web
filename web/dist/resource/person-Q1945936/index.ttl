@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q1945936 a dbo:Person ;
+    rdfs:label "Jochum ten Haaf"@en ;
+    dbo:award res:award-Q1131356 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1945936> ;
+    ex:hasContribution res:contribution-Q21935651-Q1945936-actor ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+

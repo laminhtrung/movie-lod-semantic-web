@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:42:06.336113+00:00",
+  "sha256": "db3aa6ebce337e38917bd5c34b2efb9f77bc868a5549142d8286ad9d181389ae",
+  "path": "data/raw/755b5dcd429314801eb90927.json",
+  "http_status": 200
+}

@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q237207 a dbo:Person ;
+    rdfs:label "Kathleen Kennedy"@en ;
+    dbo:award res:award-Q3101822,
+        res:award-Q52382875,
+        res:award-Q56085709,
+        res:award-Q844273 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q237207> ;
+    ex:hasContribution res:contribution-Q483941-Q237207-producer ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

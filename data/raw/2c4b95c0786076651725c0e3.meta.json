@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Memento_%28film%29.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:54.326665+00:00",
+  "sha256": "f6cf607b6ee77f974701558585b2307e961b201987b0ffa3feedca984a259483",
+  "path": "data/raw/2c4b95c0786076651725c0e3.json",
+  "http_status": 200
+}

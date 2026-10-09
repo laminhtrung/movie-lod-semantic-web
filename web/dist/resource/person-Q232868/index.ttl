@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q232868 a dbo:Person ;
+    rdfs:label "Clémence Poésy"@en ;
+    dbo:award res:award-Q13452528 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q232868> ;
+    ex:hasContribution res:contribution-Q63985561-Q232868-actor ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

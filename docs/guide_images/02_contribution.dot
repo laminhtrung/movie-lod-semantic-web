@@ -1,0 +1,16 @@
+digraph G {rankdir=LR;node [shape=box,style="rounded,filled",fillcolor="#E9F4F5",fontname="Times New Roman",fontsize=16,color="#247A86"];edge [color="#247A86",fontname="Times New Roman",fontsize=12];
+    person [label="Christopher Nolan
+dbo:Person"];
+    film [label="Inception
+dbo:Film"];
+    d [label="Directing credit"];
+    w [label="Writing credit"];
+    p [label="Producing credit"];
+    dr [label="ex:DirectorRole",fillcolor="#FEF0D8"];
+    wr [label="ex:WriterRole",fillcolor="#FEF0D8"];
+    pr [label="ex:ProducerRole",fillcolor="#FEF0D8"];
+    person->d [label="hasContribution"];person->w;person->p;
+    d->film [label="contributionTo"];w->film;p->film;
+    d->dr [label="hasRole"];w->wr [label="hasRole"];p->pr [label="hasRole"];
+    {rank=same;d;w;p;} {rank=same;dr;wr;pr;}
+    }

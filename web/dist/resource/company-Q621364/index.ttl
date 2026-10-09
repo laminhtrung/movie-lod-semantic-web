@@ -1,0 +1,11 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:company-Q621364 a dbo:Company ;
+    rdfs:label "Legendary Pictures"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q621364> ;
+    ex:sourceSnapshot res:source-f4ca917e06a8755924ffd24a .
+

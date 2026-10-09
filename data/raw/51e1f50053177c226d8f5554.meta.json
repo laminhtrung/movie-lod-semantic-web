@@ -1,0 +1,8 @@
+{
+  "url": "https://dbpedia.org/data/Fight_Club.json",
+  "provider": "DBpedia",
+  "retrieved_at": "2026-10-06T08:41:59.039898+00:00",
+  "sha256": "c96843096ba6ca1de9f0ab22b48ec2bf565374bb4dbd7f2606dbcf0cc44d73e3",
+  "path": "data/raw/51e1f50053177c226d8f5554.json",
+  "http_status": 200
+}

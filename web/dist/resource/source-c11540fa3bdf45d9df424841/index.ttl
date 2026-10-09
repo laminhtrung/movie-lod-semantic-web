@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-c11540fa3bdf45d9df424841 a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/The_Silence_of_the_Lambs_%28film%29.json> ;
+    ex:retrievedAt "2026-10-06T08:41:59.923+00:00"^^xsd:dateTime ;
+    ex:sha256 "c11540fa3bdf45d9df4248414bdae48bb0ad336d449594e918700cc1cc835d09" ;
+    ex:sourceUrl "https://dbpedia.org/data/The_Silence_of_the_Lambs_%28film%29.json"^^xsd:anyURI .
+

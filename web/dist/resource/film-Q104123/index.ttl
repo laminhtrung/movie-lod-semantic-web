@@ -1,0 +1,137 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:film-Q104123 a dbo:Film ;
+    rdfs:label "Pulp Fiction"@en ;
+    dbo:award res:award-Q1170507,
+        res:award-Q1315008,
+        res:award-Q1720784,
+        res:award-Q1789102,
+        res:award-Q179808,
+        res:award-Q1868950,
+        res:award-Q1966965,
+        res:award-Q2295041,
+        res:award-Q2544859,
+        res:award-Q3404523,
+        res:award-Q3841643,
+        res:award-Q41375,
+        res:award-Q41417,
+        res:award-Q503034,
+        res:award-Q505449,
+        res:award-Q5211226,
+        res:award-Q540977,
+        res:award-Q548389,
+        res:award-Q696972,
+        res:award-Q696998,
+        res:award-Q6978541,
+        res:award-Q849124,
+        res:award-Q952914 ;
+    dbo:country res:country-Q30 ;
+    dbo:director res:person-Q3772 ;
+    dbo:genre res:genre-Q11304653,
+        res:genre-Q113485322,
+        res:genre-Q130232,
+        res:genre-Q157443,
+        res:genre-Q1788980,
+        res:genre-Q188473,
+        res:genre-Q19367312,
+        res:genre-Q2421031,
+        res:genre-Q2484376,
+        res:genre-Q3990883,
+        res:genre-Q459290,
+        res:genre-Q5778924,
+        res:genre-Q7444356,
+        res:genre-Q859369,
+        res:genre-Q959790 ;
+    dbo:language res:language-Q1860 ;
+    dbo:producer res:person-Q514913 ;
+    dbo:productionCompany res:company-Q300323,
+        res:company-Q3177524,
+        res:company-Q465449 ;
+    dbo:runtime 9.24e+03 ;
+    dbo:starring res:person-Q1016897,
+        res:person-Q104061,
+        res:person-Q109232,
+        res:person-Q1209753,
+        res:person-Q125017,
+        res:person-Q1368224,
+        res:person-Q1563838,
+        res:person-Q164534,
+        res:person-Q172678,
+        res:person-Q185051,
+        res:person-Q191132,
+        res:person-Q203804,
+        res:person-Q2263306,
+        res:person-Q235115,
+        res:person-Q238483,
+        res:person-Q240774,
+        res:person-Q2434817,
+        res:person-Q254431,
+        res:person-Q270774,
+        res:person-Q2924399,
+        res:person-Q2926038,
+        res:person-Q310315,
+        res:person-Q318267,
+        res:person-Q3193117,
+        res:person-Q3241353,
+        res:person-Q356541,
+        res:person-Q3772,
+        res:person-Q3856171,
+        res:person-Q3973186,
+        res:person-Q432437,
+        res:person-Q453973,
+        res:person-Q514913,
+        res:person-Q7647898,
+        res:person-Q80938 ;
+    dbo:writer res:person-Q3772,
+        res:person-Q450720 ;
+    owl:sameAs <http://dbpedia.org/resource/Pulp_Fiction>,
+        <http://www.wikidata.org/entity/Q104123> ;
+    prov:wasDerivedFrom <https://www.wikidata.org/wiki/Q104123> ;
+    ex:contributionOf res:contribution-Q104123-Q1016897-actor,
+        res:contribution-Q104123-Q104061-actor,
+        res:contribution-Q104123-Q109232-actor,
+        res:contribution-Q104123-Q1209753-actor,
+        res:contribution-Q104123-Q125017-actor,
+        res:contribution-Q104123-Q1368224-actor,
+        res:contribution-Q104123-Q1563838-actor,
+        res:contribution-Q104123-Q164534-actor,
+        res:contribution-Q104123-Q172678-actor,
+        res:contribution-Q104123-Q185051-actor,
+        res:contribution-Q104123-Q191132-actor,
+        res:contribution-Q104123-Q203804-actor,
+        res:contribution-Q104123-Q2263306-actor,
+        res:contribution-Q104123-Q235115-actor,
+        res:contribution-Q104123-Q238483-actor,
+        res:contribution-Q104123-Q240774-actor,
+        res:contribution-Q104123-Q2434817-actor,
+        res:contribution-Q104123-Q254431-actor,
+        res:contribution-Q104123-Q270774-actor,
+        res:contribution-Q104123-Q2924399-actor,
+        res:contribution-Q104123-Q2926038-actor,
+        res:contribution-Q104123-Q310315-actor,
+        res:contribution-Q104123-Q318267-actor,
+        res:contribution-Q104123-Q3193117-actor,
+        res:contribution-Q104123-Q3241353-actor,
+        res:contribution-Q104123-Q356541-actor,
+        res:contribution-Q104123-Q3772-actor,
+        res:contribution-Q104123-Q3772-director,
+        res:contribution-Q104123-Q3772-writer,
+        res:contribution-Q104123-Q3856171-actor,
+        res:contribution-Q104123-Q3973186-actor,
+        res:contribution-Q104123-Q432437-actor,
+        res:contribution-Q104123-Q450720-writer,
+        res:contribution-Q104123-Q453973-actor,
+        res:contribution-Q104123-Q514913-actor,
+        res:contribution-Q104123-Q514913-producer,
+        res:contribution-Q104123-Q7647898-actor,
+        res:contribution-Q104123-Q80938-actor ;
+    ex:releaseYear 1994 ;
+    ex:sourceSnapshot res:source-3e29244a71b9cd1900b290d9,
+        res:source-918dad9e995eae829e9881e1 .
+

@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q191104 a dbo:Person ;
+    rdfs:label "Sean Bean"@en ;
+    dbo:award res:award-Q518675,
+        res:award-Q922396,
+        res:award-Q99212276 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q191104> ;
+    ex:hasContribution res:contribution-Q127367-Q191104-actor,
+        res:contribution-Q131074-Q191104-actor ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+

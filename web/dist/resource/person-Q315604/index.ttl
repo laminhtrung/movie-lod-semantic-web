@@ -1,0 +1,13 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q315604 a dbo:Person ;
+    rdfs:label "Barry Pepper"@en ;
+    dbo:award res:award-Q989453 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q315604> ;
+    ex:hasContribution res:contribution-Q208263-Q315604-actor ;
+    ex:sourceSnapshot res:source-256e3fe45cbe00107b6fcabe .
+

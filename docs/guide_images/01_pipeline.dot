@@ -1,0 +1,13 @@
+digraph G {rankdir=LR; node [shape=box,style="rounded,filled",fillcolor="#E9F4F5",fontname="Times New Roman",fontsize=16,color="#247A86"]; edge [color="#247A86",penwidth=2];
+    source [label="Crawled claims
+Wikidata + source snapshots"];
+    rdf [label="Asserted RDF
+Films, people, credits"];
+    owl [label="OWL schema
+DBpedia reuse + extensions",fillcolor="#FEF0D8"];
+    reason [label="HermiT / OWL RL
+Entailed types / relations"];
+    query [label="SPARQL
+Competency questions"];
+    source->rdf; rdf->reason; owl->reason; reason->query; rdf->query [label="direct queries",fontname="Times New Roman",fontsize=12];
+    }

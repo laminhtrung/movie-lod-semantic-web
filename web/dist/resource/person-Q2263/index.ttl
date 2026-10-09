@@ -1,0 +1,31 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q2263 a dbo:Person ;
+    rdfs:label "Tom Hanks"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q103916,
+        res:award-Q10855195,
+        res:award-Q10855271,
+        res:award-Q1131356,
+        res:award-Q17144,
+        res:award-Q1738793,
+        res:award-Q181883,
+        res:award-Q292044,
+        res:award-Q3406648,
+        res:award-Q39384825,
+        res:award-Q518675,
+        res:award-Q593098,
+        res:award-Q640353,
+        res:award-Q654620,
+        res:award-Q708135,
+        res:award-Q7243506,
+        res:award-Q849771 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2263> ;
+    ex:hasContribution res:contribution-Q134773-Q2263-actor,
+        res:contribution-Q208263-Q2263-actor ;
+    ex:sourceSnapshot res:source-95de1603c72929d3b2973622 .
+

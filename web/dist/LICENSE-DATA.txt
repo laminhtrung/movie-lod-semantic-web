@@ -1,0 +1,12 @@
+MovieLOD dataset — Creative Commons Attribution-ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Attribution: Wikidata contributors (structured data under CC0), DBpedia maintainers and Wikipedia contributors.
+Sources: https://www.wikidata.org/ and https://dbpedia.org/
+Wikidata licensing: https://www.wikidata.org/wiki/Wikidata:Licensing
+DBpedia resource pages display their source attribution and CC BY-SA 4.0 license.
+
+This educational dataset selects, normalizes, and links source records. Original responses,
+URLs, retrieval timestamps and SHA-256 hashes are retained in data/raw/ and its manifest.
+The public dataset does not reproduce long source articles or film artwork.
+When redistributing adaptations of this combined dataset, keep attribution and this license.

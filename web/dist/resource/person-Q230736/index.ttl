@@ -1,0 +1,14 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q230736 a dbo:Person ;
+    rdfs:label "Sean Young"@en ;
+    dbo:award res:award-Q602866,
+        res:award-Q977915 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q230736> ;
+    ex:hasContribution res:contribution-Q184843-Q230736-actor ;
+    ex:sourceSnapshot res:source-da9917eb50e9e79008bb81ae .
+

@@ -1,0 +1,13 @@
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:source-db3aa6ebce337e38917bd5c3 a ex:SourceSnapshot ;
+    rdfs:label "DBpedia source snapshot" ;
+    prov:wasDerivedFrom <https://dbpedia.org/data/The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring.json> ;
+    ex:retrievedAt "2026-10-06T08:42:06.336+00:00"^^xsd:dateTime ;
+    ex:sha256 "db3aa6ebce337e38917bd5c34b2efb9f77bc868a5549142d8286ad9d181389ae" ;
+    ex:sourceUrl "https://dbpedia.org/data/The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring.json"^^xsd:anyURI .
+

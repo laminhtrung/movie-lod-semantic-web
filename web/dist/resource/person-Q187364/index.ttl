@@ -1,0 +1,24 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <https://laminhtrung.github.io/movie-lod-semantic-web/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://laminhtrung.github.io/movie-lod-semantic-web/resource/> .
+
+res:person-Q187364 a dbo:Person ;
+    rdfs:label "Robert Zemeckis"@en ;
+    dbo:award res:award-Q1011547,
+        res:award-Q103360,
+        res:award-Q105447,
+        res:award-Q1111310,
+        res:award-Q13452524,
+        res:award-Q1789102,
+        res:award-Q17985761,
+        res:award-Q19020,
+        res:award-Q3101822,
+        res:award-Q3414212,
+        res:award-Q586356,
+        res:award-Q716909 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q187364> ;
+    ex:hasContribution res:contribution-Q134773-Q187364-director ;
+    ex:sourceSnapshot res:source-7ab23c0198c0fe0981d24b3b .
+
