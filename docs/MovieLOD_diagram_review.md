@@ -2,7 +2,7 @@
 
 Bản vẽ: `MovieLOD_entity_diagram.png`, `.svg` và `.pdf`.
 
-Sơ đồ dùng ký pháp UML cho các lớp chính (A/B), view range của OWL (C) và một ví dụ liên kết RDF giữa các cá thể (D). Phạm vi gồm toàn bộ 19 object properties, 5 datatype properties và ví dụ `owl:sameAs`; không liệt kê toàn bộ 37 lớp hoặc mọi biểu thức anonymous/restriction trong OWL.
+Sơ đồ dùng ký pháp UML cho các lớp chính (A/B), view range của OWL (C) và một ví dụ liên kết RDF giữa các cá thể (D). Hình có 13/37 lớp được đặt tên; còn 24 lớp chưa xuất hiện. Phạm vi gồm toàn bộ 19 object properties, 5 datatype properties và ví dụ `owl:sameAs`; không liệt kê toàn bộ 37 lớp hoặc mọi biểu thức anonymous/restriction trong OWL.
 
 ## Tài liệu chuẩn đối chiếu
 
