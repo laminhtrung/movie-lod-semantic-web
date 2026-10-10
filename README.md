@@ -83,4 +83,4 @@ Kiểm tra browser tùy chọn: `pip install -r requirements_dev.txt`, rồi `py
 
 ## Bản đồ ontology
 
-[Sơ đồ lớp và quan hệ — PNG](docs/Ontology_quan_he.png). Một ảnh gồm các ô và mũi tên có nhãn, bao phủ 37 lớp, 19 object properties và 5 datatype properties. Các vùng lặp lại tên lớp để dễ đọc. Chạy lại bằng `src/draw_ontology_arrows.py` khi đổi OWL.
+[Sơ đồ thực thể MovieLOD — PNG](docs/MovieLOD_entity_diagram.png). Bản vẽ học thuật với font Arial, mũi tên có nhãn, các thực thể chính, đủ 19 object properties và 5 datatype properties, cùng liên kết `owl:sameAs`. Những thuộc tính chưa khai báo domain được thể hiện ở nhóm RDF resource. Sơ đồ không liệt kê toàn bộ phân cấp lớp. Chạy lại bằng `src/draw_movielod_entities.py`; trình tạo kiểm tra domain/range, cardinality, chữ bị cắt, nhãn chồng nhau và mũi tên đi xuyên ô. Bản SVG/PDF nhúng font để giữ bố cục khi mở trên máy khác.

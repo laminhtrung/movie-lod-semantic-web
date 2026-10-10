@@ -1,0 +1,23 @@
+{
+  "owl_sha256": "c75fb9caad895cbc18ba316e4bfb7bc1be1ef7f3701ff214276a1a21acc4eecd",
+  "object_properties_checked": 19,
+  "datatype_properties_checked": 5,
+  "domain_range_matches_owl": true,
+  "all_arrows_labelled": true,
+  "text_clipping": [],
+  "text_overlaps": [],
+  "relationship_label_box_overlaps": [],
+  "arrow_box_overlaps": [],
+  "canvas": [
+    2800,
+    2870
+  ],
+  "scope": "Core entities and all declared properties; subclass taxonomy omitted",
+  "qualified_cardinality_checked": true,
+  "standard_identity_link_checked": true,
+  "font_embedded": "Arial.ttf",
+  "visual_review": "passed: PNG and rendered PDF inspected",
+  "pdf_pages": 1,
+  "pdf_fonts_embedded": true,
+  "png_sha256": "20d9fd7f5cfaf2bf6ad5be9c3796c1191b1463bc749f02104b51f632d13039c9"
+}
