@@ -5,19 +5,28 @@
   "domain_range_matches_owl": true,
   "all_arrows_labelled": true,
   "text_clipping": [],
+  "node_text_overflow": [],
   "text_overlaps": [],
   "relationship_label_box_overlaps": [],
   "arrow_box_overlaps": [],
+  "relationship_label_edge_overlaps": [],
   "canvas": [
     2800,
-    2870
+    3410
   ],
-  "scope": "Core entities and all declared properties; subclass taxonomy omitted",
+  "scope": "Core classes in UML notation; complementary OWL range and RDF instance view; subclass taxonomy omitted",
+  "notation_reference": "OMG UML 2.5.1 sections 9.2.4, 9.8.4, 11.5.4",
+  "uml_generalization_solid_hollow_triangle": true,
+  "uml_association_open_arrow": true,
+  "owl_role_individuals_not_attributes": true,
+  "all_different_verified": true,
+  "identity_example_triples_verified": 2,
   "qualified_cardinality_checked": true,
+  "datatype_multiplicities_unrestricted_verified": true,
   "standard_identity_link_checked": true,
   "font_embedded": "Arial.ttf",
-  "visual_review": "passed: PNG and rendered PDF inspected",
+  "visual_review": "passed: final PNG reviewed; PDF rendering checked",
   "pdf_pages": 1,
   "pdf_fonts_embedded": true,
-  "png_sha256": "20d9fd7f5cfaf2bf6ad5be9c3796c1191b1463bc749f02104b51f632d13039c9"
+  "png_sha256": "422ff5d1aa17c4ab051229e131f428addbd41fa8451e5b4c0f4564fdfa7a792a"
 }
