@@ -86,3 +86,5 @@ Kiểm tra browser tùy chọn: `pip install -r requirements_dev.txt`, rồi `py
 [Sơ đồ MovieLOD — PNG](docs/MovieLOD_entity_diagram.png). Phần lớp dùng ký pháp UML (kế thừa: nét liền/tam giác rỗng; object properties: mũi tên mở), cùng view range OWL và ví dụ RDF `owl:sameAs`. Bao phủ các thực thể chính, 19 object properties và 5 datatype properties. Chạy lại bằng `src/draw_movielod_entities.py`. Trình tạo kiểm tra ngữ nghĩa và va chạm chữ/ô/đường nối; SVG/PDF nhúng font Arial. Xem [biên bản đối chiếu UML/OWL và kiểm tra bố cục](docs/MovieLOD_diagram_review.md).
 
 [Script thuyết trình sơ đồ — Word](docs/Script_thuyet_trinh_so_do_MovieLOD.docx) (tiếng Việt, khoảng 5–6 phút); nêu rõ hình hiện có 13/37 lớp và liệt kê 24 lớp chưa vẽ.
+
+[English presentation script — PDF](docs/MovieLOD_Presentation_Script_EN.pdf) · [Word](docs/MovieLOD_Presentation_Script_EN.docx): speaker script for 24 slides, diagram walkthrough and short Q&A.
